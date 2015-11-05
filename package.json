@@ -1,35 +1,36 @@
 {
-  "name": "iamstarkov.com",
-  "version": "1.1.0",
-  "description": "Frontend blog from Vladimir Starkov",
+  "name": "alfilatov.com",
+  "version": "1.0.0",
+  "description": "Blog about life and software development",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamstarkov/iamstarkov.github.io"
+    "url": "https://github.com/greybax/iamstarkov.github.io"
   },
-  "author": "Vladimir Starkov <iamstarkov@gmail.com> (https://iamstarkov.com/)",
+  "author": "Aleksandr Filatov <greybax@gmail.com> (http://alfilatov.com/)",
   "license": "MIT",
   "scripts": {
     "start": "gulp",
     "deploy": "NODE_ENV=prod gulp gh"
   },
   "bugs": {
-    "url": "https://github.com/iamstarkov/iamstarkov.github.io/issues"
+    "url": "https://github.com/greybax/iamstarkov.github.io/issues"
   },
-  "homepage": "https://github.com/iamstarkov/iamstarkov.github.io",
+  "homepage": "https://github.com/greybax/iamstarkov.github.io",
   "site": {
-    "title": "Vladimir Starkov",
-    "description": "Frontend blog from Vladimir Starkov",
-    "feed_url": "https://iamstarkov.com/rss.xml",
-    "site_url": "https://iamstarkov.com/",
-    "managingEditor": "iamstarkov@gmail.com (Vladimir Starkov)",
-    "webMaster": "iamstarkov@gmail.com (Vladimir Starkov)",
+    "title": "Aleksandr Filatov",
+    "description": "Blog about life and software development",
+    "feed_url": "http://alfilatov.com/rss.xml",
+    "site_url": "http://alfilatov.com/",
+    "managingEditor": "greybax@gmail.com (Aleksandr Filatov)",
+    "webMaster": "greybax@gmail.com (Aleksandr Filatov)",
     "copyright": "MIT",
     "language": "en-us",
     "categories": [
       "frontend",
+      "js",
       "css",
-      "typography"
+      "life"
     ]
   },
   "dependencies": {
