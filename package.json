@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/greybax/iamstarkov.github.io"
+    "url": "https://github.com/greybax/greybax.github.io"
   },
   "author": "Aleksandr Filatov <greybax@gmail.com> (http://alfilatov.com/)",
   "license": "MIT",
@@ -14,9 +14,9 @@
     "deploy": "NODE_ENV=prod gulp gh"
   },
   "bugs": {
-    "url": "https://github.com/greybax/iamstarkov.github.io/issues"
+    "url": "https://github.com/greybax/greybax.github.io/issues"
   },
-  "homepage": "https://github.com/greybax/iamstarkov.github.io",
+  "homepage": "https://github.com/greybax/greybax.github.io",
   "site": {
     "title": "Aleksandr Filatov",
     "description": "Blog about life and software development",

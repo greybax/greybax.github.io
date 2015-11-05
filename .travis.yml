@@ -9,5 +9,5 @@ before_script:
 - git config --global user.email "greybax@gmail.com"
 - git config --global user.name "Aleksandr Filatov"
 - git remote rm origin
-- git remote add origin https://greybax:${GH_TOKEN}@github.com/greybax/iamstarkov.github.io.git
+- git remote add origin https://greybax:${GH_TOKEN}@github.com/greybax/greybax.github.io.git
 script: npm run deploy
