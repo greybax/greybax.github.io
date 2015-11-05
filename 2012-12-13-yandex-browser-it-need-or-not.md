@@ -9,6 +9,10 @@ categories:
  - Chromium
 ---
 
+# Yandex browser? It's need or not?
+
+_December 13, 2012_
+
 Yandex.Browser with a full set of features designed specifically for the English-speaking users will be released soon. (с)
 ![yandex_browser_logo](http://yabs.yandex.ru/count/AI9QGHYaezm40002Zhqbnmm5KPK2cmPfMeYosr1G0vAjXGQgfZIAe4K6Kge2fPOOP92W7mBUaRpGIMG6an11hlnExYmQdEFG1B41VmS0)
 Not so early, Yandex company on yours conference is [YaC 2012](http://fotki.yandex.ru/users/ya-events/album/136128/) presented the [Yandex browser 1.0](http://browser.yandex.com/). Let's show it inside.

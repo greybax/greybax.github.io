@@ -10,6 +10,10 @@ categories:
  - compilers
 ---
 
+# Пробуем ES2015(ES6) в действии
+
+_June 29, 2015_
+
 Буквально на днях (17 июня) свершилось то, чего ждали почти 6 лет в мире Javascript. Генеральное собрание Ecma International [официально одобрило](http://www.ecma-international.org/news/index.html) стандарт ECMA-262 6 версии, который является спецификацией языка ECMAScript 6 (ES6), который так же называют ECMAScript 2015. Предыдущий стандарт языка Javascript был одобрен в 2009 году (ES5).
 
 Теперь дело за браузерами, которые начнут усиленно внедрять спецификацию языка в свои движки. Следить за поддержкой ES2015 удобно на сайте [kangax.github.io/compat-table/es6](http://kangax.github.io/compat-table/es6/).

@@ -8,6 +8,10 @@ categories:
  - .net
 ---
 
+# Как я побывал на .NEXT'14
+
+_December 09, 2014_
+
 В [предыдущем](http://alfilatov.com/blog/2014/12/09/vpiechatlieniia-ot-piervogho-khakatona/) своем посте я написал про свое первое участие в хакатоне. На следующий день после его окончания в Москве проходила главная ```.NET``` конференция страны - [.NEXT](http://dotnext.ru/). Хочу поделиться своими впечатлениями об этом мероприятии.
 
 ![.Next Logo](/images/screenshots/dotnext_logo.png)

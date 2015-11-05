@@ -7,6 +7,10 @@ categories:
  - Windows hotkeys
 ---
 
+# Windows 7 HotKeys
+
+_December 18, 2012_
+
 I would like propose to your attention the list of hotkeys, the use of which makes the work with the Windows 7 more usability. Some hotkeys may be available in Windows 8.
 
 ### Manage windows 

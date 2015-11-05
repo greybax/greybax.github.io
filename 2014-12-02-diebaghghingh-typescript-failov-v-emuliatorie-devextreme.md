@@ -10,6 +10,11 @@ categories:
  - typescript
  - javascript
 ---
+
+# Debugging файлов TypeScript в браузере через эмулятор DevExtreme
+
+_December 02, 2014_
+
 Недавно встала задача добавить поддержку debugging'а файлов ```*.ts``` в браузере. В нашем случае это Google Chrome. 
 Постараюсь как можно подробнее описать этот процесс.
 
