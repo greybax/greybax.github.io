@@ -3,7 +3,7 @@ layout: post
 title: "Используем Fiddler в качестве прокси"
 date: 2014-10-01 10:05:46 +0000
 comments: true
-categories: 
+categories:
  - fiddler
  - proxy
  - configuration
