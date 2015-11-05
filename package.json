@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/greybax/greybax.github.io"
   },
-  "author": "Aleksandr Filatov <greybax@gmail.com> (http://alfilatov.com/)",
+  "author": "Aleksandr Filatov <greybax@gmail.com> (https://alfilatov.com/)",
   "license": "MIT",
   "scripts": {
     "start": "gulp",
@@ -20,8 +20,8 @@
   "site": {
     "title": "Aleksandr Filatov",
     "description": "Blog about life and software development",
-    "feed_url": "http://alfilatov.com/rss.xml",
-    "site_url": "http://alfilatov.com/",
+    "feed_url": "https://alfilatov.com/rss.xml",
+    "site_url": "https://alfilatov.com/",
     "managingEditor": "greybax@gmail.com (Aleksandr Filatov)",
     "webMaster": "greybax@gmail.com (Aleksandr Filatov)",
     "copyright": "MIT",
