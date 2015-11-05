@@ -11,3 +11,6 @@ before_script:
 - git remote rm origin
 - git remote add origin https://greybax:${GH_TOKEN}@github.com/greybax/greybax.github.io.git
 script: npm run deploy
+env:
+  global:
+    secure: "G08dGlsdIOn9BUiBNyoIQUZgoxAgQW4ZZTmV9F/dYTx1keZ65dAcyOMDkhZjFz6U7XwUm7kn/rUMRrgOGCrv05lrfvFSIK4YYB2FBbbws8998UZ2MJr5oUM0t96hPEpSpSKdESB8sLcKnvvpOd4SDDEAznY5HdJsZX0w+/1H6AYVtrxKOlFyueeYygvg0m+KyZwpbguwrWEcYgBW+8AxoDFohR+xOe4tFpSI5rW2MgzoyzECEVMQb2p3WFwpLjMX3+1/PmcfyqQSq/UBvUgONOzFXedj8H+k42dFq8Yy7BQDtAQ1UpY0fR+K0oKSlNYAytHjgG5VymVgzCdeI7tl/y/HbxLwcNAjZ4GwagVPwjNmpk6sexeCOBAZtbCSYZ7CI6GGT/6p7J1hxFy3G6rMSnAVrCATnxVcZ7kA+/dOXqY0DMuIIPda/9gskIN5nTVgS1Uqlx2bIDyHV1BbIukYTPRdXh/CxC2MR45ZRwxy/gFUlhfB7D5lco0Zl0SSCoMsJ0vqpqwg+nF8d35YuGqhA29FscGDPWI+vv6/KkO4kAtweNqF1JNlYPaLPNiuPdcqLxO2+jdNUR8fLjCVxHw5c45RKdhW+aGxo10YqGp3TYBNtKwJG/EYEl1CNGAcsXWPjParfxa+sme0b2x83agxxSwqr4YSv2Lk15/mQtoaplA="
