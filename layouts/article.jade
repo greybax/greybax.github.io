@@ -1,8 +1,5 @@
 extend page
 
-a(href="/")
-  | Back
-
 block title
   title #{title.text}
 
@@ -16,8 +13,7 @@ block meta
   meta(name="og:description" content=desc.text)
 
 block content
-  - var github = "https://github.com/greybax/greybax.github.io/edit/premaster/"
-  a(href=github + filename).edit-link edit on github
+  a(href=/).back-link Back
 
   article
     h1 !{title.html}

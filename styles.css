@@ -125,6 +125,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 3px;
 }
 
+.back-link {
+  float: left;
+  margin-right: 2em;
+
+  font-size: 0.7em;
+  line-height: 2.2;
+  white-space: nowrap;
+  margin-top: 3px;
+}
+
+
 blockquote {
   margin: 0px;
   padding-left: 1em;
