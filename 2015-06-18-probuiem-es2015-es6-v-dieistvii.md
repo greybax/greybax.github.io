@@ -1,6 +1,6 @@
 # Пробуем ES2015(ES6) в действии
 
-#javascript, #ES6/ES2015, #babel, #compilers
+#javascript, #ES6/ES2015, #babel, #compilers;
 
 _June 29, 2015_
 
@@ -8,13 +8,13 @@ _June 29, 2015_
 
 Теперь дело за браузерами, которые начнут усиленно внедрять спецификацию языка в свои движки. Следить за поддержкой ES2015 удобно на сайте [kangax.github.io/compat-table/es6](http://kangax.github.io/compat-table/es6/).
 
-### Некоторые термины:
+## Некоторые термины:
 
 * ECMAScript — это официальный стандарт языка JavaScript.
 * TC39 — комитет, развивающий стандарт ECMAScript и принимающий решения по внедрению нового функционала.
 * Внутри самого ECMAScript [много стандартов](http://www.ecma-international.org/publications/standards/Standard.htm). Самый популярный из них — ECMA-262.
 
-### Немного истории
+## Немного истории
 
 * 1995
     * Май - Brendan Eich реализовал Mocha в Nestcape
@@ -34,7 +34,7 @@ _June 29, 2015_
 
 Архив стандарта ECMA-262 можно посмотреть на [официальном сайте](http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm).
 
-### Обзор нововведений в ECMAScript 6:
+## Обзор нововведений в ECMAScript 6:
 
 Здесь я постарался перечислить (с ссылкой на упоминания в спецификации) основные фичи который были приняты в финальной версии стандарта ECMAScript 2015.
 
@@ -71,7 +71,7 @@ _June 29, 2015_
 У [@addyosmani](https://github.com/addyosmani) есть замечательный репозиторий, где он собрал коллекцию [es6-tools](https://github.com/addyosmani/es6-tools).
 Первым в списке стоит Babel. Давайте разберем его подробнее и узнаем, как с помощью него можно уже сейчас писать код на ES6.
 
-### Babel
+## Babel
 
 [Babel](https://babeljs.io/) - это JavaScript транскомпилятор. Если кратко, то транскомпилятор отличается от компилятора тем, что он переводит код из новой версии в более старый - стабильный. Подробнее про транскомпиляторы можно почитать [тут](https://en.wikipedia.org/wiki/Source-to-source_compiler). Как написано на их сайте:
 
@@ -79,7 +79,7 @@ _June 29, 2015_
 
 и это то, что нам нужно! Поиграться с этим транскомпилятором, не устанавливая его, можно прямо на сайте [babeljs.io/repl/](https://babeljs.io/repl/). Если мы хотим написать что-то серьезное, то нам нужно [установить и начать использовать](https://babeljs.io/docs/setup/) этот транскомпилятор.
 
-### Пишем свой первый класс на ES2015
+## Пишем свой первый класс на ES2015
 
 Используем сервис codepen.io и включим в настройках поддержку Babel. В своем примере я продемонстрировал новые возможности ES2015: классы, их наследование и шаблоны строк.
 
@@ -111,11 +111,11 @@ john.son;</code></pre>
 <p>See the Pen <a href='http://codepen.io/greybax/pen/yNpWYY/'>yNpWYY</a> by Alex Filatov (<a href='http://codepen.io/greybax'>@greybax</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 </div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-### Ссылки
+## Ссылки
 
 * [Официальная спецификация ES 2015 ](http://www.ecma-international.org/ecma-262/6.0/).
 * [Exploring ES6: Upgrade to the next version of JavaScript](http://exploringjs.com/) - Отличная книга доктора Axel Rauschmayer по ES6. Axel также является автором книги [Speaking JavaScript: An In-Depth Guide for Programmers](http://speakingjs.com/), ведет свой блог [2ality.com](http://www.2ality.com/) и организатор [MunichJS User Group](http://www.munichjs.org/)
 * [es6-features.org](http://es6-features.org/) - классный сайт, поддерживаемый [@engelschall](https://twitter.com/engelschall).  Приводится обзор и сравнение новых фич из ES6 c ES5.
 * [JavaScript, ECMA–262, TC39, and ECMAScript Transpilers Explained](https://medium.com/innoarchitech-innovation-architecture-technology/javascript-ecma-262-tc39-and-ecmascript-transpilers-explained-adde38701bf7)
 * [Цикл статей ES6 In Depth](https://hacks.mozilla.org/category/es6-in-depth/)
-* [Моя презентация](http://alfilatov.com/presentations/index)
+* [Моя презентация](http://www.slideshare.net/AlexFilatov3/es2015es6)
