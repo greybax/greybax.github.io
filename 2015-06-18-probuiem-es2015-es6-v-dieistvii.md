@@ -1,16 +1,6 @@
----
-layout: post
-title: "Пробуем ES2015(ES6) в действии"
-date: 2015-06-29 12:49:59 +0000
-comments: true
-categories:
- - javascript
- - ES6/ES2015
- - babel
- - compilers
----
-
 # Пробуем ES2015(ES6) в действии
+
+#javascript, #ES6/ES2015, #babel, #compilers
 
 _June 29, 2015_
 
