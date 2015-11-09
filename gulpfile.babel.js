@@ -61,7 +61,7 @@ const getRSS = (site, list) => {
 
 gulp.task('articles-registry', () => {
   articlesList = [];
-  return gulp.src(env === 'dev' ? ['2015-*.md'] : [ '!*draft*.md' ])
+  return gulp.src(env === 'dev' ? ['2015-*.md'] : [ '*-*.md', '!*draft*.md' ])
     .pipe(replace('https://alfilatov.com/', '/'))
     .pipe(replace('https://alfilatov.com', '/'))
     .pipe((() => through.obj((file, enc, cb) => {
