@@ -54,7 +54,6 @@ const getRSS = (site, list) => {
       url: site.site_url + article.url,
       title: article.title.text,
       description: article.desc.html,
-      tags: article.tags.md,
       date: article.date.text
     })});
   return feed.xml({ indent: true });

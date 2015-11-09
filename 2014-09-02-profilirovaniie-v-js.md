@@ -1,16 +1,6 @@
----
-layout: post
-title: "Профилирование в JS"
-date: 2014-09-04 13:20:43 +0000
-comments: true
-categories: 
- - profilers
- - browsers
- - optimization
- - javascript
----
-
 # Профилирование в JS
+
+#profilers, #browsers, #optimization, #javascript;
 
 _September 04, 2014_
 

@@ -1,15 +1,6 @@
----
-layout: post
-title: "Yandex browser? It's need or not?"
-date: 2012-12-13
-comments: true
-categories:
- - Yandex browser
- - YaC 2012
- - Chromium
----
-
 # Yandex browser? It's need or not?
+
+#Yandex browser, #YaC 2012, #Chromium;
 
 _December 13, 2012_
 

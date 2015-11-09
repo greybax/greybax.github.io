@@ -1,17 +1,6 @@
----
-layout: post
-title: "Debugging файлов TypeScript в браузере через эмулятор DevExtreme"
-date: 2014-12-02 19:45:38 +0000
-comments: true
-categories: 
- - DevExtreme
- - configuration
- - debugging
- - typescript
- - javascript
----
-
 # Debugging файлов TypeScript в браузере через эмулятор DevExtreme
+
+#DevExtreme, #configuration, #debugging, #typescript, #javascript;
 
 _December 02, 2014_
 
@@ -29,7 +18,7 @@ _December 02, 2014_
     * Выполняем команду ```mklink /D <project_link_name> <project_path>```. В моем случае это ```mklink /D Pos C:\Projects\Pos```
     * Символическая ссылка ```project_link_name``` создана в директории ```project_path```
 
-Дополнительный ссылки:
+## Дополнительный ссылки:
 
 * [Running, Debugging and Deploy DevExtreme applications](http://js.devexpress.com/Documentation/Howto/SPA_Framework/Application_Design/?version=14_1#Running)
 * [Typescript in VS2012: (automatically) generating .js from .ts](http://stackoverflow.com/questions/12683820/typescript-in-vs2012-automatically-generating-js-from-ts)

@@ -1,5 +1,7 @@
 extend page
 
+<a href="/">Back</a>
+
 block title
   title #{title.text}
 
@@ -11,9 +13,6 @@ block meta
     meta(name="og:image"     content=image.src)
   meta(name="og:title"       content=title.text)
   meta(name="og:description" content=desc.text)
-
-block tags
-  tags #{article.tags.md}
 
 block content
   - var github = "https://github.com/greybax/greybax.github.io/edit/premaster/"

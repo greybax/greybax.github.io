@@ -1,15 +1,6 @@
----
-layout: post
-title: "Как и зачем я перешел с Blogger на Octopress"
-date: 2014-08-27 08:28:59 +0000
-comments: true
-categories:
- - blog
- - ruby
- - octopress
----
-
 # Как и зачем я перешел с Blogger на Octopress
+
+#blog, #ruby, #octopress;
 
 _August 27, 2014_
 
@@ -52,7 +43,7 @@ _August 27, 2014_
 
 Процесс развертывания подробно описан на [сайте Octopress](http://octopress.org/docs/deploying/github/).
 
-### Итог
+## Итог
 * Получили окружение с IDE для ```Ruby```, которое доступно прямо из браузера.
 * Удовольствие от написания постов в markdown разметке, расходуя минимум времени на HTML разметку.
 * Поддержку "из коробки" различных социальных плагинов (twitter, github, facebook). Легко добавлять свои.

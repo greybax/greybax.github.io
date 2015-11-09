@@ -1,16 +1,6 @@
----
-layout: post
-title: "Пишем игру на HTML5/JS"
-date: 2014-10-13 08:34:07 +0000
-comments: true
-categories:
- - javascript
- - gamedev
- - html5
- - canvas
----
-
 # Пишем игру на HTML5/JS
+
+#javascript, #gamedev, #html5, #canvas;
 
 _October 13, 2014_
 

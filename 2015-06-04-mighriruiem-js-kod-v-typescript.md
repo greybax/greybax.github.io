@@ -1,16 +1,6 @@
----
-layout: post
-title: "Мигрируем Javascript код в TypeScript"
-date: 2015-06-05 13:16:39 +0000
-comments: true
-categories:
- - javascript
- - typescript
- - frontend
- - migration
----
-
 # Мигрируем Javascript код в TypeScript
+
+#javascript, #typescript, #frontend, #migration;
 
 _June 05, 2015_
 

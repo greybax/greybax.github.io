@@ -1,15 +1,6 @@
----
-layout: post
-title: "My contribution in Mozilla society"
-date: 2012-12-10
-comments: true
-categories:
- - Mozilla
- - contributon
- - browser
----
-
 # My contribution in Mozilla society
+
+#Mozilla, #contributon, #browser;
 
 _December 10, 2012_
 

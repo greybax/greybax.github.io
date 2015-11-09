@@ -1,15 +1,6 @@
----
-layout: post
-title: "Впечатления от первого хакатона"
-date: 2014-12-09 19:44:16 +0000
-comments: true
-categories: 
- - hackaton
- - unity
- - gamedev
----
-
 # Впечатления от первого хакатона
+
+#hackaton, #unity, #gamedev;
 
 _December 09, 2014_
 
