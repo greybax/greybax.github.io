@@ -40,14 +40,14 @@ const addToList = (file, article) => {
 
 const buildArticle = (article) =>
   gulp.src('layouts/article.jade')
-    .pipe(data(() => article))
-    .pipe(() => {
-      var tags = mdTags(article)
-      article.replace(tags.md, tagstags.map(item => `[${item}](https://alfilatov.com/tag/${item})`).join(', '))
-    })
+    .pipe(data(() => article))    
     .pipe(jade({ pretty: true }))
     .pipe(rename({ dirname: article.url }))
     .pipe(rename({ basename: 'index' }))
+    .pipe((article) => {
+      var tags = mdTags(article)
+      article.replace(tags.md, tags.tags.map(item => `[${item}](https://alfilatov.com/tag/${item})`).join(', '))
+    })
     .pipe(gulp.dest('dist'));
 
 const getRSS = (site, list) => {
