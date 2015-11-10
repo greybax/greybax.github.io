@@ -45,8 +45,8 @@ const buildArticle = (article) =>
     .pipe(rename({ dirname: article.url }))
     .pipe(rename({ basename: 'index' }))
     .pipe((article) => {
-      var tags = mdTags(article)
-      article.replace(tags.md, tags.tags.map(item => `[${item}](https://alfilatov.com/tag/${item})`).join(', '))
+      var tags = mdTags(article);
+      return article.replace(tags.md, tags.tags.map(item => `[${item}](https://alfilatov.com/tag/${item})`).join(', '))
     })
     .pipe(gulp.dest('dist'));
 
