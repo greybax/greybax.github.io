@@ -6,7 +6,7 @@ _October 13, 2014_
 
 На выходных нашлось немного свободного времени и я решил попрактиковаться в ```gamedev``` разработке. Давно собирался написать какую-нибудь игрушку, но все руки не доходили. Бегло пробежался по сети в поисках как это делают настоящие гуру. Мне понравилась вот эта [статья](http://jlongster.com/Making-Sprite-based-Games-with-Canvas). За основу своей будущей игры я взял [фреймворк автора статьи](https://github.com/jlongster/canvas-game-bootstrap).
 
-![Towers game 2D](images/screenshots/towers_game2d.png)
+![Towers game 2D](/images/screenshots/towers_game2d.png)
 
 ## Начало
 Фреймворк, который я стал использовать включает в себя 4 ```js``` файла 

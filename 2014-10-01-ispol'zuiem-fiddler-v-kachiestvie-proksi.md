@@ -13,14 +13,14 @@ _October 01, 2014_
 ## Конфигурация Fiddler
 1. Переходим Tools > Fiddler Options > Connections.
 2. Ставим галку Allow remote computers to connect.
-![Check "Allow remote computers to connect"](images/screenshots/allow_remote_to_connect.png)
+![Check "Allow remote computers to connect"](/images/screenshots/allow_remote_to_connect.png)
 
 3. Перезапускаем ```Fiddler```
 4. Следует проверить что в ```firewall``` разрешены входящие соединения для Fiddler
-![Income conections for fiddler process](images/screenshots/fiddler_income_connections.png)
+![Income conections for fiddler process](/images/screenshots/fiddler_income_connections.png)
 
 5. В правом верхнем углу ```Fiddler``` находим ```Online Indicator``` и смотрим в нем по какому ip орудует наш ```Fiddler```. Нам нужен локальный адрес машины. Этот ip адрес мы будем указывать в настройках интернет соединения  нашего девайса на вкладке ```Proxy```.
-![Online Indicator](images/screenshots/indicator_ip_address.png)
+![Online Indicator](/images/screenshots/indicator_ip_address.png)
 
 После выполнения этих пунктов наш ```Fiddler``` готов принимать входящие соединения с внешних устройств. Соответственно может использоваться как прокси, обрабатывая через себя все запросы, которые приходят с нашего внешнего устройства.
 
@@ -32,6 +32,6 @@ _October 01, 2014_
 5. Порт - 8888
 6. Аутентификацию отключаем
 
-![iPhone proxy settings](images/screenshots/iPhone_proxy_settings.png)
+![iPhone proxy settings](/images/screenshots/iPhone_proxy_settings.png)
 
 Теперь после перехода на любой сайт со своего iPhone можно мониторить все request/response в ```Fiddler```
