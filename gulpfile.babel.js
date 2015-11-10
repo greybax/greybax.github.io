@@ -91,7 +91,7 @@ gulp.task('watch', ['express', 'build'], () => {
 });
 
 gulp.task('build', (done) => {
-  sequence('articles-registry', ['index-page', 'each-article', 'rss'], 'css', 'cname', done);
+  sequence('articles-registry', ['index-page', 'each-article', 'rss'], 'css', 'copy-images', 'cname', done);
 });
 
 gulp.task('css', () =>
@@ -101,6 +101,11 @@ gulp.task('css', () =>
       cssvariables()
     ]))
     .pipe(gulp.dest('dist'))
+);
+
+gulp.task('copy-images', () =>
+  gulp.src('images')
+    .pipe(gulp.dest('dist/images'))
 );
 
 gulp.task('clean', (done) => { del('dist', done); });
