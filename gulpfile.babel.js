@@ -103,7 +103,7 @@ gulp.task('css', () =>
     .pipe(gulp.dest('dist'))
 );
 
-gulp.task('copy-images', ['clean'], () =>
+gulp.task('copy-images', () =>
     gulp.src(['images/**/*'])
       .pipe(gulp.dest('dist/images'))
 );
