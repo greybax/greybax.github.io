@@ -44,10 +44,10 @@ const buildArticle = (article) =>
     .pipe(jade({ pretty: true }))
     .pipe(rename({ dirname: article.url }))
     .pipe(rename({ basename: 'index' }))
-    .pipe((article) => {
+    .pipe(data(() => {
       var tags = mdTags(article);
       return article.replace(tags.md, tags.tags.map(item => `[${item}](https://alfilatov.com/tag/${item})`).join(', '))
-    })
+    }))
     .pipe(gulp.dest('dist'));
 
 const getRSS = (site, list) => {
