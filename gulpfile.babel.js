@@ -20,6 +20,7 @@ import extract from 'article-data';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer-core';
 import cssvariables from 'postcss-css-variables';
+import mdTags from 'markdown-tags';
 
 import moment from 'moment';
 import { site } from './package.json';
@@ -40,6 +41,10 @@ const addToList = (file, article) => {
 const buildArticle = (article) =>
   gulp.src('layouts/article.jade')
     .pipe(data(() => article))
+    .pipe(() => {
+      var tags = mdTags(article)
+      article.replace(tags.md, tagstags.map(item => `[${item}](https://alfilatov.com/tag/${item})`).join(', '))
+    })
     .pipe(jade({ pretty: true }))
     .pipe(rename({ dirname: article.url }))
     .pipe(rename({ basename: 'index' }))

@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "article-data": "^0.3.1",
+    "markdown-tags": "^0.1.2",
     "autoprefixer-core": "^5.2.1",
     "babel": "^5.8.21",
     "buildbranch": "0.0.3",
