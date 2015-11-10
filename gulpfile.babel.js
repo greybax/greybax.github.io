@@ -20,19 +20,31 @@ import extract from 'article-data';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer-core';
 import cssvariables from 'postcss-css-variables';
-import mdTags from 'markdown-tags';
 
 import moment from 'moment';
 import { site } from './package.json';
+import { match, text } from 'commonmark-helpers';
 
 const env = process.env.NODE_ENV || 'dev';
 const getBasename = (file) => path.basename(file.relative, path.extname(file.relative));
 
 let articlesList = [];
 
+const isTag = node => text(node).toString()[0] === '#' 
+           && text(node).toString()[text(node).toString().length - 1] === ';';
+
+export default function markdownTags(input) {
+  const node = match(input, isTag);
+  return {
+    tags: text(node) ? text(node).toString().replace(/(#|;| )/g, '').split(',') : [],
+    md: text(node),
+    node: node
+  };
+};
+
 const addToList = (file, article) => {
-  var tags = mdTags(article);
-  article.replace(tags.md, tags.tags.map(item => `[${item}](https://alfilatov.com/tag/${item})`).join(', '));
+  var tags = markdownTags(article);
+  article = article.replace(tags.md, tags.tags.map(item => `[${item}](http://alfilatov.com/tag/${item})`).join(', '));
   articlesList.push(assign({}, {
     site: site,
     filename: file.relative,
