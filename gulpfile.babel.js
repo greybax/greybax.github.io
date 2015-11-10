@@ -32,7 +32,7 @@ let articlesList = [];
 
 const addToList = (file, article) => {
   var tags = mdTags(article);
-  article.replace(tags.md, tags.tags.map(item => `[${item}](https://alfilatov.com/tag/${item})`).join(', ')));
+  article.replace(tags.md, tags.tags.map(item => `[${item}](https://alfilatov.com/tag/${item})`).join(', '));
   articlesList.push(assign({}, {
     site: site,
     filename: file.relative,
