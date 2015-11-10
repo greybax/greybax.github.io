@@ -23,7 +23,7 @@ _September 04, 2014_
 
 ### Chrome Inspector Network
 Версия ```Chrome```: 37.0.2062.103 m
-![Chrome Profiler](/images/screenshots/ChromeProfiler.png)
+![Chrome Profiler](images/screenshots/ChromeProfiler.png)
 
 Результат работы профайлера приведен выше. Есть таблица с общим и собственным временем выполнения загрузки скрипта
 
@@ -46,7 +46,7 @@ _September 04, 2014_
 
 ### Firebug Net Panel
 Версия ```Firefox```: 32.0
-![Firebug Profiler](/images/screenshots/FirefoxProfiler.png)
+![Firebug Profiler](images/screenshots/FirefoxProfiler.png)
 
 Результат работы профайлера приведен выше. Здесь в интерфейс профайлера уже интегрирована диаграмма времени загрузки скриптов по умолчанию. Остальные элементы интерфейса аналогичны профайлеру в Хроме.
 
@@ -66,7 +66,7 @@ _September 04, 2014_
 Подробно о [профайлере](https://developer.mozilla.org/en-US/docs/Tools/Profiler)
 
 ### Internet Explorer 11
-![IE Profiler](/images/screenshots/IEProfiler.png)
+![IE Profiler](images/screenshots/IEProfiler.png)
 Здесь аналогично Хрому есть профайлер CPU и профайлер памяти.
 
 Плюсы и минусы профилировщика аналогичны тем что описаны выше. Наконец-то появилась возможность переходить прямо из профайлера в код скрипта. До ```IE 9``` эта функция отстутствовала.

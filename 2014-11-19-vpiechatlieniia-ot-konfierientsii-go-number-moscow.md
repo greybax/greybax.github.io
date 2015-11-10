@@ -6,7 +6,7 @@ _November 19, 2014_
 
 Недавно я побывал еще на одной конференции - [Go# Moscow](http://www.gosharp.ru/). К языку программирования ```Go``` отношения никакого не имеет.
 
-![GoSharp Logo](/images/screenshots/gosharp_logo.png)
+![GoSharp Logo](images/screenshots/gosharp_logo.png)
 
 
 Зачем я поехал? Для себя я выделил основные 2 причины:
