@@ -44,7 +44,7 @@ export default function markdownTags(input) {
 
 const addToList = (file, article) => {
   var tags = markdownTags(article);
-  article = article.replace(tags.md, tags.tags.map(item => `[${item}](http://alfilatov.com/tag/${item})`).join(', '));
+  article = article.replace(tags.md, tags.tags.map(item => `[${item}](http://alfilatov.com/tags/#${item})`).join(' '));
   articlesList.push(assign({}, {
     site: site,
     filename: file.relative,
