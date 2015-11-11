@@ -106,7 +106,7 @@ gulp.task('watch', ['express', 'build'], () => {
 });
 
 gulp.task('build', (done) => {
-  sequence('articles-registry', ['index-page', 'each-article', 'rss'], 'css', 'copy-images', 'cname', done);
+  sequence('articles-registry', ['index-page', 'each-article', 'rss'], 'css', 'copy-images', 'copy-presentations', 'cname', done);
 });
 
 gulp.task('css', () =>
@@ -120,7 +120,12 @@ gulp.task('css', () =>
 
 gulp.task('copy-images', () =>
     gulp.src(['images/**/*'])
-      .pipe(gulp.dest('dist/images'))
+      .pipe(gulp.dest('dist/images'))    
+);
+
+gulp.task('copy-presentations', () =>
+    gulp.src(['es6_presentation/**/*'])
+      .pipe(gulp.dest('dist/es6_presentation'))  
 );
 
 gulp.task('clean', (done) => { del('dist', done); });
