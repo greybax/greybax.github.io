@@ -28,7 +28,8 @@ import { match, text } from 'commonmark-helpers';
 const env = process.env.NODE_ENV || 'dev';
 const getBasename = (file) => path.basename(file.relative, path.extname(file.relative));
 
-let articlesList = [];
+
+let tagsList = [];
 
 const isTag = node => text(node).toString()[0] === '#' 
            && text(node).toString()[text(node).toString().length - 1] === ';';
@@ -41,6 +42,8 @@ export default function markdownTags(input) {
     node: node
   };
 };
+
+let articlesList = [];
 
 const addToList = (file, article) => {
   var tags = markdownTags(article);
