@@ -28,9 +28,6 @@ import { match, text } from 'commonmark-helpers';
 const env = process.env.NODE_ENV || 'dev';
 const getBasename = (file) => path.basename(file.relative, path.extname(file.relative));
 
-
-let tagsList = [];
-
 const isTag = node => text(node).toString()[0] === '#' 
            && text(node).toString()[text(node).toString().length - 1] === ';';
 
@@ -44,14 +41,28 @@ export default function markdownTags(input) {
 };
 
 let articlesList = [];
+let tagsMap = new Map();
 
 const addToList = (file, article) => {
   var tags = markdownTags(article);
+  var articleData = extract(article, 'MMMM D, YYYY', 'en');
+
+  var articleObj = {
+    name: articleData.title.text,
+    url: getBasename(file).substr('11') + '/',
+    tags: tags.tags
+  };
+
+  // Construct tags Map with linked articles url
+  for (var tag of articleObj.tags) {
+    tagsMap.set(tag, articleObj);
+  }
+
   article = article.replace(tags.md, tags.tags.map(item => `[${item}](http://alfilatov.com/tags/#${item})`).join(' '));
   articlesList.push(assign({}, {
     site: site,
     filename: file.relative,
-    url: getBasename(file).substr('8') + '/',
+    url: getBasename(file).substr('11') + '/',
   }, extract(article, 'MMMM D, YYYY', 'en')));
 };
 
@@ -101,6 +112,16 @@ gulp.task('index-page', () =>
     .pipe(gulp.dest('dist'))
 );
 
+gulp.task('tags', () =>
+  gulp.src('layouts/tags.jade')
+    .pipe(data(() => ({
+      tagList: tagsMap.keys()
+    })))
+    .pipe(jade({ pretty: env === 'dev' }))
+    .pipe(rename({ basename: 'tags' }))
+    .pipe(gulp.dest('dist'))
+);
+
 gulp.task('each-article', (done) => { each(articlesList, buildArticle, done); });
 gulp.task('rss', (done) => { output('dist/rss.xml', getRSS(site, articlesList), done); });
 
@@ -109,7 +130,7 @@ gulp.task('watch', ['express', 'build'], () => {
 });
 
 gulp.task('build', (done) => {
-  sequence('articles-registry', ['index-page', 'each-article', 'rss'], 'css', 'copy-images', 'copy-presentations', 'cname', done);
+  sequence('articles-registry', ['index-page', 'each-article', 'rss'], 'tags', 'css', 'copy-images', 'copy-presentations', 'cname', done);
 });
 
 gulp.task('css', () =>
