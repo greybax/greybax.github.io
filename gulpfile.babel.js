@@ -40,8 +40,7 @@ export default function markdownTags(input) {
   };
 };
 
-let articlesList = [];
-let tagsMap = new Map();
+let articlesList, tagList = [];
 
 const addToList = (file, article) => {
   var tags = markdownTags(article);
@@ -55,10 +54,14 @@ const addToList = (file, article) => {
 
   // Construct tags Map with linked articles url
   for (var tag of articleObj.tags) {
-    tagsMap.set(tag, articleObj);
+    tagList.push({
+      tag: tag,
+      name: articleObj.name,
+      url: articleObj.url
+    });
   }
 
-  article = article.replace(tags.md, tags.tags.map(item => `[${item}](http://alfilatov.com/tags/#${item})`).join(' '));
+  article = article.replace(tags.md, tags.tags.map(item => `[${item}](http://alfilatov.com/tags.html#${item})`).join(' '));
   articlesList.push(assign({}, {
     site: site,
     filename: file.relative,
@@ -94,7 +97,7 @@ gulp.task('articles-registry', () => {
     .pipe(replace('https://alfilatov.com/', '/'))
     .pipe(replace('https://alfilatov.com', '/'))
     .pipe((() => through.obj((file, enc, cb) => {
-      addToList(file, file.contents.toString());
+      addToList(file, file.contents.toString());      
       cb(null, file);
     }))());
 });
@@ -115,7 +118,8 @@ gulp.task('index-page', () =>
 gulp.task('tags', () =>
   gulp.src('layouts/tags.jade')
     .pipe(data(() => ({
-      tagList: tagsMap.keys()
+      site,
+      tagList
     })))
     .pipe(jade({ pretty: env === 'dev' }))
     .pipe(rename({ basename: 'tags' }))
@@ -130,7 +134,7 @@ gulp.task('watch', ['express', 'build'], () => {
 });
 
 gulp.task('build', (done) => {
-  sequence('articles-registry', ['index-page', 'each-article', 'rss'], 'tags', 'css', 'copy-images', 'copy-presentations', 'cname', done);
+  sequence('articles-registry', ['index-page', 'each-article', 'rss', 'tags'], 'css', 'copy-images', 'copy-presentations', 'cname', done);
 });
 
 gulp.task('css', () =>

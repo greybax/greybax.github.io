@@ -1,8 +1,5 @@
 extend page
 
-block title
-  title Aleksandr Filatov
-
 block meta
   meta(property="description" content=site.description)
   meta(name="og:url"          content=site.site_url)
@@ -12,8 +9,22 @@ block meta
 block content
   h1 Aleksandr Filatov
   
-  tag
-  ul.list
+  nav
+    a(href="/about/") About
+    = " • "
+    a(href="/rss.xml") Subscribe to RSS
+    = " or "
+    a(href="https://google.com/?q=site:alfilatov.com+smth") search "smth"
+    br
+    a(href="https://twitter.com/greybax") Follow me on Twitter
+  br
+  
+  article
     each tag in tagList
-      li.list__item
-        tag
+      h2
+        a(href='##{tag.tag}' name=tag.tag)= tag.tag
+      each article in tagList
+        if tag.tag == article.tag
+          ul.list
+            li.list__item
+              a(href=article.url)= article.name
