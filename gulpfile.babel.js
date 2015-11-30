@@ -20,10 +20,12 @@ import extract from 'article-data';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer-core';
 import cssvariables from 'postcss-css-variables';
+import Multimap from 'multimap';
 
 import moment from 'moment';
 import { site } from './package.json';
 import { match, text } from 'commonmark-helpers';
+
 
 const env = process.env.NODE_ENV || 'dev';
 const getBasename = (file) => path.basename(file.relative, path.extname(file.relative));
@@ -40,7 +42,8 @@ export default function markdownTags(input) {
   };
 };
 
-let articlesList, tagList = [];
+let articlesList = [];
+let tagList = new Multimap();
 
 const addToList = (file, article) => {
   var tags = markdownTags(article);
@@ -54,8 +57,7 @@ const addToList = (file, article) => {
 
   // Construct tags Map with linked articles url
   for (var tag of articleObj.tags) {
-    tagList.push({
-      tag: tag,
+    tagList.set(tag, {
       name: articleObj.name,
       url: articleObj.url
     });
@@ -97,7 +99,7 @@ gulp.task('articles-registry', () => {
     .pipe(replace('https://alfilatov.com/', '/'))
     .pipe(replace('https://alfilatov.com', '/'))
     .pipe((() => through.obj((file, enc, cb) => {
-      addToList(file, file.contents.toString());      
+      addToList(file, file.contents.toString());
       cb(null, file);
     }))());
 });
@@ -119,7 +121,8 @@ gulp.task('tags', () =>
   gulp.src('layouts/tags.jade')
     .pipe(data(() => ({
       site,
-      tagList
+      tagList,
+      tags: Array.from(tagList.keys())
     })))
     .pipe(jade({ pretty: env === 'dev' }))
     .pipe(rename({ basename: 'tags' }))

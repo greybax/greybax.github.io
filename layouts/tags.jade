@@ -20,11 +20,10 @@ block content
   br
   
   article
-    each tag in tagList
+    each tag in tags
       h2
-        a(href='##{tag.tag}' name=tag.tag)= tag.tag
-      each article in tagList
-        if tag.tag == article.tag
-          ul.list
-            li.list__item
-              a(href=article.url)= article.name
+        a(href='##{tag}' name=tag)= tag
+      ul.list
+        each article in tagList.get(tag)
+          li.list__item
+            a(href=article.url)= article.name

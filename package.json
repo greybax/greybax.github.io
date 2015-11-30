@@ -61,6 +61,7 @@
     "ramda": "^0.17.1",
     "rss": "^1.1.1",
     "run-sequence": "^1.1.2",
-    "through2": "^2.0.0"
+    "through2": "^2.0.0",
+    "multimap": "^1.0.1"
   }
 }
