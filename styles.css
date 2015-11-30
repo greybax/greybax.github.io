@@ -55,6 +55,10 @@ article a:hover {
   border-bottom-style: solid;
 }
 
+article.tags li {
+  font-size: 0.8em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: normal;
