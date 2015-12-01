@@ -7,14 +7,15 @@ block meta
   meta(name="og:description"  content=site.description)
 
 block content
-  h1 Aleksandr Filatov
+  h1
+    a(href="/") Aleksandr Filatov
   
   nav
     a(href="/about/") About
     = " • "
     a(href="/rss.xml") Subscribe to RSS
-    = " or "
-    a(href="https://google.com/?q=site:alfilatov.com+smth") search "smth"
+    = " • "
+    a(href="https://google.com/?q=site:alfilatov.com+smth") Search "smth"
     br
     a(href="https://twitter.com/greybax") Follow me on Twitter
   br

@@ -45,6 +45,13 @@ a {
   text-decoration: none;
 }
 
+article blockquote {
+  border-left: 3px solid #aaa;
+  margin-left: 0;
+  padding-left: 1em;
+  opacity: 0.7;
+}
+
 article a {
    color: #555;
    border-bottom: 1px dotted #a2a2a2;
