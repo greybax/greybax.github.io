@@ -21,42 +21,29 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer-core';
 import cssvariables from 'postcss-css-variables';
 import Multimap from 'multimap';
+import markdownTags from 'markdown-tags';
 
-import moment from 'moment';
 import { site } from './package.json';
-import { match, text } from 'commonmark-helpers';
-
 
 const env = process.env.NODE_ENV || 'dev';
 const getBasename = (file) => path.basename(file.relative, path.extname(file.relative));
-
-const isTag = node => text(node).toString()[0] === '#' 
-           && text(node).toString()[text(node).toString().length - 1] === ';';
-
-export default function markdownTags(input) {
-  const node = match(input, isTag);
-  return {
-    tags: text(node) ? text(node).toString().replace(/(#|;| )/g, '').split(',') : [],
-    md: text(node),
-    node: node
-  };
-};
 
 let articlesList = [];
 let tagList = new Multimap();
 
 const addToList = (file, article) => {
-  var tags = markdownTags(article);
-  var articleData = extract(article, 'MMMM D, YYYY', 'en');
+  let fileBaseName = getBasename(file).substr('11');
+  let tags = fileBaseName !== 'about' ? markdownTags(article) : {md: '', tags: []};
+  let articleData = extract(article, 'MMMM D, YYYY', 'en');
 
-  var articleObj = {
+  let articleObj = {
     name: articleData.title.text,
-    url: getBasename(file).substr('11') + '/',
+    url: fileBaseName + '/',
     tags: tags.tags
   };
 
   // Construct tags Map with linked articles url
-  for (var tag of articleObj.tags) {
+  for (let tag of articleObj.tags) {
     tagList.set(tag, {
       name: articleObj.name,
       url: articleObj.url
@@ -67,7 +54,7 @@ const addToList = (file, article) => {
   articlesList.push(assign({}, {
     site: site,
     filename: file.relative,
-    url: getBasename(file).substr('11') + '/',
+    url: fileBaseName + '/',
   }, extract(article, 'MMMM D, YYYY', 'en')));
 };
 

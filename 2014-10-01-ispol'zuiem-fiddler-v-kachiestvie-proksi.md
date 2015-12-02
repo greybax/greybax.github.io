@@ -1,6 +1,6 @@
 # Используем Fiddler в качестве прокси
 
-#fiddler, #proxy, #configuration, #debugging;
+#fiddler, #proxy, #configuration, #debugging
 
 _October 01, 2014_
 

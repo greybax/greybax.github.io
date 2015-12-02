@@ -1,6 +1,6 @@
 # Windows 7 HotKeys
 
-#windows, #hotkeys;
+#windows, #hotkeys
 
 _December 18, 2012_
 

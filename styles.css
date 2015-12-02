@@ -172,6 +172,14 @@ blockquote p a:last-of-type::before {
   text-align: center;
 }
 
+footer hr {
+  width: 50%;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
 
 @media (max-device-width: 480px) {
   .article-footer { width: 70%; }

@@ -1,6 +1,6 @@
 # Мигрируем Javascript код в TypeScript
 
-#javascript, #typescript, #frontend, #migration;
+#javascript, #typescript, #frontend, #migration
 
 _June 05, 2015_
 

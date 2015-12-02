@@ -1,6 +1,6 @@
 # My contribution in Mozilla society
 
-#Mozilla, #contributon, #browser;
+#Mozilla, #contributon, #browser
 
 _December 10, 2012_
 
