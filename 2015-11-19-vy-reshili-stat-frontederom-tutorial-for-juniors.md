@@ -4,7 +4,8 @@
 
 _November 19, 2015_
 
-script(type="text/javascript")
-  | (function () {
-  |   window.location.href = 'http://habrahabr.ru/post/271135/';
-  | })(window);
+<script type="text/javascript">
+	(function () {
+		window.location.href = 'http://habrahabr.ru/post/271135/';
+	})(window);
+</script>

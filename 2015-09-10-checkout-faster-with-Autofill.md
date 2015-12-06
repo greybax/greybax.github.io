@@ -4,7 +4,8 @@
 
 _September 10, 2015_
 
-script(type="text/javascript")
-  | (function () {
-  |   window.location.href = 'http://frontender.info/checkout-faster-with-Autofill/';
-  | })(window);
+<script type="text/javascript">
+	(function () {
+		window.location.href = 'http://frontender.info/checkout-faster-with-Autofill/';
+	})(window);
+</script>
