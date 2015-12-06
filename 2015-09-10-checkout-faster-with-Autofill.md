@@ -1,6 +1,6 @@
-# [Перевод для Frontender Magazine] Упрощаем заполнение форм с помощью Autofill
+# [Frontender Magazine] Упрощаем заполнение форм с помощью Autofill
 
-#Frontender Magazine, #перевод, #autocomplete, #javascript
+#FrontenderMagazine, #перевод, #autocomplete, #javascript
 
 _September 10, 2015_
 
