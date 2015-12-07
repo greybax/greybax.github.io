@@ -26,10 +26,12 @@ import markdownTags from 'markdown-tags';
 import { site } from './package.json';
 
 const env = process.env.NODE_ENV || 'dev';
+const pathPosts = '/posts/';
 const getBasename = (file) => path.basename(file.relative, path.extname(file.relative));
 
 let articlesList = [];
-let tagList = new Multimap();
+let tagMap = new Multimap();
+let aboutPage = [];
 
 const addToList = (file, article) => {
   let fileBaseName = getBasename(file).substr('11');
@@ -38,23 +40,23 @@ const addToList = (file, article) => {
 
   let articleObj = {
     name: articleData.title.text,
-    url: fileBaseName + '/',
+    url: pathPosts + fileBaseName + '/',
     tags: tags.tags
   };
 
   // Construct tags Map with linked articles url
   for (let tag of articleObj.tags) {
-    tagList.set(tag, {
+    tagMap.set(tag, {
       name: articleObj.name,
       url: articleObj.url
     });
   }
 
-  article = article.replace(tags.md, tags.tags.map(item => `[${item}](http://alfilatov.com/tags.html#${item})`).join(' '));
+  article = article.replace(tags.md, tags.tags.map(item => `[${item}](http://alfilatov.com/tags/index.html#${item})`).join(' '));
   articlesList.push(assign({}, {
     site: site,
     filename: file.relative,
-    url: fileBaseName + '/',
+    url: pathPosts + fileBaseName + '/',
   }, extract(article, 'MMMM D, YYYY', 'en')));
 };
 
@@ -82,7 +84,7 @@ const getRSS = (site, list) => {
 
 gulp.task('articles-registry', () => {
   articlesList = [];
-  return gulp.src(env === 'dev' ? ['2015-*.md'] : [ '*-*.md', '!*draft*.md' ])
+  return gulp.src(env === 'dev' ? ['source/drafts/*.md'] : [ 'source/posts/*.md' ])
     .pipe(replace('https://alfilatov.com/', '/'))
     .pipe(replace('https://alfilatov.com', '/'))
     .pipe((() => through.obj((file, enc, cb) => {
@@ -96,24 +98,44 @@ gulp.task('index-page', () =>
     .pipe(data(() => ({
       site,
       list: articlesList
-              .filter(i => !!i.date)
-              .sort((a, b) => b.date.unix - a.date.unix )
+            .filter(i => !!i.date)
+            .sort((a, b) => b.date.unix - a.date.unix)
     })))
     .pipe(jade({ pretty: env === 'dev' }))
     .pipe(rename({ basename: 'index' }))
     .pipe(gulp.dest('dist'))
 );
 
+gulp.task('about-registry', () => {
+  return gulp.src(['source/about/about.md'])
+    .pipe((() => through.obj((file, enc, cb) => {
+      aboutPage = extract(file.contents.toString(), 'MMMM D, YYYY', 'en');
+      cb(null, file);
+    }))());
+});
+
+gulp.task('about-page', () =>
+  gulp.src('layouts/about.jade')
+    .pipe(data(() => ({
+      site,
+      title: aboutPage.title,
+      content: aboutPage.content
+    })))
+    .pipe(jade({ pretty: env === 'dev' }))
+    .pipe(rename({ basename: 'index' }))
+    .pipe(gulp.dest('dist/about'))
+);
+
 gulp.task('tags', () =>
   gulp.src('layouts/tags.jade')
     .pipe(data(() => ({
       site,
-      tagList,
-      tags: Array.from(tagList.keys())
+      tagMap,
+      tags: Array.from(tagMap.keys())
     })))
     .pipe(jade({ pretty: env === 'dev' }))
-    .pipe(rename({ basename: 'tags' }))
-    .pipe(gulp.dest('dist'))
+    .pipe(rename({ basename: 'index' }))
+    .pipe(gulp.dest('dist/tags'))
 );
 
 gulp.task('each-article', (done) => { each(articlesList, buildArticle, done); });
@@ -124,7 +146,16 @@ gulp.task('watch', ['express', 'build'], () => {
 });
 
 gulp.task('build', (done) => {
-  sequence('articles-registry', ['index-page', 'each-article', 'rss', 'tags'], 'css', 'copy-images', 'copy-presentations', 'cname', done);
+  sequence('clean'
+          , 'articles-registry'
+          , 'about-registry'
+          , ['index-page', 'each-article', 'rss', 'tags']
+          , 'about-page'
+          , 'css'
+          , 'copy-images'
+          , 'copy-presentations'
+          , 'cname'
+          , done);
 });
 
 gulp.task('css', () =>
@@ -143,7 +174,7 @@ gulp.task('copy-images', () =>
 
 gulp.task('copy-presentations', () =>
     gulp.src(['es6_presentation/**/*'])
-      .pipe(gulp.dest('dist/es6_presentation'))  
+      .pipe(gulp.dest('dist/es6_presentation'))
 );
 
 gulp.task('clean', (done) => { del('dist', done); });

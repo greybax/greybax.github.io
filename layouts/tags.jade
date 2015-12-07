@@ -25,6 +25,6 @@ block content
       h2
         a(href='##{tag}' name=tag)= tag
       ul.list
-        each article in tagList.get(tag)
+        each article in tagMap.get(tag)
           li.list__item
             a(href=article.url)= article.name

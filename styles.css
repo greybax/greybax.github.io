@@ -23,7 +23,6 @@ html, body {
   }
 }
 
-
 article img {
   max-width: 100%;
 }
@@ -179,7 +178,6 @@ footer hr {
 footer a:hover{
   text-decoration: underline;
 }
-
 
 @media (max-device-width: 480px) {
   .article-footer { width: 70%; }
