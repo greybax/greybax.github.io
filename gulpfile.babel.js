@@ -153,6 +153,7 @@ gulp.task('build', (done) => {
           , 'about-page'
           , 'css'
           , 'copy-images'
+          , 'copy-favicon'
           , 'copy-presentations'
           , 'cname'
           , done);
@@ -170,6 +171,11 @@ gulp.task('css', () =>
 gulp.task('copy-images', () =>
     gulp.src(['images/**/*'])
       .pipe(gulp.dest('dist/images'))    
+);
+
+gulp.task('copy-favicon', () =>
+    gulp.src(['favicon.ico'])
+      .pipe(gulp.dest('dist'))  
 );
 
 gulp.task('copy-presentations', () =>

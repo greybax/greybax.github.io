@@ -11,7 +11,7 @@ html, body {
     font-size: 1.4em;
     font-family: "Hoefler Text", "Times New Roman", Times, serif;
     color: #222;
-    max-width: 30em;
+    max-width: 40em;
     margin: 3em auto 7em;
 }
 
@@ -165,14 +165,14 @@ blockquote p a:last-of-type::before {
 }
 
 .article-footer {
-  width: 50%;
+  width: 40em;
   margin: 5em auto 0;
   font-size: 0.6em;
   text-align: center;
 }
 
 footer hr {
-  width: 50%;
+  width: 40em;
 }
 
 footer a:hover{
