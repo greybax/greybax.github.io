@@ -75,7 +75,7 @@ const getRSS = (site, list) => {
     .sort((a, b) => b.date.unix - a.date.unix )
     .forEach((article) => { feed.item({
       url: site.site_url + article.url,
-      title: article.title.text,
+      title: article.title.html,
       description: article.desc.html,
       date: article.date.text
     })});

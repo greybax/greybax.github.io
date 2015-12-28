@@ -1,4 +1,4 @@
-# Пробуем ES2015(ES6) в действии
+# Пробуем ES2015/ES6 в действии
 
 #javascript, #ES6/ES2015, #babel, #compilers
 

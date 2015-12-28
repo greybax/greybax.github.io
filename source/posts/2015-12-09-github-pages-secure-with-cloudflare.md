@@ -1,4 +1,4 @@
-# HTTPS для Github Pages через CloudFare (Free)
+# HTTPS для Github Pages через CloudFare
 
 #https, #cloudflare
 

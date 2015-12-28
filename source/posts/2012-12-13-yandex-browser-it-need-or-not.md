@@ -1,4 +1,4 @@
-# Yandex browser? It's need or not?
+# Yandex browser - it's need or not?
 
 #YandexBrowser, #YaC2012, #Chromium
 
