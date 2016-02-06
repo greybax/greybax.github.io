@@ -21,7 +21,7 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer-core';
 import cssvariables from 'postcss-css-variables';
 import Multimap from 'multimap';
-import markdownTags from 'markdown-tags';
+import mdTags from 'md-tags';
 
 import { site } from './package.json';
 
@@ -35,13 +35,13 @@ let aboutPage = [];
 
 const addToList = (file, article) => {
   let fileBaseName = getBasename(file).substr('11');
-  let tags = fileBaseName !== 'about' ? markdownTags(article) : {md: '', tags: []};
+  let tags = fileBaseName !== 'about' ? mdTags().tagsForPost(article) : {md: '', text: '', list: []};
   let articleData = extract(article, 'MMMM D, YYYY', 'en');
 
   let articleObj = {
     name: articleData.title.text,
     url: pathPosts + fileBaseName + '/',
-    tags: tags.tags
+    tags: tags.list
   };
 
   // Construct tags Map with linked articles url
@@ -52,7 +52,7 @@ const addToList = (file, article) => {
     });
   }
 
-  article = article.replace(tags.md, tags.tags.map(item => `[${item}](http://alfilatov.com/tags/index.html#${item})`).join(' '));
+  article = article.replace(tags.md, tags.list.map(item => `[${item}](http://alfilatov.com/tags/index.html#${item})`).join(' '));
   articlesList.push(assign({}, {
     site: site,
     filename: file.relative,

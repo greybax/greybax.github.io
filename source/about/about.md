@@ -4,7 +4,7 @@
 
 ## Technical  summary
 
-Good experience in professional development. Object-oriented development, design, implementation and testing. Frontend technoligies: AMD, ES6, CSS Pre-Processors. Database systems usage. Software testing, unit testing. 5 years of Web Development experience.
+Skilled, result-oriented Software Engineer with more than 5 years of experience in corporate and web software development. Always interested in new web technologies and complex tasks and contributing in open source frontend community. Sociable, responsible, open to new ideas and always trying to learn something new. Have personal blog. The blog site works on my own blog engine. Most posts are written in Russian about frontend technologies: Gulp, Jade, NPM, JavaScript and others.
 
 ## Contacts
 
