@@ -16,7 +16,7 @@ import assign from 'object-assign';
 import sequence from 'run-sequence';
 import each from 'each-done';
 import path from 'path';
-import extract from 'article-data';
+import extract from 'md-article';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer-core';
 import cssvariables from 'postcss-css-variables';

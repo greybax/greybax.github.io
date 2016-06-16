@@ -34,7 +34,7 @@
     ]
   },
   "dependencies": {
-    "article-data": "^0.3.1",
+    "md-article": "^1.0.0",
     "autoprefixer-core": "^5.2.1",
     "babel": "^5.8.21",
     "buildbranch": "0.0.3",
@@ -54,7 +54,7 @@
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.4",
     "jade": "^1.11.0",
-    "md-tags": "^1.2.1",
+    "md-tags": "^1.2.2",
     "moment": "^2.10.6",
     "multimap": "^1.0.1",
     "object-assign": "^3.0.0",
