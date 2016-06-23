@@ -172,7 +172,7 @@ blockquote p a:last-of-type::before {
 }
 
 footer hr {
-  width: 40em;
+  width: calc(100% - 5em);
 }
 
 footer a:hover{

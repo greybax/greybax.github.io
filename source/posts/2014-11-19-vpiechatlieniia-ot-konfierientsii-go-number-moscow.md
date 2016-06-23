@@ -1,6 +1,6 @@
 # Впечатления от конференции Go# Moscow
 
-#конференции, #.net, #Mobile Development
+#конференции, #.net, #MobileDevelopment
 
 _November 19, 2014_
 
