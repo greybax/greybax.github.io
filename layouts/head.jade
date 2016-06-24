@@ -7,6 +7,10 @@ meta(name="viewport" content="width=device-width")
 
 link(href=site.feed_url title=site.title rel="alternate" type="application/rss+xml")
 link(href="/styles.css" rel="stylesheet")
+link(href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet")
+script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js")
+script(type="text/javascript")
+  | hljs.initHighlightingOnLoad();
 
 meta(property="og:site_name" content=site.title)
 meta(property="article:author" content=site.site_url + "about/")
