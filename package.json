@@ -51,7 +51,7 @@
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.8",
     "jade": "^1.11.0",
-    "md-article": "^1.0.3",
+    "md-article": "^1.0.4",
     "md-tags": "^1.2.2",
     "multimap": "^1.0.2",
     "object-assign": "^4.1.0",
