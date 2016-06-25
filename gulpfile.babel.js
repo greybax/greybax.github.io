@@ -185,7 +185,7 @@ gulp.task('copy-presentations', () =>
         .pipe(gulp.dest('dist/es6_presentation'))
 );
 
-gulp.task('clean', (done) => { del(['dist']).then(paths => { done(); }); });
+gulp.task('clean', (done) => { del(['dist']).then(() => { done(); }); });
 gulp.task('cname', () => gulp.src('CNAME').pipe(gulp.dest('dist')));
 gulp.task('gh', ['build'], (done) => { buildbranch({ branch: 'master', folder: 'dist' }, done); });
 
