@@ -154,6 +154,7 @@ gulp.task('build', (done) => {
         , ['index-page', 'each-article', 'rss', 'tags']
         , 'about-page'
         , 'css'
+        , 'font-awesome'
         , 'copy-images'
         , 'copy-favicon'
         , 'copy-presentations'
@@ -162,12 +163,17 @@ gulp.task('build', (done) => {
 });
 
 gulp.task('css', () =>
-    gulp.src('styles.css')
+    gulp.src('css/*.css')
         .pipe(postcss([
             autoprefixer(),
             cssvariables()
         ]))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist/css'))
+);
+
+gulp.task('font-awesome', () =>
+    gulp.src(['font-awesome/**/*'])
+        .pipe(gulp.dest('dist/font-awesome'))
 );
 
 gulp.task('copy-images', () =>

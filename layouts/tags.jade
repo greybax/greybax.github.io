@@ -6,20 +6,37 @@ block meta
   meta(name="og:title"        content=site.title)
   meta(name="og:description"  content=site.description)
 
-block content
-  h1
-    a(href="/") Aleksandr Filatov
-  
-  nav
-    a(href="/about/") About
-    = " • "
-    a(href="/rss.xml") Subscribe to RSS
-    = " • "
-    a(href="https://google.com/?q=site:alfilatov.com+smth") Search "smth"
-    br
-    a(href="https://twitter.com/greybax") Follow me on Twitter
-  br
+block header
+  header(class="main-header no-cover")
+    div(class="profile")
+      a(href="/")
+        img(src="https://www.gravatar.com/avatar/4ef97675943e8fe05f61adb948e42ef0?s=160" width="160" height="160")
+    hgroup
+      div(class="main-header-content inner")
+        h1(class="page-title") Aleksandr Filatov
+        h2 greybax
+        h3(class="page-description") Thoughts and stuff
+    nav
+      ul
+        li
+          a(href="/about/") about
+        li
+          a(href="/en") archives
+    ul(class="social")
+      li
+        a(target="_blank" class="twitter" href="https://twitter.com/greybax")
+          i(class="fa fa-twitter")
+      li
+        a(target="_blank" class="github" href="https://github.com/greybax")
+          i(class="fa fa-github")
+      li
+        a(target="_blank" class="linkedin" href="https://www.linkedin.com/in/alfila/en")
+          i(class="fa fa-linkedin")
+      li
+        a(class="rss" href="/rss.xml")
+          i(class="fa fa-rss")
 
+block content
   article.tags
     each tag in tags
       h2
