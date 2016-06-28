@@ -71,7 +71,7 @@ header nav li:not(:first-child):before {
 
 header ul.social {
     text-align: center;
-    padding: 0em 0 2em 0;
+    padding: 0px;
 }
 
 header ul.social li a.twitter {
@@ -126,7 +126,7 @@ header ul.social li:not(:first-child):before {
     font-family: Georgia, Times, "Times New Roman", serif;
     color: #222;
     max-width: 40em;
-    margin: 3em auto 7em;
+    margin: 2em auto 7em;
 }
 
 @media (max-device-width: 480px) {
@@ -192,7 +192,6 @@ h2, h3, h4, h5, h6 {
     color: #444;
     line-height: 1.1em;
 }
-
 
 .list, .list__item {
   margin: 0;
