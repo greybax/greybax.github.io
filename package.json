@@ -1,6 +1,6 @@
 {
   "name": "alfilatov.com",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Blog about life and software development",
   "main": "gulpfile.js",
   "repository": {
