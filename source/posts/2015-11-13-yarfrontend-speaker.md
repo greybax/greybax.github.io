@@ -1,6 +1,6 @@
 # Мой доклад на Yaroslavl Frontend Meetup
 
-#yarfrontend, #meetup, #frontend, #es6
+#yarfrontend, #meetup, #frontend, #es6;
 
 _November 13, 2015_
 

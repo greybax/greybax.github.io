@@ -1,6 +1,6 @@
 # Yandex browser - it's need or not?
 
-#YandexBrowser, #YaC2012, #Chromium
+#YandexBrowser, #YaC2012, #Chromium;
 
 _December 13, 2012_
 

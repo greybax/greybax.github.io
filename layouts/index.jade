@@ -45,5 +45,7 @@ block content
       each article in list
         li.list__item
           a(href=article.url)= article.title.text
-            time= article.date.text + " "
-          p.list__item-tags !{article.desc.html}
+            time= article.date.text
+          p.list__item-tags
+            each tag in article.tags.list
+              a(href=`/tags/index.html#${tag}`)= tag

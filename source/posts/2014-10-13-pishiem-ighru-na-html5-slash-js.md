@@ -1,6 +1,6 @@
 # Пишем игру на HTML5/JS
 
-#javascript, #gamedev, #html5, #canvas
+#javascript, #gamedev, #html5, #canvas;
 
 _October 13, 2014_
 

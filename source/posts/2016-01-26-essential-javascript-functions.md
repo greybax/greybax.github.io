@@ -4,6 +4,6 @@
 
 # [Frontender Magazine] 7 жизненно важных функций в JavaScript
 
-#FrontenderMagazine, #перевод, #javascript
+#FrontenderMagazine, #перевод, #javascript;
 
 _January 26, 2016_

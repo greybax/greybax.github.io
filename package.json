@@ -34,7 +34,7 @@
     ]
   },
   "dependencies": {
-    "autoprefixer": "^6.3.6",
+    "autoprefixer": "^6.3.7",
     "babel-core": "^6.10.4",
     "buildbranch": "1.0.0",
     "del": "^2.2.1",
@@ -51,13 +51,12 @@
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.8",
     "jade": "^1.11.0",
-    "md-article": "^1.0.4",
-    "md-tags": "^1.2.2",
+    "md-article": "^1.0.9",
     "multimap": "^1.0.2",
     "object-assign": "^4.1.0",
     "postcss-css-variables": "^0.5.1",
     "rss": "^1.2.1",
-    "run-sequence": "^1.2.1",
+    "run-sequence": "^1.2.2",
     "through2": "^2.0.1"
   },
   "devDependencies": {

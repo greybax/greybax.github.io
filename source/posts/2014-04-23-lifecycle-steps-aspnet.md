@@ -1,6 +1,6 @@
 # ASP.NET: Этапы жизненного цикла страницы
 
-#ASP.NET, #programming
+#ASP.NET, #programming;
 
 _April 23, 2014_
 

@@ -4,6 +4,6 @@
 
 # [habrahabr] Мысли вслух о TypeScript
 
-#habrahabr, #typescript
+#habrahabr, #typescript;
 
 _December 21, 2015_
