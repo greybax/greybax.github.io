@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Aleksandr Filatov]]></title>
+        <description><![CDATA[Blog about life and software development]]></description>
+        <link>https://alfilatov.com/</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Mon, 12 Nov 2018 23:47:39 GMT</lastBuildDate>
+        <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <copyright><![CDATA[MIT]]></copyright>
+        <language><![CDATA[en-us]]></language>
+        <managingEditor><![CDATA[greybax@gmail.com (Aleksandr Filatov)]]></managingEditor>
+        <webMaster><![CDATA[greybax@gmail.com (Aleksandr Filatov)]]></webMaster>
+        <category><![CDATA[frontend]]></category>
+        <category><![CDATA[js]]></category>
+        <category><![CDATA[css]]></category>
+        <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>Впечатления от просмотра фильма «Bohemian Rhapsody»</h1>]]></title>
+            <description><![CDATA[впечатления, review, russian, review, movie]]></description>
+            <link>https://alfilatov.com//posts/bohemian-rhapsody-review/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/bohemian-rhapsody-review/</guid>
+            <pubDate>Sun, 11 Nov 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>My VSCode settings</h1>]]></title>
+            <description><![CDATA[vscode, tools, plugins]]></description>
+            <link>https://alfilatov.com//posts/awesome-vscode-plugins/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/awesome-vscode-plugins/</guid>
+            <pubDate>Sun, 06 Nov 2016 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>[Frontender Magazine] ES6 в деталях: символы</h1>]]></title>
+            <description><![CDATA[FrontenderMagazine, перевод, es6, javascript]]></description>
+            <link>https://alfilatov.com//posts/es6-in-depth-symbols/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/es6-in-depth-symbols/</guid>
+            <pubDate>Tue, 09 Feb 2016 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>[Frontender Magazine] 7 жизненно важных функций в JavaScript</h1>]]></title>
+            <description><![CDATA[FrontenderMagazine, перевод, javascript]]></description>
+            <link>https://alfilatov.com//posts/essential-javascript-functions/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/essential-javascript-functions/</guid>
+            <pubDate>Tue, 26 Jan 2016 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>[habrahabr] Мысли вслух о TypeScript</h1>]]></title>
+            <description><![CDATA[habrahabr, typescript]]></description>
+            <link>https://alfilatov.com//posts/thoughts-about-typescript/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/thoughts-about-typescript/</guid>
+            <pubDate>Mon, 21 Dec 2015 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>HTTPS для Github Pages через CloudFare</h1>]]></title>
+            <description><![CDATA[https, cloudflare]]></description>
+            <link>https://alfilatov.com//posts/github-pages-secure-with-cloudflare/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/github-pages-secure-with-cloudflare/</guid>
+            <pubDate>Wed, 09 Dec 2015 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>[habrahabr] Тестирование вёрстки на визуальные регрессии с помощью PhantomCSS</h1>]]></title>
+            <description><![CDATA[habrahabr, перевод, тестирование, css, javascript]]></description>
+            <link>https://alfilatov.com//posts/testirovanie-verstki-na-vizualne-regressii-s-pomosh&apos;yu-phantomcss/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/testirovanie-verstki-na-vizualne-regressii-s-pomosh&apos;yu-phantomcss/</guid>
+            <pubDate>Wed, 25 Nov 2015 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>[habrahabr] Итак, вы решили стать фронтендером: практическое руководство для роста начинающего разработчика</h1>]]></title>
+            <description><![CDATA[habrahabr, перевод, junior, frontend]]></description>
+            <link>https://alfilatov.com//posts/vy-reshili-stat-frontederom-tutorial-for-juniors/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/vy-reshili-stat-frontederom-tutorial-for-juniors/</guid>
+            <pubDate>Thu, 19 Nov 2015 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Мой доклад на Yaroslavl Frontend Meetup</h1>]]></title>
+            <description><![CDATA[yarfrontend, meetup, frontend, es6]]></description>
+            <link>https://alfilatov.com//posts/yarfrontend-speaker/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/yarfrontend-speaker/</guid>
+            <pubDate>Fri, 13 Nov 2015 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>[Frontender Magazine] Упрощаем заполнение форм с помощью Autofill</h1>]]></title>
+            <description><![CDATA[FrontenderMagazine, перевод, autocomplete, javascript]]></description>
+            <link>https://alfilatov.com//posts/checkout-faster-with-Autofill/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/checkout-faster-with-Autofill/</guid>
+            <pubDate>Thu, 10 Sep 2015 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>[Frontender Magazine] Классы в ECMAScript 6</h1>]]></title>
+            <description><![CDATA[FrontenderMagazine, перевод, es6, javascript]]></description>
+            <link>https://alfilatov.com//posts/es6-classes-final/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/es6-classes-final/</guid>
+            <pubDate>Mon, 06 Jul 2015 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Пробуем ES2015/ES6 в действии</h1>]]></title>
+            <description><![CDATA[javascript, ES6/ES2015, babel, compilers]]></description>
+            <link>https://alfilatov.com//posts/probuiem-es2015-es6-v-dieistvii/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/probuiem-es2015-es6-v-dieistvii/</guid>
+            <pubDate>Mon, 29 Jun 2015 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Мигрируем Javascript код в TypeScript</h1>]]></title>
+            <description><![CDATA[javascript, typescript, frontend, migration]]></description>
+            <link>https://alfilatov.com//posts/mighriruiem-js-kod-v-typescript/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/mighriruiem-js-kod-v-typescript/</guid>
+            <pubDate>Fri, 05 Jun 2015 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Поездка в Шри-Ланку</h1>]]></title>
+            <description><![CDATA[Путешествия, Travellings]]></description>
+            <link>https://alfilatov.com//posts/poiezdka-v-shri-lanku/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/poiezdka-v-shri-lanku/</guid>
+            <pubDate>Mon, 11 May 2015 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Получаем список обработчиков элемента в DOM'е</h1>]]></title>
+            <description><![CDATA[frontend, javascript]]></description>
+            <link>https://alfilatov.com//posts/poluchaiem-spisok-obrabotchikov-eliemienta-stranitsy/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/poluchaiem-spisok-obrabotchikov-eliemienta-stranitsy/</guid>
+            <pubDate>Fri, 10 Apr 2015 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Что можно почитать по frontend'у</h1>]]></title>
+            <description><![CDATA[frontend, javascript, links]]></description>
+            <link>https://alfilatov.com//posts/gdie-ia-bieru-informatsiiu-o-mirie-frontend/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/gdie-ia-bieru-informatsiiu-o-mirie-frontend/</guid>
+            <pubDate>Mon, 30 Mar 2015 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Впечатления от первого хакатона</h1>]]></title>
+            <description><![CDATA[hackaton, unity, gamedev]]></description>
+            <link>https://alfilatov.com//posts/vpiechatlieniia-ot-piervogho-khakatona/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/vpiechatlieniia-ot-piervogho-khakatona/</guid>
+            <pubDate>Tue, 09 Dec 2014 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Как я побывал на .NEXT'14</h1>]]></title>
+            <description><![CDATA[конференции, .net]]></description>
+            <link>https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</guid>
+            <pubDate>Tue, 09 Dec 2014 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Debugging файлов TypeScript в браузере через эмулятор DevExtreme</h1>]]></title>
+            <description><![CDATA[DevExtreme, configuration, debugging, typescript, javascript]]></description>
+            <link>https://alfilatov.com//posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/</guid>
+            <pubDate>Tue, 02 Dec 2014 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Впечатления от конференции Go# Moscow</h1>]]></title>
+            <description><![CDATA[конференции, .net, MobileDevelopment]]></description>
+            <link>https://alfilatov.com//posts/vpiechatlieniia-ot-konfierientsii-go-number-moscow/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/vpiechatlieniia-ot-konfierientsii-go-number-moscow/</guid>
+            <pubDate>Wed, 19 Nov 2014 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Пишем игру на HTML5/JS</h1>]]></title>
+            <description><![CDATA[javascript, gamedev, html5, canvas]]></description>
+            <link>https://alfilatov.com//posts/pishiem-ighru-na-html5-slash-js/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/pishiem-ighru-na-html5-slash-js/</guid>
+            <pubDate>Mon, 13 Oct 2014 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Используем Fiddler в качестве прокси</h1>]]></title>
+            <description><![CDATA[fiddler, proxy, configuration, debugging]]></description>
+            <link>https://alfilatov.com//posts/ispol&apos;zuiem-fiddler-v-kachiestvie-proksi/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/ispol&apos;zuiem-fiddler-v-kachiestvie-proksi/</guid>
+            <pubDate>Wed, 01 Oct 2014 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Профилирование в JS</h1>]]></title>
+            <description><![CDATA[profilers, browsers, optimization, javascript]]></description>
+            <link>https://alfilatov.com//posts/profilirovaniie-v-js/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/profilirovaniie-v-js/</guid>
+            <pubDate>Thu, 04 Sep 2014 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Как и зачем я перешел с Blogger на Octopress</h1>]]></title>
+            <description><![CDATA[blog, ruby, octopress]]></description>
+            <link>https://alfilatov.com//posts/kak-i-zachiem-ia-pierieshiel-s-blogger-na-octopress/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/kak-i-zachiem-ia-pierieshiel-s-blogger-na-octopress/</guid>
+            <pubDate>Wed, 27 Aug 2014 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Как я побывал на DevConf'14</h1>]]></title>
+            <description><![CDATA[programming, конференции]]></description>
+            <link>https://alfilatov.com//posts/devconf14/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/devconf14/</guid>
+            <pubDate>Mon, 07 Jul 2014 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Пишем расширение для браузера Google Chrome</h1>]]></title>
+            <description><![CDATA[javascript, userjs, frontend, Chromium, browser]]></description>
+            <link>https://alfilatov.com//posts/google-chrome/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/google-chrome/</guid>
+            <pubDate>Fri, 27 Jun 2014 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Основы языка Javascript</h1>]]></title>
+            <description><![CDATA[javascript, frontend]]></description>
+            <link>https://alfilatov.com//posts/basics-javascript/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/basics-javascript/</guid>
+            <pubDate>Fri, 13 Jun 2014 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>ASP.NET: События жизненного цикла страницы</h1>]]></title>
+            <description><![CDATA[ASP.NET, programming]]></description>
+            <link>https://alfilatov.com//posts/lifecycle-events-aspnet/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/lifecycle-events-aspnet/</guid>
+            <pubDate>Mon, 12 May 2014 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>ASP.NET: Этапы жизненного цикла страницы</h1>]]></title>
+            <description><![CDATA[ASP.NET, programming]]></description>
+            <link>https://alfilatov.com//posts/lifecycle-steps-aspnet/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/lifecycle-steps-aspnet/</guid>
+            <pubDate>Wed, 23 Apr 2014 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>StyleCop - или как соблюдать code style?</h1>]]></title>
+            <description><![CDATA[codestyle, programming, StyleCop, refactoring]]></description>
+            <link>https://alfilatov.com//posts/stylecop/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/stylecop/</guid>
+            <pubDate>Mon, 03 Mar 2014 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Windows 7 HotKeys</h1>]]></title>
+            <description><![CDATA[windows, hotkeys]]></description>
+            <link>https://alfilatov.com//posts/windows-7-hotkeys/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/windows-7-hotkeys/</guid>
+            <pubDate>Tue, 18 Dec 2012 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Yandex browser - it's need or not?</h1>]]></title>
+            <description><![CDATA[YandexBrowser, YaC2012, Chromium]]></description>
+            <link>https://alfilatov.com//posts/yandex-browser-it-need-or-not/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/yandex-browser-it-need-or-not/</guid>
+            <pubDate>Thu, 13 Dec 2012 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>My contribution in Mozilla society</h1>]]></title>
+            <description><![CDATA[Mozilla, contributon, browser]]></description>
+            <link>https://alfilatov.com//posts/my-contribution-in-mozilla-society/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/my-contribution-in-mozilla-society/</guid>
+            <pubDate>Mon, 10 Dec 2012 08:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

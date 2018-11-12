@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTTPS для Github Pages через CloudFare</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="https, cloudflare">
+    <meta name="og:url" content="/posts/github-pages-secure-with-cloudflare/">
+    <meta name="og:title" content="HTTPS для Github Pages через CloudFare">
+    <meta name="og:description" content="https, cloudflare">
+  </head>
+  <body>
+    <div class="wrap">
+      <article><h1>HTTPS для Github Pages через CloudFare</h1><i class="fa fa-calendar">
+          <time>December 9, 2015</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#https"> https </a><a href="/tags/index.html#cloudflare"> cloudflare </a></i><p>Многие хотят видеть у своего сайта зеленый значок защищенного соединения (https).
+К сожалению, существет ряд причин по которым это бывает сделать довольно не просто. Например, GitHub Pages до сих
+пор не поддерживают HTTPS для кастомных доменов
+(<a href="https://github.com/isaacs/github/issues/156">Add HTTPS support to Github Pages</a> - это неофициальный багтрекинг
+Github Pages).</p>
+<p>Есть 2 возможности обойти это ограничение:</p>
+<ul>
+<li>использовать собственный сервер для хостинга вашего сайта. Способ настройки https в данном случае хорошо описан
+<a href="https://outcoldman.com/en/archive/2015/08/30/hosting-github-pages-with-https/">Hosting GitHub Pages with HTTPS</a></li>
+<li>использовать сервисы (например CloudFlare).</li>
+</ul>
+<p>О втором варианте я и хочу рассказать в этой заметке.</p>
+<p>Подразумевается, что вы знакомы с Githab Pages и знаете как хостить там свой сайт.</p>
+<p>В качестве бонуса, сайт будет загружаться быстрее (CloudFlare кэширует ваш сайт и поддерживает новые протоколы
+SPDY и IPv6).</p>
+<p>С другой стороны, данное решение имеет некоторые ограничения и не подходит для ряда случаев:</p>
+<ul>
+<li>
+<p>Если вы используете кастомный домен, то соединение между серверами CloudFlare и Github вовсе
+не обеспечивает безопаность данных. Это соединение, как правило, надежнее по сравнению с WiFi в кафе, но оно
+не защищено от современных  атак. Это ограничение, связано с тем, что Github не поддерживает безопасные соединения для
+пользовательских доменов.</p>
+</li>
+<li>
+<p>Старые браузеры не поддерживают защищенные соединения. Если это критично для вас вы можете использовать платный план.
+Единственный способ для CloudFlare поддерживать старые браузеры - предоставление выделенного IP-адреса для вашего
+сайта. Вполне логично, что они не могут обеспечить ими всех бесплатно.</p>
+</li>
+</ul>
+<h2>Установка</h2>
+<ol>
+<li>
+<p>Создаем аккаунт на <a href="https://www.cloudflare.com/">CloudFlare</a></p>
+</li>
+<li>
+<p>Проходим по шагам настройки CloudFlare для вашего домена</p>
+</li>
+<li>
+<p>Делелегируем DNS нейм сервера на CloudFlare.
+После чего вы получите возможность управлять настройками DNS вашего домена из CloudFlare.
+Для Github Pages вам нужно иметь корневую CNAME запись, которая ссылается на домен
+вида <code>&#x3C;your_github_alias>.github.io</code>.</p>
+</li>
+<li>
+<p>Включаем SSL опцией <strong>Flexible SSL</strong> в настройках. Если вы не используете кастомный домен, то для лучшей
+защищенности можно выбрать опцию <strong>Full(Strict)</strong>. Ждем в течение 24 часов, пока применятся изменения в DNS и
+CloudFlare сгенерирует SSL сертификат для домена.</p>
+</li>
+<li>
+<p>После выполнения шагов ваш домен будет доступен через CloudFlare как по защищенному так и по незащищенному
+соединению.</p>
+</li>
+<li>
+<p>Настраиваем редирект на  <code>https</code>:</p>
+<ul>
+<li>из CloudFlare консоли переходим в <strong>Page Rules</strong></li>
+<li>добавляем URL pattern <code>http://yourwebsite/*</code></li>
+<li>выбираем <strong>Always use HTTPS</strong></li>
+<li>Нажимаем <strong>Add Rule</strong></li>
+</ul>
+</li>
+<li>
+<p>Наслаждаемся результатом и идем пить кофе.</p>
+</li>
+</ol>
+<p>P.S. В связи с тем, что CloudFlare кеширует изменения на вашем сайте, они не могут мгновенно отображаться.
+Тем ни менее, вы всегда можете перейти в консоль CloudFlare и перевести домен в режиме разработчика,
+который временно отключит кэширование.</p>
+      </article><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="http://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ASP.NET: События жизненного цикла страницы</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="ASP.NET, programming">
+    <meta name="og:url" content="/posts/lifecycle-events-aspnet/">
+    <meta name="og:title" content="ASP.NET: События жизненного цикла страницы">
+    <meta name="og:description" content="ASP.NET, programming">
+  </head>
+  <body>
+    <div class="wrap">
+      <article><h1>ASP.NET: События жизненного цикла страницы</h1><i class="fa fa-calendar">
+          <time>May 12, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#ASP.NET"> ASP.NET </a><a href="/tags/index.html#programming"> programming </a></i><p>Эта статья является продолжением статьи "ASP.NET: Этапы жизненного цикла страницы". Сейчас я хочу более подробно рассказать о событийной модели в ASP.NET. Во время прохождения этапов жизненного цикла возникают события, подписавшись на которые, разработчик может выполнять свой собственный код. Зачастую, многие начинающие разработчики, путают порядок событий в ASP.NET приложении.
+Проверить trace загрузки страницы достаточно просто:</p>
+<ul>
+<li>Создадим простое <code>ASP.NET Web Forms Application</code> в студии</li>
+<li>Добавим атрибуты <code>Trace</code> и <code>TraceMode</code> директивы <code>@Page</code> и устанавливаем значения 'true' и 'SortByName' соответственно.</li>
+</ul>
+<p><img src="http://2.bp.blogspot.com/-t8kJhuvsFzY/U2dzRQx22fI/AAAAAAAABA4/joxV8eAvuIE/s1600/Untitled.png" alt="example"></p>
+<ul>
+<li>Запускаем наш сайт (нажимаем F5 в студии)</li>
+<li>Прямо в окне браузера вместе с сайтом загрузилась информации трассировки.</li>
+</ul>
+<p><img src="http://4.bp.blogspot.com/-6tgWMi1IZHk/U2d3K3cYC7I/AAAAAAAABBE/vDJc1nhg8FU/s1600/22.png" alt="example"></p>
+<p>Во время трассировки не выводится событие <code>Unload</code>, потому что оно происходит, когда весь код уже отработал. Из всех событий жизненного цикла страницы, разработчик может подписаться только на пять, помимо событий дочерних элементов управления. Эти события: </p>
+<ul>
+<li><code>PreInit</code></li>
+<li><code>Init</code></li>
+<li><code>Load</code></li>
+<li><code>PreRender</code></li>
+<li><code>Unload</code></li>
+</ul>
+<p>Во время любого события можно использовать свойство IsPostBack, для того, чтобы определить вызвана ли эта страница в первый раз или в результате postback. Рассмотрим варианты использования этих событий.</p>
+<table>
+<thead>
+<tr>
+<th>Событие</th>
+<th>Использование</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PreInit</td>
+<td>На данном этапе элементы управления еще не созданы и равны 
+<code>null</code>
+. Здесь разработчик может создать динамически элементы управления, динамически устанавливать шаблон дизайна или тему оформления, считывать или устанавливать свойства объекта 
+<code>Profile</code>
+.</td>
+</tr>
+<tr>
+<td>Init</td>
+<td>Здесь происходит начальная инициализация контролов, значения берутся из aspx файла. 
+<code>Tracking ViewState</code>
+ еще отключен. В случае, если разработчик самостоятельно установит свойства на этом этапе, то на следующем установленные значения могут быть изменены. На этом этапе разработчик может считывать или инициализировать свойства элементов управления.</td>
+</tr>
+<tr>
+<td>Load</td>
+<td>Загружаются данные из ресурсов. Если произошел Postback, элементы управления получают значения, которые были отправлены с формы. На этом этапе разработчик может считывать или изменять свойства элементов управления.</td>
+</tr>
+<tr>
+<td>PreRender</td>
+<td>Последняя возможность внести изменения во внешний вид страницы.</td>
+</tr>
+<tr>
+<td>Unload</td>
+<td>Освобождение занятых ресурсов (закрытие открытых соединений с базой данных, завершение работы с файлами и т.п.) Важно, что на этом этапе уже создано HTML представление страницы и попытка внести какие-либо изменения (например, вызвав метод 
+<code>Response.Write()</code>
+), приведет к исключению. Если на данном этапе изменить знамения элементов управления, они не попадут конечному пользователю.</td>
+</tr>
+</tbody>
+</table>
+<h2>Пример</h2>
+<script src="https://gist.github.com/greybax/d4147fb046cf9b3cf7d3.js"></script> 
+<p>Результат работы скрипта приведен в таблице:</p>
+<table>
+<thead>
+<tr>
+<th align="right">Событие</th>
+<th align="center"></th>
+<th></th>
+<th></th>
+<th>IsPostBack</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"></td>
+<td align="center"></td>
+<td></td>
+<td><strong>До</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>После</strong></td>
+<td></td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="center">Tracking ViewState</td>
+<td>TextBox (на момент входа в функцию)</td>
+<td>TextBox (на момент выхода из функции)</td>
+<td>Response.Write</td>
+<td>Tracking ViewState</td>
+<td>TextBox (на момент входа в функцию)</td>
+<td>TextBox (на момент выхода из функции)</td>
+<td>Response.Write</td>
+</tr>
+<tr>
+<td align="right"><strong><em>OnPreInit</em></strong></td>
+<td align="center">False</td>
+<td>null</td>
+<td>null</td>
+<td>OnPreInit</td>
+<td>False</td>
+<td>null</td>
+<td>null</td>
+<td>OnPreInit</td>
+</tr>
+<tr>
+<td align="right"><strong><em>OnInit</em></strong></td>
+<td align="center">False</td>
+<td>Sample text</td>
+<td>Sample text OnInit</td>
+<td>OnInit</td>
+<td>False</td>
+<td>Sample text</td>
+<td>Sample text OnInit</td>
+<td>OnInit</td>
+</tr>
+<tr>
+<td align="right"><strong><em>OnPreLoad</em></strong></td>
+<td align="center">True</td>
+<td>Sample text OnInit</td>
+<td>Sample text OnInit OnPreLoad</td>
+<td>OnPreLoad</td>
+<td>True</td>
+<td>Sample text OnInit OnPreLoad OnPreRender</td>
+<td>Sample text OnInit OnPreLoad OnPreRender OnPreLoad</td>
+<td>OnPreLoad</td>
+</tr>
+<tr>
+<td align="right"><strong><em>OnPreRender</em></strong></td>
+<td align="center">True</td>
+<td>Sample text OnInit OnPreLoad</td>
+<td>Sample text OnInit OnPreLoad OnPreRender</td>
+<td>OnPreRender</td>
+<td>True</td>
+<td>Sample text OnInit OnPreLoad OnPreRender OnPreLoad</td>
+<td>Sample text OnInit OnPreLoad OnPreRender OnPreLoad OnPreRender</td>
+<td>OnPreRender</td>
+</tr>
+<tr>
+<td align="right"><strong><em>OnUnload</em></strong></td>
+<td align="center">True</td>
+<td>Sample text OnInit OnPreLoad OnPreRender</td>
+<td>Sample text OnInit OnPreLoad OnPreRender OnUnload</td>
+<td>Error</td>
+<td>True</td>
+<td>Sample text OnInit OnPreLoad OnPreRender OnPreLoad OnPreRender</td>
+<td>Sample text OnInit OnPreLoad OnPreRender OnPreLoad OnPreRender OnUnload</td>
+<td>Error</td>
+</tr>
+</tbody>
+</table>
+      </article><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="http://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>

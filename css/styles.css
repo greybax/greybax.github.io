@@ -13,8 +13,10 @@ html, body {
 }
 
 .page-title {
-    animation: fade-in-down 0.6s;
-    animation-delay: 0.2s;
+    -webkit-animation: fade-in-down 0.6s;
+            animation: fade-in-down 0.6s;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
 }
 
 .no-cover .page-title {

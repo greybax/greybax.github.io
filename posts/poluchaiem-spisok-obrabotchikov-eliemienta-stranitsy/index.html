@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Получаем список обработчиков элемента в DOM'е</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="frontend, javascript">
+    <meta name="og:url" content="/posts/poluchaiem-spisok-obrabotchikov-eliemienta-stranitsy/">
+    <meta name="og:title" content="Получаем список обработчиков элемента в DOM'е">
+    <meta name="og:description" content="frontend, javascript">
+  </head>
+  <body>
+    <div class="wrap">
+      <article><h1>Получаем список обработчиков элемента в DOM'е</h1><i class="fa fa-calendar">
+          <time>April 10, 2015</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#javascript"> javascript </a></i><p>Допустим, что у нас есть элемент на странице. Пусть это будет <code>div</code>. Наша задача - получить все обработчики этого элемента. Рассмотрим варианты решения этой задачи в различных браузерах, а именно <code>IE</code>, <code>Firefox</code>, <code>Chrome</code>. В каждом современном браузере в консоли разработчка есть специальный UI для этих целей. Например в <code>Chrome</code> это <code>DevTools</code> -> <code>Elements</code> -> <code>Выбрать интересующий DOM узел</code> -> <code>Вкладка Event Listeners</code>. В нашем случае, поговорим о получании списка обработчиков программно.</p>
+<ul>
+<li>
+<p>Использовать метод <code>getEventListeners(target)</code>. В браузере <code>Chrome</code> (является методом DevTools API) этот метод работает без лишних телодвижений - возвращает объект-массив эвентов на целевом элементе.</p>
+</li>
+<li>
+<p>Ситуация с <code>Firefox</code> немного сложнее. Данный метод доступен после установки <code>Firebug</code> <a href="http://getfirebug.com/wiki/index.php/GetEventListeners">GetEventListeners</a>.</p>
+</li>
+<li>
+<p>В <code>IE</code> все совсем плохо, т.к такой метод не реализован в API консоли разработчика и нет extensions с его аналогами (я таких не нашел).</p>
+</li>
+</ul>
+<p>Итак, мы выяснили, что метод <code>getEventListeners</code> не является кроссбраузерным и является частью Developer Console API, поэтому рассмотрим следующий <del>костыль</del> вариант решения. Для этого нам придется переопределить нативные методы <code>Element.prototype.addEventListener</code> и <code>Element.prototype.removeEventListener</code> (для старых версий <code>IE</code> нужно переопределить свои аналоги) своими кастомными реализациями которые будут отслеживать <code>event listeners</code>.</p>
+<p data-height="268" data-theme-id="0" data-slug-hash="RNzGwj" data-default-tab="result" data-user="greybax" class='codepen'>See the Pen <a href='http://codepen.io/greybax/pen/RNzGwj/'>RNzGwj</a> by Alex Filatov (<a href='http://codepen.io/greybax'>@greybax</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<p><strong><em>Плюс</em></strong>:</p>
+<ul>
+<li>Это единственный способ получить все обработчики событий (в том числе, зарегистрированные сторонними библиотеками, например, <code>jQuery</code>)</li>
+</ul>
+<p><strong><em>Минус</em></strong>:</p>
+<ul>
+<li>Cкрипт, который выполняет переопределение, должен быть выполнен первым - до <code>jQuery/Prototype/</code> и др., т.к иначе <code>event listeners</code>, зарегистрированные через эти сценарии будут не отражены.</li>
+</ul>
+<p>Можно ничего не писать и использовать сторонние реализации функции, например <a href="https://github.com/alvinteh/geteventlisteners">эту</a>.</p>
+<p><strong><em>Минусы</em></strong>:</p>
+<ul>
+<li>Плагин, в состоянии обнаружить и получить обработчики событий, зарегистрированные <strong><em>только</em></strong> через <code>jQuery</code>.</li>
+<li>Завязан на <code>jQuery</code> версии >=1.8.</li>
+</ul>
+<h2>Итог</h2>
+<p>Универсального (кроссбраузерного) и по-настоящему хорошего варианта, к сожалению, сейчас не существует.</p>
+      </article><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="http://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Профилирование в JS</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="profilers, browsers, optimization, javascript">
+    <meta name="og:url" content="/posts/profilirovaniie-v-js/">
+    <meta name="og:title" content="Профилирование в JS">
+    <meta name="og:description" content="profilers, browsers, optimization, javascript">
+  </head>
+  <body>
+    <div class="wrap">
+      <article><h1>Профилирование в JS</h1><i class="fa fa-calendar">
+          <time>September 04, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#profilers"> profilers </a><a href="/tags/index.html#browsers"> browsers </a><a href="/tags/index.html#optimization"> optimization </a><a href="/tags/index.html#javascript"> javascript </a></i><p>Профилирование - это в первую очерель сбор и анализ информации, а уже потом программирование и работы по улучшению производительности программы.</p>
+<h2>Зачем нужна оптимизация?</h2>
+<ol>
+<li>Загрузка страницы экономит нервы пользователя. Следствие из этого мы получаем лояльных пользователей.</li>
+<li>Полезно разработчику, чтобы лучше понять "узкие места" своего сайта в которых его приложение подвисает.</li>
+</ol>
+<p>Самый простой способ посмотреть время загрузки <code>DOM</code> не заморачиваясь на профилировании это конечно стандартные профайлеры такие как <code>Chrome Inspector Network</code>, <code>Firebug Net Panel</code> и т.д. Итак, разберемся какие бывают способы оптимизировать работу своего приложения.</p>
+<ul>
+<li>Метод пристального взгляда</li>
+<li>Инструментальное (средствами исполняемой среды)</li>
+<li>Ручное (средствами языка)</li>
+</ul>
+<p>Если с первым методом все понятно, то про другие два я хочу рассказать. </p>
+<h2>Инструментальное профилирование</h2>
+<p>Во все актуальные версии браузеров уже встроены инструменты разработчика, в которые входит <code>profiler</code>. Так профайлеры есть в: <code>Firefox</code>, <code>IE</code>, <code>Chrome</code>.</p>
+<h3>Chrome Inspector Network</h3>
+<p>Версия <code>Chrome</code>: 37.0.2062.103 m
+<img src="/images/screenshots/ChromeProfiler.png" alt="Chrome Profiler"></p>
+<p>Результат работы профайлера приведен выше. Есть таблица с общим и собственным временем выполнения загрузки скрипта</p>
+<p>Плюсы:</p>
+<ul>
+<li>Возможность профилировать как производительность так и утечки памяти</li>
+<li>Варинт просмотра выполнения скриптов на странице графиком и деревом вызовов</li>
+<li>Доступен фокус просмотра на конрктной функции или дереве вызова функций</li>
+<li>Возможность перейти в участок кода функции</li>
+<li>Дерево вызовов</li>
+<li>Сортировка</li>
+</ul>
+<p>Минусы:</p>
+<ul>
+<li>Слишком нагроможденный интерфейс в режиме просмотра Chart (В <code>Firefox</code> профайлере c этим дела обстоят лучше)</li>
+<li>Профилирует не саму страницу, а все что видит, т.е. в профайлер попадают куча плагинов и расширений</li>
+<li>Нет возможности выбрать конретный метод или конструктор который мы хотим профилировать </li>
+</ul>
+<p>Подробно о <a href="https://developer.chrome.com/devtools/docs/cpu-profiling">Profiling JavaScript Performance</a> и о <a href="https://developer.chrome.com/devtools/docs/javascript-memory-profiling">Javascript Memory Profiling</a></p>
+<h3>Firebug Net Panel</h3>
+<p>Версия <code>Firefox</code>: 32.0
+<img src="/images/screenshots/FirefoxProfiler.png" alt="Firebug Profiler"></p>
+<p>Результат работы профайлера приведен выше. Здесь в интерфейс профайлера уже интегрирована диаграмма времени загрузки скриптов по умолчанию. Остальные элементы интерфейса аналогичны профайлеру в Хроме.</p>
+<p>Плюсы:</p>
+<ul>
+<li>Диаграмма времени вызова функций и удобная фильтрация по ней</li>
+<li>Возможность перейти в участок кода функции</li>
+<li>Дерево вызовов</li>
+<li>Сортировка</li>
+<li>Удобно выделять детально промежутки времени и детально наблюдать время загрузки</li>
+</ul>
+<p>Минусы:</p>
+<ul>
+<li>Нет фильтрации по конретным функциям</li>
+<li>Нет возможности выбрать конретный метод или конструктор который мы хотим профилировать </li>
+</ul>
+<p>Подробно о <a href="https://developer.mozilla.org/en-US/docs/Tools/Profiler">профайлере</a></p>
+<p><img src="/images/screenshots/IEProfiler.png" alt="IE Profiler">
+Здесь аналогично Хрому есть профайлер CPU и профайлер памяти.</p>
+<p>Плюсы и минусы профилировщика аналогичны тем что описаны выше. Наконец-то появилась возможность переходить прямо из профайлера в код скрипта. До <code>IE 9</code> эта функция отстутствовала.</p>
+<h2>Ручное профилирование</h2>
+<p>Бывают задачи когда нужно посмореть время выполнения конкретных функций или конструкторов, использовать встроенные профилировщики и разбираться в дереве вызовов в поисках нужной функции бывает довольно неудобно. На эти случаи удобно использовать следующие конструкции языка <code>javascript</code>:</p>
+<pre><code class="language-javascript">t = +new Date();
+code_to_measure();
+time = +new Date() - t;
+</code></pre>
+<p>Более удобный варинт реализует паттерн Декоратор:</p>
+<pre><code class="language-javascript">function profile(func) {
+  var wrapper = function() {
+    var start = +new Date();
+    var result = func.apply(null, arguments);
+    console.log(func.name, +new Date() - start, "ms");
+    return result;
+  }
+  return wrapper;
+}
+</code></pre>
+<p>Вызываем функцию профайлер так</p>
+<pre><code class="language-javascript">code_to_measure = profile(code_to_measure);
+code_to_measure();
+>code_to_measure 10 ms
+</code></pre>
+<h2>Итог</h2>
+<p>Идеального для себя профайлера я не нашел, довольно симпатичными выглядят встроенные в <code>Chrome</code> и в <code>Firefox</code>, но они не имеют части функционала которая выделяла бы их из общей массы. Тем более, оптимузируя свое приложение под тот или иной браузер приходится сталкиваться с его встроенным профайлером. Не стоит забывать и про старые ручные методы которые часто помогают.</p>
+      </article><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="http://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>

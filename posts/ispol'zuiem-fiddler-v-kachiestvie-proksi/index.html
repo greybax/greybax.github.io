@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Используем Fiddler в качестве прокси</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="fiddler, proxy, configuration, debugging">
+    <meta name="og:url" content="/posts/ispol'zuiem-fiddler-v-kachiestvie-proksi/">
+    <meta name="og:title" content="Используем Fiddler в качестве прокси">
+    <meta name="og:description" content="fiddler, proxy, configuration, debugging">
+  </head>
+  <body>
+    <div class="wrap">
+      <article><h1>Используем Fiddler в качестве прокси</h1><i class="fa fa-calendar">
+          <time>October 01, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#fiddler"> fiddler </a><a href="/tags/index.html#proxy"> proxy </a><a href="/tags/index.html#configuration"> configuration </a><a href="/tags/index.html#debugging"> debugging </a></i><p><a href="http://www.telerik.com/fiddler">Fiddler</a> - мощный инструмент для веб дебагинга, мониторинга веб трафика, манипуляций с сессией и т.п. Кроме того в <code>Fiddler</code> есть еще одна мощная фича - это возможность его использования как самостоятельный proxy сервер на машине где он запущен.</p>
+<p>Мне эта фича пригодилась когда пришлось подключаться с моего iPhone девайса через <code>VPN</code> к серверу, который находится на другом конце планеты. Аналогично, вместо iPhone мог быть любой девайс, планшет или десктоп.</p>
+<p>Постараюсь описать процесс настройки максимально детально. Версия установленного <code>Fiddler</code> у меня - <code>Fiddler Web Debugger (v4.4.8.0)</code>. <code>Built: Wednesday, April 23, 2014</code></p>
+<h2>Конфигурация Fiddler</h2>
+<ol>
+<li>
+<p>Переходим Tools > Fiddler Options > Connections.</p>
+</li>
+<li>
+<p>Ставим галку Allow remote computers to connect.
+<img src="/images/screenshots/allow_remote_to_connect.png" alt="Check &#x22;Allow remote computers to connect&#x22;"></p>
+</li>
+<li>
+<p>Перезапускаем <code>Fiddler</code></p>
+</li>
+<li>
+<p>Следует проверить что в <code>firewall</code> разрешены входящие соединения для Fiddler
+<img src="/images/screenshots/fiddler_income_connections.png" alt="Income conections for fiddler process"></p>
+</li>
+<li>
+<p>В правом верхнем углу <code>Fiddler</code> находим <code>Online Indicator</code> и смотрим в нем по какому ip орудует наш <code>Fiddler</code>. Нам нужен локальный адрес машины. Этот ip адрес мы будем указывать в настройках интернет соединения  нашего девайса на вкладке <code>Proxy</code>.
+<img src="/images/screenshots/indicator_ip_address.png" alt="Online Indicator"></p>
+</li>
+</ol>
+<p>После выполнения этих пунктов наш <code>Fiddler</code> готов принимать входящие соединения с внешних устройств. Соответственно может использоваться как прокси, обрабатывая через себя все запросы, которые приходят с нашего внешнего устройства.</p>
+<h2>Конфигурация iPhone</h2>
+<ol>
+<li>Переходим 'Настройки' > 'Wi-Fi'</li>
+<li>Переходим в настройки Wi-Fi соединения</li>
+<li>Выбираем раздел 'Вручную' в секции HTTP прокси</li>
+<li>В поле Сервер, вводим IP адрес машины где запущен <code>Fiddler</code></li>
+<li>Порт - 8888</li>
+<li>Аутентификацию отключаем</li>
+</ol>
+<p><img src="/images/screenshots/iPhone_proxy_settings.png" alt="iPhone proxy settings"></p>
+<p>Теперь после перехода на любой сайт со своего iPhone можно мониторить все request/response в <code>Fiddler</code></p>
+      </article><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="http://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>

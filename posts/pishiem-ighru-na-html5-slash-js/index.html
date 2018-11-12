@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Пишем игру на HTML5/JS</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="javascript, gamedev, html5, canvas">
+    <meta name="og:url" content="/posts/pishiem-ighru-na-html5-slash-js/">
+    <meta name="og:title" content="Пишем игру на HTML5/JS">
+    <meta name="og:description" content="javascript, gamedev, html5, canvas">
+  </head>
+  <body>
+    <div class="wrap">
+      <article><h1>Пишем игру на HTML5/JS</h1><i class="fa fa-calendar">
+          <time>October 13, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#gamedev"> gamedev </a><a href="/tags/index.html#html5"> html5 </a><a href="/tags/index.html#canvas"> canvas </a></i><p>На выходных нашлось немного свободного времени и я решил попрактиковаться в <code>gamedev</code> разработке. Давно собирался написать какую-нибудь игрушку, но все руки не доходили. Бегло пробежался по сети в поисках как это делают настоящие гуру. Мне понравилась вот эта <a href="http://jlongster.com/Making-Sprite-based-Games-with-Canvas">статья</a>. За основу своей будущей игры я взял <a href="https://github.com/jlongster/canvas-game-bootstrap">фреймворк автора статьи</a>.</p>
+<p><img src="/images/screenshots/towers_game2d.png" alt="Towers game 2D"></p>
+<h2>Начало</h2>
+<ul>
+<li><code>sprite.js</code> - библиотечка работы со спрайтами</li>
+<li><code>resources.js</code> - подгрузка ресурсов</li>
+<li><code>input.js</code> - библиотека ввода с клавиатуры</li>
+<li><code>app.js</code> - основной файл игры</li>
+</ul>
+<p>Далее буду рассказывать только о файле <code>app.js</code>. Разберем его содержимое.</p>
+<p>Для плавности анимации будем использовать <code>requestAnimationFrame</code>. Подробно о нем ознакомиться можно <a href="https://hacks.mozilla.org/2011/08/animating-with-javascript-from-setinterval-to-requestanimationframe/">здесь</a></p>
+<pre><code class="language-javascript">var requestAnimFrame = (function(){
+    return window.requestAnimationFrame    ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame    ||
+        window.oRequestAnimationFrame      ||
+        window.msRequestAnimationFrame     ||
+        function(callback){
+            window.setTimeout(callback, 1000 / 60);
+        };
+})();
+</code></pre>
+<p>Разделим разработку нашей игры на несколько этапов:</p>
+<ol>
+<li>Создание и инициализация холста (canvas) на странице</li>
+<li>Добавление основной функции-цикла игры</li>
+<li>Инициализация и рендер объектов и ресурсов игры</li>
+<li>Обработка событий ввода пользователя</li>
+<li>Математика и расчет столкновений объектов в игре</li>
+<li>Окончание и перезагрузка игры</li>
+</ol>
+<h2>Этап 1. Создание и инициализация холста</h2>
+<p>Первым делом что мы должны сделать - это создать <code>canvas</code> элемент и добавить его к тегу <code>body</code> основной страницы игры.</p>
+<pre><code class="language-javascript">var canvas = document.createElement("canvas");
+var ctx = canvas.getContext("2d");
+canvas.width = 1024;
+canvas.height = 520;
+document.body.appendChild(canvas);
+</code></pre>
+<ul>
+<li>Создаем объект <code>canvas</code></li>
+<li>Указываем, что мы создаем 2D игру (далее будем использовать везде в коде объект <code>ctx</code>)</li>
+<li>Задаем размеры холста</li>
+<li>Добавляем холст к тегу <code>body</code> на странице</li>
+</ul>
+<h2>Этап 2. Добавление основной функции-цикла</h2>
+<p>Основной цикл необходим для обновления и рендера игры.</p>
+<pre><code class="language-javascript">var lastTime;
+function main() {
+    var now = Date.now();
+    var dt = (now - lastTime) / 1000.0;
+
+    update(dt);
+    render();
+
+    lastTime = now;
+    requestAnimFrame(main);
+}
+</code></pre>
+<p>Здесь вызываем функцию requestAnimFrame (к сожалению, <a href="http://caniuse.com/#feat=requestanimationframe">поддерживается</a> не во всех браузерах), которая генерирует 60 фреймов/секунду (как это было описано выше).</p>
+<h2>Этап 3. Инициализация и рендер объектов и ресурсов игры</h2>
+<p>Используем <code>resource.js</code> для загрузки ресурсов в игру. Хорошим правилом является добавить все изображения  в  1 спрайт, но т.к я рисовал не сам, а брал готовые картинки, поэтому я решил с этим на заморачиваться, тем более, что в данном случае это не столь критично. Так это выглядит <a href="https://github.com/greybax/towers_game2d/blob/gh-pages/js/app.js#L57">в коде</a></p>
+<pre><code class="language-javascript">resources.load([
+  'img/tower.png',
+    'img/sprites.png',
+    'img/spider.png',
+  'img/hero.png',
+    'img/bullet.png',
+  'img/terrain.png'
+]);
+resources.onReady(init);
+</code></pre>
+<p>В функции <code>init</code> загружаем мир и добавлеем хэндлер кнопки <code>reset</code>, после game over.</p>
+<pre><code class="language-javascript">function init() {
+    terrainPattern = ctx.createPattern(resources.get('img/terrain.png'), 'repeat');
+
+    document.getElementById('play-again').addEventListener('click', function() {
+        reset();
+    });
+    
+    reset();
+    lastTime = Date.now();
+    main();
+}
+</code></pre>
+<h3>Начальное состояние</h3>
+<pre><code class="language-javascript">var player = {
+    pos: [0, 0],
+    sprite: new Sprite('img/hero.png', [0, 0], [48, 30], 5, [0, 1, 2, 1]),
+        down: new Sprite('img/hero.png', [0, 0], [48, 30], 5, [0, 1, 2, 1]),
+        up: new Sprite('img/hero.png', [0, 144], [48, 30], 5, [0, 1, 2, 1]),
+        left: new Sprite('img/hero.png', [0, 48], [48, 30], 5, [0, 1, 2, 1]),
+        right: new Sprite('img/hero.png', [0, 96], [48, 30], 5, [0, 1, 2, 1])
+};
+
+var towers = [];
+var bullets = [];
+var enemies = [];
+var explosions = [];
+
+var lastTower = 0;
+var gameTime = 0;
+var isGameOver;
+var terrainPattern;
+
+var score = 0;
+var scoreEl = document.getElementById('score');
+</code></pre>
+<h3>Обновление состояния игрового процесса</h3>
+<p>По нашей задумке пауки должны вылезать со всех 4 сторон игрового поля. Для того чтобы это происходило случайным образом, используем функцию <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random">getRandomInt</a>.</p>
+<pre><code class="language-javascript">switch (getRandomInt(0,4)) {
+    case 0: //left
+        enemies.push({
+            pos: [0, Math.random() * (canvas.height - 30)],
+            sprite: new Sprite('img/spider.png', [0, 0], [40, 30], 5, [0, 1, 2, 1])
+        });
+    break;
+    case 1: //top
+        enemies.push({
+            pos: [Math.random() * canvas.width, 0],
+            sprite: new Sprite('img/spider.png', [0, 0], [40, 30], 5, [0, 1, 2, 1])
+        });
+    break;
+    case 2: //bottom
+        enemies.push({
+            pos: [Math.random() * canvas.width, canvas.height - 30],
+            sprite: new Sprite('img/spider.png', [0, 0], [40, 30], 5, [0, 1, 2, 1])
+        });
+    break;
+    default: //right
+        enemies.push({
+            pos: [canvas.width, Math.random() * (canvas.height - 30)],
+            sprite: new Sprite('img/spider.png', [0, 0], [40, 30], 5, [0, 1, 2, 1])
+        });
+    break;
+}
+</code></pre>
+<p>Здесь же используем <code>sprite.js</code>. Всю функцию можно посмотреть в <a href="https://github.com/greybax/towers_game2d/blob/gh-pages/js/app.js#L96">исходниках</a>.</p>
+<h2>Этап 4. Обработка событий ввода пользователя</h2>
+<p>Наш герой должен уметь двигаться вверх, вниз, влево, вправо. Соответственно привожу ниже реализацию данного решения</p>
+<pre><code class="language-javascript">if (input.isDown('DOWN') || input.isDown('s')) {
+    player.pos[1] += playerSpeed * dt;
+        player.sprite = player.down;
+}
+
+if (input.isDown('UP') || input.isDown('w')) {
+    player.pos[1] -= playerSpeed * dt;
+        player.sprite = player.up;
+}
+
+if (input.isDown('LEFT') || input.isDown('a')) {
+    player.pos[0] -= playerSpeed * dt;
+        player.sprite = player.left;
+}
+
+if (input.isDown('RIGHT') || input.isDown('d')) {
+    player.pos[0] += playerSpeed * dt;
+        player.sprite = player.right;
+}
+</code></pre>
+<p>При клике на пробел по задумке должны ставиться башни которые будут стрелять случайным образом во все стороны. Чтобы немного усложнить процесс игры башни разрешается ставить на некоторм расстоянии друг от друга. В данном случае это <code>50px</code>.</p>
+<pre><code class="language-javascript">if (input.isDown('SPACE') &#x26;&#x26; !isGameOver) {
+    var isClosest = false;
+    for (var i = 0; i &#x3C; towers.length; i++) {
+        if (Math.abs(player.pos[0] - towers[i].pos[0]) &#x3C; 50 &#x26;&#x26; 
+            Math.abs(player.pos[1] - towers[i].pos[1]) &#x3C; 50) {
+            isClosest = true;
+        }
+    }
+    
+    if (!isClosest) {
+        towers[lastTower % 3] = {
+            pos: [player.pos[0], player.pos[1]],
+            lastFire: Date.now(),
+            sprite: new Sprite('img/tower.png', [0, 0], [38, 35], 8, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])
+        };
+        lastTower++;
+     }
+}
+</code></pre>
+<h2>Этап 5. Математика и расчет столкновений объектов в игре</h2>
+<p>Анимация персонажей, математика движения пуль, и логика движения NPC в игре описаны в функции <code>updateEntities</code>. Вот тут как раз нам и потребуются базовые знания линейной алгебры.</p>
+<pre><code class="language-javascript">// Update the towers sprite animation
+for(var i = 0; i &#x3C; towers.length; i++) {
+    var tower = towers[i];
+    tower.sprite.update(dt);
+
+    if (!isGameOver &#x26;&#x26; Date.now() - tower.lastFire > 500) {
+        var pi = Math.PI;
+        var x = tower.pos[0] + tower.sprite.size[0] / 2;
+        var y = tower.pos[1] + tower.sprite.size[1] / 2;
+
+        bullets.push({
+            pos: [x, y],
+            k: getRandomArbitrary(-5 * pi, 5 * pi),
+            sprite: new Sprite('img/bullet.png', [0, 0], [24, 24]) 
+        });
+        tower.lastFire = Date.now();
+    }
+}
+</code></pre>
+<p>Логика обновления анимации спрайтов башни. И создаем патроны для каждой башни в своем массиве. </p>
+<p>Динамика пуль башни:</p>
+<pre><code class="language-javascript">// Update all the bullets
+for (var i = 0; i &#x3C; bullets.length; i++) {
+    var bullet = bullets[i];
+    var c = dt * bulletSpeed;
+    var sin = Math.sin(bullet.k);       
+    var cos = Math.cos(bullet.k);
+
+    bullet.pos[0] += sin * c;
+    bullet.pos[1] += cos * c;       
+
+    // Remove the bullet if it goes offscreen
+    if (bullet.pos[1] &#x3C; 0 || bullet.pos[1] > canvas.height ||
+        bullet.pos[0] > canvas.width) {
+        bullets.splice(i, 1);
+        i--;
+    }
+}
+</code></pre>
+<p>Напомню, что нашей целью было чтобы башни стреляли случайным образом во всех направлениях.</p>
+<p>Пауков мы наделили простым интелектом и поэтому они ползут всегда за нами, чтобы нас укусить.</p>
+<pre><code class="language-javascript">// Update all the enemies
+for (var i = 0; i &#x3C; enemies.length; i++) {
+    var x0 = enemies[i].pos[0];
+    var y0 = enemies[i].pos[1];
+    var x1 = player.pos[0];
+    var y1 = player.pos[1];
+    var c = enemySpeed * dt;
+    var l = Math.sqrt((x1 - x0) * (x1 - x0) + (y1 - y0) * (y1 - y0));
+    
+    enemies[i].pos[0] += (x1 - x0) * c / l;
+    enemies[i].pos[1] += (y1 - y0) * c / l;
+    enemies[i].sprite.update(dt);
+
+    // Remove if offscreen
+    if (enemies[i].pos[0] + enemies[i].sprite.size[0] &#x3C; 0) {
+        enemies.splice(i, 1);
+        i--;
+    }
+}
+</code></pre>
+<p>Полный код функции <code>updateEntities</code> можно посмотреть в <a href="https://github.com/greybax/towers_game2d/blob/gh-pages/js/app.js#L179">исходникак на GitHub</a>.</p>
+<p>Математика расчета столкновений хорошо <a href="http://jlongster.com/Making-Sprite-based-Games-with-Canvas">описана</a> в статье автора (раздел Collision Detection) используемого мной 2d бутстрапа.</p>
+<h2>Этап 6. Game Over и рестарт</h2>
+<p>Когда пауки доползают до нашего героя наступает конец <del>света</del> игры. </p>
+<pre><code class="language-javascript">function gameOver() {
+    document.getElementById('game-over').style.display = 'block';
+    document.getElementById('game-over-overlay').style.display = 'block';
+    isGameOver = true;
+}
+</code></pre>
+<p>Показываем окно GAME OVER и кнопку "Начать заного". Кликаем ее и все начинается сначала :)</p>
+<pre><code class="language-javascript">function reset() {
+    document.getElementById('game-over').style.display = 'none';
+    document.getElementById('game-over-overlay').style.display = 'none';
+    isGameOver = false;
+    gameTime = 0;
+    lastTower = 0;
+    score = 0;
+
+    towers = [];
+    enemies = [];
+    bullets = [];
+
+    player.pos = [canvas.width / 2, canvas.height / 2];
+}
+</code></pre>
+<h2>Заключение</h2>
+<p>В итоге, я для себя понял, что в <code>gamedev</code> много плюсов:</p>
+<ul>
+<li>Весело и интересно проводишь время</li>
+<li>Повторяешь курс школьной геометрии. Если игра серьезней, то и универ вспоминаешь :)</li>
+<li>Практика программирования игр</li>
+<li>Удовлетворение от проделанной работы</li>
+</ul>
+<p>Посмотреть исходники можно <a href="https://github.com/greybax/towers_game2d/">тут</a>, поиграть <a href="http://greybax.github.io/towers_game2d">здесь</a>.</p>
+      </article><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="http://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Мигрируем Javascript код в TypeScript</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="javascript, typescript, frontend, migration">
+    <meta name="og:url" content="/posts/mighriruiem-js-kod-v-typescript/">
+    <meta name="og:title" content="Мигрируем Javascript код в TypeScript">
+    <meta name="og:description" content="javascript, typescript, frontend, migration">
+  </head>
+  <body>
+    <div class="wrap">
+      <article><h1>Мигрируем Javascript код в TypeScript</h1><i class="fa fa-calendar">
+          <time>June 05, 2015</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#typescript"> typescript </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#migration"> migration </a></i><p>Не так давно стояла задача перевести один старый проект из кода на <code>Javascript</code> в <code>TypeScript</code>. Хочу поделиться своим опытом такого перехода. Рассмотрим на примере разработки в Visual Studio.</p>
+<p>Для начала стоит отметить, что такая миграция не является проблемой с точки зрения совместимости, т.к код на <code>Javascript</code> - это синтаксически корректный код на <code>TypeScript</code>.</p>
+<p>Итак, выделим основные этапы, после выполнения которых произойдет чудесное
+превращение:</p>
+<ul>
+<li>
+<p>Переименуем все <code>.js</code> файлы в <code>.ts</code></p>
+</li>
+<li>
+<p>Настраиваем компиляцию из <code>.ts</code> в <code>.js</code></p>
+<ul>
+<li>Для этого нужно скачать и установить <code>TypeScript</code> плагин для студии с <a href="http://www.typescriptlang.org/#Download">официального сайта</a>, позволяющий компилировать <code>.ts</code> файлы в <code>.js</code>.</li>
+</ul>
+</li>
+<li>
+<p>Устанавливаем определения для библиотек (<code>.d.ts</code>)</p>
+<ul>
+<li>Коллекция определений библиотек находится в <a href="https://github.com/borisyankov/DefinitelyTyped">открытом доступе</a>. Определения для <code>javascript</code> библиотек можно установить через <a href="http://definitelytyped.org/tsd/">tsd</a> - это аналог NuGet Package Manager.</li>
+</ul>
+</li>
+<li>
+<p>Пишем определения для своего кода</p>
+<ul>
+<li>Это совсем не сложно и делается по аналогии с кучей примеров из <a href="https://github.com/borisyankov/DefinitelyTyped">DefinitelyTyped on GitHub</a>. Мой пример можно посмотреть <a href="https://github.com/greybax/DefinitelyTyped/tree/master/quixote">тут</a>, который я писал по <a href="https://github.com/jamesshore/quixote/blob/master/docs/api.md">документации для библиотеки quixote</a></li>
+</ul>
+</li>
+<li>
+<p>Рефакторим чтобы использовать язык <code>TypeScript</code></p>
+<ul>
+<li>После компиляции проекта в вашем коде будут возникать ошибки, которые слудует исправлять в соответвии с семантикой <code>TypeScript</code>. После исправления всех ошибок вы получите рабочий проект на <code>TypeScript</code> со всеми вытекающими отсюда удобствами.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Итог</strong>: Все, как оказалось невероятно просто, как досчитать до 5! :)</p>
+      </article><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="http://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>
