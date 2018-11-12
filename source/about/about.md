@@ -4,7 +4,7 @@
 
 ## Technical  summary
 
-Skilled, result-oriented Software Engineer with more than 5 years of experience in corporate and web software development. Always interested in new web technologies and complex tasks and contributing in open source frontend community. Sociable, responsible, open to new ideas and always trying to learn something new. Have personal blog. The blog site works on my own blog engine. Most posts are written in Russian about frontend technologies: Gulp, Jade, NPM, JavaScript and others.
+Skilled, result-oriented Software Engineer with more than 6 years of experience in corporate and web software development. Always interested in new web technologies and complex tasks and contributing in open source frontend community. Sociable, responsible, open to new ideas and always trying to learn something new. Have personal blog. The blog site works on my own blog engine. Most posts are written in Russian about frontend technologies: Gulp, Jade, NPM, JavaScript and others.
 
 ## Contacts
 
