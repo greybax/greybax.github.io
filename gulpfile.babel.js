@@ -4,7 +4,6 @@ import watch from "gulp-watch";
 import rename from "gulp-rename";
 import data from "gulp-data";
 import jade from "gulp-jade";
-import debug from "gulp-debug";
 import replace from "gulp-replace";
 import { log } from "gulp-util";
 import buildbranch from "buildbranch";
