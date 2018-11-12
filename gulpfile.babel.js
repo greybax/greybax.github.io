@@ -190,7 +190,13 @@ gulp.task("copy-presentations", () =>
 
 gulp.task("clean", (done) => { del(["dist"]).then(() => { done(); }); });
 gulp.task("cname", () => gulp.src("CNAME").pipe(gulp.dest("dist")));
-gulp.task("gh", ["build"], (done) => { buildbranch({ branch: "master", folder: "dist" }, done); });
+gulp.task("gh", ["build"], (done) => {
+  buildbranch({
+    branch: "master",
+    folder: "dist",
+    ignore: ['.git', 'package.json', 'node_modules']
+  }, done);
+});
 
 gulp.task("express", () => {
   express().use(express.static("dist")).listen(4000);
