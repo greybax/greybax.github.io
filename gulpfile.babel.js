@@ -194,7 +194,7 @@ gulp.task("gh", ["build"], (done) => {
   buildbranch({
     branch: "master",
     folder: "dist",
-    ignore: ['.git', 'package.json', 'node_modules']
+    noVerify: true
   }, done);
 });
 
