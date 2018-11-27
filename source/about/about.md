@@ -2,31 +2,80 @@
 
 > On this blog I publish only my personal thoughts.
 
-## Technical  summary
+## Technical summary
 
-Skilled, result-oriented Software Engineer with more than 6 years of experience in corporate and web software development. Always interested in new web technologies and complex tasks and contributing in open source frontend community. Sociable, responsible, open to new ideas and always trying to learn something new. Have personal blog. The blog site works on my own blog engine. Most posts are written in Russian about frontend technologies: Gulp, Jade, NPM, JavaScript and others.
+Skilled, result-oriented Software Engineer with more than 6 years of experience in corporate and web software development. Always interested in new web technologies and complex tasks and contributing in open source frontend community. Sociable, responsible, open to new ideas and always trying to learn something new. Have personal blog. The blog site works on my own blog engine. Most posts are written in Russian about frontend technologies: Gulp, Webpack, Jade, NPM, JavaScript and others.
 
 ## Contacts
 
-* Twitter: [https://twitter.com/greybax](https://twitter.com/greybax)
-* Github: [https://github.com/greybax](https://github.com/greybax)
-* Linkedin: [http://ru.linkedin.com/pub/aleksandr-filatov/89/608/66b/](http://ru.linkedin.com/pub/aleksandr-filatov/89/608/66b/)
-* StackOverflow: <a href="http://stackoverflow.com/users/2173016/alex-filatov" target="_blank">
+* [Twitter](https://twitter.com/greybax)
+* [Github](https://github.com/greybax)
+* [Linkedin](http://ru.linkedin.com/pub/aleksandr-filatov/89/608/66b/)
+* <a href="http://stackoverflow.com/users/2173016/alex-filatov" target="_blank">
 <img src="http://stackoverflow.com/users/flair/2173016.png?theme=clean" width="208" height="58" alt="profile for Alex Filatov at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Alex Filatov at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
 </a>
+
+* [Yelp](https://alexfilatov.yelp.com)
+* [Last.fm](https://www.last.fm/user/greybax)
+* [Pinterest](www.pinterest.com/aleksandrfilatov)
 
 * Email: greybax[at]gmail[dot]com
 
 ## Work Experience
-### December 2013 - Present. [Akvelon LLC](http://akvelon.com/), Yaroslavl Branch, Software Developer Engineer
+### January 2014 - Present. [Microsoft](http://microsoft.com/), Yaroslavl(remote) / Seattle(onsite), Contract Software Developer Engineer
 
-Dynamics AX Retail - frontend developer vendor at Microsoft.
+1. Microsoft IcM
+Responsibilities:
+  - WebApp
+    - I've reduced angular $digest cycles on one of the heavy app pages which decrease load page time from 10s to 4s 
+    - Implemented and designed Infinite Scroll component. It decreased render page from 4s to 1s
+    - Implemented cache improvements for decreasing page loading time
+    - Developed Support Page with responsive design
+  - MobileApp
+    - Designed architecture and implemented build pipeline.
+    - Implemented UI and business logic for application core.
 
-* Non-windows POS project - developing new functionality for iOS and Android application on DevExtreme framework for cross platform mobile developing. Was developed CSS framework.
-* Modern POS - developing and implementing new functionality on client-side.
-* WebPOS / CloudPOS - developing app for Chrome/IE browsers on Windows/Mac/Linux platforms. Was developed some unit tests (tsUnit)
+***Languages and technologies***: ```TypeScript```, ```Angular```, ```ES6```, ```Cordova```, ```SASS```, ```Jasmine```
 
-***Languages and technologies***: ```KnockoutJS```, ```TypeScript```, ```WinJS```,  ```JQuery```, ```Javascript```, ```Sass/Less```, ```CSS```
+2. Microsoft CRM
+Responsibilities:
+  - Unified Customer Intelligence Service
+    - Designed application core
+    - Wrapped highcharts widgets (Bar, Bubble, Spider, etc.) as angular2 components
+    - Implemented custom Timeline widget using D3
+    - Implemented custom bindings for specific widget structure
+    - Added tests based on Jasmine and Karma
+    - Implemented unit tests and angular2 component tests
+
+***Languages and technologies***: ```TypeScript```, ```Angular2```, ```ES6```, ```Redux```, ```SASS```, ```Jasmine```
+
+3. Microsoft Dynamics AX Retail
+Responsibilities:
+  - Non-windows POS project
+    - Developed cross-platform (iOS, Android) UI using DevExtreme framework
+    - Developed login page UI
+    - Implemented UI for customer search and products search
+    - Implemented cart page UI with CRUD operations
+    - Developed new module ‘Daily operations’
+  - Cloud POS project
+    - Ported UI from non-windows POS to browsers support (IE, Chrome) based on WinJS
+  - Designed new feature ‘Task recorder’ for Modern and Cloud POS:
+    - Developed format of configuration file for events capturing
+    - Added new functionality of manage recording events to JSON object
+    - Added support of saving record to Azure Web Service and receive link to generated file
+    - Implemented possibility of downloading and reproducing generated file in UI.
+  - Implemented screenshot capturing for ‘Task recorder’ feature in Modern POS based on C#
+
+***Languages and technologies***: ```TypeScript```, ```KnockoutJS```, ```WinJS```, ```JQuery```, ```JavaScript```, ```LESS/SASS```, ```CSS```
+
+### December 2013 - June 2016. [Akvelon LLC](http://akvelon.com/), Yaroslavl Branch, Software Developer Engineer
+
+- Was developed AuthorIt plugin 
+  • Developed main program module
+  • Implemented most of XSLT rules for Import module
+  • Added NUnit testing framework to the project.
+
+***Languages and technologies***: ```C#```, ```XSLT```, ```NUnit```, ```TDD```
 
 ### June 2010 - November 2013. [Fogsoft LLC](http://fogsoft.ru/), Yaroslavl, Software Developer Engineer
 
