@@ -9,6 +9,18 @@ block meta
   meta(name="og:title"        content=title.text)
   meta(name="og:description"  content=tags.text)
 
+block header
+  header(class="no-cover flex-header")
+    div(class="to-main-page")
+      i(class="fa fa-chevron-left")
+      a(href="/") Main page
+    div(class="profile")
+      img(src="https://www.gravatar.com/avatar/4ef97675943e8fe05f61adb948e42ef0?s=160" width="50" height="50")
+      nav
+        ul
+          li
+            a(href="/about/") About
+
 block content
   article
     | !{title.html}

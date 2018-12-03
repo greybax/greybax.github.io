@@ -17,15 +17,13 @@ Skilled, result-oriented Software Engineer with more than 6 years of experience 
 
 * [Yelp](https://alexfilatov.yelp.com)
 * [Last.fm](https://www.last.fm/user/greybax)
-* [Pinterest](www.pinterest.com/aleksandrfilatov)
-
+* [Pinterest](https://www.pinterest.com/aleksandrfilatov)
 * Email: greybax[at]gmail[dot]com
 
 ## Work Experience
 ### January 2014 - Present. [Microsoft](http://microsoft.com/), Yaroslavl(remote) / Seattle(onsite), Contract Software Developer Engineer
 
 1. Microsoft IcM
-Responsibilities:
   - WebApp
     - I've reduced angular $digest cycles on one of the heavy app pages which decrease load page time from 10s to 4s 
     - Implemented and designed Infinite Scroll component. It decreased render page from 4s to 1s
@@ -38,7 +36,6 @@ Responsibilities:
 ***Languages and technologies***: ```TypeScript```, ```Angular```, ```ES6```, ```Cordova```, ```SASS```, ```Jasmine```
 
 2. Microsoft CRM
-Responsibilities:
   - Unified Customer Intelligence Service
     - Designed application core
     - Wrapped highcharts widgets (Bar, Bubble, Spider, etc.) as angular2 components
@@ -50,7 +47,6 @@ Responsibilities:
 ***Languages and technologies***: ```TypeScript```, ```Angular2```, ```ES6```, ```Redux```, ```SASS```, ```Jasmine```
 
 3. Microsoft Dynamics AX Retail
-Responsibilities:
   - Non-windows POS project
     - Developed cross-platform (iOS, Android) UI using DevExtreme framework
     - Developed login page UI
