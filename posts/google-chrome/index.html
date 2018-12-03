@@ -25,6 +25,16 @@
     <meta name="og:description" content="javascript, userjs, frontend, Chromium, browser">
   </head>
   <body>
+    <header class="no-cover flex-header">
+      <div class="to-main-page"><i class="fa fa-chevron-left"></i><a href="/">Main page</a></div>
+      <div class="profile"><img src="https://www.gravatar.com/avatar/4ef97675943e8fe05f61adb948e42ef0?s=160" width="50" height="50">
+        <nav>
+          <ul>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="wrap">
       <article><h1>Пишем расширение для браузера Google Chrome</h1><i class="fa fa-calendar">
           <time>June 27, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#userjs"> userjs </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#Chromium"> Chromium </a><a href="/tags/index.html#browser"> browser </a></i><p>В интернете много сайтов на которых реализована возможность пролистывать страницу вверх без помощи мыши или полосы прокрутки. Но в то же время еще есть сайты где такой реализации нет. "Почему бы не попробовать написать скрипт который бы добавлял такую кнопку на все сайты?" - подумал я и принялся за реализацию. Такие скрипты называются пользовательскими и имеют расширение <code>*.user.js</code>. Почитать к примеру можно на <a href="http://habrahabr.ru/post/129343/">хабре</a>. К сожалению без "подводных камней" не обходится. Существуют некоторые различия в реализации <code>userjs</code> под разные браузеры. Я остановлюсь на описании реализации нашего <code>userjs</code> скрипта как расширения для браузера <code>Google Chrome</code>.</p>
