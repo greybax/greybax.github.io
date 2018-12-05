@@ -73,7 +73,7 @@ Skilled, result-oriented Software Engineer with more than 6 years of experience 
 
 ***Languages and technologies***: ```C#```, ```XSLT```, ```NUnit```, ```TDD```
 
-### June 2010 - November 2013. [Fogsoft LLC](http://fogsoft.ru/), Yaroslavl, Software Developer Engineer
+### June 2011 - November 2013. [Fogsoft LLC](http://fogsoft.ru/), Yaroslavl, Software Developer Engineer
 
 - Was developed electronic trading platforms (ETP): bugs fixing and adding new features (```C#```, ```Microsoft SQL Server```)
 - ETP on the project "Trust" - lead programmer.
@@ -84,7 +84,7 @@ Skilled, result-oriented Software Engineer with more than 6 years of experience 
 
 ***Languages and technologies***: ```C#```, ```ASP.NET MVC 3```, ```EntityFramework```, ```MS SQL```, ```Ajax```, ```Javascipt```
 
-### January 2010 - November 2010. [IT Co LLC](http://www.it-co.ru/), Moscow. Worked remotely from Yaroslavl. C# Developer, ASP.NET Developer
+### January 2010 - November 2010. [IT Co LLC](http://www.it-co.ru/), Yaroslavl(remote). C# Developer, ASP.NET Developer
 
 Was developed of two projects:
 
