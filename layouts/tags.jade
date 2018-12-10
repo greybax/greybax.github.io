@@ -45,7 +45,7 @@ html(dir="LTR" lang="en")
         div(class='tags-cloud')
           each tag in tags
             div
-              a(href='/tags/##{tag}')= `${tagMap.get(tag).length} ${tag}`
+              a(href='/tags/##{tag}')= `(${tagMap.get(tag).length}) ${tag}`
 
         article.tags
           each tag in tags

@@ -42,7 +42,7 @@ const addToList = (file, article) => {
     tags: tags.list
   };
 
-  // Construct tags Map with linked articles url
+  // Construct tagMap with linked articles url
   for (let tag of articleObj.tags) {
     tagMap.set(tag, {
       name: articleObj.name,
@@ -100,7 +100,7 @@ gulp.task('index-page', () =>
         .filter(i => !!i.date)
         .sort((a, b) => b.date.unix - a.date.unix),
       tagMap,
-      tags: Array.from(tagMap.keys())
+      tags: Array.from(tagMap.keys()).sort((a,b) => tagMap.get(b).length - tagMap.get(a).length)
     })))
     .pipe(jade({ pretty: env === 'dev' }))
     .pipe(rename({ basename: 'index' }))
@@ -132,7 +132,7 @@ gulp.task('tags', () =>
     .pipe(data(() => ({
       site,
       tagMap,
-      tags: Array.from(tagMap.keys())
+      tags: Array.from(tagMap.keys()).sort((a,b) => tagMap.get(b).length - tagMap.get(a).length)
     })))
     .pipe(jade({ pretty: env === 'dev' }))
     .pipe(rename({ basename: 'index' }))
