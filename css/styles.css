@@ -123,12 +123,35 @@ header ul.social li:not(:first-child):before {
   overflow: hidden;
 }
 
+.wrap-flex {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: #222;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  margin: 1em 4em;
+}
+
+.tags-cloud {
+  flex-grow: 1;
+  flex-basis: 10%;
+}
+
+.tags, .archives {
+  flex-grow: 2;
+}
+
+.archives {
+  min-width: 10em;
+}
+
 .wrap {
   font-family: Georgia, Times, "Times New Roman", serif;
   color: #222;
   max-width: 45em;
   margin: 1em auto;
 }
+
 
 @media (max-device-width: 480px) {
   .wrap { 
@@ -203,6 +226,7 @@ h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-right: 3em;
 }
 
 .list__item a {
