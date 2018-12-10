@@ -98,7 +98,9 @@ gulp.task('index-page', () =>
       site,
       list: articlesList
         .filter(i => !!i.date)
-        .sort((a, b) => b.date.unix - a.date.unix)
+        .sort((a, b) => b.date.unix - a.date.unix),
+      tagMap,
+      tags: Array.from(tagMap.keys())
     })))
     .pipe(jade({ pretty: env === 'dev' }))
     .pipe(rename({ basename: 'index' }))

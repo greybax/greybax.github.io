@@ -1,47 +1,70 @@
-extend page
+doctype html
+html(dir="LTR" lang="en")
+  head
+    include head
+    block title
+      title Aleksandr Filatov
+    block meta
+      meta(property="description" content=site.description)
+      meta(name="og:url"          content=site.site_url)
+      meta(name="og:title"        content=site.title)
+      meta(name="og:description"  content=site.description)
 
-block meta
-  meta(property="description" content=site.description)
-  meta(name="og:url"          content=site.site_url)
-  meta(name="og:title"        content=site.title)
-  meta(name="og:description"  content=site.description)
+  body
+    block header
+      header(class="main-header no-cover")
+        div(class="profile")
+          a(href="/")
+            img(src="https://www.gravatar.com/avatar/4ef97675943e8fe05f61adb948e42ef0?s=100" width="100" height="100")
+        hgroup
+          div(class="main-header-content inner")
+            h1(class="page-title") Aleksandr Filatov
+            h2 greybax
+            h3(class="page-description") Thoughts and stuff
+        nav
+          ul
+            li
+              a(href="/about/") about
+            li
+              a(href="/#archives") archives
+        ul(class="social")
+          li
+            a(target="_blank" class="twitter" href="https://twitter.com/greybax")
+              i(class="fa fa-twitter")
+          li
+            a(target="_blank" class="github" href="https://github.com/greybax")
+              i(class="fa fa-github")
+          li
+            a(target="_blank" class="linkedin" href="https://www.linkedin.com/in/alfila/en")
+              i(class="fa fa-linkedin")
+          li
+            a(class="rss" href="/rss.xml")
+              i(class="fa fa-rss")
+    .wrap-flex
+      block content
+        div(class='tags-cloud')
+          each tag in tags
+            div
+              a(href='/tags/##{tag}')= `${tagMap.get(tag).length} ${tag}`
 
-block header
-  header(class="main-header no-cover")
-    div(class="profile")
-      a(href="/")
-        img(src="https://www.gravatar.com/avatar/4ef97675943e8fe05f61adb948e42ef0?s=160" width="160" height="160")
-    hgroup
-      div(class="main-header-content inner")
-        h1(class="page-title") Aleksandr Filatov
-        h2 greybax
-        h3(class="page-description") Thoughts and stuff
-    nav
-      ul
-        li
-          a(href="/about/") about
-        li
-          a(href="/#archives") archives
-    ul(class="social")
-      li
-        a(target="_blank" class="twitter" href="https://twitter.com/greybax")
-          i(class="fa fa-twitter")
-      li
-        a(target="_blank" class="github" href="https://github.com/greybax")
-          i(class="fa fa-github")
-      li
-        a(target="_blank" class="linkedin" href="https://www.linkedin.com/in/alfila/en")
-          i(class="fa fa-linkedin")
-      li
-        a(class="rss" href="/rss.xml")
-          i(class="fa fa-rss")
+        article.tags
+          each tag in tags
+            h2
+              a(href='##{tag}' name=tag)= tag
+            ul.list
+              each article in tagMap.get(tag)
+                li.list__item
+                  a(href=article.url)= article.name
 
-block content
-  article.tags
-    each tag in tags
-      h2
-        a(href='##{tag}' name=tag)= tag
-      ul.list
-        each article in tagMap.get(tag)
-          li.list__item
-            a(href=article.url)= article.name
+    include yandex_metrika
+    include google_analytics
+
+  footer
+    hr
+    center
+      | Made with ❤ and 
+      a(href='http://gulpjs.com/') Gulp 
+      | ♦ 
+      a(href='https://travis-ci.org/') Travis CI
+      | ♦ 
+      a(href='https://pages.github.com/') GitHub Pages
