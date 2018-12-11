@@ -34,7 +34,7 @@ _November 25, 2018_
 
 По всему маршруту стоят подписи к различным ягодам и деревьям которые здесь произрастают. Интересно также, что почти все названия дублируются на местном языке племени Snoqualmie. На смотровых площадках стоят доски с фотографиями хроники строительства и работы местной гидроэлектро станции.
 
-<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0393.jpg" alt="трубы ГЭС" title="трубы ГЭС" style="transform: rotate(90deg);margin: 5em auto;">
+<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0393.JPG" alt="трубы ГЭС" title="трубы ГЭС" style="transform: rotate(90deg);margin: 5em auto;">
 
 Соответственно, гуляя по трейлу, (trail (en.)- маршрут) можно не только насладиться красивейшими пейзажми, но и изучить историю местности. Очень интересно.
 
@@ -67,6 +67,6 @@ Snoqualmie ([официальный сайт](https://www.ci.snoqualmie.wa.us/))
 А в одном из таких вагонов наливали горячий шоколад, чай, кофе на выбор и 1 печеньку. То что нужно после долгой прогулки зимой :)
 Зимой к сожалению быстро темнеет, и после небольшой прогулки по городу мы решили возврашаться в Сиэтл.
 
-<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0466.jpg" alt="по дороге в Сиэтл" title="по дороге в Сиэтл" style="transform: rotate(90deg);margin: 5em auto;">
+<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0466.JPG" alt="по дороге в Сиэтл" title="по дороге в Сиэтл" style="transform: rotate(90deg);margin: 5em auto;">
 
 _Приятных путешествий!_ :)
