@@ -20,11 +20,11 @@ _November 25, 2018_
 
 Кроме верхнего яруса можно еще спуститься к воде.
 
-<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0388.JPG" alt="прогулка к реке" title="прогулка к реке" style="transform: rotate(90deg);margin: 5em auto;">
+<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0388.jpg" alt="прогулка к реке" title="прогулка к реке" style="transform: rotate(90deg);margin: 5em auto;">
 
-<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0383.JPG" alt="вот это пень!" title="вот это пень!" style="transform: rotate(90deg);margin: 5em auto;">
+<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0383.jpg" alt="вот это пень!" title="вот это пень!" style="transform: rotate(90deg);margin: 5em auto;">
 
-<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0413.JPG" alt="и еще один" title="и еще один" style="transform: rotate(90deg);margin: 5em auto;">
+<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0413.jpg" alt="и еще один" title="и еще один" style="transform: rotate(90deg);margin: 5em auto;">
 
 Протяженность маршрута вниз около двух миль. Спуск плавный, поэтому спускаться достаточно просто. Но т.к мы не планировали что будем хайкать по городам, то не взяли с собой кроссовки и пришлось идти в ботинках. Поэтому совет - всегда при поезде в горы берите с собой удобную обувь для похода по горам.
 
@@ -32,9 +32,9 @@ _November 25, 2018_
 
 ![вид на водопад с реки](/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0408.jpg)
 
-По всему маршруту стоят подписи к различным ягодам и деревьям которые здесь произрастают. Интересно также, что почти все названия дублируются на местном языке племени Snoqualmie. На смотровых площадках стоят доски с фотографиями хроники строительства и работы местной гидроэлектро станции. 
+По всему маршруту стоят подписи к различным ягодам и деревьям которые здесь произрастают. Интересно также, что почти все названия дублируются на местном языке племени Snoqualmie. На смотровых площадках стоят доски с фотографиями хроники строительства и работы местной гидроэлектро станции.
 
-<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0393.JPG" alt="трубы ГЭС" title="трубы ГЭС" style="transform: rotate(90deg);margin: 5em auto;">
+<img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0393.jpg" alt="трубы ГЭС" title="трубы ГЭС" style="transform: rotate(90deg);margin: 5em auto;">
 
 Соответственно, гуляя по трейлу, (trail (en.)- маршрут) можно не только насладиться красивейшими пейзажми, но и изучить историю местности. Очень интересно.
 
