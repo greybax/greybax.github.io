@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /about/
 Disallow: /cyrillic-to-translit-js/
+Disallow: /brandifyjs/
 Disallow: /towers_game2d/
 Sitemap: https://alfilatov.com/sitemap.xml

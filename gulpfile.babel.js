@@ -156,6 +156,8 @@ gulp.task('build', (done) => {
     , 'font-awesome'
     , 'copy-images'
     , 'copy-favicon'
+    , 'copy-sitemap'
+    , 'copy-robots_txt'
     , 'copy-presentations'
     , 'cname'
     , done);
@@ -182,6 +184,16 @@ gulp.task('copy-images', () =>
 
 gulp.task('copy-favicon', () =>
   gulp.src(['favicon.ico'])
+    .pipe(gulp.dest('dist'))
+);
+
+gulp.task('copy-sitemap', () =>
+  gulp.src('sitemap.xml')
+    .pipe(gulp.dest('dist'))
+);
+
+gulp.task('copy-robots_txt', () =>
+  gulp.src('robots.txt')
     .pipe(gulp.dest('dist'))
 );
 
