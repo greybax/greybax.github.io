@@ -141,6 +141,32 @@ header ul.social li:not(:first-child):before {
   flex-grow: 2;
 }
 
+.tags-cloud .text {
+  text-decoration: none;
+  background-color: #e6e6e6;
+  padding: .25em .5em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+}
+
+.tags-cloud .badge {
+  background-color: #fff;
+  display: inline-block;
+  padding: .25em .3em;
+  font-size: 89%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+}
+
 .archives {
   min-width: 10em;
 }

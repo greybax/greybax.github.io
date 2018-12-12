@@ -45,7 +45,8 @@ html(dir="LTR" lang="en")
         div(class='tags-cloud')
           each tag in tags
             div
-              a(href='/tags/##{tag}')= `(${tagMap.get(tag).length}) ${tag}`
+              a(class='text' href='/tags/##{tag}')= tag
+                span(class='badge')=`${tagMap.get(tag).length}`
 
         article.tags
           each tag in tags
