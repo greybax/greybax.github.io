@@ -1,6 +1,6 @@
 # HTTPS для Github Pages через CloudFare
 
-#https, #cloudflare;
+#https, #cloudflare, #russian;
 
 _December 9, 2015_
 

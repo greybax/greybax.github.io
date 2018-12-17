@@ -1,6 +1,6 @@
 # Debugging файлов TypeScript в браузере через эмулятор DevExtreme
 
-#DevExtreme, #configuration, #debugging, #typescript, #javascript;
+#DevExtreme, #configuration, #debugging, #typescript, #javascript, #russian;
 
 _December 02, 2014_
 

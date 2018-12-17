@@ -1,6 +1,6 @@
 # ASP.NET: События жизненного цикла страницы
 
-#ASP.NET, #programming;
+#ASP.NET, #programming, #russian;
 
 _May 12, 2014_
 

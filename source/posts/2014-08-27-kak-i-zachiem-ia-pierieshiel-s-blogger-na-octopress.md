@@ -1,6 +1,6 @@
 # Как и зачем я перешел с Blogger на Octopress
 
-#blog, #ruby, #octopress;
+#blog, #ruby, #octopress, #russian;
 
 _August 27, 2014_
 

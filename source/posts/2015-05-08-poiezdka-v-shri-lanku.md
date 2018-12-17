@@ -1,6 +1,6 @@
 # Поездка в Шри-Ланку
 
-#Путешествия, #Travellings;
+#Путешествия, #Travellings, #russian;
 
 _May 11, 2015_
 

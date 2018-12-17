@@ -1,6 +1,6 @@
 # My VSCode settings
 
-#vscode, #tools, #plugins;
+#vscode, #tools, #plugins, #english;
 
 _November 06, 2016_
 

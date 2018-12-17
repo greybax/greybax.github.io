@@ -4,6 +4,6 @@
 
 # [Frontender Magazine] Классы в ECMAScript 6
 
-#FrontenderMagazine, #перевод, #es6, #javascript;
+#FrontenderMagazine, #перевод, #es6, #javascript, #russian;
 
 _July 06, 2015_

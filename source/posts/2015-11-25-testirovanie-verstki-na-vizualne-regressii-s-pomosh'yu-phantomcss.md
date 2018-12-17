@@ -4,6 +4,6 @@
 
 # [habrahabr] Тестирование вёрстки на визуальные регрессии с помощью PhantomCSS
 
-#habrahabr, #перевод, #тестирование, #css, #javascript;
+#habrahabr, #перевод, #тестирование, #css, #javascript, #russian;
 
 _November 25, 2015_

@@ -4,6 +4,6 @@
 
 # [Frontender Magazine] Упрощаем заполнение форм с помощью Autofill
 
-#FrontenderMagazine, #перевод, #autocomplete, #javascript;
+#FrontenderMagazine, #перевод, #autocomplete, #javascript, #russian;
 
 _September 10, 2015_

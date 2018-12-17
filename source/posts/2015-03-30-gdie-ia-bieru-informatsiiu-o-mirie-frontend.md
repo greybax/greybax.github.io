@@ -1,6 +1,6 @@
 # Что можно почитать по frontend'у
 
-#frontend, #javascript, #links;
+#frontend, #javascript, #links, #russian;
 
 _March 30, 2015_
 

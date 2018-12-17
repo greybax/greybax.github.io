@@ -1,6 +1,6 @@
 # Впечатления от первого хакатона
 
-#hackaton, #unity, #gamedev;
+#hackaton, #unity, #gamedev, #russian;
 
 _December 09, 2014_
 

@@ -1,6 +1,6 @@
 # Профилирование в JS
 
-#profilers, #browsers, #optimization, #javascript;
+#profilers, #browsers, #optimization, #javascript, #russian;
 
 _September 04, 2014_
 

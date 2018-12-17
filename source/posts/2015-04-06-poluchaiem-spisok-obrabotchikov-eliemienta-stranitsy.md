@@ -1,6 +1,6 @@
 # Получаем список обработчиков элемента в DOM'е
 
-#frontend, #javascript;
+#frontend, #javascript, #russian;
 
 _April 10, 2015_
 

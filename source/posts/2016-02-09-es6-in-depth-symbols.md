@@ -4,6 +4,6 @@
 
 # [Frontender Magazine] ES6 в деталях: символы
 
-#FrontenderMagazine, #перевод, #es6, #javascript;
+#FrontenderMagazine, #перевод, #es6, #javascript, #russian;
 
 _February 09, 2016_

@@ -1,6 +1,6 @@
 # Пишем расширение для браузера Google Chrome
 
-#javascript, #userjs, #frontend, #Chromium, #browser;
+#javascript, #userjs, #frontend, #Chromium, #browser, #russian;
 
 _June 27, 2014_
 

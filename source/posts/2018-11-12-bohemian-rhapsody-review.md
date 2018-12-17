@@ -1,6 +1,6 @@
 # Впечатления от просмотра фильма «Bohemian Rhapsody»
 
-#впечатления, #review, #russian, #review, #movie;
+#впечатления, #review, #review, #movie, #russian;
 
 _November 11, 2018_
 
