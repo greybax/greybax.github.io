@@ -64,7 +64,7 @@ Snoqualmie ([официальный сайт](https://www.ci.snoqualmie.wa.us/))
 
 <img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0456.jpg" alt="поезд на станции snoqualmie" title="поезд на станции snoqualmie" style="transform: rotate(90deg);margin: 5em auto;">
 
-А в одном из таких вагонов наливали горячий шоколад, чай, кофе на выбор и 1 печеньку. То что нужно после долгой прогулки зимой :)
+А в одном из таких вагонов наливали горячий шоколад, чай, кофе на выбор и угощали печеньем. То что нужно после долгой прогулки зимой :)
 Зимой к сожалению быстро темнеет, и после небольшой прогулки по городу мы решили возврашаться в Сиэтл.
 
 <img src="/images/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/IMG_0466.JPG" alt="по дороге в Сиэтл" title="по дороге в Сиэтл" style="transform: rotate(90deg);margin: 5em auto;">

@@ -4,9 +4,9 @@
 
 _December 16, 2018_
 
-In our days we have to remember tons of information: from job, family, personal. There are huge amount of information we getting from internet. That's really great to keep training your memory and in fact that human brain could remember everything. But sometimes we can't remember some important thing which could be very urgent on that moment. So in this case we've put some tasks from our memory to paper. Just let our brain to be free our of some works. This is pretty cool, but what if you will lost your paper or will forgot to bring it with you.
+In our days we have to remember tons of information: from job, family, personal. There are huge amount of information we getting from internet. That's really great to keep training your memory and in fact that human brain could remember everything. But sometimes we can't remember some important thing which could be very urgent on that moment. So in this case we've put some tasks from our memory to paper. Just let our brain to be free out of some works. This is pretty cool, but what if you will lost your paper or will forgot to bring it with you.
 
-Today we are all have smarphones and smart watches. And there are lot of applicatioons of them. So one of them are named like `to-do list`. This type of applications which allows you to put all your affairs to the app and forgot about it until app will not remind you about it in the future. This is really cool thing. And in this post I'd like to talk about them.
+Today we are all have smarphones, smart watches and all another kind of smart devices. And there are lot of applicatioons of them. So one of them are named like `to-do list`. This type of applications which allows you to put all your affairs to the app and forgot about it until app will not remind you about it in the future. This is really cool thing. And in this post I'd like to talk about them.
 
 Actually you could find lot of them just by request in google: `to-do apps`. And actually all of them doing the same work. I'm using only 2 of them and that pretty enough for me.
 
