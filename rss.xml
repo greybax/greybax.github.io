@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 17 Dec 2018 03:44:59 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Dec 2018 00:22:06 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -22,22 +22,29 @@
             <pubDate>Sun, 16 Dec 2018 08:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[<h1>Прогулка по Rattlesnake Lake и Rattlesnake Ledge</h1>]]></title>
+            <description><![CDATA[usa, wa, life, nature, trails, russian]]></description>
+            <link>https://alfilatov.com//posts/progulka-po-rattlesnake-lake-i-rattlesnake-ledge/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/progulka-po-rattlesnake-lake-i-rattlesnake-ledge/</guid>
+            <pubDate>Sat, 01 Dec 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[<h1>Snoqualmie Falls или прогулка по следам съемок Twin Peaks</h1>]]></title>
-            <description><![CDATA[usa, washington, life, waterfalls, nature, trails, russian]]></description>
+            <description><![CDATA[usa, wa, life, waterfalls, nature, trails, russian]]></description>
             <link>https://alfilatov.com//posts/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/</guid>
             <pubDate>Sun, 25 Nov 2018 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Покупка машины в Америке</h1>]]></title>
-            <description><![CDATA[driver, cars, usa, washington, life, russian]]></description>
+            <description><![CDATA[driver, cars, usa, wa, life, russian]]></description>
             <link>https://alfilatov.com//posts/how-to-buy-a-car-in-usa/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-buy-a-car-in-usa/</guid>
             <pubDate>Wed, 21 Nov 2018 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Как я получал водительское удостоверение в штате Вашингтон</h1>]]></title>
-            <description><![CDATA[driver, license, cars, dol, usa, washington, life, russian]]></description>
+            <description><![CDATA[driver, license, cars, dol, usa, wa, life, russian]]></description>
             <link>https://alfilatov.com//posts/how-to-get-driver-license-in-washington-state/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-get-driver-license-in-washington-state/</guid>
             <pubDate>Sat, 17 Nov 2018 08:00:00 GMT</pubDate>
