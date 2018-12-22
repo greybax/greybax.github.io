@@ -1,6 +1,6 @@
 # Как я получал водительское удостоверение в штате Вашингтон
 
-#driver, #license, #cars, #dol, #usa, #washington, #life, #russian;
+#driver, #license, #cars, #dol, #usa, #wa, #life, #russian;
 
 _November 17, 2018_
 

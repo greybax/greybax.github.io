@@ -1,6 +1,6 @@
 # Snoqualmie Falls или прогулка по следам съемок Twin Peaks
 
-#usa, #washington, #life, #waterfalls, #nature, #trails, #russian;
+#usa, #wa, #life, #waterfalls, #nature, #trails, #russian;
 
 _November 25, 2018_
 

@@ -1,6 +1,6 @@
 # Покупка машины в Америке
 
-#driver, #cars, #usa, #washington, #life, #russian;
+#driver, #cars, #usa, #wa, #life, #russian;
 
 _November 21, 2018_
 
