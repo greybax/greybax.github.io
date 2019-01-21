@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 21 Jan 2019 22:59:40 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Jan 2019 23:06:43 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -16,7 +16,7 @@
         <category><![CDATA[life]]></category>
         <item>
             <title><![CDATA[<h1>Is your <code>npm install</code> still too slow?</h1>]]></title>
-            <description><![CDATA[npm, performance, pnpm, build, english]]></description>
+            <description><![CDATA[npm, performance, optimization, pnpm, build, frontend, english]]></description>
             <link>https://alfilatov.com//posts/is-your-npm-install-still-too-slow/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/is-your-npm-install-still-too-slow/</guid>
             <pubDate>Mon, 21 Jan 2019 08:00:00 GMT</pubDate>
