@@ -1,6 +1,6 @@
 # Is your `npm install` still too slow?
 
-#npm, #performance, #pnpm, #build, #english;
+#npm, #performance, #optimization, #pnpm, #build, #frontend, #english;
 
 _January 21, 2019_
 
