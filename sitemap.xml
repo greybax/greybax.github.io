@@ -18,6 +18,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://alfilatov.com/posts/useful-js-snippets/</loc>
+  <lastmod>2019-02-08T21:40:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://alfilatov.com/posts/is-your-npm-install-still-too-slow/</loc>
   <lastmod>2019-01-21T21:37:06+00:00</lastmod>
   <priority>0.80</priority>

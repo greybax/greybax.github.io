@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 21 Jan 2019 23:06:43 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Feb 2019 20:17:36 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>My collection of useful javascript snippets</h1>]]></title>
+            <description><![CDATA[javascript, snippets, frontend, gist, english]]></description>
+            <link>https://alfilatov.com//posts/useful-js-snippets/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/useful-js-snippets/</guid>
+            <pubDate>Fri, 08 Feb 2019 08:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>Is your <code>npm install</code> still too slow?</h1>]]></title>
             <description><![CDATA[npm, performance, optimization, pnpm, build, frontend, english]]></description>
@@ -254,7 +261,7 @@
         </item>
         <item>
             <title><![CDATA[<h1>ASP.NET: События жизненного цикла страницы</h1>]]></title>
-            <description><![CDATA[ASP.NET, programming, russian]]></description>
+            <description><![CDATA[ASP.NET, programming, gist, russian]]></description>
             <link>https://alfilatov.com//posts/lifecycle-events-aspnet/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/lifecycle-events-aspnet/</guid>
             <pubDate>Mon, 12 May 2014 07:00:00 GMT</pubDate>
