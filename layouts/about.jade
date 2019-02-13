@@ -1,9 +1,32 @@
-extend page
+doctype html
+html(dir="LTR" lang="en")
+  head
+    include head
+    block title
+      title About Me
+    block meta
+      meta(property="description" content=site.description)
+      meta(name="og:url"          content=site.site_url)
+      meta(name="og:title"        content=site.title)
+      meta(name="og:description"  content=site.description)
 
-block title
-  title #{title.text}
+  body
+    block header
+    .wrap
+      block content
+        article
+          h1 !{title.html}
+          | !{content.html}
 
-block content
-  article
-    h1 !{title.html}
-    | !{content.html}
+    include yandex_metrika
+    include google_analytics
+
+  footer
+    hr
+    center
+      | Made with ❤ and 
+      a(href='http://gulpjs.com/') Gulp 
+      | ♦ 
+      a(href='https://travis-ci.org/') Travis CI
+      | ♦ 
+      a(href='https://pages.github.com/') GitHub Pages
