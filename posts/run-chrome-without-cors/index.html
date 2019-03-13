@@ -45,16 +45,34 @@
     <div class="wrap">
       <article><h1>Run Chrome browser without CORS</h1><i class="fa fa-calendar">
           <time>November 13, 2018</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#chrome"> chrome </a><a href="/tags/index.html#browser"> browser </a><a href="/tags/index.html#cors"> cors </a><a href="/tags/index.html#debug"> debug </a><a href="/tags/index.html#development"> development </a><a href="/tags/index.html#english"> english </a></i><p>I use this sometimes, for posting a localhost frontend app to a localhost backend API.
-I created a separate shortcut on my Windows 10 laptop (but this case will works with any OS I believe), so that it never is used for normal browsing, only for debugging locally.
-Just do follow steps:</p>
+I created a separate shortcut on my Windows 10 laptop, so that it never is used for normal browsing, only for debugging locally.</p>
+<h2>Windows</h2>
+<p>Just do follow steps:</p>
 <ul>
 <li>Right click on desktop, add new shortcut</li>
 <li>Add the target as <code>"[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp</code></li>
 <li>Click OK.</li>
 </ul>
+<blockquote>
 <p><em><strong>NOTE</strong></em>: On Windows 10 command will be:
 <code>"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp</code></p>
-<p>You will get a warning on load of this browser, that it is not secure, just take care with what you browser on it.</p>
+</blockquote>
+<h2>OSX</h2>
+<p><code>open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security</code></p>
+<h2>Linux</h2>
+<p><code>google-chrome --disable-web-security</code></p>
+<p>If you need access to local files for dev purposes like AJAX or JSON, you can use <code>-–allow-file-access-from-files</code> flag.</p>
+<h2>Remark</h2>
+<p>Since Chrome 22+ you will get an error message that says:</p>
+<blockquote>
+<p>You are using an unsupported command-line flag: <code>--disable-web-security</code>. Stability and security will suffer.</p>
+</blockquote>
+<p>However you can just ignore that message while developing.</p>
+<h2>Links</h2>
+<ul>
+<li><a href="https://stackoverflow.com/questions/3102819/disable-same-origin-policy-in-chrome">Disable same origin policy in Chrome</a></li>
+<li><a href="https://stackoverflow.com/questions/35432749/disable-web-security-in-chrome-48">Disable-web-security in Chrome 48+</a></li>
+</ul>
       </article><!-- Yandex.RTB R-A-334917-1 -->
       <div id="yandex_rtb_R-A-334917-1"></div>
       <script type="text/javascript">
