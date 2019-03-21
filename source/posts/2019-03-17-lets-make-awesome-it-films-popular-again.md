@@ -4,6 +4,8 @@
 
 _March 17, 2019_
 
+![Awesome IT Films Logo](/images/lets-make-awesome-it-films-popular-again/awesome_it_films_logo.png)
+
 Actually I would write this post as soon as repo [awesome-it-films](https://github.com/greybax/awesome-IT-films) will reached **100 stars** on Github. But I missed this moment... 
 
 Instead of it I woke up one day and as usually went to my github profile just for checking and do some my stuff there. And what could I see... Awesome-IT-Films repo just got **300 stars** for one day. 
@@ -21,6 +23,6 @@ So now people came from some of topics like: [tv-series](https://github.com/topi
 
 I would like to thank you everyone who starred it. 
 
-So, what for now? I changed license to CC0 and waiting approval of [my PR on awesome list](https://github.com/sindresorhus/awesome/pull/1434) by [@sindresorhus](https://github.com/sindresorhus). 
+So, what for now? I changed license to Creative Commons Zero v1.0 Universal and waiting approval of [my PR on awesome list](https://github.com/sindresorhus/awesome/pull/1434) by [@sindresorhus](https://github.com/sindresorhus). 
 
 What I learned form it? Just keep doing what you love and love what you doing. Sooner or later your work will be appreciated. :v:
