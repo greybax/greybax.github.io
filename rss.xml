@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 19 Mar 2019 00:35:46 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Mar 2019 22:58:19 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to add dynamic data badges from Shields.io</h1>]]></title>
+            <description><![CDATA[awesome-it-films, json, badges, endpoint, markdown, frontend, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-add-dynamic-data-badges-from-shields-io/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-add-dynamic-data-badges-from-shields-io/</guid>
+            <pubDate>Thu, 21 Mar 2019 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>Let's make "Awesome IT Films" popular again!</h1>]]></title>
             <description><![CDATA[javascript, awesome, awesome-it-films, collection, frontend, english]]></description>

@@ -9,7 +9,7 @@
       });
     </script><!-- /Google Adsense -->
     <meta charset="utf-8">
-    <title>Let's make &quot;Awesome IT Films&quot; popular again!</title><!-- Yandex Webmaster -->
+    <title>How to add dynamic data badges from Shields.io</title><!-- Yandex Webmaster -->
     <meta name="yandex-verification" content="610e7b6bb48fc4d6">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
@@ -26,10 +26,10 @@
     <meta property="article:author" content="https://alfilatov.com/about/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@greybax">
-    <meta property="description" content="javascript, awesome, awesome-it-films, collection, frontend, english">
-    <meta name="og:url" content="/posts/lets-make-awesome-it-films-popular-again/">
-    <meta name="og:title" content="Let's make &quot;Awesome IT Films&quot; popular again!">
-    <meta name="og:description" content="javascript, awesome, awesome-it-films, collection, frontend, english">
+    <meta property="description" content="awesome-it-films, json, badges, endpoint, markdown, frontend, english">
+    <meta name="og:url" content="/posts/how-to-add-dynamic-data-badges-from-shields-io/">
+    <meta name="og:title" content="How to add dynamic data badges from Shields.io">
+    <meta name="og:description" content="awesome-it-films, json, badges, endpoint, markdown, frontend, english">
   </head>
   <body>
     <header class="no-cover flex-header">
@@ -43,19 +43,25 @@
       </div>
     </header>
     <div class="wrap">
-      <article><h1>Let's make "Awesome IT Films" popular again!</h1><i class="fa fa-calendar">
-          <time>March 17, 2019</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#awesome"> awesome </a><a href="/tags/index.html#awesome-it-films"> awesome-it-films </a><a href="/tags/index.html#collection"> collection </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#english"> english </a></i><p><img src="/images/lets-make-awesome-it-films-popular-again/awesome_it_films_logo.png" alt="Awesome IT Films Logo"></p>
-<p>Actually I would write this post as soon as repo <a href="https://github.com/greybax/awesome-IT-films">awesome-it-films</a> will reached <strong>100 stars</strong> on Github. But I missed this moment... </p>
-<p>Instead of it I woke up one day and as usually went to my github profile just for checking and do some my stuff there. And what could I see... Awesome-IT-Films repo just got <strong>300 stars</strong> for one day. </p>
-<p>And for now I still didn't realize how it happens. Just only one day before it was <strong>59 stars</strong>. Repo just increased 5x stars per night. I started to investigate some sources which my repo got users came from.</p>
-<p>I would to appreciate this guy which is twitted my repo in their twitter with more 1k followers.</p>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you&#39;re looking for IT movies to watch, you could check this out <a href="https://t.co/B7piGghDAx">https://t.co/B7piGghDAx</a><br><br>cc <a href="https://twitter.com/greybax?ref_src=twsrc%5Etfw">@greybax</a></p>&mdash; Ademola ⚡ (@_ooade) <a href="https://twitter.com/_ooade/status/1098906129780879360?ref_src=twsrc%5Etfw">February 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>It could be happens a big start to this explosive growth. </p>
-<p>For now at March 18 repo already reached more than <strong>600 stars</strong> on Github and this is most popular repo on my account at this moment.
-So now people came from some of topics like: <a href="https://github.com/topics/tv-series">tv-series</a>, <a href="https://github.com/topics/tv-shows">tv-shows</a>, <a href="https://github.com/topics/movie-collection">movie-collection</a>, <a href="https://github.com/topics/geeks">geeks</a> on Github where this repo placed on the top of the list.</p>
-<p>I would like to thank you everyone who starred it. </p>
-<p>So, what for now? I changed license to Creative Commons Zero v1.0 Universal and waiting approval of <a href="https://github.com/sindresorhus/awesome/pull/1434">my PR on awesome list</a> by <a href="https://github.com/sindresorhus">@sindresorhus</a>. </p>
-<p>What I learned form it? Just keep doing what you love and love what you doing. Sooner or later your work will be appreciated. :v:</p>
+      <article><h1>How to add dynamic data badges from Shields.io</h1><i class="fa fa-calendar">
+          <time>March 21, 2019</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#awesome-it-films"> awesome-it-films </a><a href="/tags/index.html#json"> json </a><a href="/tags/index.html#badges"> badges </a><a href="/tags/index.html#endpoint"> endpoint </a><a href="/tags/index.html#markdown"> markdown </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
+<p>As I wrote in my recent post <a href="/posts/lets-make-awesome-it-films-popular-again/">Let's make "Awesome IT Films" popular again!</a> I've got a nice achievement which stimulate me to do more features for this project.</p>
+<p>One of this was born in discussion in thread issue <a href="https://github.com/greybax/awesome-IT-films/issues/24">More useful badges?</a> and in one day I've got PR with interesting idea <a href="https://github.com/greybax/awesome-IT-films/pull/28">Added badges for number of movies,tv-series and documentaries.</a> but implementation could much to be desired. </p>
+<p>So here I would like to describe how to achieve it without any pain. </p>
+<h2>Shields.IO</h2>
+<p><img src="/images/how-to-add-dynamic-data-badges-from-shields-io/shields_io_logo.svg" alt="Shields.io Logo"></p>
+<p>I believe everybody knows about <a href="https://shields.io/">shields.io</a> and how to create find and <strong>create</strong> nice badge there. If you still didn't know about this service check it now. It provides also nice feature to create dynamic badges based on your endpoint via <a href="https://shields.io/endpoint">their API</a>. That's exactly what I want for my task.</p>
+<h2>Endpoint</h2>
+<p>In my case I just count javascript objects for each entities: movies, shows, documentaries and create <a href="https://github.com/greybax/awesome-IT-films/blob/master/badge_endpoint.json">badge_endpoint.json</a> in gulp task. </p>
+<blockquote>
+<p><strong>Important:</strong> <code>badge_endpoint.json</code> have to be with required and proper fields how id describes in <a href="https://shields.io/endpoint">Shields.io endpoint manual</a>.</p>
+</blockquote>
+<p>After that on the same page you need to validate <code>endpoint.json</code> file. For that you need to put a link on raw json file and shields.io will generate link for badge which you can use wherever you want.</p>
+<p>In my case I'm putting it in readme.md file like this</p>
+<pre><code class="language-markdown">![Awesome-IT-Films Badge](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgreybax%2Fawesome-IT-films%2Fmaster%2Fbadge_endpoint.json)
+</code></pre>
+<p><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgreybax%2Fawesome-IT-films%2Fmaster%2Fbadge_endpoint.json" alt="Awesome-IT-Films Badge"></p>
+<p><em>Happy creating badges!</em> :v:</p>
       </article><!-- Yandex.RTB R-A-334917-1 -->
       <div id="yandex_rtb_R-A-334917-1"></div>
       <script type="text/javascript">
