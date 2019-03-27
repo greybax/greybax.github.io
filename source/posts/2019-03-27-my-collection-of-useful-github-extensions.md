@@ -6,7 +6,7 @@ _March 27, 2019_
 
 ## Intro
 
-![Github logo](/images/how-to-add-dynamic-data-badges-from-shields-io/github.jpg)
+![Github logo](/images/my-collection-of-useful-github-extensions/github.jpg)
 
 Usually we spend a bunch of time while reading and surfing others open source project on GitHub. It turned out, this process can be much better. Here is a short list of most useful extensions which I'm using right now and could be interesting for you too.
 
