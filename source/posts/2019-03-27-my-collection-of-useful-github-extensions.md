@@ -32,7 +32,7 @@ Usually we spend a bunch of time while reading and surfing others open source pr
 
 > Extension for Chrome and Safari that simplifies the GitHub interface and adds useful features
 
-It's like [reddit enhancement suite][https://redditenhancementsuite.com], but for github. Check it out.
+It's like [reddit enhancement suite](https://redditenhancementsuite.com), but for github. Check it out.
 
 [https://github.com/sindresorhus/refined-github](https://github.com/sindresorhus/refined-github)
 
