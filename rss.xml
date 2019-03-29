@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 27 Mar 2019 23:41:46 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 29 Mar 2019 01:16:10 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>We started our YouTube channel</h1>]]></title>
+            <description><![CDATA[youtube, vlog, video, wa-travellers, $travel, english]]></description>
+            <link>https://alfilatov.com//posts/we-started-our-youtube-channel/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/we-started-our-youtube-channel/</guid>
+            <pubDate>Thu, 28 Mar 2019 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>My collection of useful Github extension</h1>]]></title>
             <description><![CDATA[collection, github, extensions, chrome-extension, english]]></description>
