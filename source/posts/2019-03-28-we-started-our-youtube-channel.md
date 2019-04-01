@@ -8,7 +8,7 @@ Hi everyone who read this post right now and perhaps found this blog helpful for
 
 While we don’t know if our content will be useful to anyone. We do this as an experiment and just for ourselves as a memory of the places where we were.
 
-At this moment most of our video on channel about skiing. Weclome and just check it out.
+At this moment most of our video on channel about skiing. Welcome and just check it out.
 
 Here one of our video timelapse:
 
@@ -16,5 +16,4 @@ Here one of our video timelapse:
 
 Link to our channel [WA Travellers](https://www.youtube.com/channel/UCMlDLVoNxAD59tLlKpAbPYQ)
 
-_Happy youtubing!_ :v:
-
+_Subscribe, like, comment!_ :v:
