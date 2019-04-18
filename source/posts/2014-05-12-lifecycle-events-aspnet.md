@@ -10,13 +10,13 @@ _May 12, 2014_
 * Создадим простое ```ASP.NET Web Forms Application``` в студии
 * Добавим атрибуты ```Trace``` и ```TraceMode``` директивы ```@Page``` и устанавливаем значения 'true' и 'SortByName' соответственно.
 
-![example](http://2.bp.blogspot.com/-t8kJhuvsFzY/U2dzRQx22fI/AAAAAAAABA4/joxV8eAvuIE/s1600/Untitled.png)
+![example](https://2.bp.blogspot.com/-t8kJhuvsFzY/U2dzRQx22fI/AAAAAAAABA4/joxV8eAvuIE/s1600/Untitled.png)
 
 
 * Запускаем наш сайт (нажимаем F5 в студии)
 * Прямо в окне браузера вместе с сайтом загрузилась информации трассировки.
 
-![example](http://4.bp.blogspot.com/-6tgWMi1IZHk/U2d3K3cYC7I/AAAAAAAABBE/vDJc1nhg8FU/s1600/22.png)
+![example](https://4.bp.blogspot.com/-6tgWMi1IZHk/U2d3K3cYC7I/AAAAAAAABBE/vDJc1nhg8FU/s1600/22.png)
 
 Во время трассировки не выводится событие ```Unload```, потому что оно происходит, когда весь код уже отработал. Из всех событий жизненного цикла страницы, разработчик может подписаться только на пять, помимо событий дочерних элементов управления. Эти события: 
 

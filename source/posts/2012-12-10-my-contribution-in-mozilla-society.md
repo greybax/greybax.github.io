@@ -8,7 +8,7 @@ It's my first publication on english. And it's blog some training for my english
 
 I think that not secret for each other that mozilla it's global web society where each people can have yours contribution: programming, design sites, translate article on [mozilla network](https://developer.mozilla.org/ru/)
 
-Site [what can I do for mozilla](http://whatcanidoformozilla.org/) help a new people who it's can intrested. If you like makes open source world better, that it's makes interested you. Some of yours can see page with title "Our Contributors" on menu "About Firefox" - "global society" in mozilla products. Perhaps you too would become on this page. It's very easy. There are some advice after this.
+Site [what can I do for mozilla](https://whatcanidoformozilla.org/) help a new people who it's can intrested. If you like makes open source world better, that it's makes interested you. Some of yours can see page with title "Our Contributors" on menu "About Firefox" - "global society" in mozilla products. Perhaps you too would become on this page. It's very easy. There are some advice after this.
 
 ## What I can do?
 

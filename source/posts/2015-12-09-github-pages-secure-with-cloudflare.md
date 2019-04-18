@@ -49,7 +49,7 @@ CloudFlare сгенерирует SSL сертификат для домена.
 6. Настраиваем редирект на  ```https```:
 
     * из CloudFlare консоли переходим в **Page Rules**
-    * добавляем URL pattern ```http://yourwebsite/*```
+    * добавляем URL pattern ```https://yourwebsite/*```
     * выбираем **Always use HTTPS**
     * Нажимаем **Add Rule**
 

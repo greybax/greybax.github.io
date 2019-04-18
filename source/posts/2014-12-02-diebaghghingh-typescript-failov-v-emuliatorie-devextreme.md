@@ -11,7 +11,7 @@ _December 02, 2014_
 
 2. Добавляем в проект ```*.map файл```. Это необходимо для связи файлов ```js``` и ```ts```
 
-3. Заключительный этап - добавление "символической ссылки" на проект в директории веб сервера DevExtreme. Можно просто скопировать проект в директорию указаную выше. В этом случае мы лишим сервер возможности автоматически подхватывать изменения в проекте. Чтобы это учесть, выполним команду [mklink](http://ss64.com/nt/mklink.html). Для этого:
+3. Заключительный этап - добавление "символической ссылки" на проект в директории веб сервера DevExtreme. Можно просто скопировать проект в директорию указаную выше. В этом случае мы лишим сервер возможности автоматически подхватывать изменения в проекте. Чтобы это учесть, выполним команду [mklink](https://ss64.com/nt/mklink.html). Для этого:
 
     * Запускаем ```cmd``` под администратором
     * Переходим в каталог DevExpress WebServer
@@ -20,6 +20,6 @@ _December 02, 2014_
 
 ## Дополнительный ссылки:
 
-* [Running, Debugging and Deploy DevExtreme applications](http://js.devexpress.com/Documentation/Howto/SPA_Framework/Application_Design/?version=14_1#Running)
-* [Typescript in VS2012: (automatically) generating .js from .ts](http://stackoverflow.com/questions/12683820/typescript-in-vs2012-automatically-generating-js-from-ts)
-* [An A-Z Index of the Windows CMD command line](http://ss64.com/nt/)
+* [Running, Debugging and Deploy DevExtreme applications](https://js.devexpress.com/Documentation/Howto/SPA_Framework/Application_Design/?version=14_1#Running)
+* [Typescript in VS2012: (automatically) generating .js from .ts](https://stackoverflow.com/questions/12683820/typescript-in-vs2012-automatically-generating-js-from-ts)
+* [An A-Z Index of the Windows CMD command line](https://ss64.com/nt/)

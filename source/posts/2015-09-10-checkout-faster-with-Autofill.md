@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	window.location.href = 'http://frontender.info/checkout-faster-with-Autofill/';
+	window.location.href = 'https://frontender.info/checkout-faster-with-Autofill/';
 </script>
 
 # [Frontender Magazine] Упрощаем заполнение форм с помощью Autofill

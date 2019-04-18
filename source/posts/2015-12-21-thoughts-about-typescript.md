@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	window.location.href = 'http://habrahabr.ru/post/272055/';
+	window.location.href = 'https://habrahabr.ru/post/272055/';
 </script>
 
 # [habrahabr] Мысли вслух о TypeScript

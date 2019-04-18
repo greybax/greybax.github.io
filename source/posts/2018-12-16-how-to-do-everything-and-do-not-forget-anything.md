@@ -12,7 +12,7 @@ Actually you could find lot of them just by request in google: `to-do apps`. And
 
 ## Evernote
 
-> http://evernote.com
+> https://evernote.com
 
 Good app for saving a big blocks of information. In this app you can save a whole webpages or write your thoughts about everything. They support a good structure for your things. You can create a multilevel nested structure of folders with lot of notes inside on them.
 
@@ -20,7 +20,7 @@ I'm using this app mostly for saving a big chunks of information like: good idea
 
 ## Todoist
 
-> http://todoist.com
+> https://todoist.com
 
 This app doesn't allow to store a big notes but from another hand it's very helpful for us. It helps us do forget nothing. App has a pretty cool extensions for popular web browsers. I'm using [Chrome extension](https://chrome.google.com/webstore/detail/todoist-to-do-list-and-ta/jldhpllghnbhlbpcmnajkpdmadaolakh) and [iOS app](https://itunes.apple.com/us/app/todoist-organize-your-life/id572688855). Here I just put all my things about my project ideas, routines work and even auto-pay info about some stuff from my credit cards. In fact I've also added to the app my thoughts about this post and as you can see I didn't forget to write it :). This app has a nice mechanism of repetitive tasks at specified intervals and its super useful. If you borrow from somehow some money just put info in the app and be sure that you will have not to justify why you forgot to return the money back.
 

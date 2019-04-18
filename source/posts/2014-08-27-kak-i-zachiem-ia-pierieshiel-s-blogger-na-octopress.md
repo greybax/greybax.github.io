@@ -27,7 +27,7 @@ _August 27, 2014_
 * Развертывание
 
 ### Подготовка
-Регистрируемся на сайте https://www.nitrous.io. Выбираем в качестве окружения box c ```Ruby```. Далее выполняем все по шагам как описано [тут](http://octopress.org/docs/setup/) и [конфигурируем](http://octopress.org/docs/configuring/).
+Регистрируемся на сайте https://www.nitrous.io. Выбираем в качестве окружения box c ```Ruby```. Далее выполняем все по шагам как описано [тут](https://octopress.org/docs/setup/) и [конфигурируем](https://octopress.org/docs/configuring/).
 
 Для миграции постов на Octopress нужно:
 
@@ -39,9 +39,9 @@ _August 27, 2014_
 Теперь все готово для того чтобы равернуть наш блог.
 
 ### Развертывание
-На этом этапе мы получили блог на Octopress? куда мы импортировали свои посты из Blogger. Для развертывания я использовал  Github Pages, но процесс развертывания на [Heroku](http://octopress.org/docs/deploying/heroku) или [через RSync на свой хостинг](http://octopress.org/docs/deploying/rsync/) отличаются незначительно.
+На этом этапе мы получили блог на Octopress? куда мы импортировали свои посты из Blogger. Для развертывания я использовал  Github Pages, но процесс развертывания на [Heroku](https://octopress.org/docs/deploying/heroku) или [через RSync на свой хостинг](https://octopress.org/docs/deploying/rsync/) отличаются незначительно.
 
-Процесс развертывания подробно описан на [сайте Octopress](http://octopress.org/docs/deploying/github/).
+Процесс развертывания подробно описан на [сайте Octopress](https://octopress.org/docs/deploying/github/).
 
 ## Итог
 * Получили окружение с IDE для ```Ruby```, которое доступно прямо из браузера.

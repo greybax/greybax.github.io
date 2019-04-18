@@ -9,14 +9,14 @@ _April 10, 2015_
 ## Способ 1
 * Использовать метод ```getEventListeners(target)```. В браузере ```Chrome``` (является методом DevTools API) этот метод работает без лишних телодвижений - возвращает объект-массив эвентов на целевом элементе.
 
-* Ситуация с ```Firefox``` немного сложнее. Данный метод доступен после установки ```Firebug``` [GetEventListeners](http://getfirebug.com/wiki/index.php/GetEventListeners).
+* Ситуация с ```Firefox``` немного сложнее. Данный метод доступен после установки ```Firebug``` [GetEventListeners](https://getfirebug.com/wiki/index.php/GetEventListeners).
 
 * В ```IE``` все совсем плохо, т.к такой метод не реализован в API консоли разработчика и нет extensions с его аналогами (я таких не нашел).
 
 ## Способ 2
 Итак, мы выяснили, что метод ```getEventListeners``` не является кроссбраузерным и является частью Developer Console API, поэтому рассмотрим следующий ~~костыль~~ вариант решения. Для этого нам придется переопределить нативные методы ```Element.prototype.addEventListener``` и ```Element.prototype.removeEventListener``` (для старых версий ```IE``` нужно переопределить свои аналоги) своими кастомными реализациями которые будут отслеживать ```event listeners```.
 
-<p data-height="268" data-theme-id="0" data-slug-hash="RNzGwj" data-default-tab="result" data-user="greybax" class='codepen'>See the Pen <a href='http://codepen.io/greybax/pen/RNzGwj/'>RNzGwj</a> by Alex Filatov (<a href='http://codepen.io/greybax'>@greybax</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="0" data-slug-hash="RNzGwj" data-default-tab="result" data-user="greybax" class='codepen'>See the Pen <a href='https://codepen.io/greybax/pen/RNzGwj/'>RNzGwj</a> by Alex Filatov (<a href='https://codepen.io/greybax'>@greybax</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ***Плюс***:

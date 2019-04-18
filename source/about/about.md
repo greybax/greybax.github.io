@@ -10,9 +10,9 @@ Skilled, result-oriented Software Engineer with more than 6 years of experience 
 
 * [Twitter](https://twitter.com/greybax)
 * [Github](https://github.com/greybax)
-* [Linkedin](http://ru.linkedin.com/pub/aleksandr-filatov/89/608/66b/)
-* <a href="http://stackoverflow.com/users/2173016/alex-filatov" target="_blank">
-<img src="http://stackoverflow.com/users/flair/2173016.png?theme=clean" width="208" height="58" alt="profile for Alex Filatov at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Alex Filatov at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+* [Linkedin](https://ru.linkedin.com/pub/aleksandr-filatov/89/608/66b/)
+* <a href="https://stackoverflow.com/users/2173016/alex-filatov" target="_blank">
+<img src="https://stackoverflow.com/users/flair/2173016.png?theme=clean" width="208" height="58" alt="profile for Alex Filatov at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Alex Filatov at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
 </a>
 
 * [Yelp](https://alexfilatov.yelp.com)
@@ -21,7 +21,7 @@ Skilled, result-oriented Software Engineer with more than 6 years of experience 
 * Email: greybax[at]gmail[dot]com
 
 ## Work Experience
-### January 2014 - Present. [Microsoft](http://microsoft.com/), Yaroslavl(remote) / Seattle(onsite), Contract Software Developer Engineer
+### January 2014 - Present. [Microsoft](https://microsoft.com/), Yaroslavl(remote) / Seattle(onsite), Contract Software Developer Engineer
 
 1. Microsoft IcM
   - WebApp
@@ -64,7 +64,7 @@ Skilled, result-oriented Software Engineer with more than 6 years of experience 
 
 ***Languages and technologies***: ```TypeScript```, ```KnockoutJS```, ```WinJS```, ```JQuery```, ```JavaScript```, ```LESS/SASS```, ```CSS```
 
-### December 2013 - June 2016. [Akvelon LLC](http://akvelon.com/), Yaroslavl Branch, Software Developer Engineer
+### December 2013 - June 2016. [Akvelon LLC](https://akvelon.com/), Yaroslavl Branch, Software Developer Engineer
 
 - Was developed AuthorIt plugin 
   • Developed main program module
@@ -73,7 +73,7 @@ Skilled, result-oriented Software Engineer with more than 6 years of experience 
 
 ***Languages and technologies***: ```C#```, ```XSLT```, ```NUnit```, ```TDD```
 
-### June 2011 - November 2013. [Fogsoft LLC](http://fogsoft.ru/), Yaroslavl, Software Developer Engineer
+### June 2011 - November 2013. [Fogsoft LLC](https://fogsoft.ru/), Yaroslavl, Software Developer Engineer
 
 - Was developed electronic trading platforms (ETP): bugs fixing and adding new features (```C#```, ```Microsoft SQL Server```)
 - ETP on the project "Trust" - lead programmer.

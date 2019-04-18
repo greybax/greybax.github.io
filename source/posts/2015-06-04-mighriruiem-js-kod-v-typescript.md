@@ -13,10 +13,10 @@ _June 05, 2015_
 
 * Переименуем все ```.js``` файлы в ```.ts```
 * Настраиваем компиляцию из ```.ts``` в ```.js```
-  - Для этого нужно скачать и установить ```TypeScript``` плагин для студии с [официального сайта](http://www.typescriptlang.org/#Download), позволяющий компилировать ```.ts``` файлы в ```.js```.
+  - Для этого нужно скачать и установить ```TypeScript``` плагин для студии с [официального сайта](https://www.typescriptlang.org/#Download), позволяющий компилировать ```.ts``` файлы в ```.js```.
 
 * Устанавливаем определения для библиотек (```.d.ts```)
-  - Коллекция определений библиотек находится в [открытом доступе](https://github.com/borisyankov/DefinitelyTyped). Определения для ```javascript``` библиотек можно установить через [tsd](http://definitelytyped.org/tsd/) - это аналог NuGet Package Manager.
+  - Коллекция определений библиотек находится в [открытом доступе](https://github.com/borisyankov/DefinitelyTyped). Определения для ```javascript``` библиотек можно установить через [tsd](https://definitelytyped.org/tsd/) - это аналог NuGet Package Manager.
 
 * Пишем определения для своего кода
   - Это совсем не сложно и делается по аналогии с кучей примеров из [DefinitelyTyped on GitHub](https://github.com/borisyankov/DefinitelyTyped). Мой пример можно посмотреть [тут](https://github.com/greybax/DefinitelyTyped/tree/master/quixote), который я писал по [документации для библиотеки quixote](https://github.com/jamesshore/quixote/blob/master/docs/api.md)

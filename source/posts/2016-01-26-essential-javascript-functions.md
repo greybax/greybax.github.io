@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	window.location.href = 'http://frontender.info/essential-javascript-functions/';
+	window.location.href = 'https://frontender.info/essential-javascript-functions/';
 </script>
 
 # [Frontender Magazine] 7 жизненно важных функций в JavaScript

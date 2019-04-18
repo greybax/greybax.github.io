@@ -4,7 +4,7 @@
 
 _October 13, 2014_
 
-На выходных нашлось немного свободного времени и я решил попрактиковаться в ```gamedev``` разработке. Давно собирался написать какую-нибудь игрушку, но все руки не доходили. Бегло пробежался по сети в поисках как это делают настоящие гуру. Мне понравилась вот эта [статья](http://jlongster.com/Making-Sprite-based-Games-with-Canvas). За основу своей будущей игры я взял [фреймворк автора статьи](https://github.com/jlongster/canvas-game-bootstrap).
+На выходных нашлось немного свободного времени и я решил попрактиковаться в ```gamedev``` разработке. Давно собирался написать какую-нибудь игрушку, но все руки не доходили. Бегло пробежался по сети в поисках как это делают настоящие гуру. Мне понравилась вот эта [статья](https://jlongster.com/Making-Sprite-based-Games-with-Canvas). За основу своей будущей игры я взял [фреймворк автора статьи](https://github.com/jlongster/canvas-game-bootstrap).
 
 ![Towers game 2D](/images/screenshots/towers_game2d.png)
 
@@ -71,7 +71,7 @@ function main() {
     requestAnimFrame(main);
 }
 ```
-Здесь вызываем функцию requestAnimFrame (к сожалению, [поддерживается](http://caniuse.com/#feat=requestanimationframe) не во всех браузерах), которая генерирует 60 фреймов/секунду (как это было описано выше).
+Здесь вызываем функцию requestAnimFrame (к сожалению, [поддерживается](https://caniuse.com/#feat=requestanimationframe) не во всех браузерах), которая генерирует 60 фреймов/секунду (как это было описано выше).
 
 ## Этап 3. Инициализация и рендер объектов и ресурсов игры
 Используем ```resource.js``` для загрузки ресурсов в игру. Хорошим правилом является добавить все изображения  в  1 спрайт, но т.к я рисовал не сам, а брал готовые картинки, поэтому я решил с этим на заморачиваться, тем более, что в данном случае это не столь критично. Так это выглядит [в коде](https://github.com/greybax/towers_game2d/blob/gh-pages/js/app.js#L57)
@@ -273,7 +273,7 @@ for (var i = 0; i < enemies.length; i++) {
 
 Полный код функции ```updateEntities``` можно посмотреть в [исходникак на GitHub](https://github.com/greybax/towers_game2d/blob/gh-pages/js/app.js#L179).
 
-Математика расчета столкновений хорошо [описана](http://jlongster.com/Making-Sprite-based-Games-with-Canvas) в статье автора (раздел Collision Detection) используемого мной 2d бутстрапа.
+Математика расчета столкновений хорошо [описана](https://jlongster.com/Making-Sprite-based-Games-with-Canvas) в статье автора (раздел Collision Detection) используемого мной 2d бутстрапа.
 
 ## Этап 6. Game Over и рестарт
 Когда пауки доползают до нашего героя наступает конец ~~света~~ игры. 
@@ -310,4 +310,4 @@ function reset() {
 - Практика программирования игр
 - Удовлетворение от проделанной работы
 
-Посмотреть исходники можно [тут](https://github.com/greybax/towers_game2d/), поиграть [здесь](http://greybax.github.io/towers_game2d).
+Посмотреть исходники можно [тут](https://github.com/greybax/towers_game2d/), поиграть [здесь](https://greybax.github.io/towers_game2d).

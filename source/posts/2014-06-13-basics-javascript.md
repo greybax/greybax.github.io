@@ -356,7 +356,7 @@ changeColor();	// function call
 
 Схема ниже иллюстрирует контекст выполнения функций:
 
-![func_scope](http://2.bp.blogspot.com/-JkQD5nm6wtI/U5rkqe9m1_I/AAAAAAAABBY/JsYrX9EW0u8/s1600/2014-06-13+15-43-51+%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82+%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0.png)
+![func_scope](https://2.bp.blogspot.com/-JkQD5nm6wtI/U5rkqe9m1_I/AAAAAAAABBY/JsYrX9EW0u8/s1600/2014-06-13+15-43-51+%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82+%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0.png)
 
 Переменные видны внутри контекста функции не зависимо где они объявлены. Необычно для новичков в JS выглядит следующий пример:
 
@@ -394,7 +394,7 @@ alert(increaseCount());	// Shows 2
 
 В Javascript все объекты наследуют Object, поэтому каждый объект имеет свойство prototype. Prototype это объект, которое позволяет шарить свойства с другими объектами.
 
-![prototypes](http://3.bp.blogspot.com/-aE93elcAvL4/U5sBdhK_YUI/AAAAAAAABBo/SWEMu8srCJc/s1600/2014-06-13+17-49-12+%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82+%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0.png)
+![prototypes](https://3.bp.blogspot.com/-aE93elcAvL4/U5sBdhK_YUI/AAAAAAAABBo/SWEMu8srCJc/s1600/2014-06-13+17-49-12+%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82+%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0.png)
 
 Например, когда у объекта свойство "jump", то интерпретатор языка ищет сначала это свойство у самого объекта, а потом спускаясь по цепочке прототипов ищет в них пока не найдет.
 
@@ -483,7 +483,7 @@ alert(obj.result);		// Property was created. Result is 3
 * Parasitic Combination Inheritance
 
 ## Литература
-* [http://www.ecmascript.org](http://www.ecmascript.org/">http://www.ecmascript.org/)
+* [https://www.ecmascript.org](https://www.ecmascript.org/)
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 * Larry Ulman "Modern JavaScript Develop and Design"
 * David Flanagan "JavaScript: The Definitive Guide"

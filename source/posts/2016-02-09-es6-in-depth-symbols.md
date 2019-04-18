@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	window.location.href = 'http://frontender.info/es6-in-depth-symbols/';
+	window.location.href = 'https://frontender.info/es6-in-depth-symbols/';
 </script>
 
 # [Frontender Magazine] ES6 в деталях: символы
