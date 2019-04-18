@@ -44,7 +44,7 @@
     </header>
     <div class="wrap">
       <article><h1>Пишем расширение для браузера Google Chrome</h1><i class="fa fa-calendar">
-          <time>June 27, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#userjs"> userjs </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#Chromium"> Chromium </a><a href="/tags/index.html#browser"> browser </a><a href="/tags/index.html#russian"> russian </a></i><p>В интернете много сайтов на которых реализована возможность пролистывать страницу вверх без помощи мыши или полосы прокрутки. Но в то же время еще есть сайты где такой реализации нет. "Почему бы не попробовать написать скрипт который бы добавлял такую кнопку на все сайты?" - подумал я и принялся за реализацию. Такие скрипты называются пользовательскими и имеют расширение <code>*.user.js</code>. Почитать к примеру можно на <a href="http://habrahabr.ru/post/129343/">хабре</a>. К сожалению без "подводных камней" не обходится. Существуют некоторые различия в реализации <code>userjs</code> под разные браузеры. Я остановлюсь на описании реализации нашего <code>userjs</code> скрипта как расширения для браузера <code>Google Chrome</code>.</p>
+          <time>June 27, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#userjs"> userjs </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#Chromium"> Chromium </a><a href="/tags/index.html#browser"> browser </a><a href="/tags/index.html#russian"> russian </a></i><p>В интернете много сайтов на которых реализована возможность пролистывать страницу вверх без помощи мыши или полосы прокрутки. Но в то же время еще есть сайты где такой реализации нет. "Почему бы не попробовать написать скрипт который бы добавлял такую кнопку на все сайты?" - подумал я и принялся за реализацию. Такие скрипты называются пользовательскими и имеют расширение <code>*.user.js</code>. Почитать к примеру можно на <a href="https://habrahabr.ru/post/129343/">хабре</a>. К сожалению без "подводных камней" не обходится. Существуют некоторые различия в реализации <code>userjs</code> под разные браузеры. Я остановлюсь на описании реализации нашего <code>userjs</code> скрипта как расширения для браузера <code>Google Chrome</code>.</p>
 <h2>manifest.json</h2>
 <p>Обязательным для расширения <code>Google Chrome</code> является файл <strong><em>manifest.json</em></strong> в котором описываются параметры, пути к внешним файлам (<code>*.js, *.css</code> и др.), поддержка версии и т.п. для расширения. Подробнее о файле можно почитать <a href="https://developer.chrome.com/extensions/manifest">тут</a>. В нашем случае файл <code>manifest.json</code> выглядит следующим образом:</p>
 <pre><code class="language-javascript">{
@@ -99,7 +99,7 @@ script.appendChild(document.createTextNode('('+ main +')();'));
 <p>Для каждого расширения создаем свою директорию например в нашем случае назовем ее так <code>C:\MyChromeExtensionUserJS\backTopUserJS</code>. Добавляем файлы расширения в эту директорию.</p>
 <p>Заходим "О браузере Google Chrome" -> вкладка "Расширения" или в адресной строке пишем <code>chrome://extensions/</code></p>
 <p>Ставим галочку "Режим разработчика"
-<img src="http://1.bp.blogspot.com/-bax0UMkP6dU/U60tEjgXiLI/AAAAAAAABCQ/MRKVYzCoHjc/s1600/qwerty.png" alt="developer_mode"></p>
+<img src="https://1.bp.blogspot.com/-bax0UMkP6dU/U60tEjgXiLI/AAAAAAAABCQ/MRKVYzCoHjc/s1600/qwerty.png" alt="developer_mode"></p>
 <p>Нажимаем кнопку "Загрузить распакованное расширение" и выбираем директорию нашего расширения. Нажимаем "OK".</p>
 <p>Расширение установлено и готово к работе. Чтобы обновить расширения после того как вы внесли в него изменения достаточно просто нажать кнопку "Обновить расширение" или в режиме разработчика сочетание клавиш <code>Ctrl+R</code>.</p>
 <h2>Итог</h2>
@@ -153,6 +153,6 @@ script.appendChild(document.createTextNode('('+ main +')();'));
   </body>
   <footer>
     <hr>
-    <center>Made with ❤ and <a href="http://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+    <center>Made with ❤ and <a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
   </footer>
 </html>

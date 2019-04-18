@@ -44,7 +44,7 @@
     </header>
     <div class="wrap">
       <article><h1>Пишем игру на HTML5/JS</h1><i class="fa fa-calendar">
-          <time>October 13, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#gamedev"> gamedev </a><a href="/tags/index.html#html5"> html5 </a><a href="/tags/index.html#canvas"> canvas </a><a href="/tags/index.html#russian"> russian </a></i><p>На выходных нашлось немного свободного времени и я решил попрактиковаться в <code>gamedev</code> разработке. Давно собирался написать какую-нибудь игрушку, но все руки не доходили. Бегло пробежался по сети в поисках как это делают настоящие гуру. Мне понравилась вот эта <a href="http://jlongster.com/Making-Sprite-based-Games-with-Canvas">статья</a>. За основу своей будущей игры я взял <a href="https://github.com/jlongster/canvas-game-bootstrap">фреймворк автора статьи</a>.</p>
+          <time>October 13, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#gamedev"> gamedev </a><a href="/tags/index.html#html5"> html5 </a><a href="/tags/index.html#canvas"> canvas </a><a href="/tags/index.html#russian"> russian </a></i><p>На выходных нашлось немного свободного времени и я решил попрактиковаться в <code>gamedev</code> разработке. Давно собирался написать какую-нибудь игрушку, но все руки не доходили. Бегло пробежался по сети в поисках как это делают настоящие гуру. Мне понравилась вот эта <a href="https://jlongster.com/Making-Sprite-based-Games-with-Canvas">статья</a>. За основу своей будущей игры я взял <a href="https://github.com/jlongster/canvas-game-bootstrap">фреймворк автора статьи</a>.</p>
 <p><img src="/images/screenshots/towers_game2d.png" alt="Towers game 2D"></p>
 <h2>Начало</h2>
 <ul>
@@ -103,7 +103,7 @@ function main() {
     requestAnimFrame(main);
 }
 </code></pre>
-<p>Здесь вызываем функцию requestAnimFrame (к сожалению, <a href="http://caniuse.com/#feat=requestanimationframe">поддерживается</a> не во всех браузерах), которая генерирует 60 фреймов/секунду (как это было описано выше).</p>
+<p>Здесь вызываем функцию requestAnimFrame (к сожалению, <a href="https://caniuse.com/#feat=requestanimationframe">поддерживается</a> не во всех браузерах), которая генерирует 60 фреймов/секунду (как это было описано выше).</p>
 <h2>Этап 3. Инициализация и рендер объектов и ресурсов игры</h2>
 <p>Используем <code>resource.js</code> для загрузки ресурсов в игру. Хорошим правилом является добавить все изображения  в  1 спрайт, но т.к я рисовал не сам, а брал готовые картинки, поэтому я решил с этим на заморачиваться, тем более, что в данном случае это не столь критично. Так это выглядит <a href="https://github.com/greybax/towers_game2d/blob/gh-pages/js/app.js#L57">в коде</a></p>
 <pre><code class="language-javascript">resources.load([
@@ -288,7 +288,7 @@ for (var i = 0; i &#x3C; enemies.length; i++) {
 }
 </code></pre>
 <p>Полный код функции <code>updateEntities</code> можно посмотреть в <a href="https://github.com/greybax/towers_game2d/blob/gh-pages/js/app.js#L179">исходникак на GitHub</a>.</p>
-<p>Математика расчета столкновений хорошо <a href="http://jlongster.com/Making-Sprite-based-Games-with-Canvas">описана</a> в статье автора (раздел Collision Detection) используемого мной 2d бутстрапа.</p>
+<p>Математика расчета столкновений хорошо <a href="https://jlongster.com/Making-Sprite-based-Games-with-Canvas">описана</a> в статье автора (раздел Collision Detection) используемого мной 2d бутстрапа.</p>
 <h2>Этап 6. Game Over и рестарт</h2>
 <p>Когда пауки доползают до нашего героя наступает конец <del>света</del> игры. </p>
 <pre><code class="language-javascript">function gameOver() {
@@ -321,7 +321,7 @@ for (var i = 0; i &#x3C; enemies.length; i++) {
 <li>Практика программирования игр</li>
 <li>Удовлетворение от проделанной работы</li>
 </ul>
-<p>Посмотреть исходники можно <a href="https://github.com/greybax/towers_game2d/">тут</a>, поиграть <a href="http://greybax.github.io/towers_game2d">здесь</a>.</p>
+<p>Посмотреть исходники можно <a href="https://github.com/greybax/towers_game2d/">тут</a>, поиграть <a href="https://greybax.github.io/towers_game2d">здесь</a>.</p>
       </article><!-- Google Adsense -->
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_bottom_article_banner --><ins style="display:block" data-ad-client="ca-pub-2866912874659895" data-ad-slot="2846418099" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense --><!-- Disqus -->
@@ -371,6 +371,6 @@ for (var i = 0; i &#x3C; enemies.length; i++) {
   </body>
   <footer>
     <hr>
-    <center>Made with ❤ and <a href="http://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+    <center>Made with ❤ and <a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
   </footer>
 </html>

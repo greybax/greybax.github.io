@@ -47,7 +47,7 @@
           <time>March 03, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#codestyle"> codestyle </a><a href="/tags/index.html#programming"> programming </a><a href="/tags/index.html#StyleCop"> StyleCop </a><a href="/tags/index.html#refactoring"> refactoring </a><a href="/tags/index.html#russian"> russian </a></i><p>В каждой компании существует свой code style по написанию правильного и красивого кода. Недавно в одном из проектов наша команда решила "причесать" код. На помощь пришел <strong><em>StyleCop</em></strong>. Итак.</p>
 <h2>Установка</h2>
 <ul>
-<li>Вы можете скачать <strong><em>Stylecop</em></strong> c <a href="http://stylecop.codeplex.com/">сайта</a>. </li>
+<li>Вы можете скачать <strong><em>Stylecop</em></strong> c <a href="https://stylecop.codeplex.com/">сайта</a>. </li>
 <li>Советую не изменять пусть установки, потому что это может привести к некоторым проблемам.</li>
 <li>После установки может потребоваться перезагрузка компьютера.</li>
 </ul>
@@ -55,7 +55,7 @@
 <p>Для установки настроек <strong><em>Stylecop</em></strong> одинаковыми на всех ваших проектах нужно выполнить следующие действия:</p>
 <ul>
 <li>Клик правой кнопкой мыши выбираем раздел <code>StyleCop Settings</code>
-<img src="http://4.bp.blogspot.com/-Ff4lI2D2Vt8/UzhuaRggbMI/AAAAAAAAA_8/GdbfdLYTOtM/s1600/2.png" alt="pic_1"> </li>
+<img src="https://4.bp.blogspot.com/-Ff4lI2D2Vt8/UzhuaRggbMI/AAAAAAAAA_8/GdbfdLYTOtM/s1600/2.png" alt="pic_1"> </li>
 </ul>
 <p>Разберем каждую вкладку в отдельности</p>
 <ul>
@@ -73,7 +73,7 @@
 </li>
 <li>
 <p>3-й - мерж настроек с указанным файлом.
-<img src="http://1.bp.blogspot.com/-zSzjZtQ2K2k/UzhiQvLTXaI/AAAAAAAAA_s/twkcNLtIRYQ/s1600/1.png" alt="pic_2"></p>
+<img src="https://1.bp.blogspot.com/-zSzjZtQ2K2k/UzhiQvLTXaI/AAAAAAAAA_s/twkcNLtIRYQ/s1600/1.png" alt="pic_2"></p>
 </li>
 <li>
 <p>Options - настройки обновления и выбор языка</p>
@@ -88,16 +88,16 @@
 <p>Hungarian - по умолчанию венгерский стиль отключен, но на этой вкладке вы можете добавить исключения.</p>
 </li>
 </ul>
-<p>Больше правил и настроек <strong><em>Stylecop</em></strong> вы можете найти на <a href="http://www.stylecop.com/docs/">официальном сайте программы</a>. Так же там есть Rule Suppressions, но лучше ими не злоупотреблять.</p>
+<p>Больше правил и настроек <strong><em>Stylecop</em></strong> вы можете найти на <a href="https://www.stylecop.com/docs/">официальном сайте программы</a>. Так же там есть Rule Suppressions, но лучше ими не злоупотреблять.</p>
 <h2>StyleCop и Build</h2>
 <p>Если вы хотите запускать <strong><em>StyleCop</em></strong> при каждом билде проекта, вам следует отредактировать <code>.csproj</code> file. В конец файла следует добавить следующую строку (для StyleCop v4.7):</p>
 <pre><code class="language-xml">&#x3C;Import Project="$(ProgramFiles)\MSBuild\StyleCop\v4.7\StyleCop.targets" />
 </code></pre>
-<p><img src="http://1.bp.blogspot.com/-SDkTXb4NLbE/Uzhvc4Dig2I/AAAAAAAABAE/RhC66zW-saI/s1600/3.png" alt="pic_3"></p>
+<p><img src="https://1.bp.blogspot.com/-SDkTXb4NLbE/Uzhvc4Dig2I/AAAAAAAABAE/RhC66zW-saI/s1600/3.png" alt="pic_3"></p>
 <p>После этого вы будете получать <code>Warnings</code> в коде после билда о всех несоответствиях вашего кода с настройками <strong><em>Stylecop</em></strong>. Если вы хотите получать <code>Errors</code>, вам следует добавить в раздел <code>PropertyGroup</code> следующую строку:</p>
 <pre><code class="language-xml">&#x3C;StyleCopTreatErrorsAsWarnings>false&#x3C;/StyleCopTreatErrorsAsWarnings>
 </code></pre>
-<p><img src="http://1.bp.blogspot.com/-9SnH6nIlF9w/Uzhw2FtausI/AAAAAAAABAQ/KSjgBAcDLH8/s1600/4.png" alt="pic_4"></p>
+<p><img src="https://1.bp.blogspot.com/-9SnH6nIlF9w/Uzhw2FtausI/AAAAAAAABAQ/KSjgBAcDLH8/s1600/4.png" alt="pic_4"></p>
       </article><!-- Google Adsense -->
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_bottom_article_banner --><ins style="display:block" data-ad-client="ca-pub-2866912874659895" data-ad-slot="2846418099" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense --><!-- Disqus -->
@@ -147,6 +147,6 @@
   </body>
   <footer>
     <hr>
-    <center>Made with ❤ and <a href="http://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+    <center>Made with ❤ and <a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
   </footer>
 </html>
