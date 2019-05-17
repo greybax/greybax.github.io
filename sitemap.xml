@@ -18,6 +18,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://alfilatov.com/posts/how-to-separate-your-webpack-configs/</loc>
+  <lastmod>2019-05-17T15:29:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://alfilatov.com/posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/</loc>
   <lastmod>2019-05-10T14:23:06+00:00</lastmod>
   <priority>0.80</priority>
