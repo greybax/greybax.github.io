@@ -1,6 +1,6 @@
 # How to separate your Webpack configs?
 
-#webpack, #build, #optimization, #performance, #english;
+#webpack, #build, #optimization, #performance, #configuration, #typescript, #english;
 
 _May 17, 2019_
 

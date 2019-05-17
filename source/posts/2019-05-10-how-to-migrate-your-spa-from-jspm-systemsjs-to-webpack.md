@@ -1,6 +1,6 @@
 # How to migrate your SPA from JSPM/SystemsJS to Webpack?
 
-#webpack, #jspm, #systemjs, #migration, #build, #optimization, #performance, #english;
+#webpack, #jspm, #systemjs, #migration, #build, #optimization, #performance, #configuration, #english;
 
 _May 10, 2019_
 
