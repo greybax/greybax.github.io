@@ -207,3 +207,4 @@ Migration could depends on many factors such as current project settings. So I u
 * [Guy Bedford's article about SystemJS 2.0](https://guybedford.com/systemjs-2.0)
 * [Good resource about setting up Webpack](https://survivejs.com/webpack/what-is-webpack/)
 * [Make your `npm install` incredibly fast!](/posts/is-your-npm-install-still-too-slow/)
+* [How to separate your Webpack configs?](/posts/how-to-separate-your-webpack-configs/)
