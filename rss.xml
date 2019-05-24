@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 17 May 2019 22:30:11 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 May 2019 19:53:38 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -16,14 +16,14 @@
         <category><![CDATA[life]]></category>
         <item>
             <title><![CDATA[<h1>How to separate your Webpack configs?</h1>]]></title>
-            <description><![CDATA[webpack, build, optimization, performance, english]]></description>
+            <description><![CDATA[webpack, build, optimization, performance, configuration, typescript, english]]></description>
             <link>https://alfilatov.com//posts/how-to-separate-your-webpack-configs/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-separate-your-webpack-configs/</guid>
             <pubDate>Fri, 17 May 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>How to migrate your SPA from JSPM/SystemsJS to Webpack?</h1>]]></title>
-            <description><![CDATA[webpack, jspm, systemjs, migration, build, optimization, performance, english]]></description>
+            <description><![CDATA[webpack, jspm, systemjs, migration, build, optimization, performance, configuration, english]]></description>
             <link>https://alfilatov.com//posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/</guid>
             <pubDate>Fri, 10 May 2019 07:00:00 GMT</pubDate>
