@@ -129,12 +129,17 @@ header ul.social li:not(:first-child):before {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  margin: 1em 4em;
+  margin: 1em 2em;
 }
 
 .tags-cloud {
   flex-grow: 1;
   flex-basis: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: baseline;
 }
 
 .tags, .archives {
