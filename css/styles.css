@@ -150,13 +150,11 @@ header ul.social li:not(:first-child):before {
   text-decoration: none;
   background-color: #e6e6e6;
   padding: .25em .5em;
+  margin: .1em;
   font-size: 75%;
   font-weight: 700;
-  line-height: 1;
   text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25rem;
+  border-radius: .15em;
 }
 
 .tags-cloud .badge {
