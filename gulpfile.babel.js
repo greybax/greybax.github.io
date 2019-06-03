@@ -158,6 +158,7 @@ gulp.task('build', (done) => {
     , 'copy-favicon'
     , 'copy-sitemap'
     , 'copy-robots_txt'
+    , 'copy-ads_txt'
     , 'copy-presentations'
     , 'cname'
     , done);
@@ -194,6 +195,11 @@ gulp.task('copy-sitemap', () =>
 
 gulp.task('copy-robots_txt', () =>
   gulp.src('robots.txt')
+    .pipe(gulp.dest('dist'))
+);
+
+gulp.task('copy-ads_txt', () =>
+  gulp.src('ads.txt')
     .pipe(gulp.dest('dist'))
 );
 
