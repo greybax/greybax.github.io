@@ -189,12 +189,20 @@ header ul.social li:not(:first-child):before {
   }
 }
 
-.wrap-flex ul.related-posts {
+.wrap-flex .related-posts {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   flex-grow: 1;
   flex-basis: 10%;
+}
+
+.related-posts .header {
+  text-align: left;
+  max-width: 100%;
+  margin-top: .61111em;
+  font: 300 1.9em "Noto Sans","Noto Sans",Helvetica,sans-serif;
+  text-shadow: 0 1px 1px #fff;
 }
 
 .wrap-flex article {
@@ -264,7 +272,7 @@ h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-right: 3em;
+  margin-right: 1em;
 }
 
 .list__item a {
@@ -277,7 +285,7 @@ h2, h3, h4, h5, h6 {
 
 .list time {
   font-style: italic;
-  font-size: 0.7em;
+  font-size: 0.9em;
   white-space: nowrap;
   display: inline;
 }

@@ -22,10 +22,16 @@ block header
             a(href="/about/") About
 block content
   if relatedPosts
-    ul(class="related-posts")
-      each val, post in relatedPosts[article.url]
-        li 
-          a(href=`${post}`)= " " + val.title + " "
+    div(class="related-posts")
+      span(class="header") Related posts
+      ul
+        - var count = 0;
+        each val, post in relatedPosts[article.url]
+          if count < 5
+            li
+              a(href=`${post}`)= " " + val.title + " "
+          - count++;
+      include google_adsense_right_article_banner
   article
     | !{title.html}
     if date
