@@ -50,9 +50,11 @@
           <li><a href="/posts/profilirovaniie-v-js/"> Профилирование в JS </a></li>
           <li><a href="/posts/ispol'zuiem-fiddler-v-kachiestvie-proksi/"> Используем Fiddler в качестве прокси </a></li>
           <li><a href="/posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/"> Debugging файлов TypeScript в браузере через эмулятор DevExtreme </a></li>
-        </ul><!-- Google Adsense -->
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </ul>
+        <div class="right-banner"><!-- Google Adsense -->
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div>
       </div>
       <article><h1>How to separate your Webpack configs?</h1><i class="fa fa-calendar">
           <time>May 17, 2019</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#webpack"> webpack </a><a href="/tags/index.html#build"> build </a><a href="/tags/index.html#optimization"> optimization </a><a href="/tags/index.html#performance"> performance </a><a href="/tags/index.html#configuration"> configuration </a><a href="/tags/index.html#typescript"> typescript </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
@@ -72,7 +74,7 @@
 </ul>
 <p>So it's a good thing to separate build for typechecking and without it. Of course this is one of example which you can apply on your project.</p>
 <h2>Let's do it!</h2>
-<p>For merge webpack config files we will use [webpack-merge](<a href="https://github.com/survivejs/webpack-merge">https://github.com/survivejs/webpack-merge</a> plugin.
+<p>For merge webpack config files we will use <a href="https://github.com/survivejs/webpack-merge">webpack-merge</a> plugin.
 Let's create 3 webpack configs:</p>
 <h3>webpack.common.js</h3>
 <pre><code class="language-js">// list of including packages here
