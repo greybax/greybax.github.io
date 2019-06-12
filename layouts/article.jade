@@ -31,7 +31,8 @@ block content
             li
               a(href=`${post}`)= " " + val.title + " "
           - count++;
-      include google_adsense_right_article_banner
+      div(class="right-banner")
+        include google_adsense_right_article_banner
   article
     | !{title.html}
     if date

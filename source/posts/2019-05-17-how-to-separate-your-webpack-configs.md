@@ -27,7 +27,7 @@ So it's a good thing to separate build for typechecking and without it. Of cours
 
 ## Let's do it!
 
-For merge webpack config files we will use [webpack-merge](https://github.com/survivejs/webpack-merge plugin.
+For merge webpack config files we will use [webpack-merge](https://github.com/survivejs/webpack-merge) plugin.
 Let's create 3 webpack configs:
 
 ### webpack.common.js
