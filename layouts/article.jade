@@ -20,8 +20,12 @@ block header
         ul
           li
             a(href="/about/") About
-
 block content
+  if relatedPosts
+    ul(class="related-posts")
+      each val, post in relatedPosts[article.url]
+        li 
+          a(href=`${post}`)= " " + val.title + " "
   article
     | !{title.html}
     if date

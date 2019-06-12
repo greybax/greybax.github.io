@@ -28,6 +28,7 @@ const pathPosts = '/posts/';
 const getBasename = (file) => path.basename(file.relative, path.extname(file.relative));
 
 let articlesList = [];
+let relatedPosts = {};
 let tagMap = new Multimap();
 let aboutPage = [];
 
@@ -39,7 +40,8 @@ const addToList = (file, article) => {
   let articleObj = {
     name: articleData.title.text,
     url: pathPosts + fileBaseName + '/',
-    tags: tags.list
+    tags: tags.list,
+    related: [],
   };
 
   // Construct tagMap with linked articles url
@@ -57,9 +59,45 @@ const addToList = (file, article) => {
   }, extract(article, 'MMMM D, YYYY', 'en')));
 };
 
+const buildRelated = (articlesList) => {
+  let curArray = 0;
+
+  // loop through articles
+  while (curArray < articlesList.length) {
+    // loop through tags
+    for (let j = 0; j < articlesList[curArray].tags.list.length; j++) {
+
+      // loop through WHOLE articleList
+      for (let k = 0; k < articlesList.length; k++) {
+        // do not check tags in current array
+        if (curArray !== k) {
+          if (articlesList[k].tags.list.indexOf(articlesList[curArray].tags.list[j]) > 0) {
+            let relArr = {};
+            if (!relatedPosts[(articlesList[curArray].url)]) {
+              relArr[articlesList[k].url] = { 'weight': 1, 'title': articlesList[k].title.text };
+              relatedPosts[articlesList[curArray].url] = relArr;
+            } else {
+              if (!relatedPosts[articlesList[curArray].url][articlesList[k].url]) {
+                relatedPosts[articlesList[curArray].url][articlesList[k].url] = { 'weight': 1, 'title': articlesList[k].title.text };
+              } else {
+                relatedPosts[articlesList[curArray].url][articlesList[k].url].weight++;
+              }
+            }
+          }
+        }
+      }
+    }
+    curArray++;
+  }
+}
+
 const buildArticle = (article) =>
   gulp.src('layouts/article.jade')
     .pipe(data(() => article))
+    .pipe(data(() => ({
+      relatedPosts,
+      article
+    })))
     .pipe(jade({ pretty: true }))
     .pipe(rename({ dirname: article.url }))
     .pipe(rename({ basename: 'index' }))
@@ -100,7 +138,7 @@ gulp.task('index-page', () =>
         .filter(i => !!i.date)
         .sort((a, b) => b.date.unix - a.date.unix),
       tagMap,
-      tags: Array.from(tagMap.keys()).sort((a,b) => tagMap.get(b).length - tagMap.get(a).length)
+      tags: Array.from(tagMap.keys()).sort((a, b) => tagMap.get(b).length - tagMap.get(a).length)
     })))
     .pipe(jade({ pretty: env === 'dev' }))
     .pipe(rename({ basename: 'index' }))
@@ -132,10 +170,13 @@ gulp.task('tags', () =>
     .pipe(data(() => ({
       site,
       tagMap,
-      tags: Array.from(tagMap.keys()).sort((a,b) => tagMap.get(b).length - tagMap.get(a).length)
+      tags: Array.from(tagMap.keys()).sort((a, b) => tagMap.get(b).length - tagMap.get(a).length)
     })))
     .pipe(jade({ pretty: env === 'dev' }))
     .pipe(rename({ basename: 'index' }))
+    .pipe(data(() =>
+      buildRelated(articlesList)
+    ))
     .pipe(gulp.dest('dist/tags'))
 );
 
@@ -150,7 +191,8 @@ gulp.task('build', (done) => {
   sequence('clean'
     , 'articles-registry'
     , 'about-registry'
-    , ['index-page', 'each-article', 'rss', 'tags']
+    , 'tags'
+    , ['index-page', 'each-article', 'rss']
     , 'about-page'
     , 'css'
     , 'font-awesome'
