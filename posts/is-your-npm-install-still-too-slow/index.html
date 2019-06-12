@@ -42,7 +42,18 @@
         </nav>
       </div>
     </header>
-    <div class="wrap">
+    <div class="wrap-flex">
+      <div class="related-posts"><span class="header">Related posts</span>
+        <ul>
+          <li><a href="/posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/"> How to migrate your SPA from JSPM/SystemsJS to Webpack? </a></li>
+          <li><a href="/posts/how-to-separate-your-webpack-configs/"> How to separate your Webpack configs? </a></li>
+          <li><a href="/posts/profilirovaniie-v-js/"> Профилирование в JS </a></li>
+          <li><a href="/posts/basics-javascript/"> Основы языка Javascript </a></li>
+          <li><a href="/posts/google-chrome/"> Пишем расширение для браузера Google Chrome </a></li>
+        </ul><!-- Google Adsense -->
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+      </div>
       <article><h1>Is your <code>npm install</code> still too slow?</h1><i class="fa fa-calendar">
           <time>January 21, 2019</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#npm"> npm </a><a href="/tags/index.html#performance"> performance </a><a href="/tags/index.html#optimization"> optimization </a><a href="/tags/index.html#pnpm"> pnpm </a><a href="/tags/index.html#build"> build </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#english"> english </a></i><p>Today we have a big choice of package managers for our frontend apps such as JSPM, NPM, Yarn, Bower, etc.. Some of them has been outdated and some of them still grow its popularity such as NPM and Yarn. And everybody who worked with NPM faced with huge size <code>npm_modules</code> directory and dependencies hell in our apps. All these leads us to big performance gaps in build pipelines of our apps.</p>
 <p>One of project on which I've worked on has NPM as main package manager and <code>npm install</code> command takes almost 3 minutes on our CI builds. And of course this time still grows with growing our app. Some of devs suggest us to use Yarn, but in this case we will have to face with <a href="https://yarnpkg.com/lang/en/docs/migrating-from-npm/">Migrating to Yarn from NPM</a>. In some ways this is a pretty good solution, but I would to go deeper and found for myself nice solution which nice fit for all our team.</p>
@@ -65,7 +76,9 @@
 <li><a href="https://github.com/rstacruz">Rico Sta. Cruz - Author @pnpm</a></li>
 <li><a href="https://github.com/zkochan">Zoltan Kochan - Maintainer of @pnpm</a></li>
 </ul>
-      </article><!-- Yandex.RTB R-A-334917-1 -->
+      </article>
+    </div>
+    <div class="wrap"><!-- Yandex.RTB R-A-334917-1 -->
       <div id="yandex_rtb_R-A-334917-1"></div>
       <script type="text/javascript">
          (function(w, d, n, s, t) {
