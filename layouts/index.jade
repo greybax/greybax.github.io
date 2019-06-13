@@ -47,6 +47,8 @@ html(dir="LTR" lang="en")
             div
               a(class='text' href='/tags/##{tag}')= tag
                 span(class='badge')=`${tagMap.get(tag).length}`
+          div(class="right-banner")
+            include google_adsense_right_main_page_banner
         article(id="archives" class="archives")
           ul.list
             each article in list

@@ -205,7 +205,8 @@ header ul.social li:not(:first-child):before {
   text-shadow: 0 1px 1px #fff;
 }
 
-.related-posts .right-banner {
+.related-posts .right-banner,
+.tags-cloud .right-banner {
   margin: 1em auto;
 }
 
