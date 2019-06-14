@@ -195,14 +195,10 @@ gulp.task('build', (done) => {
     , ['index-page', 'each-article', 'rss']
     , 'about-page'
     , 'css'
-    , 'font-awesome'
+    , 'copy-font-awesome'
     , 'copy-images'
-    , 'copy-favicon'
-    , 'copy-sitemap'
-    , 'copy-robots_txt'
-    , 'copy-ads_txt'
+    , 'copy-files'
     , 'copy-presentations'
-    , 'cname'
     , done);
 });
 
@@ -215,7 +211,7 @@ gulp.task('css', () =>
     .pipe(gulp.dest('dist/css'))
 );
 
-gulp.task('font-awesome', () =>
+gulp.task('copy-font-awesome', () =>
   gulp.src(['font-awesome/**/*'])
     .pipe(gulp.dest('dist/font-awesome'))
 );
@@ -225,23 +221,14 @@ gulp.task('copy-images', () =>
     .pipe(gulp.dest('dist/images'))
 );
 
-gulp.task('copy-favicon', () =>
-  gulp.src(['favicon.ico'])
-    .pipe(gulp.dest('dist'))
-);
-
-gulp.task('copy-sitemap', () =>
-  gulp.src('sitemap.xml')
-    .pipe(gulp.dest('dist'))
-);
-
-gulp.task('copy-robots_txt', () =>
-  gulp.src('robots.txt')
-    .pipe(gulp.dest('dist'))
-);
-
-gulp.task('copy-ads_txt', () =>
-  gulp.src('ads.txt')
+gulp.task('copy-files', () =>
+  gulp.src([
+    'favicon.ico', 
+    'sitemap.xml', 
+    'robots.txt', 
+    'ads.txt',
+    'CNAME'
+  ])
     .pipe(gulp.dest('dist'))
 );
 
@@ -251,7 +238,6 @@ gulp.task('copy-presentations', () =>
 );
 
 gulp.task('clean', (done) => { del(['dist']).then(() => { done(); }); });
-gulp.task('cname', () => gulp.src('CNAME').pipe(gulp.dest('dist')));
 gulp.task('gh', ['build'], (done) => {
   buildbranch({
     branch: 'master',
