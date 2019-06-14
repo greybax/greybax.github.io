@@ -9,17 +9,22 @@ html, body {
 .no-cover.main-header {
   min-height: 160px;
   max-height: 40vh;
-  background: #f5f8fa;
+  background: url(https://source.unsplash.com/1600x900/?seattle,sunrise) no-repeat center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
-.no-cover .page-title {
-  color: rgba(0,0,0,0.8);
+.main-header-content h1,
+.main-header-content h2,
+.main-header-content h3 {
+  color: rgba(255,255,255);
+  font-family: "-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen-sans,ubuntu,cantarell,helvetica neue,sans-serif";
 }
 
 .page-title {
   margin: 5px 0 5px 0;
-  font-size: 1.5em;
-  font-family: "Open Sans", sans-serif;
+  font-family: "-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen-sans,ubuntu,cantarell,helvetica neue,sans-serif";
+  font-weight: 700;
 }
 
 header {
@@ -31,21 +36,21 @@ header .profile img {
 }
 
 header hgroup h1 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 header hgroup h2 {
   font-weight: normal;
   margin: 5px 0 5px 0;
-  font-size: 1.2em;
+  font-size: 1.7em;
 }
 
 header hgroup h3 {
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1.3em;
   margin-top: 0.5em;
   font-style: italic;
-  color: #aaa;
+  color: rgba(255,255,255);
   line-height: 1.2em;
 }
 
@@ -53,6 +58,7 @@ header nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  color: rgba(255,255,255);
 }
 
 header nav li {
@@ -60,10 +66,8 @@ header nav li {
 }
 
 header nav a, header nav a:visited {
-  font-family: "Open sans", sans-serif;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: 300;
+  font-family: "-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen-sans,ubuntu,cantarell,helvetica neue,sans-serif";
+  font-size: 1.3em;
 }
 
 header nav li:not(:first-child):before {
@@ -72,24 +76,26 @@ header nav li:not(:first-child):before {
 }
 
 header ul.social {
+  width: 15em;
+  margin: 0.1em auto;
   text-align: center;
   padding: 0px;
-  margin: 5px 0 5px 0;
+  color: #fff;
 }
 
-header ul.social li a.twitter {
+header ul.social li a:hover.twitter {
   color: #54ACEE;
 }
 
-header ul.social li a.github {
+header ul.social li a:hover.github {
   color: #000;
 }
 
-header ul.social li a.linkedin {
+header ul.social li a:hover.linkedin {
   color: #069;
 }
 
-header ul.social li a.rss {
+header ul.social li a:hover.rss {
   color: #f88624;
 }
 
@@ -102,10 +108,6 @@ header ul.social li:not(:first-child):before {
   content: '\2219';
   padding: 0 0.6em 0 0.4em;
   color: #aaa;
-}
-
-.no-cover .page-description {
-  color: rgba(0,0,0,0.5);
 }
 
 .page-description {
