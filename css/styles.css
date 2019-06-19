@@ -179,9 +179,14 @@ header ul.social li:not(:first-child):before {
   margin: 1em auto;
 }
 
+@media (max-device-width: 1024px) {
+  .top-banner {
+    display: none;
+  }
+}
 
 @media (max-device-width: 480px) {
-  .wrap { 
+  .wrap {
     font-size: 1em;
     margin: 1em;
   }
