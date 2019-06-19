@@ -34,6 +34,8 @@ block content
       div(class="right-banner")
         include google_adsense_right_article_banner
   article
+    div(class="top-banner")
+      include google_adsense_top_article_banner
     | !{title.html}
     if date
       i(class="fa fa-calendar"): time !{date.text}
