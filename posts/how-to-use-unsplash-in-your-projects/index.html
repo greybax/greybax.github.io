@@ -9,7 +9,7 @@
       });
     </script><!-- /Google Adsense -->
     <meta charset="utf-8">
-    <title>Используем Fiddler в качестве прокси</title><!-- Yandex Webmaster -->
+    <title>How to use Unsplash in your projects?</title><!-- Yandex Webmaster -->
     <meta name="yandex-verification" content="610e7b6bb48fc4d6">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
@@ -26,10 +26,10 @@
     <meta property="article:author" content="https://alfilatov.com/about/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@greybax">
-    <meta property="description" content="fiddler, proxy, configuration, debugging, russian">
-    <meta name="og:url" content="/posts/ispol'zuiem-fiddler-v-kachiestvie-proksi/">
-    <meta name="og:title" content="Используем Fiddler в качестве прокси">
-    <meta name="og:description" content="fiddler, proxy, configuration, debugging, russian">
+    <meta property="description" content="css, configuration, unsplash, english">
+    <meta name="og:url" content="/posts/how-to-use-unsplash-in-your-projects/">
+    <meta name="og:title" content="How to use Unsplash in your projects?">
+    <meta name="og:description" content="css, configuration, unsplash, english">
   </head>
   <body>
     <header class="no-cover flex-header">
@@ -45,54 +45,49 @@
     <div class="wrap-flex">
       <div class="related-posts"><span class="header">Related posts</span>
         <ul>
+          <li><a href="/posts/testirovanie-verstki-na-vizualne-regressii-s-pomosh'yu-phantomcss/"> [habrahabr] Тестирование вёрстки на визуальные регрессии с помощью PhantomCSS </a></li>
+          <li><a href="/posts/ispol'zuiem-fiddler-v-kachiestvie-proksi/"> Используем Fiddler в качестве прокси </a></li>
           <li><a href="/posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/"> Debugging файлов TypeScript в браузере через эмулятор DevExtreme </a></li>
           <li><a href="/posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/"> How to migrate your SPA from JSPM/SystemsJS to Webpack? </a></li>
           <li><a href="/posts/how-to-separate-your-webpack-configs/"> How to separate your Webpack configs? </a></li>
-          <li><a href="/posts/how-to-use-unsplash-in-your-projects/"> How to use Unsplash in your projects? </a></li>
-          <li><a href="/posts/stylecop/"> StyleCop - или как соблюдать code style? </a></li>
         </ul>
         <div class="right-banner"><!-- Google Adsense -->
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
         </div>
       </div>
-      <article><h1>Используем Fiddler в качестве прокси</h1><i class="fa fa-calendar">
-          <time>October 01, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#fiddler"> fiddler </a><a href="/tags/index.html#proxy"> proxy </a><a href="/tags/index.html#configuration"> configuration </a><a href="/tags/index.html#debugging"> debugging </a><a href="/tags/index.html#russian"> russian </a></i><p><a href="https://www.telerik.com/fiddler">Fiddler</a> - мощный инструмент для веб дебагинга, мониторинга веб трафика, манипуляций с сессией и т.п. Кроме того в <code>Fiddler</code> есть еще одна мощная фича - это возможность его использования как самостоятельный proxy сервер на машине где он запущен.</p>
-<p>Мне эта фича пригодилась когда пришлось подключаться с моего iPhone девайса через <code>VPN</code> к серверу, который находится на другом конце планеты. Аналогично, вместо iPhone мог быть любой девайс, планшет или десктоп.</p>
-<p>Постараюсь описать процесс настройки максимально детально. Версия установленного <code>Fiddler</code> у меня - <code>Fiddler Web Debugger (v4.4.8.0)</code>. <code>Built: Wednesday, April 23, 2014</code></p>
-<h2>Конфигурация Fiddler</h2>
-<ol>
-<li>
-<p>Переходим Tools > Fiddler Options > Connections.</p>
-</li>
-<li>
-<p>Ставим галку Allow remote computers to connect.
-<img src="/images/screenshots/allow_remote_to_connect.png" alt="Check &#x22;Allow remote computers to connect&#x22;"></p>
-</li>
-<li>
-<p>Перезапускаем <code>Fiddler</code></p>
-</li>
-<li>
-<p>Следует проверить что в <code>firewall</code> разрешены входящие соединения для Fiddler
-<img src="/images/screenshots/fiddler_income_connections.png" alt="Income conections for fiddler process"></p>
-</li>
-<li>
-<p>В правом верхнем углу <code>Fiddler</code> находим <code>Online Indicator</code> и смотрим в нем по какому ip орудует наш <code>Fiddler</code>. Нам нужен локальный адрес машины. Этот ip адрес мы будем указывать в настройках интернет соединения  нашего девайса на вкладке <code>Proxy</code>.
-<img src="/images/screenshots/indicator_ip_address.png" alt="Online Indicator"></p>
-</li>
-</ol>
-<p>После выполнения этих пунктов наш <code>Fiddler</code> готов принимать входящие соединения с внешних устройств. Соответственно может использоваться как прокси, обрабатывая через себя все запросы, которые приходят с нашего внешнего устройства.</p>
-<h2>Конфигурация iPhone</h2>
-<ol>
-<li>Переходим 'Настройки' > 'Wi-Fi'</li>
-<li>Переходим в настройки Wi-Fi соединения</li>
-<li>Выбираем раздел 'Вручную' в секции HTTP прокси</li>
-<li>В поле Сервер, вводим IP адрес машины где запущен <code>Fiddler</code></li>
-<li>Порт - 8888</li>
-<li>Аутентификацию отключаем</li>
-</ol>
-<p><img src="/images/screenshots/iPhone_proxy_settings.png" alt="iPhone proxy settings"></p>
-<p>Теперь после перехода на любой сайт со своего iPhone можно мониторить все request/response в <code>Fiddler</code></p>
+      <article><h1>How to use Unsplash in your projects?</h1><i class="fa fa-calendar">
+          <time>June 18, 2019</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#css"> css </a><a href="/tags/index.html#configuration"> configuration </a><a href="/tags/index.html#unsplash"> unsplash </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
+<p>Recently I've explored for yourself great photo stock service <a href="https://unsplash.com/">Unsplash.com</a>. </p>
+<blockquote>
+<p>The internet’s source of freely useable images. Powered by creators everywhere</p>
+</blockquote>
+<p>Service has tons of high quality photos grouped by collections and categories. So you can find photo about everything literally.</p>
+<p>So in this post I want to share one pretty interesting thing which I've done with this service. But I believe you could already noticed it on the main page of this blog.</p>
+<h2>Dynamic background image</h2>
+<p>For a long time the main page of this blog has mono color grey background. It was bored and depressed. So I thought to change it on photo image or something similar. But couldn't to decide to which actually one. Hard choice. Agree? :) And it was great to explore for myself <strong>unsplash.com</strong>. I think it would be great to make background image dynamically changing. First I've went to <a href="https://unsplash.com/license">licence for unsplash</a>:</p>
+<blockquote>
+<p>All photos published on Unsplash can be used for free. You can use them for commercial and noncommercial purposes. You do not need to ask permission from or provide credit to the photographer or Unsplash, although it is appreciated when possible.
+More precisely, Unsplash grants you an irrevocable, nonexclusive, worldwide copyright license to download, copy, modify, distribute, perform, and use photos from Unsplash for free, including for commercial purposes, without permission from or attributing the photographer or Unsplash. This license does not include the right to compile photos from Unsplash to replicate a similar or competing service.</p>
+</blockquote>
+<p>Great! That means that I can use all photos from this service for free for my use. </p>
+<p>After that check the <a href="https://source.unsplash.com/">Unpslash source</a>. This is awesome powerful service which allows you to embed Unsplash photos wherever you want. In my case I've done it with one <code>CSS</code> string:</p>
+<pre><code class="language-css">background: url(https://source.unsplash.com/1600x900/?seattle,sunrise) no-repeat center;
+</code></pre>
+<p>That's it! No any Javascript code at all ;)</p>
+<p>This string gets random photo from unsplash with size <strong><em>1600x900px</em></strong> and tags including <strong><em>seattle</em></strong> and <strong><em>sunrise</em></strong>. The result how it works you can find on the main page of this blog.</p>
+<p>And you can play with parameters in this form:</p>
+<p class="codepen" data-height="300" data-theme-id="16380" data-default-tab="css,result" data-user="greybax" data-slug-hash="BgQrmx" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Unsplash dynamic background">
+  <span>See the Pen <a href="https://codepen.io/greybax/pen/BgQrmx/">
+  Unsplash dynamic background</a> by Alex Filatov (<a href="https://codepen.io/greybax">@greybax</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p>For a more advanced integration, see <a href="https://unsplash.com/developers">Unsplash API</a>.</p>
+<h2>More ideas how to use it</h2>
+<p>Using powerful API you can get photos based on a lot of parameters which is actually represents as a tags on the unsplash service. </p>
+<p>For example, you can show photos for group of people based on their geoposition or time of the day. You can show images from specific collections or setup daily or weekly update for the image (not on each request).</p>
+<p>Happy unsplashing! :y:</p>
       </article>
     </div>
     <div class="wrap"><!-- Yandex.RTB R-A-334917-1 -->
