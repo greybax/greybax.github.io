@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 19 Jun 2019 20:56:18 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Jun 2019 18:31:57 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to make your JS code faster just adding some parenthesis?</h1>]]></title>
+            <description><![CDATA[javascript, optimization, performance, configuration, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-make-your-js-code-faster-just-adding-some-parenthesis/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-make-your-js-code-faster-just-adding-some-parenthesis/</guid>
+            <pubDate>Fri, 21 Jun 2019 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>How to use Unsplash in your projects?</h1>]]></title>
             <description><![CDATA[css, configuration, unsplash, english]]></description>
