@@ -18,39 +18,39 @@ The idea of our application is to answer on question are there any connections b
 
 Before implementing our app we've investigated competitors and found some them:
 
-  * 2 are based on flash player
-  * 1 has too many ads
-  * only 1 app we've found pretty good and competitive with us.
+* 2 are based on flash player
+* 1 has too many ads
+* only 1 app we've found pretty good and competitive with us.
 
 So we have to make our app better than these 4. So, ready! Set! **GO!**
 
 ## Tech stack
 
-  * VanillaJS (because we wouldn't to make our app too heavy)
-  * jQuery (for DOM manipulation, but of course we could avoid it)
-  * D3 (for svg - vector graphic, draw lines, ellipses, foreign objects)
-  * VK API (because we've developed our app based on vk.com platform)
-    - **Methods** which we've used:
-      - [users.get](https://vk.com/dev/users.get)
-      - [execute](https://vk.com/dev/execute)
-      - [friends.get](https://vk.com/dev/friends.get)
-      - [friends.getMutual](https://vk.com/dev/friends.getMutual)
-    - **Restrictions**
-      - execute: 25 calls
-      - max 3 request per second
-      - max length of request is 100k symbols
-      - users.get: array has more than 10 elements 
+* VanillaJS (because we wouldn't to make our app too heavy)
+* jQuery (for DOM manipulation, but of course we could avoid it)
+* D3 (for svg - vector graphic, draw lines, ellipses, foreign objects)
+* VK API (because we've developed our app based on vk.com platform)
+  - **Methods** which we've used:
+    - [users.get](https://vk.com/dev/users.get)
+    - [execute](https://vk.com/dev/execute)
+    - [friends.get](https://vk.com/dev/friends.get)
+    - [friends.getMutual](https://vk.com/dev/friends.getMutual)
+  - **Restrictions**
+    - execute: 25 calls
+    - max 3 request per second
+    - max length of request is 100k symbols
+    - users.get: array has more than 10 elements 
 
 ## Algorithm
 
 The main idea of algorithm which we've used in our app is ["divide and conquer"](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm). 
 
-  * If me and destination person are friends - return OK
-  * Else find mutual friends between us.
-  * Else find connections between all my friends and our mutual friends.
-  * Else find connections between all my friends and all destination person friends.
-  * Else find connections between mutual friends of my and destination person friends.
-  * Else find connections between friends of my friends and mutual friends of my and destination person friends.
+* If me and destination person are friends - return OK
+* Else find mutual friends between us.
+* Else find connections between all my friends and our mutual friends.
+* Else find connections between all my friends and all destination person friends.
+* Else find connections between mutual friends of my and destination person friends.
+* Else find connections between friends of my friends and mutual friends of my and destination person friends.
 
 So as you can notice on each step we are dividing our search in depth. And trying to find connections between friends of friends.
 As result the connections search takes just 2 seconds. Our competitors have the same result for 5-15 seconds.
