@@ -34,4 +34,6 @@ Unfortunately, **no**:
 
 So I believe that someone will find this post helpful for yourself and oneday will contribute to this awesome tool! Repo are waiting for its hero!
 
+**_P.S._:** More my posts about perf improvements you can find tag: [#performance](/tags/index.html#performance)
+
 Happy improving your js code perf! :y:
