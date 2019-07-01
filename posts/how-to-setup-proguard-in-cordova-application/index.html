@@ -9,7 +9,7 @@
       });
     </script><!-- /Google Adsense -->
     <meta charset="utf-8">
-    <title>Is your npm install still too slow?</title><!-- Yandex Webmaster -->
+    <title>How to setup Proguard in Cordova application?</title><!-- Yandex Webmaster -->
     <meta name="yandex-verification" content="610e7b6bb48fc4d6">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
@@ -26,10 +26,10 @@
     <meta property="article:author" content="https://alfilatov.com/about/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@greybax">
-    <meta property="description" content="npm, performance, optimization, pnpm, build, frontend, english">
-    <meta name="og:url" content="/posts/is-your-npm-install-still-too-slow/">
-    <meta name="og:title" content="Is your npm install still too slow?">
-    <meta name="og:description" content="npm, performance, optimization, pnpm, build, frontend, english">
+    <meta property="description" content="proguard, optimization, performance, configuration, cordova, mobile, english">
+    <meta name="og:url" content="/posts/how-to-setup-proguard-in-cordova-application/">
+    <meta name="og:title" content="How to setup Proguard in Cordova application?">
+    <meta name="og:description" content="proguard, optimization, performance, configuration, cordova, mobile, english">
   </head>
   <body>
     <header class="no-cover flex-header">
@@ -45,11 +45,11 @@
     <div class="wrap-flex">
       <div class="related-posts"><span class="header">Related posts</span>
         <ul>
+          <li><a href="/posts/profilirovaniie-v-js/"> Профилирование в JS </a></li>
+          <li><a href="/posts/is-your-npm-install-still-too-slow/"> Is your npm install still too slow? </a></li>
           <li><a href="/posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/"> How to migrate your SPA from JSPM/SystemsJS to Webpack? </a></li>
           <li><a href="/posts/how-to-separate-your-webpack-configs/"> How to separate your Webpack configs? </a></li>
           <li><a href="/posts/how-to-make-your-js-code-faster-just-adding-some-parenthesis/"> How to make your JS code faster just adding some parenthesis? </a></li>
-          <li><a href="/posts/how-to-setup-proguard-in-cordova-application/"> How to setup Proguard in Cordova application? </a></li>
-          <li><a href="/posts/profilirovaniie-v-js/"> Профилирование в JS </a></li>
         </ul>
         <div class="right-banner"><!-- Google Adsense -->
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
@@ -60,28 +60,62 @@
         <div class="top-banner"><!-- Google Adsense -->
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_top_article_banner --><ins style="display:inline-block;width:980px;height:120px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="4549198145" class="adsbygoogle"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
-        </div><h1>Is your <code>npm install</code> still too slow?</h1><i class="fa fa-calendar">
-          <time>January 21, 2019</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#npm"> npm </a><a href="/tags/index.html#performance"> performance </a><a href="/tags/index.html#optimization"> optimization </a><a href="/tags/index.html#pnpm"> pnpm </a><a href="/tags/index.html#build"> build </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#english"> english </a></i><p>Today we have a big choice of package managers for our frontend apps such as JSPM, NPM, Yarn, Bower, etc.. Some of them has been outdated and some of them still grow its popularity such as NPM and Yarn. And everybody who worked with NPM faced with huge size <code>npm_modules</code> directory and dependencies hell in our apps. All these leads us to big performance gaps in build pipelines of our apps.</p>
-<p>One of project on which I've worked on has NPM as main package manager and <code>npm install</code> command takes almost 3 minutes on our CI builds. And of course this time still grows with growing our app. Some of devs suggest us to use Yarn, but in this case we will have to face with <a href="https://yarnpkg.com/lang/en/docs/migrating-from-npm/">Migrating to Yarn from NPM</a>. In some ways this is a pretty good solution, but I would to go deeper and found for myself nice solution which nice fit for all our team.</p>
-<h2>Solution is PNPM!</h2>
+        </div><h1>How to setup Proguard in Cordova application?</h1><i class="fa fa-calendar">
+          <time>July 01, 2019</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#proguard"> proguard </a><a href="/tags/index.html#optimization"> optimization </a><a href="/tags/index.html#performance"> performance </a><a href="/tags/index.html#configuration"> configuration </a><a href="/tags/index.html#cordova"> cordova </a><a href="/tags/index.html#mobile"> mobile </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
+<p>Some time ago I was involved into design of architecture one mobile app which was based on AngularJS 1.6 framework. One of the main concerns of the app were performance. So perf improvements were made on different steps of the developing cycles.
+What actually were done:</p>
+<ul>
+<li>Improved build time</li>
+<li>Improved codebase for decreasing digest cycles and decreasing bundle size in a common.</li>
+<li>Improved resulting package for specific mobile platform (Android/iOS).</li>
+</ul>
+<p>The first option I've tried to cover in my recent posts <a href="/posts/is-your-npm-install-still-too-slow/">Is your npm install still too slow?</a>, <a href="/posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/">How to migrate your SPA from JSPM/SystemsJS to Webpack?
+</a> and <a href="/posts/how-to-separate-your-webpack-configs/">How to separate your Webpack configs?
+</a></p>
+<p>In this post I'd like to talk about 3rd step. In particular, how to improve your <code>.apk</code> package for Android. The great tool for it is <strong><em>Proguard</em></strong>. </p>
+<h2>Proguard</h2>
 <blockquote>
-<p>PNPM - Fast, disk space efficient package manager.</p>
+<p>ProGuard is the most popular optimizer for Java bytecode. It makes your Java and Android applications up to 90% smaller and up to 20% faster. ProGuard also provides minimal protection against reverse engineering by obfuscating the names of classes, fields and methods.</p>
 </blockquote>
-<p><a href="https://pnpm.js.org/">pnpm.js.org</a></p>
-<h3>Pros:</h3>
-<ul>
-<li><em><strong>Fast</strong></em> - pnpm is as fast and sometimes even faster than NPM and Yarn (see <a href="https://github.com/pnpm/benchmarks-of-javascript-package-managers">benchmarks</a>)</li>
-<li><em><strong>Efficient</strong></em> - One version of a package is saved only ever once on a disk. So you save dozens of gigabytes of disk space!</li>
-<li><em><strong>Strict</strong></em> - pnpm creates a non-flat <code>node_modules</code>, so code has no access to arbitrary packages</li>
-<li>In our case after installing pnpm we've just renamed <code>npm install</code> --> <code>pnpm install</code> in <code>package.json</code> file and build time on our CI decreases from 3 minites to 30 seconds (in 6x times!).</li>
-</ul>
-<h2>Useful links</h2>
-<ul>
-<li><a href="https://pnpm.js.org/">PNPM website</a></li>
-<li><a href="https://github.com/pnpm">Organization on Github</a></li>
-<li><a href="https://github.com/rstacruz">Rico Sta. Cruz - Author @pnpm</a></li>
-<li><a href="https://github.com/zkochan">Zoltan Kochan - Maintainer of @pnpm</a></li>
-</ul>
+<p>More about this tool you can find on the <a href="https://www.guardsquare.com/en/products/proguard">offical website</a>.</p>
+<p>The description of the proguard sounds really great! But how we can use it with our existing app based on Cordova. After quick investigation I didn't find any cordova plugins for proguard at that moment. And I was super wondered that this plugin still didn't exist. So let's do it by yourself! ;)</p>
+<h2>cordova-plugin-proguard</h2>
+<p>So I've created my <a href="https://github.com/greybax/cordova-plugin-proguard">cordova-plugin-proguard</a> and published it under MIT license on github.</p>
+<p>Using of the plugin is pretty straightforward. What you can need is just <a href="https://github.com/greybax/cordova-plugin-proguard/fork">fork the repo</a> and add rules which specific for your application. </p>
+<p>For example if you developing plugin for Google Maps, so likely you should add these rows into <code>proguard-custom.txt</code>:</p>
+<pre><code>-keep public class * extends plugin.google.maps.MyPlugin
+-keepclassmembers public class plugin.google.maps.GoogleMaps {*; }
+-keepclassmembers public class * extends plugin.google.maps.MyPlugin { *; }
+</code></pre>
+<h2>How to install plugin in cordova app</h2>
+<ol>
+<li>First of all you need to be sure that I've installed cordova globally</li>
+</ol>
+<pre><code class="language-cmd">npm install -g cordova
+</code></pre>
+<ol start="2">
+<li>In a separate directory, create a new Cordova project:</li>
+</ol>
+<pre><code class="language-cmd">cordova create cordova-plugin-test
+</code></pre>
+<ol start="3">
+<li>Add the platforms you need(in our case we need just Android):</li>
+</ol>
+<pre><code class="language-cmd">cd cordova-plugin-test
+cordova platform add android
+</code></pre>
+<ol start="4">
+<li>install cordova-plugin-proguard</li>
+</ol>
+<pre><code class="language-cmd">cordova plugin add cordova-plugin-proguard
+</code></pre>
+<ol start="5">
+<li>Build the Cordova app:</li>
+</ol>
+<pre><code class="language-cmd">cordova build android
+</code></pre>
+<p><strong>_Note:</strong> if you already have an app where you want to install <code>cordova-plugin-proguard</code> so you have to skip 1,2,3 steps and start from 4th step.</p>
+<p>Happy obfuscation! :y:</p>
       </article>
     </div>
     <div class="wrap"><!-- Yandex.RTB R-A-334917-1 -->
