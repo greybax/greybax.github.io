@@ -71,4 +71,6 @@ cordova build android
 
 **_Note:** if you already have an app where you want to install `cordova-plugin-proguard` so you have to skip 1,2,3 steps and start from 4th step.
 
+Please feel free to contribute in this plugin on github and ask me anything regarding it in comments.
+
 Happy obfuscation! :y:
