@@ -17,7 +17,7 @@ The first option I've tried to cover in my recent posts [Is your npm install sti
 ](https://alfilatov.com/posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/) and [How to separate your Webpack configs?
 ](https://alfilatov.com/posts/how-to-separate-your-webpack-configs/)
 
-In this post I'd like to talk about 3rd step. In particular, how to improve your `.apk` package for Android. The great tool for it is **_Proguard_**. 
+In this post I'd like to talk about 3rd step. In particular, how to improve your `.apk` package for Android. The great tool for it is **_Proguard_**.
 
 ## Proguard
 
@@ -44,33 +44,37 @@ For example if you developing plugin for Google Maps, so likely you should add t
 ## How to install plugin in cordova app
 
 1. First of all you need to be sure that I've installed cordova globally
-```cmd
+```bash
 npm install -g cordova
 ```
 
 2. In a separate directory, create a new Cordova project:
-```cmd
+```bash
 cordova create cordova-plugin-test
 ```
 
 3. Add the platforms you need(in our case we need just Android):
-```cmd
+```bash
 cd cordova-plugin-test
 cordova platform add android
 ```
 
 4. install cordova-plugin-proguard
-```cmd
+```bash
 cordova plugin add cordova-plugin-proguard
 ```
 
 5. Build the Cordova app:
-```cmd
+```bash
 cordova build android
 ```
 
-**_Note:** if you already have an app where you want to install `cordova-plugin-proguard` so you have to skip 1,2,3 steps and start from 4th step.
+**_Note:_** if you already have an app where you want to install `cordova-plugin-proguard` so you have to skip 1, 2, 3 steps and start from 4th step.
 
 Please feel free to contribute in this plugin on github and ask me anything regarding it in comments.
+
+## Links
+
+* [Obfuscating Android code with ProGuard](https://www.ibm.com/support/knowledgecenter/SSHS8R_7.1.0/com.ibm.worklight.deploy.doc/admin/c_pg_obfus_intro.html)
 
 Happy obfuscation! :y:
