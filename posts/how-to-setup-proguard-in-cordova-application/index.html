@@ -72,7 +72,7 @@ What actually were done:</p>
 <p>The first option I've tried to cover in my recent posts <a href="/posts/is-your-npm-install-still-too-slow/">Is your npm install still too slow?</a>, <a href="/posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/">How to migrate your SPA from JSPM/SystemsJS to Webpack?
 </a> and <a href="/posts/how-to-separate-your-webpack-configs/">How to separate your Webpack configs?
 </a></p>
-<p>In this post I'd like to talk about 3rd step. In particular, how to improve your <code>.apk</code> package for Android. The great tool for it is <strong><em>Proguard</em></strong>. </p>
+<p>In this post I'd like to talk about 3rd step. In particular, how to improve your <code>.apk</code> package for Android. The great tool for it is <strong><em>Proguard</em></strong>.</p>
 <h2>Proguard</h2>
 <blockquote>
 <p>ProGuard is the most popular optimizer for Java bytecode. It makes your Java and Android applications up to 90% smaller and up to 20% faster. ProGuard also provides minimal protection against reverse engineering by obfuscating the names of classes, fields and methods.</p>
@@ -91,31 +91,35 @@ What actually were done:</p>
 <ol>
 <li>First of all you need to be sure that I've installed cordova globally</li>
 </ol>
-<pre><code class="language-cmd">npm install -g cordova
+<pre><code class="language-bash">npm install -g cordova
 </code></pre>
 <ol start="2">
 <li>In a separate directory, create a new Cordova project:</li>
 </ol>
-<pre><code class="language-cmd">cordova create cordova-plugin-test
+<pre><code class="language-bash">cordova create cordova-plugin-test
 </code></pre>
 <ol start="3">
 <li>Add the platforms you need(in our case we need just Android):</li>
 </ol>
-<pre><code class="language-cmd">cd cordova-plugin-test
+<pre><code class="language-bash">cd cordova-plugin-test
 cordova platform add android
 </code></pre>
 <ol start="4">
 <li>install cordova-plugin-proguard</li>
 </ol>
-<pre><code class="language-cmd">cordova plugin add cordova-plugin-proguard
+<pre><code class="language-bash">cordova plugin add cordova-plugin-proguard
 </code></pre>
 <ol start="5">
 <li>Build the Cordova app:</li>
 </ol>
-<pre><code class="language-cmd">cordova build android
+<pre><code class="language-bash">cordova build android
 </code></pre>
-<p><strong>_Note:</strong> if you already have an app where you want to install <code>cordova-plugin-proguard</code> so you have to skip 1,2,3 steps and start from 4th step.</p>
+<p><strong><em>Note:</em></strong> if you already have an app where you want to install <code>cordova-plugin-proguard</code> so you have to skip 1, 2, 3 steps and start from 4th step.</p>
 <p>Please feel free to contribute in this plugin on github and ask me anything regarding it in comments.</p>
+<h2>Links</h2>
+<ul>
+<li><a href="https://www.ibm.com/support/knowledgecenter/SSHS8R_7.1.0/com.ibm.worklight.deploy.doc/admin/c_pg_obfus_intro.html">Obfuscating Android code with ProGuard</a></li>
+</ul>
 <p>Happy obfuscation! :y:</p>
       </article>
     </div>
