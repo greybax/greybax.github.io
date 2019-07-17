@@ -135,7 +135,7 @@ header ul.social li:not(:first-child):before {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  margin: 1em 2em;
+  margin: 1em 3.5em;
 }
 
 .tags-cloud {
