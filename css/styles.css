@@ -176,7 +176,8 @@ header ul.social li:not(:first-child):before {
   min-width: 10em;
 }
 
-.archives a {
+.archives a,
+.tags a {
   box-shadow: none;
 }
 
@@ -309,6 +310,12 @@ article .fa-tags a {
   color: inherit;
   text-decoration: none;
   box-shadow: none;
+}
+
+.fa-tags a:hover,
+.tags-cloud a:hover,
+.list__item-tags a:hover {
+  background-color: #fff08c;
 }
 
 h1, h2, h3, h4, h5, h6 {
