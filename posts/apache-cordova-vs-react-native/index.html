@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head><!-- Google Adsense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+       google_ad_client: "ca-pub-2866912874659895",
+       enable_page_level_ads: true
+      });
+    </script><!-- /Google Adsense -->
+    <meta charset="utf-8">
+    <title>Apache Cordova vs. React Native</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="mobile, cordova, ReactNative, performance, debugging, cross-platform, english">
+    <meta name="og:url" content="/posts/apache-cordova-vs-react-native/">
+    <meta name="og:title" content="Apache Cordova vs. React Native">
+    <meta name="og:description" content="mobile, cordova, ReactNative, performance, debugging, cross-platform, english"><!—- ShareThis BEGIN -—>
+    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
+  </head>
+  <body>
+    <header class="no-cover flex-header">
+      <div class="to-main-page"><i class="fa fa-chevron-left"></i><a href="/">Main page</a></div>
+      <div class="profile"><img src="https://www.gravatar.com/avatar/4ef97675943e8fe05f61adb948e42ef0?s=160" width="50" height="50">
+        <nav>
+          <ul>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrap-flex">
+      <div class="related-posts"><span class="header">Related posts</span>
+        <ul>
+          <li><a href="/posts/how-to-setup-proguard-in-cordova-application/"> How to setup Proguard in Cordova application? </a></li>
+          <li><a href="/posts/is-your-npm-install-still-too-slow/"> Is your npm install still too slow? </a></li>
+          <li><a href="/posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/"> How to migrate your SPA from JSPM/SystemsJS to Webpack? </a></li>
+          <li><a href="/posts/how-to-separate-your-webpack-configs/"> How to separate your Webpack configs? </a></li>
+          <li><a href="/posts/how-to-make-your-js-code-faster-just-adding-some-parenthesis/"> How to make your JS code faster just adding some parenthesis? </a></li>
+        </ul>
+        <div class="right-banner"><!-- Google Adsense -->
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div>
+      </div>
+      <article>
+        <div class="top-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_top_article_banner --><ins style="display:inline-block;width:980px;height:120px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="4549198145" class="adsbygoogle"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div><h1>Apache Cordova vs. React Native</h1><i class="fa fa-calendar">
+          <time>September 06, 2019</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#mobile"> mobile </a><a href="/tags/index.html#cordova"> cordova </a><a href="/tags/index.html#ReactNative"> ReactNative </a><a href="/tags/index.html#performance"> performance </a><a href="/tags/index.html#debugging"> debugging </a><a href="/tags/index.html#cross-platform"> cross-platform </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
+<p><img src="/images/apache-cordova-vs-react-native/cordova_vs_react_native.png" alt="Apache Cordova vs React Native"></p>
+<p>In this article, I'm gonna to compare 2 technologies for cross-platform mobile development: Apache Cordova and React Native. It will primarily focus on the overview of build performance, app performance, and debugging capabilities.
+I've worked with both of them on production and would like to share some of my knowledge here.</p>
+<h2>Background</h2>
+<p>Before getting into the overview of each category, let’s cover some of the basic information about each framework.</p>
+<h3>Apache Cordova</h3>
+<p><a href="https://cordova.apache.org/">Apache Cordova</a>, formerly known as Adobe PhoneGap, is an open source framework for creating cross-platform hybrid mobile applications using web standard technologies such as <code>HTML5</code>, <code>CSS3</code>, and <code>JavaScript</code>. Cordova has been around for many years with a lot of resources available on the internet. Additionally, there are a lot of plugins available to enhance your application.</p>
+<h3>React Native</h3>
+<p><a href="https://facebook.github.io/react-native/">React Native</a>, created by <a href="https://github.com/facebook">Facebook</a>, is also an open source framework but for creating native cross-platform mobile applications. The fundamental for building a React Native applications is using the React design pattern. When compiling the application, the React UI components are compiled down into the platform’s native UI view elements. For example, React Native’s Image component will be convert into the iOS UIImageView object.</p>
+<p>React Native’s community is continuing to grow strongly. You can find a lot of help and information from the React Native’s community Discord server or on their official website.</p>
+<h2>Build Performance</h2>
+<h3>Apache Cordova</h3>
+<p>By comparing against multiple builds with or without caching, it is noticeable that Apache Cordova has a better build time performance and produces smaller built packages. Out of the box, Cordova provides two API layers that allow your app to communicate with the Cordova-enabled WebView for rendering and the WebView to communicate with the Cordova plugins.</p>
+<p><img src="/images/apache-cordova-vs-react-native/cordova_infra_app.png" alt="Cordova App Structure"></p>
+<p>When compiling a Cordova app, only plugins which you specifically add will be added. This is what gives Cordova the edge in outperforming in build time and creating small package sizes.</p>
+<h3>React Native</h3>
+<p>React Native takes more time to build an application and the package size is larger. React Native has built-in support for native functionality, such as the Camera, whereas Cordova requires plugins to provide native functionality support. This is one of the reasons why React Native apps are larger when built, but it pays off in other areas such as app performance.</p>
+<h2>Application Performance</h2>
+<h3>Apache Cordova</h3>
+<p>As the foundation of an Apache Cordova app is written with web standard technologies the execution and render time will always take longer than native application. This is common because JavaScript is an interpreted language. HTML and CSS are used to lay out your app’s visual presentation. They are also interpreted languages (rather than compiled).</p>
+<p>On more powerful phones, performance issues related to the limitations of these web technologies tend to be non-existent. Like-for-like performance will always be behind a native compiled app, but with Cordova it is possible to provide a smooth and native-like experience.</p>
+<h3>React Native</h3>
+<p>React Native’s UI components are linked to native UI views, giving it faster like-for-like rendering times compared to web-based frameworks like Cordova. Though the app’s logic is written in Javascript, React Native also utilizes multi-threading technology which allows it to run in a separate thread, unlike in Cordova apps.</p>
+<p>Even though the execution time of the JavaScript is relatively similar it does not need to manage the views and lighten the load. Additionally the JavaScript bundle and required libraries are loaded into the JavaScript VM, parsed, and generated bytecode.</p>
+<h2>How to Debug</h2>
+<h3>Apache Cordova</h3>
+<p>Apache Cordova comes with great documentation on how to prepare your local environment for debugging. Cordova does not come pre-packaged with any set to tools but you can configure and use existing tools that you may already have.</p>
+<p>These tools are:</p>
+<ul>
+<li>Safari’s Web Inspector with Remote Debugging for iOS</li>
+<li>Chrome DevTools with Remote Debugging for Android</li>
+</ul>
+<p>With these tools alone, you can easily identify network, javascript and UI bugs easily without rebuilding your app multiple times for trial and error.</p>
+<p>The Safari Web Inspector and Chrome DevTools give you access to:</p>
+<ul>
+<li>JavaScript Debugger</li>
+<li>Network Inspector</li>
+<li>DOM Inspector</li>
+</ul>
+<h3>React Native</h3>
+<p>The Chrome Developer Tool is also used for debugging React Native’s JavaScript code remotely. The one thing that Chrome Developer Tools lack is the ability to drill through the React component hierarchy structure.</p>
+<p>If you have ever developed a ReactJS application before, you might be aware of the React Developer Tools Chrome extension that give you the ability to drill. This extension had been converted into a standalone application for React Native projects.</p>
+<p>All React Native debug builds also give developers access to an extra menu to enable a lot of features.</p>
+<p>Some of these features are:</p>
+<ul>
+<li>Performance Monitoring</li>
+<li>Element Inspector</li>
+<li>System Trace</li>
+<li>Hot Reloading</li>
+<li>Live Reloading</li>
+</ul>
+<h2>Conclusion</h2>
+<p>No matter what, each framework has its pros and cons. It truly comes down to what you’re comfortable with and what your application needs are. In the end, both are great options for creating and debugging cross-platform apps.</p>
+<p>React Native is a great option if you need that extra edge in performance with multi-threading and native UI rendering. Or you already have an web app based on React which you want to port to mobile.</p>
+<p>On the other hand, if you have an existing web application code and you want to reuse some or all, including the ability to use web third-party libraries, then Cordova is the best option.</p>
+<h2>Links</h2>
+<ul>
+<li><a href="https://cordova.apache.org/">Apache Cordova Official Docs</a></li>
+<li><a href="https://facebook.github.io/react-native/">React Native Official Docs</a></li>
+</ul>
+<p>Happy cross-platform mobile development! :y:</p>
+      </article>
+    </div>
+    <div class="wrap"><!-- Yandex.RTB R-A-334917-1 -->
+      <div id="yandex_rtb_R-A-334917-1"></div>
+      <script type="text/javascript">
+         (function(w, d, n, s, t) {
+             w[n] = w[n] || [];
+             w[n].push(function() {
+                 Ya.Context.AdvManager.render({
+                     blockId: "R-A-334917-1",
+                     renderTo: "yandex_rtb_R-A-334917-1",
+                     async: true
+                 });
+             });
+             t = d.getElementsByTagName("script")[0];
+             s = d.createElement("script");
+             s.type = "text/javascript";
+             s.src = "//an.yandex.ru/system/context.js";
+             s.async = true;
+             t.parentNode.insertBefore(s, t);
+         })(this, this.document, "yandexContextAsyncCallbacks");
+      </script><!-- /Yandex.RTB R-A-334917-1 --><!-- Google Adsense -->
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_bottom_article_banner --><ins style="display:block" data-ad-client="ca-pub-2866912874659895" data-ad-slot="2846418099" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense --><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>
