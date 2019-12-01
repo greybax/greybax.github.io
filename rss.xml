@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 06 Sep 2019 19:17:19 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Dec 2019 23:58:11 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>cyrillic-to-translit-js - library for converting cyrillic symbols to translit and vice versa.</h1>]]></title>
+            <description><![CDATA[cyrillic, translit, converter, symbols, javascript, js-library, github, english]]></description>
+            <link>https://alfilatov.com//posts/cyrillic-to-translit-js-library-for-converting-cyrillic-symbols-to-translit-and-vice-versa/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/cyrillic-to-translit-js-library-for-converting-cyrillic-symbols-to-translit-and-vice-versa/</guid>
+            <pubDate>Sun, 01 Dec 2019 08:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>Apache Cordova vs. React Native</h1>]]></title>
             <description><![CDATA[mobile, cordova, ReactNative, performance, debugging, cross-platform, english]]></description>
@@ -37,7 +44,7 @@
         </item>
         <item>
             <title><![CDATA[<h1>How to setup Proguard in Cordova application?</h1>]]></title>
-            <description><![CDATA[proguard, optimization, performance, configuration, cordova, mobile, english]]></description>
+            <description><![CDATA[proguard, optimization, performance, configuration, cordova, mobile, github, english]]></description>
             <link>https://alfilatov.com//posts/how-to-setup-proguard-in-cordova-application/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-setup-proguard-in-cordova-application/</guid>
             <pubDate>Mon, 01 Jul 2019 07:00:00 GMT</pubDate>
@@ -100,7 +107,7 @@
         </item>
         <item>
             <title><![CDATA[<h1>Let's make "Awesome IT Films" popular again!</h1>]]></title>
-            <description><![CDATA[javascript, awesome, awesome-it-films, collection, frontend, english]]></description>
+            <description><![CDATA[javascript, awesome, awesome-it-films, collection, frontend, github, english]]></description>
             <link>https://alfilatov.com//posts/lets-make-awesome-it-films-popular-again/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/lets-make-awesome-it-films-popular-again/</guid>
             <pubDate>Sun, 17 Mar 2019 07:00:00 GMT</pubDate>
