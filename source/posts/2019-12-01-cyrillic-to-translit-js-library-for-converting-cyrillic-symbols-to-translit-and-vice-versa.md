@@ -1,4 +1,4 @@
-# cyrillic-to-translit-js - library for converting cyrillic symbols to translit and vice versa.
+# cyrillic-to-translit-js - library for converting cyrillic symbols to translit and vice versa
 
 #cyrillic, #translit, #converter, #symbols, #javascript, #js-library, #github, #english;
 
