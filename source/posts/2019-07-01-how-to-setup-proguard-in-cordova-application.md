@@ -1,6 +1,6 @@
 # How to setup Proguard in Cordova application?
 
-#proguard, #optimization, #performance, #configuration, #cordova, #mobile, #english;
+#proguard, #optimization, #performance, #configuration, #cordova, #mobile, #github, #english;
 
 _July 01, 2019_
 

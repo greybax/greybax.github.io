@@ -1,6 +1,6 @@
 # Let's make "Awesome IT Films" popular again! 
 
-#javascript, #awesome, #awesome-it-films, #collection, #frontend, #english;
+#javascript, #awesome, #awesome-it-films, #collection, #frontend, #github, #english;
 
 _March 17, 2019_
 
