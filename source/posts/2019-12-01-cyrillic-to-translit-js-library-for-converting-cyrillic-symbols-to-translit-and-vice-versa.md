@@ -6,7 +6,7 @@ _December 01, 2019_
 
 ## Intro
 
-At this post, I would like to promote another my javascript tool which is growing popular on Github for the last couple of years. I believe that topics that GitHub introduced [31 January 2017](https://github.blog/2017-01-31-introducing-topics/) really help to promote your project on Github. I believe that almost all my projects gained a lot of starts because of this awesome feature.
+At this post, I would like to promote my another javascript tool which popular is growing on Github for the last couple of years. I believe that topics which GitHub introduced on [31 January 2017](https://github.blog/2017-01-31-introducing-topics/) really help to promote your projects on this platform. I believe that almost all my projects gained a lot of starts because of this awesome feature.
 
 I've already wrote about [awesome-it-films](/posts/lets-make-awesome-it-films-popular-again) and [cordova-plugin-proguard](/posts/how-to-setup-proguard-in-cordova-application) which I'm proud of. And that's time for another js library tool. Welcome [cyrillic-to-translit-js](https://github.com/greybax/cyrillic-to-translit-js)!
 
