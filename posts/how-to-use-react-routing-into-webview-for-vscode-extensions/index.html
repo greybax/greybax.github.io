@@ -9,7 +9,7 @@
       });
     </script><!-- /Google Adsense -->
     <meta charset="utf-8">
-    <title>[habrahabr] Тестирование вёрстки на визуальные регрессии с помощью PhantomCSS</title><!-- Yandex Webmaster -->
+    <title>How to use React Routing into Webview for VSCode extensions?</title><!-- Yandex Webmaster -->
     <meta name="yandex-verification" content="610e7b6bb48fc4d6"><!-- WoT Verification -->
     <meta name="wot-verification" content="6c0d169b1afe357fe29c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,10 +27,10 @@
     <meta property="article:author" content="https://alfilatov.com/about/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@greybax">
-    <meta property="description" content="habrahabr, перевод, тестирование, css, javascript, russian">
-    <meta name="og:url" content="/posts/testirovanie-verstki-na-vizualne-regressii-s-pomosh'yu-phantomcss/">
-    <meta name="og:title" content="[habrahabr] Тестирование вёрстки на визуальные регрессии с помощью PhantomCSS">
-    <meta name="og:description" content="habrahabr, перевод, тестирование, css, javascript, russian"><!—- ShareThis BEGIN -—>
+    <meta property="description" content="vscode, extensions, react, routing, javascript, js-library, github, english">
+    <meta name="og:url" content="/posts/how-to-use-react-routing-into-webview-for-vscode-extensions/">
+    <meta name="og:title" content="How to use React Routing into Webview for VSCode extensions?">
+    <meta name="og:description" content="vscode, extensions, react, routing, javascript, js-library, github, english"><!—- ShareThis BEGIN -—>
     <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
   </head>
   <body>
@@ -47,11 +47,11 @@
     <div class="wrap-flex">
       <div class="related-posts"><span class="header">Related posts</span>
         <ul>
-          <li><a href="/posts/es6-classes-final/"> [Frontender Magazine] Классы в ECMAScript 6 </a></li>
-          <li><a href="/posts/checkout-faster-with-Autofill/"> [Frontender Magazine] Упрощаем заполнение форм с помощью Autofill </a></li>
-          <li><a href="/posts/vy-reshili-stat-frontederom-tutorial-for-juniors/"> [habrahabr] Итак, вы решили стать фронтендером: практическое руководство для роста начинающего разработчика </a></li>
-          <li><a href="/posts/essential-javascript-functions/"> [Frontender Magazine] 7 жизненно важных функций в JavaScript </a></li>
-          <li><a href="/posts/es6-in-depth-symbols/"> [Frontender Magazine] ES6 в деталях: символы </a></li>
+          <li><a href="/posts/my-collection-of-useful-github-extensions/"> My collection of useful Github extension </a></li>
+          <li><a href="/posts/useful-extensions-for-amazon-shopping/"> Useful extensions for Amazon shopping </a></li>
+          <li><a href="/posts/profilirovaniie-v-js/"> Профилирование в JS </a></li>
+          <li><a href="/posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/"> Debugging файлов TypeScript в браузере через эмулятор DevExtreme </a></li>
+          <li><a href="/posts/gdie-ia-bieru-informatsiiu-o-mirie-frontend/"> Что можно почитать по frontend'у </a></li>
         </ul>
         <div class="right-banner"><!-- Google Adsense -->
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
@@ -62,10 +62,78 @@
         <div class="top-banner"><!-- Google Adsense -->
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_top_article_banner --><ins style="display:inline-block;width:980px;height:120px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="4549198145" class="adsbygoogle"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
-        </div><h1>[habrahabr] Тестирование вёрстки на визуальные регрессии с помощью PhantomCSS</h1><i class="fa fa-calendar">
-          <time>November 25, 2015</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#habrahabr"> habrahabr </a><a href="/tags/index.html#перевод"> перевод </a><a href="/tags/index.html#тестирование"> тестирование </a><a href="/tags/index.html#css"> css </a><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#russian"> russian </a></i><script type="text/javascript">
-	window.location.href = 'https://habrahabr.ru/post/271379/';
-</script>
+        </div><h1>How to use React Routing into Webview for VSCode extensions?</h1><i class="fa fa-calendar">
+          <time>January 09, 2020</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#vscode"> vscode </a><a href="/tags/index.html#extensions"> extensions </a><a href="/tags/index.html#react"> react </a><a href="/tags/index.html#routing"> routing </a><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#js-library"> js-library </a><a href="/tags/index.html#github"> github </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
+<p>Recently I've faced with issue how to implement navigation between views into my VSCode extension based on ReactJS.</p>
+<p>At the first sight it looks that webview allows you to work into it like with web app into the browser. It actually is, but with some restictions.</p>
+<h2><code>react-routing-dom</code></h2>
+<blockquote>
+<p>DOM bindings for <a href="https://reacttraining.com/react-router/">React Router</a></p>
+</blockquote>
+<p>I've started with <a href="https://reacttraining.com/react-router/web/guides/quick-start/1st-example-basic-routing">1st basic example</a> but got failed, because webview doesn't support URL into VSCode extensions. </p>
+<p>So, I've got the <a href="https://stackoverflow.com/q/59637276/2173016">great solution on SO</a>. Instead of using links with navigation over URL you should use <code>createMemoryHistory</code> or <a href="https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/MemoryRouter.md">MemoryRouter</a> I've started to use the last one for myself.</p>
+<h2>Code Example</h2>
+<p>Below I would like to provide some of my code how I've fixed issue with navigation into VSCode Extension Webview:</p>
+<ul>
+<li><strong>App.tsx</strong></li>
+</ul>
+<pre><code class="language-js">import React from "react";
+import { MemoryRouter, Route } from "react-router-dom";
+
+import FirstPage from "./FirstPage";
+import SecondPage from "./SecondPage";
+
+export default function App() {
+  return (
+    &#x3C;MemoryRouter
+      initialEntries={[
+        '/index'
+      ]}>
+
+      &#x3C;Route path="/first-page" component={FirstPage} />
+      &#x3C;Route path="/second-page" component={SecondPage} />
+    &#x3C;/MemoryRouter>
+  );
+}
+</code></pre>
+<ul>
+<li><strong>FirstPage.tsx</strong></li>
+</ul>
+<pre><code class="language-js">import React from "react";
+
+export default class FirstPage extends React.Component {
+
+  constructor(props: any) {
+    super(props);
+
+    this.handleNextButton = this.handleNextButton.bind(this);
+    this.handleBackButton = this.handleBackButton.bind(this);
+  }
+
+  render() {
+    return (
+      &#x3C;div className="btn-controls">
+        &#x3C;button onClick={this.handleBackButton}>Back&#x3C;/button>
+        &#x3C;button onClick={this.handleNextButton}>Next&#x3C;/button>
+      &#x3C;/div>
+    );
+  }
+
+  handleNextButton() {
+    this.props.history.push('/second-page');
+  }
+
+  handleBackButton() {
+    this.props.history.go(-1);
+  }
+}
+</code></pre>
+<h2>Links</h2>
+<ul>
+<li><a href="https://reacttraining.com/react-router/web/api/MemoryRouter">About on MemoryRouter reacttraining.com</a></li>
+<li><a href="https://stackoverflow.com/questions/39721812/react-router-without-changing-url">SO question "React Router Without Changing URL"</a></li>
+</ul>
+<p>Happy coding and navigating into VSCode extensions :y:</p>
       </article>
     </div>
     <div class="wrap"><!-- Yandex.RTB R-A-334917-1 -->
