@@ -6,7 +6,6 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://alfilatov.com/</loc>
   <lastmod>2018-11-13T22:37:06+00:00</lastmod>
@@ -15,6 +14,11 @@
 <url>
   <loc>https://alfilatov.com/about/</loc>
   <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-i-have-developed-simple-and-useful-markdown-cheatsheet-browser-extension/</loc>
+  <lastmod>2019-01-25T15:46:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>

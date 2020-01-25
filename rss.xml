@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 10 Jan 2020 05:30:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 25 Jan 2020 23:50:46 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How I have developed simple and useful "Markdown Cheatsheet" browser extension</h1>]]></title>
+            <description><![CDATA[chrome, extensions, javascript, github, frontend, userjs, browser, english]]></description>
+            <link>https://alfilatov.com//posts/how-i-have-developed-simple-and-useful-markdown-cheatsheet-browser-extension/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-i-have-developed-simple-and-useful-markdown-cheatsheet-browser-extension/</guid>
+            <pubDate>Sat, 25 Jan 2020 08:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>How to use React Routing into Webview for VSCode extensions?</h1>]]></title>
             <description><![CDATA[vscode, extensions, react, routing, javascript, js-library, github, english]]></description>
