@@ -9,7 +9,7 @@
       });
     </script><!-- /Google Adsense -->
     <meta charset="utf-8">
-    <title>My VSCode settings</title><!-- Yandex Webmaster -->
+    <title>Netherlands life. Old Utrecht and the castle De Haar.</title><!-- Yandex Webmaster -->
     <meta name="yandex-verification" content="610e7b6bb48fc4d6"><!-- WoT Verification -->
     <meta name="wot-verification" content="6c0d169b1afe357fe29c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,10 +27,10 @@
     <meta property="article:author" content="https://alfilatov.com/about/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@greybax">
-    <meta property="description" content="vscode, tools, plugins, english">
-    <meta name="og:url" content="/posts/awesome-vscode-plugins/">
-    <meta name="og:title" content="My VSCode settings">
-    <meta name="og:description" content="vscode, tools, plugins, english"><!—- ShareThis BEGIN -—>
+    <meta property="description" content="netherlands, amsterdam, utrecht, castle, dehaar, trip, life, english">
+    <meta name="og:url" content="/posts/netherlands-life-old-utrecht-and-the-castle-de-haar/">
+    <meta name="og:title" content="Netherlands life. Old Utrecht and the castle De Haar.">
+    <meta name="og:description" content="netherlands, amsterdam, utrecht, castle, dehaar, trip, life, english"><!—- ShareThis BEGIN -—>
     <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
   </head>
   <body>
@@ -47,11 +47,11 @@
     <div class="wrap-flex">
       <div class="related-posts"><span class="header">Related posts</span>
         <ul>
-          <li><a href="/posts/my-contribution-in-mozilla-society/"> My contribution in Mozilla society </a></li>
-          <li><a href="/posts/yandex-browser-it-need-or-not/"> Yandex browser - it's need or not? </a></li>
-          <li><a href="/posts/windows-7-hotkeys/"> Windows 7 HotKeys </a></li>
-          <li><a href="/posts/how-we-have-validated-the-theory-of-6-handshakes-six-degrees-of-separation-via-social-network/"> How we have validated the theory of 6 handshakes (six degrees of separation) via social network? </a></li>
           <li><a href="/posts/netherlands-life-day-trip-to-edam-and-volendam/"> Netherlands life. Day trip to Edam and Volendam. </a></li>
+          <li><a href="/posts/how-to-get-driver-license-in-washington-state/"> Как я получал водительское удостоверение в штате Вашингтон </a></li>
+          <li><a href="/posts/how-to-buy-a-car-in-usa/"> Покупка машины в Америке </a></li>
+          <li><a href="/posts/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/"> Snoqualmie Falls или прогулка по следам съемок Twin Peaks </a></li>
+          <li><a href="/posts/progulka-po-rattlesnake-lake-i-rattlesnake-ledge/"> Прогулка по Rattlesnake Lake и Rattlesnake Ledge </a></li>
         </ul>
         <div class="right-banner"><!-- Google Adsense -->
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
@@ -62,123 +62,22 @@
         <div class="top-banner"><!-- Google Adsense -->
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_top_article_banner --><ins style="display:inline-block;width:980px;height:120px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="4549198145" class="adsbygoogle"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
-        </div><h1>My VSCode settings</h1><i class="fa fa-calendar">
-          <time>November 06, 2016</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#vscode"> vscode </a><a href="/tags/index.html#tools"> tools </a><a href="/tags/index.html#plugins"> plugins </a><a href="/tags/index.html#english"> english </a></i><p>I'm using VSCode as my main code editor for a long time.
-This is a good open source project done by Microsoft, code based on <a href="https://github.com/Microsoft/vscode">github</a>.
-And now it has more than 19K⭐️. </p>
-<p>Here I'd like to share my configs and plugin list for this editor.</p>
-<h2>Configs</h2>
-<p>VSCode supports 2 settings file: </p>
-<ul>
-<li>User Settings - <em>common settings for editor</em></li>
-<li>Workspace Settings - <em>these settings can override user settings</em></li>
-</ul>
-<p>My <code>settings.json</code> file:</p>
-<pre><code class="language-json">// Place your settings in this file to override the default settings
-{
-    // Editor
-
-    // The number of spaces a tab is equal to.
-    "editor.tabSize": 2,
-    // Controls whether the editor should render whitespace characters
-    "editor.renderWhitespace": "all",
-    // Controls whether the editor should render indent guides
-    "editor.renderIndentGuides": true,
-    
-    // Workbench
-
-    // Controls if opened editors should show in tabs or not.
-    "workbench.editor.showTabs": false,
-    
-    // File Explorer
-
-    // Number of editors shown in the Open Editors pane. Set it to 0 to hide the pane.
-    "explorer.openEditors.visible": 5,
-
-    // Search
-
-    // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/jspm_packages": true,
-        "**/bower_components": true
-    },
-
-    // Files
-
-    // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
-    "files.autoSave": "onWindowChange",
-
-    // Emmet
-
-    // When enabled, emmet abbreviations are expanded when pressing TAB.
-    "emmet.triggerExpansionOnTab": true,
-
-    // Preferences used to modify behavior of some actions and resolvers of Emmet.
-    "emmet.preferences": {},
-
-    // Define profile for specified syntax or use your own profile with specific rules.
-    "emmet.syntaxProfiles": {
-        "javascript": "html",
-        "typescript": "html"
-    },
-
-    // An array of languages where emmet abbreviations should not be expanded.
-    "emmet.excludeLanguages": [],
-    "typescript.check.tscVersion": false
-}
-</code></pre>
-<h2>Plugins</h2>
-<p>Below I provide my plugin list which helps me every day in my work.
-Full list of plugins you can find on <a href="https://marketplace.visualstudio.com/">VisualStudio Marketplace</a>.</p>
-<ol>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense">npm Intellisense</a></li>
-</ol>
-<blockquote>
-<p>Visual Studio Code plugin that autocompletes npm modules in import statements.</p>
-</blockquote>
-<ol start="2">
-<li><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a></li>
-</ol>
-<blockquote>
-<p>Visual Studio Code plugin that autocompletes filenames.</p>
-</blockquote>
-<ol start="3">
-<li><a href="https://marketplace.visualstudio.com/items?itemName=eg2.tslint">TSLint</a></li>
-</ol>
-<blockquote>
-<p>Integrates the <a href="https://github.com/palantir/tslint">tslint</a> linter for the TypeScript language into VS Code.</p>
-</blockquote>
-<ol start="4">
-<li><a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome">Debugger for Chrome</a></li>
-</ol>
-<blockquote>
-<p>A VS Code extension to debug your JavaScript code in the Google Chrome browser, or other targets that support the Chrome Debugging Protocol.</p>
-</blockquote>
-<ol start="5">
-<li><a href="https://marketplace.visualstudio.com/items?itemName=ryu1kn.annotator">Annotator</a></li>
-</ol>
-<blockquote>
-<p>Display git blame info along with your code. Can open the diff of a particullar commit from here.</p>
-</blockquote>
-<ol start="6">
-<li><a href="https://marketplace.visualstudio.com/items?itemName=seanmcbreen.Spell">Spelling and Grammar Checker</a></li>
-</ol>
-<blockquote>
-<p>Using a web service to detect mistakes and suggest fixes - great for Markdown or any plain text.</p>
-</blockquote>
-<ol start="7">
-<li><a href="https://marketplace.visualstudio.com/items?itemName=steoates.autoimport">Auto Import</a></li>
-</ol>
-<blockquote>
-<p>Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX.</p>
-</blockquote>
-<ol start="8">
-<li><a href="https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools">Cordova Tools</a> (usefull only if you a working with Cordova)</li>
-</ol>
-<blockquote>
-<p>Code-hinting, debugging and integrated commands for Apache Cordova (PhoneGap). With added support for ionic framework.</p>
-</blockquote>
+        </div><h1>Netherlands life. Old Utrecht and the castle De Haar.</h1><i class="fa fa-calendar">
+          <time>December 31, 2017</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#netherlands"> netherlands </a><a href="/tags/index.html#amsterdam"> amsterdam </a><a href="/tags/index.html#utrecht"> utrecht </a><a href="/tags/index.html#castle"> castle </a><a href="/tags/index.html#dehaar"> dehaar </a><a href="/tags/index.html#trip"> trip </a><a href="/tags/index.html#life"> life </a><a href="/tags/index.html#english"> english </a></i><h2>The castle De Haar</h2>
+<p>The De Haar Castle (10km on the bike in one direction) dates back to the 13th century. The last time was rebuilt from the ruins at the end of the 19th century by the Rothschild family.</p>
+<p><img src="/images/netherlands-life-old-utrecht-and-the-castle-de-haar/1.jpg" alt="The Bike" title="The Bike"></p>
+<p><img src="/images/netherlands-life-old-utrecht-and-the-castle-de-haar/2.jpg" alt="The De Haar Castle" title="The De Haar Castle"></p>
+<p><img src="/images/netherlands-life-old-utrecht-and-the-castle-de-haar/3.jpg" alt="The De Haar Castle interior" title="The De Haar Castle interior"></p>
+<p><strong>Interesting fact:</strong> the castle was badly damaged by a 1674 hurricane. The same hurricane demolished half of Utrecht Cathedral. </p>
+<h2>Utrecht</h2>
+<p>The two thousand-year-old Utrecht (half an hour by train from Amsterdam) turned out to be rich in architectural places.</p>
+<p>The bell tower (112m) at the cathedral is the highest in the Netherlands.</p>
+<p><img src="/images/netherlands-life-old-utrecht-and-the-castle-de-haar/5.jpg" alt="The bell tower" title="The bell tower"></p>
+<p><img src="/images/netherlands-life-old-utrecht-and-the-castle-de-haar/6.jpg" alt="The bell tower interior" title="The bell tower interior"></p>
+<p><img src="/images/netherlands-life-old-utrecht-and-the-castle-de-haar/7.jpg" alt="The bell tower from the street" title="The bell tower from the street"></p>
+<p>A unique feature for Holland is the local two-level channels. On the lower "floor" you can find pretty cafes pretty often.</p>
+<p><img src="/images/netherlands-life-old-utrecht-and-the-castle-de-haar/4.jpg" alt="The Utrecht channels" title="The Utrecht channels"></p>
+<p>Happy visiting Utrecht! :y:</p>
       </article>
     </div>
     <div class="wrap"><!-- Yandex.RTB R-A-334917-1 -->

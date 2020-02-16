@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 25 Jan 2020 23:50:46 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Feb 2020 01:16:54 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -188,6 +188,20 @@
             <link>https://alfilatov.com//posts/bohemian-rhapsody-review/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/bohemian-rhapsody-review/</guid>
             <pubDate>Sun, 11 Nov 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Old Utrecht and the castle De Haar.</h1>]]></title>
+            <description><![CDATA[netherlands, amsterdam, utrecht, castle, dehaar, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-old-utrecht-and-the-castle-de-haar/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-old-utrecht-and-the-castle-de-haar/</guid>
+            <pubDate>Sun, 31 Dec 2017 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Day trip to Edam and Volendam.</h1>]]></title>
+            <description><![CDATA[netherlands, amsterdam, edam, volendam, lifestyle, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-day-trip-to-edam-and-volendam/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-day-trip-to-edam-and-volendam/</guid>
+            <pubDate>Sun, 24 Dec 2017 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>How we have validated the theory of 6 handshakes (six degrees of separation) via social network?</h1>]]></title>
