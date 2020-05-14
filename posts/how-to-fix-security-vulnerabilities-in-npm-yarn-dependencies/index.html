@@ -9,7 +9,7 @@
       });
     </script><!-- /Google Adsense -->
     <meta charset="utf-8">
-    <title>Is your npm install still too slow?</title><!-- Yandex Webmaster -->
+    <title>How to fix security vulnerabilities in NPM/Yarn dependencies</title><!-- Yandex Webmaster -->
     <meta name="yandex-verification" content="610e7b6bb48fc4d6"><!-- WoT Verification -->
     <meta name="wot-verification" content="6c0d169b1afe357fe29c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,10 +27,10 @@
     <meta property="article:author" content="https://alfilatov.com/about/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@greybax">
-    <meta property="description" content="npm, performance, optimization, pnpm, build, frontend, english">
-    <meta name="og:url" content="/posts/is-your-npm-install-still-too-slow/">
-    <meta name="og:title" content="Is your npm install still too slow?">
-    <meta name="og:description" content="npm, performance, optimization, pnpm, build, frontend, english"><!—- ShareThis BEGIN -—>
+    <meta property="description" content="javascript, npm, yarn, security, vulnerability, english">
+    <meta name="og:url" content="/posts/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/">
+    <meta name="og:title" content="How to fix security vulnerabilities in NPM/Yarn dependencies">
+    <meta name="og:description" content="javascript, npm, yarn, security, vulnerability, english"><!—- ShareThis BEGIN -—>
     <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
   </head>
   <body>
@@ -47,11 +47,11 @@
     <div class="wrap-flex">
       <div class="related-posts"><span class="header">Related posts</span>
         <ul>
-          <li><a href="/posts/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/"> How to fix security vulnerabilities in NPM/Yarn dependencies </a></li>
-          <li><a href="/posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/"> How to migrate your SPA from JSPM/SystemsJS to Webpack? </a></li>
-          <li><a href="/posts/how-to-separate-your-webpack-configs/"> How to separate your Webpack configs? </a></li>
-          <li><a href="/posts/how-to-make-your-js-code-faster-just-adding-some-parenthesis/"> How to make your JS code faster just adding some parenthesis? </a></li>
-          <li><a href="/posts/how-to-setup-proguard-in-cordova-application/"> How to setup Proguard in Cordova application? </a></li>
+          <li><a href="/posts/profilirovaniie-v-js/"> Профилирование в JS </a></li>
+          <li><a href="/posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/"> Debugging файлов TypeScript в браузере через эмулятор DevExtreme </a></li>
+          <li><a href="/posts/gdie-ia-bieru-informatsiiu-o-mirie-frontend/"> Что можно почитать по frontend'у </a></li>
+          <li><a href="/posts/poluchaiem-spisok-obrabotchikov-eliemienta-stranitsy/"> Получаем список обработчиков элемента в DOM'е </a></li>
+          <li><a href="/posts/es6-classes-final/"> [Frontender Magazine] Классы в ECMAScript 6 </a></li>
         </ul>
         <div class="right-banner"><!-- Google Adsense -->
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
@@ -62,28 +62,63 @@
         <div class="top-banner"><!-- Google Adsense -->
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_top_article_banner --><ins style="display:inline-block;width:980px;height:120px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="4549198145" class="adsbygoogle"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
-        </div><h1>Is your <code>npm install</code> still too slow?</h1><i class="fa fa-calendar">
-          <time>January 21, 2019</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#npm"> npm </a><a href="/tags/index.html#performance"> performance </a><a href="/tags/index.html#optimization"> optimization </a><a href="/tags/index.html#pnpm"> pnpm </a><a href="/tags/index.html#build"> build </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#english"> english </a></i><p>Today we have a big choice of package managers for our frontend apps such as JSPM, NPM, Yarn, Bower, etc.. Some of them has been outdated and some of them still grow its popularity such as NPM and Yarn. And everybody who worked with NPM faced with huge size <code>npm_modules</code> directory and dependencies hell in our apps. All these leads us to big performance gaps in build pipelines of our apps.</p>
-<p>One of project on which I've worked on has NPM as main package manager and <code>npm install</code> command takes almost 3 minutes on our CI builds. And of course this time still grows with growing our app. Some of devs suggest us to use Yarn, but in this case we will have to face with <a href="https://yarnpkg.com/lang/en/docs/migrating-from-npm/">Migrating to Yarn from NPM</a>. In some ways this is a pretty good solution, but I would to go deeper and found for myself nice solution which nice fit for all our team.</p>
-<h2>Solution is PNPM!</h2>
-<blockquote>
-<p>PNPM - Fast, disk space efficient package manager.</p>
-</blockquote>
-<p><a href="https://pnpm.js.org/">pnpm.js.org</a></p>
-<h3>Pros:</h3>
+        </div><h1>How to fix security vulnerabilities in NPM/Yarn dependencies</h1><i class="fa fa-calendar">
+          <time>May 13, 2020</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#npm"> npm </a><a href="/tags/index.html#yarn"> yarn </a><a href="/tags/index.html#security"> security </a><a href="/tags/index.html#vulnerability"> vulnerability </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
+<p>Not so long ago Github introduced security alerts:</p>
+<p><img src="/images/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/image1.PNG" alt="Github security alert"></p>
+<p>So lot of developers started to use in their applications to make them secure. However we still facing with issues that 3rd party packages from your <code>package.json</code> dependecies have vulnerabilities. So it that case it's not so obvious how to fix that issues.</p>
+<p>But we have some options how to fix them. </p>
+<h2><code>NPM/Yarn update</code></h2>
+<p><code>npm update</code> or <code>yarn update</code></p>
+<p>This is the simplest way to fix security issue, but sometimes it will doesn't work because it may cause updates to many packages and as result deep testing of your app.</p>
+<h2>NPM packages</h2>
+<p>If you are using npm <strong><em>greater than 6 version</em></strong>, so you can use pretty good intrument like:</p>
+<p>Show only potential vulnerabilities in your dependecies:</p>
+<pre><code class="language-bash">npm audit
+</code></pre>
+<p>Execute vulnerabilities fix mechanism:</p>
+<pre><code class="language-bash">npm audit fix
+</code></pre>
 <ul>
-<li><em><strong>Fast</strong></em> - pnpm is as fast and sometimes even faster than NPM and Yarn (see <a href="https://github.com/pnpm/benchmarks-of-javascript-package-managers">benchmarks</a>)</li>
-<li><em><strong>Efficient</strong></em> - One version of a package is saved only ever once on a disk. So you save dozens of gigabytes of disk space!</li>
-<li><em><strong>Strict</strong></em> - pnpm creates a non-flat <code>node_modules</code>, so code has no access to arbitrary packages</li>
-<li>In our case after installing pnpm we've just renamed <code>npm install</code> --> <code>pnpm install</code> in <code>package.json</code> file and build time on our CI decreases from 3 minites to 30 seconds (in 6x times!).</li>
+<li>remove <code>node_modules</code> before run this command</li>
+<li>Do not recomend you to use <code>--force</code> flag here, because in that case <code>npm audit</code> will override some deps which might be not compatible with existing ones.</li>
 </ul>
+<h2>Yarn packages</h2>
+<p>Yarn also has <code>yarn audit</code> mechanism, but it hasn't <code>yarn audit fix</code> mechanism. So in most cases you have to fix these issues manually. So how it works. As example will demonstrate it for <code>minimist</code> package:</p>
+<ol>
+<li>Add a resolutions key in your <code>package.json</code> file:</li>
+</ol>
+<pre><code class="language-json">{
+  "resolutions": {
+    "minimist": "^1.2.5"
+  }
+}
+</code></pre>
+<ol start="2">
+<li>Use <code>npm-force-resolutions</code> (<a href="https://www.npmjs.com/package/npm-force-resolutions">https://www.npmjs.com/package/npm-force-resolutions</a>) by adding <code>preinstall</code> command under <code>"script"</code> category:</li>
+</ol>
+<pre><code class="language-json">"scripts": {
+  "preinstall": "npx npm-force-resolutions"
+}
+</code></pre>
+<ol start="3">
+<li>Run <code>npm install</code>.</li>
+</ol>
+<p>That’s it. It will update your <code>package-lock.json</code>/<code>yarn.lock</code> files accordingly. That solves the dependency issues which can not be updated using either npm update or by uninstalling and reinstalling a new dependency.
+So <code>minimist</code> versions into your <code>yarn.lock</code> file will look like:</p>
+<pre><code>minimist@0.0.8, minimist@1.2.0, minimist@^1.1.0, minimist@^1.1.1, minimist@^1.1.3, minimist@^1.2.0, minimist@^1.2.5, minimist@~0.0.1:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
+  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+</code></pre>
+<p><strong>Please keep in mind</strong> if some packages are only compatible with an older version, then this change might break your app. So be careful while resolving to a particular version and test your app before releasing this change.</p>
 <h2>Useful links</h2>
 <ul>
-<li><a href="https://pnpm.js.org/">PNPM website</a></li>
-<li><a href="https://github.com/pnpm">Organization on Github</a></li>
-<li><a href="https://github.com/rstacruz">Rico Sta. Cruz - Author @pnpm</a></li>
-<li><a href="https://github.com/zkochan">Zoltan Kochan - Maintainer of @pnpm</a></li>
+<li><a href="https://docs.npmjs.com/cli/audit">npm audit</a></li>
+<li><a href="https://classic.yarnpkg.com/en/docs/cli/audit/">yarn audit</a></li>
+<li><a href="https://snyk.io/vuln">Detailed information and remediation guidance for known vulnerabilities</a></li>
 </ul>
+<p>Happy fix vulnerabilities and make your code safe! :y:</p>
       </article>
     </div>
     <div class="wrap"><!-- Yandex.RTB R-A-334917-1 -->
