@@ -28,7 +28,7 @@ Since the main app has been deployed to host and was using by VSCode via iframe,
 
 _**Usage:**_
 
-```js
+```javascript
 // call it in the code where you want to pass your data through iframe
 window.parent.postMessage({ message: "getAppData", value: MyDataToPass }, "*");
 ```
@@ -37,7 +37,7 @@ window.parent.postMessage({ message: "getAppData", value: MyDataToPass }, "*");
 
 _**Usage:**_
 
-```typescript
+```javascript
 export default class WelcomePanel extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
