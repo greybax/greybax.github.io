@@ -23,7 +23,9 @@ import Multimap from 'multimap';
 
 import { site } from './package.json';
 
-const env = process.env.NODE_ENV || 'dev';
+// const env = process.env.NODE_ENV || 'dev';
+const env = 'prod';
+
 const pathPosts = '/posts/';
 const getBasename = (file) => path.basename(file.relative, path.extname(file.relative));
 
@@ -183,25 +185,6 @@ gulp.task('tags', () =>
 gulp.task('each-article', (done) => { each(articlesList, buildArticle, done); });
 gulp.task('rss', (done) => { output('dist/rss.xml', getRSS(site, articlesList), done); });
 
-gulp.task('watch', ['express', 'build'], () => {
-  watch(['**/*{jade,md,json}', '*.css'], () => { gulp.start('build'); });
-});
-
-gulp.task('build', (done) => {
-  sequence('clean'
-    , 'articles-registry'
-    , 'about-registry'
-    , 'tags'
-    , ['index-page', 'each-article', 'rss']
-    , 'about-page'
-    , 'css'
-    , 'copy-font-awesome'
-    , 'copy-images'
-    , 'copy-files'
-    , 'copy-presentations'
-    , done);
-});
-
 gulp.task('css', () =>
   gulp.src('css/*.css')
     .pipe(postcss([
@@ -223,9 +206,9 @@ gulp.task('copy-images', () =>
 
 gulp.task('copy-files', () =>
   gulp.src([
-    'favicon.ico', 
-    'sitemap.xml', 
-    'robots.txt', 
+    'favicon.ico',
+    'sitemap.xml',
+    'robots.txt',
     'ads.txt',
     'CNAME'
   ])
@@ -237,13 +220,11 @@ gulp.task('copy-presentations', () =>
     .pipe(gulp.dest('dist/es6_presentation'))
 );
 
-gulp.task('clean', (done) => { del(['dist']).then(() => { done(); }); });
-gulp.task('gh', ['build'], (done) => {
-  buildbranch({
-    branch: 'master',
-    folder: 'dist',
-    noVerify: true
-  }, done);
+gulp.task('clean', (done) => {
+  del(['dist'])
+    .then(() => {
+      done();
+    });
 });
 
 gulp.task('express', () => {
@@ -251,4 +232,32 @@ gulp.task('express', () => {
   log('Server is running on http://localhost:4000');
 });
 
-gulp.task('default', ['watch']);
+gulp.task('build', gulp.series(
+  'clean'
+  , 'articles-registry'
+  , 'about-registry'
+  , 'tags'
+  , gulp.parallel('index-page', 'each-article', 'rss')
+  , 'about-page'
+  , 'css'
+  , 'copy-font-awesome'
+  , 'copy-images'
+  , 'copy-files'
+  , 'copy-presentations'
+), (done) => {
+  done();
+});
+
+gulp.task('gh', gulp.series('build', (done) => {
+  buildbranch({
+    branch: 'master',
+    folder: 'dist',
+    noVerify: true
+  }, done);
+}));
+
+gulp.task('watch', gulp.series('express', 'build', () => {
+  watch(['**/*{jade,md,json}', '*.css'], () => { gulp.start('build'); });
+}));
+
+gulp.task('default', gulp.series('watch'));

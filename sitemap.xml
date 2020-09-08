@@ -18,6 +18,11 @@
 </url>
 
 <url>
+  <loc>https://alfilatov.com/posts/how-to-pass-data-between-iframe-and-parent-window/</loc>
+  <lastmod>2020-09-08T14:55:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://alfilatov.com/posts/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/</loc>
   <lastmod>2020-05-13T23:36:06+00:00</lastmod>
   <priority>0.80</priority>
