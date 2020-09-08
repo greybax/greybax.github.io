@@ -79,12 +79,12 @@
 </blockquote>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">Link to MDN</a></p>
 <p><em><strong>Usage:</strong></em></p>
-<pre><code class="language-js">// call it in the code where you want to pass your data through iframe
+<pre><code class="language-javascript">// call it in the code where you want to pass your data through iframe
 window.parent.postMessage({ message: "getAppData", value: MyDataToPass }, "*");
 </code></pre>
 <h3><code>onMessage</code>/<code>onReceiveMessage</code></h3>
 <p><em><strong>Usage:</strong></em></p>
-<pre><code class="language-typescript">export default class WelcomePanel extends React.Component&#x3C;any, any> {
+<pre><code class="language-javascript">export default class WelcomePanel extends React.Component&#x3C;any, any> {
   constructor(props: any) {
     super(props);
     ...
