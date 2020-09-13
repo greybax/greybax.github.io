@@ -1,6 +1,6 @@
 # We started our YouTube channel
 
-#youtube, #vlog, #video, #wa-travellers, $travel, #english;
+#youtube, #vlog, #video, #wa-travelers, #travel, #english;
 
 _March 28, 2019_
 

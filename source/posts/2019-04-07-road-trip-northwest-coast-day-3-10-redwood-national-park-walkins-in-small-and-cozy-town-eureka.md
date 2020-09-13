@@ -1,6 +1,6 @@
 # Road trip Northwest Coast. Day 3/10. Redwood National Park. Walkins in small and cozy town Eureka
 
-#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #redwood, #california, #wa-travellers, #english;
+#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #redwood, #california, #youtube, #vlog, #video, #wa-travelers, #travel, #english;
 
 _April 07, 2019_
 

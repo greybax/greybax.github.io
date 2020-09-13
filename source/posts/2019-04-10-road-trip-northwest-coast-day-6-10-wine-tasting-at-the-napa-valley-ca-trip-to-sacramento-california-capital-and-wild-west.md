@@ -1,6 +1,6 @@
 # Road trip Northwest Coast. Day 6/10. Wine tasting at the Napa Valley, CA. Trip to Sacramento - California Capital and Wild West
 
-#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #california, #napa-valley, #sacramento, #wa-travellers, #english;
+#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #california, #napa-valley, #sacramento, #youtube, #vlog, #video, #wa-travelers, #travel, #english;
 
 _April 10, 2019_
 

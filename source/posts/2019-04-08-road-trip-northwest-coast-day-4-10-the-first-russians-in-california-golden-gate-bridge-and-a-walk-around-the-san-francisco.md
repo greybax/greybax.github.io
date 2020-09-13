@@ -1,6 +1,6 @@
 # Road trip Northwest Coast. Day 4/10. The first Russians in California. Golden Gate Bridge and a walk around the San Francisco
 
-#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #california, #fort-ross, #san-francisco, #wa-travellers, #english;
+#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #california, #fort-ross, #san-francisco, #youtube, #vlog, #video, #wa-travelers, #travel, #english;
 
 _April 08, 2019_
 

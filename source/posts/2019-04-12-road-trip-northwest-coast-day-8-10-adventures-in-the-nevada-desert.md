@@ -1,6 +1,6 @@
 # Road trip Northwest Coast. Day 8/10. Adventures in the Nevada Desert
 
-#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #nevada, #wa-travellers, #english;
+#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #nevada, #youtube, #vlog, #video, #wa-travelers, #travel, #english;
 
 _April 12, 2019_
 
