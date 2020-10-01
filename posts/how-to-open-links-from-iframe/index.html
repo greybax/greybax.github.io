@@ -67,14 +67,14 @@
 <p>Month ago I've wrote about <a href="/posts/how-to-pass-data-between-iframe-and-parent-window/">How to pass data between iframe and parent window</a>. Today I'd like to share a similar experience related to iframes. Perhaps if you developed web applications and using iframes to showing them somewhere in your tools you faced with experience that links <code>&#x3C;a>&#x3C;/a></code> doesn't work. If you will click on the link it will not navigate you by <code>href</code> url. I've faced this behavior while developed VSCode extension with webview/iframe.</p>
 <h2>Web app</h2>
 <p>As we know we can iframe using <code>postMessage/onMessage</code> mechanism for communication between iframe and app in iframe. So keeping in mind this idea we can implement the similar technique to open links from our application via iframe. Let's write some <code>TypeScript</code> code.</p>
-<pre><code class="language-typescript">export default function openLinkThroughIframe(uri: string) {
+<pre><code class="language-js">export default function openLinkThroughIframe(uri: string) {
   window.parent.postMessage({
     message: "openExternalLink",
     link: uri
   }, "*");
 }
 </code></pre>
-<pre><code class="language-html">&#x3C;a
+<pre><code class="language-jsx">&#x3C;a
   onClick={() => openLinkThroughIframe("/")}
   href="/"
 >Go to alfilatov.com
@@ -86,7 +86,7 @@
 <p>Think of a webview as an iframe within VS Code that your extension controls. A webview can render almost any HTML content in this frame, and it communicates with extensions using message passing. This freedom makes webviews incredibly powerful, and opens up a whole new range of extension possibilities.</p>
 </blockquote>
 <p>So once we've created webview into our extension we can subscribe on any messages which we can pass from our web app.</p>
-<pre><code class="language-typescript">// Handle messages from the webview
+<pre><code class="language-js">// Handle messages from the webview
 this.panel.webview.onDidReceiveMessage(msg => {
   switch (msg.command) {
     case "openExternalLink":
