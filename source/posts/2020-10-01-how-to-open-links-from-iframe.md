@@ -12,7 +12,7 @@ Month ago I've wrote about [How to pass data between iframe and parent window](/
 
 As we know we can iframe using `postMessage/onMessage` mechanism for communication between iframe and app in iframe. So keeping in mind this idea we can implement the similar technique to open links from our application via iframe. Let's write some `TypeScript` code.
 
-```typescript
+```js
 export default function openLinkThroughIframe(uri: string) {
   window.parent.postMessage({
     message: "openExternalLink",
@@ -21,7 +21,7 @@ export default function openLinkThroughIframe(uri: string) {
 }
 ```
 
-```html
+```jsx
 <a
   onClick={() => openLinkThroughIframe("https://alfilatov.com")}
   href="https://alfilatov.com"
@@ -37,7 +37,7 @@ As we know VSCode is using iframe underhood of its webview actually, so this exa
 
 So once we've created webview into our extension we can subscribe on any messages which we can pass from our web app.
 
-```typescript
+```js
 // Handle messages from the webview
 this.panel.webview.onDidReceiveMessage(msg => {
   switch (msg.command) {
