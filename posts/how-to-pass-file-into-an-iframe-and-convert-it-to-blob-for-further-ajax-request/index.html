@@ -91,7 +91,7 @@ datauri('test/myfile.png', (err, content, meta) => {
   console.log(meta.base64); //=> "iVBORw0KGgoAAAANSUhEUgAA..."
 });
 </code></pre>
-<pre><code class="language-javascript">// call it in the code where you want to pass your data through iframe
+<pre><code class="language-js">// call it in the code where you want to pass your data through iframe
 window.parent.postMessage({ message: "sendFile", value: datauri }, "*");
 </code></pre>
 <pre><code class="language-js">window.addEventListener("message", receiveMessage, false);
