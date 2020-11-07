@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 01 Oct 2020 23:02:36 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Nov 2020 04:36:57 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to pass file into an iframe and convert it to Blob for further AJAX request</h1>]]></title>
+            <description><![CDATA[iframe, vscode, extensions, javascript, typescript, data-transfer, datauri, blob english]]></description>
+            <link>https://alfilatov.com//posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</guid>
+            <pubDate>Fri, 06 Nov 2020 08:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>How to open links from iframe</h1>]]></title>
             <description><![CDATA[iframe, vscode, extensions, html, javascript, typescript, data-transfer, english]]></description>

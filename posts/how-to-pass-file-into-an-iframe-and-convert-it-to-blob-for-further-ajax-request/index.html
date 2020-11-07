@@ -9,7 +9,7 @@
       });
     </script><!-- /Google Adsense -->
     <meta charset="utf-8">
-    <title>[habrahabr] Мысли вслух о TypeScript</title><!-- Yandex Webmaster -->
+    <title>How to pass file into an iframe and convert it to Blob for further AJAX request</title><!-- Yandex Webmaster -->
     <meta name="yandex-verification" content="610e7b6bb48fc4d6"><!-- WoT Verification -->
     <meta name="wot-verification" content="6c0d169b1afe357fe29c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,10 +27,10 @@
     <meta property="article:author" content="https://alfilatov.com/about/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@greybax">
-    <meta property="description" content="habrahabr, typescript, russian">
-    <meta name="og:url" content="/posts/thoughts-about-typescript/">
-    <meta name="og:title" content="[habrahabr] Мысли вслух о TypeScript">
-    <meta name="og:description" content="habrahabr, typescript, russian"><!—- ShareThis BEGIN -—>
+    <meta property="description" content="iframe, vscode, extensions, javascript, typescript, data-transfer, datauri, blob english">
+    <meta name="og:url" content="/posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/">
+    <meta name="og:title" content="How to pass file into an iframe and convert it to Blob for further AJAX request">
+    <meta name="og:description" content="iframe, vscode, extensions, javascript, typescript, data-transfer, datauri, blob english"><!—- ShareThis BEGIN -—>
     <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
   </head>
   <body>
@@ -47,11 +47,11 @@
     <div class="wrap-flex">
       <div class="related-posts"><span class="header">Related posts</span>
         <ul>
-          <li><a href="/posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/"> Debugging файлов TypeScript в браузере через эмулятор DevExtreme </a></li>
-          <li><a href="/posts/mighriruiem-js-kod-v-typescript/"> Мигрируем Javascript код в TypeScript </a></li>
-          <li><a href="/posts/how-to-separate-your-webpack-configs/"> How to separate your Webpack configs? </a></li>
+          <li><a href="/posts/how-to-pass-data-between-iframe-and-parent-window/"> How to pass data between iframe and parent window </a></li>
           <li><a href="/posts/how-to-open-links-from-iframe/"> How to open links from iframe </a></li>
-          <li><a href="/posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/"> How to pass file into an iframe and convert it to Blob for further AJAX request </a></li>
+          <li><a href="/posts/my-collection-of-useful-github-extensions/"> My collection of useful Github extension </a></li>
+          <li><a href="/posts/useful-extensions-for-amazon-shopping/"> Useful extensions for Amazon shopping </a></li>
+          <li><a href="/posts/how-to-use-react-routing-into-webview-for-vscode-extensions/"> How to use React Routing into Webview for VSCode extensions? </a></li>
         </ul>
         <div class="right-banner"><!-- Google Adsense -->
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
@@ -62,10 +62,83 @@
         <div class="top-banner"><!-- Google Adsense -->
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_top_article_banner --><ins style="display:inline-block;width:980px;height:120px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="4549198145" class="adsbygoogle"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
-        </div><h1>[habrahabr] Мысли вслух о TypeScript</h1><i class="fa fa-calendar">
-          <time>December 21, 2015</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#habrahabr"> habrahabr </a><a href="/tags/index.html#typescript"> typescript </a><a href="/tags/index.html#russian"> russian </a></i><script type="text/javascript">
-	window.location.href = 'https://habrahabr.ru/post/272055/';
-</script>
+        </div><h1>How to pass file into an iframe and convert it to Blob for further AJAX request</h1><i class="fa fa-calendar">
+          <time>November 6, 2020</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#iframe"> iframe </a><a href="/tags/index.html#vscode"> vscode </a><a href="/tags/index.html#extensions"> extensions </a><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#typescript"> typescript </a><a href="/tags/index.html#data-transfer"> data-transfer </a><a href="/tags/index.html#datauri"> datauri </a><a href="/tags/index.html#blob #english"> blob #english </a></i><h2>Intro</h2>
+<p>You have <code>NodeJS</code> service code with access to file system and you want to pass files through iframe from your service to web app for further sending file through AJAX. So in this post I'd like to share my findings with everyone how I've done it. Hope it will save bunch of time for someone :)</p>
+<p>I've already wrote couple posts about how to deal <code>iframe</code> here:</p>
+<ul>
+<li><a href="/posts/how-to-pass-data-between-iframe-and-parent-window/">How to pass data between iframe and parent window</a></li>
+<li><a href="/posts/how-to-open-links-from-iframe/">How to open links from iframe</a></li>
+</ul>
+<p>and this post will have the similar context. But instead of just common <code>"data"</code> we're going to pass file through iframe.</p>
+<p>The alghorithm will be the similar as I've already described into this post <a href="/posts/how-to-pass-data-between-iframe-and-parent-window/">How to pass data between iframe and parent window</a>, but we will have to done one more step before that.</p>
+<h2>DataURI</h2>
+<blockquote>
+<p>The data URI scheme is a uniform resource identifier (URI) scheme that provides a way to include data in-line in Web pages as if they were external resources. It is a form of file literal or here document. This technique allows normally separate elements such as images and style sheets to be fetched in a single Hypertext Transfer Protocol (HTTP) request, which may be more efficient than multiple HTTP requests,[1] and used by several browser extensions to package images as well as other multimedia contents in a single HTML file for page saving.<a href="">2</a> As of 2015, data URIs are fully supported by most major browsers, and partially supported in Internet</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Data_URI_scheme">wikipedia</a> (c)</p>
+<p>So <code>data URI</code> will help us to encode file into uri string and pass this string as data through iframe using already known <code>postMessage/onMessage</code> mechanism. </p>
+<p>I've used <a href="https://www.npmjs.com/package/datauri">datauri</a> NPM package.</p>
+<pre><code class="language-js">const datauri = require('datauri');
+ 
+datauri('test/myfile.png', (err, content, meta) => {
+  if (err) {
+      throw err;
+  }
+ 
+  console.log(content); //=> "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..."
+  console.log(meta.mimetype); //=> "image/png"
+  console.log(meta.base64); //=> "iVBORw0KGgoAAAANSUhEUgAA..."
+});
+</code></pre>
+<pre><code class="language-javascript">// call it in the code where you want to pass your data through iframe
+window.parent.postMessage({ message: "sendFile", value: datauri }, "*");
+</code></pre>
+<pre><code class="language-js">window.addEventListener("message", receiveMessage, false);
+
+let receiveMessage = (event: any) => {
+  const message = event.data.message;
+
+  switch (message) {
+    case 'sendFile':
+      getFile(event.data.value);
+      break;
+  }
+  ...
+}
+</code></pre>
+<pre><code class="language-js">let getFile = (fileUri: string) => {
+  let blob = dataURItoBlob(dataUri);
+  sendAjaxRequest(blob);
+}
+</code></pre>
+<p>as you already might to notice we've used <code>dataURItoBlob</code> which is actually looks like:</p>
+<pre><code class="language-js">let dataURItoBlob = (dataURI: string) => {
+  // convert base64 to raw binary data held in a string
+  // doesn't handle URLEncoded DataURIs - see SO answer #6850276 for code that does this
+  let byteString = atob(dataURI.split(',')[1]);
+
+  // separate out the mime component
+  let mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+
+  // write the bytes of the string to an ArrayBuffer
+  let ab = new ArrayBuffer(byteString.length);
+  let ia = new Uint8Array(ab);
+  for (let i = 0; i &#x3C; byteString.length; i++) {
+    ia[i] = byteString.charCodeAt(i);
+  }
+
+  return new Blob([ab], { type: mimeString });
+}
+</code></pre>
+<p>We've used this function to convert our <code>dataURI</code> into <code>Blob</code> for passing it through AJAX.</p>
+<h2>Useful Links</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Data_URI_scheme">Data URI Scheme</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Blob">Blob</a></li>
+<li><a href="https://stackoverflow.com/questions/6850276">SO question: How to convert dataURL to file object in javascript?</a></li>
+</ul>
+<p>Happy passing files into iframes! :y:</p>
       </article>
     </div>
     <div class="wrap"><!-- Google Adsense -->
