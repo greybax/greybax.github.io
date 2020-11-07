@@ -25,7 +25,8 @@ The alghorithm will be the similar as I've already described into this post [How
 
 So `data URI` will help us to encode file into uri string and pass this string as data through iframe using already known `postMessage/onMessage` mechanism. 
 
-## Step 1
+
+### Step 1
 
 I've used [datauri](https://www.npmjs.com/package/datauri) NPM package.
 
@@ -43,14 +44,16 @@ datauri('test/myfile.png', (err, content, meta) => {
 });
 ```
 
-## Step 2
 
-```javascript
+### Step 2
+
+```js
 // call it in the code where you want to pass your data through iframe
 window.parent.postMessage({ message: "sendFile", value: datauri }, "*");
 ```
 
-## Step 3
+
+### Step 3
 
 ```js
 window.addEventListener("message", receiveMessage, false);
@@ -67,7 +70,8 @@ let receiveMessage = (event: any) => {
 }
 ```
 
-## Step 4
+
+### Step 4
 
 ```js
 let getFile = (fileUri: string) => {
