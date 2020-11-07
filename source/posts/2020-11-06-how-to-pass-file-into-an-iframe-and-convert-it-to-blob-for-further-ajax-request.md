@@ -1,6 +1,6 @@
 # How to pass file into an iframe and convert it to Blob for further AJAX request
 
-#iframe, #vscode, #extensions, #javascript, #typescript, #data-transfer, #datauri, #blob #english;
+#iframe, #vscode, #extensions, #javascript, #typescript, #data-transfer, #datauri, #blob, #english;
 
 _November 6, 2020_
 
@@ -19,13 +19,13 @@ The alghorithm will be the similar as I've already described into this post [How
 
 ## DataURI
 
-> The data URI scheme is a uniform resource identifier (URI) scheme that provides a way to include data in-line in Web pages as if they were external resources. It is a form of file literal or here document. This technique allows normally separate elements such as images and style sheets to be fetched in a single Hypertext Transfer Protocol (HTTP) request, which may be more efficient than multiple HTTP requests,[1] and used by several browser extensions to package images as well as other multimedia contents in a single HTML file for page saving.[2][3] As of 2015, data URIs are fully supported by most major browsers, and partially supported in Internet
+> The data URI scheme is a uniform resource identifier (URI) scheme that provides a way to include data in-line in Web pages as if they were external resources. It is a form of file literal or here document. This technique allows normally separate elements such as images and style sheets to be fetched in a single Hypertext Transfer Protocol (HTTP) request, which may be more efficient than multiple HTTP requests, and used by several browser extensions to package images as well as other multimedia contents in a single HTML file for page saving. As of 2015, data URIs are fully supported by most major browsers, and partially supported in Internet
 
 [wikipedia](https://en.wikipedia.org/wiki/Data_URI_scheme) (c)
 
 So `data URI` will help us to encode file into uri string and pass this string as data through iframe using already known `postMessage/onMessage` mechanism. 
 
-### Step 1
+## Step 1
 
 I've used [datauri](https://www.npmjs.com/package/datauri) NPM package.
 
@@ -43,14 +43,14 @@ datauri('test/myfile.png', (err, content, meta) => {
 });
 ```
 
-### Step 2
+## Step 2
 
 ```javascript
 // call it in the code where you want to pass your data through iframe
 window.parent.postMessage({ message: "sendFile", value: datauri }, "*");
 ```
 
-### Step 3
+## Step 3
 
 ```js
 window.addEventListener("message", receiveMessage, false);
@@ -67,7 +67,7 @@ let receiveMessage = (event: any) => {
 }
 ```
 
-### Step 4
+## Step 4
 
 ```js
 let getFile = (fileUri: string) => {
