@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 07 Nov 2020 04:53:17 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Nov 2020 22:54:48 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -286,6 +286,20 @@
             <link>https://alfilatov.com//posts/bohemian-rhapsody-review/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/bohemian-rhapsody-review/</guid>
             <pubDate>Sun, 11 Nov 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Weekend Trip to Belgium (Brussels).</h1>]]></title>
+            <description><![CDATA[netherlands, amsterdam, brussels, belgium, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-weekend-trip-to-belgium-brussels/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-weekend-trip-to-belgium-brussels/</guid>
+            <pubDate>Thu, 15 Mar 2018 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Weekend Trip to Belgium (Ghent).</h1>]]></title>
+            <description><![CDATA[netherlands, amsterdam, ghent, belgium, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-weekend-trip-to-belgium-ghent/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-weekend-trip-to-belgium-ghent/</guid>
+            <pubDate>Tue, 13 Mar 2018 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Netherlands life. Day trip to Rotterdam.</h1>]]></title>
