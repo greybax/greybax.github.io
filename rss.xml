@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 08 Nov 2020 22:54:48 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Nov 2020 01:04:53 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>Как взять машину в лизинг в Америке и не быть обманутым</h1>]]></title>
+            <description><![CDATA[driver, cars, usa, wa, life, lease, russian]]></description>
+            <link>https://alfilatov.com//posts/how-to-lease-a-car-in-usa/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-lease-a-car-in-usa/</guid>
+            <pubDate>Wed, 18 Nov 2020 08:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>How to pass file into an iframe and convert it to Blob for further AJAX request</h1>]]></title>
             <description><![CDATA[iframe, vscode, extensions, javascript, typescript, data-transfer, datauri, blob, english]]></description>
