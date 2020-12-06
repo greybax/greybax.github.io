@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 19 Nov 2020 01:04:53 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 06 Dec 2020 01:04:59 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -293,6 +293,13 @@
             <link>https://alfilatov.com//posts/bohemian-rhapsody-review/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/bohemian-rhapsody-review/</guid>
             <pubDate>Sun, 11 Nov 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Day trip to Haarlem.</h1>]]></title>
+            <description><![CDATA[netherlands, amsterdam, haarlem, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-day-trip-to-haarlem/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-day-trip-to-haarlem/</guid>
+            <pubDate>Sun, 25 Mar 2018 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Netherlands life. Weekend Trip to Belgium (Brussels).</h1>]]></title>
