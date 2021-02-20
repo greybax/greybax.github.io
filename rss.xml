@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 10 Jan 2021 00:43:33 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Feb 2021 21:42:37 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to create, debug and deploy your MS Teams apps using VSCode</h1>]]></title>
+            <description><![CDATA[microsoft, teams, msteams, debug, deploy, vscode, extension, react, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-create-debug-and-deploy-your-ms-teams-apps-using-vscode/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-debug-and-deploy-your-ms-teams-apps-using-vscode/</guid>
+            <pubDate>Sat, 20 Feb 2021 08:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>How to create self-signed certificate</h1>]]></title>
             <description><![CDATA[certificate, ssl, localhost, debug, windows, osx, english]]></description>
