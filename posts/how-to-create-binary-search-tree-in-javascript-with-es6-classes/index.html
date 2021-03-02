@@ -9,7 +9,7 @@
       });
     </script><!-- /Google Adsense -->
     <meta charset="utf-8">
-    <title>How to create linked list in javascript with ES6 classes</title><!-- Yandex Webmaster -->
+    <title>How to create binary search tree in javascript with ES6 classes</title><!-- Yandex Webmaster -->
     <meta name="yandex-verification" content="610e7b6bb48fc4d6"><!-- WoT Verification -->
     <meta name="wot-verification" content="6c0d169b1afe357fe29c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,10 +27,10 @@
     <meta property="article:author" content="https://alfilatov.com/about/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@greybax">
-    <meta property="description" content="javascript, data-structure, interview, es6, linked-list, english">
-    <meta name="og:url" content="/posts/how-to-create-linked-list-in-javascript-with-es6-classes/">
-    <meta name="og:title" content="How to create linked list in javascript with ES6 classes">
-    <meta name="og:description" content="javascript, data-structure, interview, es6, linked-list, english"><!—- ShareThis BEGIN -—>
+    <meta property="description" content="javascript, data-structure, interview, es6, bst, binary-tree, binary-search-tree, english">
+    <meta name="og:url" content="/posts/how-to-create-binary-search-tree-in-javascript-with-es6-classes/">
+    <meta name="og:title" content="How to create binary search tree in javascript with ES6 classes">
+    <meta name="og:description" content="javascript, data-structure, interview, es6, bst, binary-tree, binary-search-tree, english"><!—- ShareThis BEGIN -—>
     <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
   </head>
   <body>
@@ -62,50 +62,222 @@
         <div class="top-banner"><!-- Google Adsense -->
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_top_article_banner --><ins style="display:inline-block;width:980px;height:120px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="4549198145" class="adsbygoogle"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
-        </div><h1>How to create linked list in javascript with ES6 classes</h1><i class="fa fa-calendar">
-          <time>February 25, 2021</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#data-structure"> data-structure </a><a href="/tags/index.html#interview"> interview </a><a href="/tags/index.html#es6"> es6 </a><a href="/tags/index.html#linked-list"> linked-list </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
-<p>In this post, I'd like to share my implementation of <code>LinkedList</code> in JavaScript using mechanism of ES6 Classes.</p>
-<h2>LinkedList</h2>
-<pre><code class="language-js">class LinkedList {
-    constructor() {
-    this.head = new Node("", null);
+        </div><h1>How to create binary search tree in javascript with ES6 classes</h1><i class="fa fa-calendar">
+          <time>March 01, 2021</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#data-structure"> data-structure </a><a href="/tags/index.html#interview"> interview </a><a href="/tags/index.html#es6"> es6 </a><a href="/tags/index.html#bst"> bst </a><a href="/tags/index.html#binary-tree"> binary-tree </a><a href="/tags/index.html#binary-search-tree"> binary-search-tree </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
+<p>In this post, I'd like to share my implementation of <code>Binary SearchTree</code> (BST) in JavaScript using mechanism of ES6 Classes.</p>
+<h2>Binary Search Tree</h2>
+<blockquote>
+<p><strong>Binary Search Tree</strong> is a node-based binary tree data structure which has the following properties: 1. The left subtree of a node contains only nodes with keys lesser than the node’s key. 2. The right subtree of a node contains only nodes with keys greater than the node’s key. 3. The left and right subtree each must also be a binary search tree. <a href="https://www.geeksforgeeks.org/binary-search-tree-data-structure/">BST ref (geeksforgeeks)</a></p>
+</blockquote>
+<pre><code class="language-js">class BinarySearchTree {
+    constructor(data) {
+    this.root = {
+        data: data,
+      left: null,
+      right: null
+    };
   }
   
-  addNode(node) {
-    let curr = this.head;
-    while(curr.next) {
-      curr = curr.next;
+  // Time complexity: 
+  // In case of balanced tree: O(log N)
+  // worst case O(n)
+  insertTo(node, key) {
+    if (key &#x3C; node.data) {
+        if (node.left) {
+        this.insertTo(node.left, key);
+        return;
+      } else {
+        node.left = new Node(key);
+      }
+    } else {
+        if (node.right) {
+        this.insertTo(node.right, key);
+        return;
+      } else {
+        node.right = new Node(key);
+      }
     }
-    curr.next = node;
   }
 }
 </code></pre>
 <h2>Node</h2>
 <pre><code class="language-js">class Node {
-    constructor(data, node) {
+    constructor(data) {
     this.data = data;
-    this.next = node;
+    this.left = null;
+    this.right = null;
   }
 }
 </code></pre>
 <h2>How to use it</h2>
-<pre><code class="language-js">let linkedList = new LinkedList();
+<pre><code class="language-js">let bst = new BinarySearchTree(0);
 
 // add some nodes
-linkedList.addNode(new Node("1", null));
-linkedList.addNode(new Node("2", null));
-linkedList.addNode(new Node("3", null));
+bst.insertTo(bst.root, 2);
+bst.insertTo(bst.root, 1);
+bst.insertTo(bst.root, 3);
+bst.insertTo(bst.root, 4);
+</code></pre>
+<h2>Find element in BST</h2>
+<pre><code class="language-js">// Time complexity: 
+// In case of balanced tree: O(log N)
+// worst case O(n)
+function findIn(node, key) {
+  if (node.data === key) {
+    return node;
+  }
+  
+  if (key &#x3C; node.data) {
+    return node.left
+      ? findIn(node.left, key)
+      : null;
+  } else {
+    return node.right
+      ? findIn(node.right, key)
+      : null;
+  }
+}
+</code></pre>
+<h2>Tree Traversals</h2>
+<h3>Preorder</h3>
+<ol>
+<li>Visit the root.</li>
+<li>Traverse the left subtree, i.e., call Preorder(left-subtree)</li>
+<li>Traverse the right subtree, i.e., call Preorder(right-subtree) </li>
+</ol>
+<p><strong>Iteratinve method:</strong></p>
+<pre><code class="language-js">function preorder() {
+  let currNode = this.root;
+  let stack = [];
+  stack.push(currNode);
+  while(stack.length || currNode) {
+    currNode = stack.pop();
+    console.log(currNode.data);
+    if (currNode.right) {
+      stack.push(currNode.right);
+    }
+    if (currNode.left) {
+      stack.push(currNode.left);
+    }
+  }
+}
+</code></pre>
+<p><strong>Recursive method:</strong></p>
+<pre><code class="language-js">function recursivePreorderTraversal(node) {
+  if (node.data) {
+    console.log(node.data);
+  }
+  
+  if (node.left) {
+    recursivePreorderTraversal(node.left);
+  }
+  
+  if (node.right) {
+    recursivePreorderTraversal(node.right);
+  }
+}
+</code></pre>
+<h3>Inorder</h3>
+<ol>
+<li>Traverse the left subtree, i.e., call Inorder(left-subtree)</li>
+<li>Visit the root.</li>
+<li>Traverse the right subtree, i.e., call Inorder(right-subtree)</li>
+</ol>
+<p><strong>Iteratinve method:</strong></p>
+<pre><code class="language-js">function inorder() {
+  let currNode = this.root;
+  let stack = [];
+  while(stack.length || currNode) {
+    if (currNode) {
+      stack.push(currNode);
+      currNode = currNode.left;
+    } else {
+      currNode = stack.pop();
+      console.log(currNode.data);
+      currNode = currNode.right;
+    }
+  }
+}
+</code></pre>
+<p><strong>Recursive method:</strong></p>
+<pre><code class="language-js">function recursiveInorderTraversal(node) {
+  if (node.left) {
+    recursiveInorderTraversal(node.left);
+  }
 
-// console.log nodes, just to verify that everything works fine ;)
-let current = linkedList.head;
-while(current.next) {
-    console.log(current);
-    current = current.next;
+  if (node.data) {
+    console.log(node.data);
+  }
+  
+  if (node.right) {
+    recursiveInorderTraversal(node.right);
+  }
+}
+</code></pre>
+<h3>Postorder</h3>
+<ol>
+<li>Traverse the left subtree, i.e., call Postorder(left-subtree)</li>
+<li>Traverse the right subtree, i.e., call Postorder(right-subtree)</li>
+<li>Visit the root.</li>
+</ol>
+<p><strong>Iteratinve method:</strong></p>
+<pre><code class="language-js">function postorder() {
+  let currNode = this.root;
+  let stack = [];
+  let lastVisited = null;
+  
+  while(stack.length || currNode) {
+    if (currNode) {
+      stack.push(currNode);
+      currNode = currNode.left;
+    } else {
+      let peekNode = stack[stack.length - 1];
+      if (peekNode.right &#x26;&#x26; lastVisited !== peekNode.right) {
+        currNode = peekNode.right;
+      } else {
+        console.log(currNode.data);
+        lastVisited = stack.pop();
+      }
+    }
+  }
+}
+</code></pre>
+<p><strong>Recursive method:</strong></p>
+<pre><code class="language-js">function recursivePostorderTraversal(node) {
+  if (node.left) {
+    recursivePostorderTraversal(node.left);
+  }
+
+  if (node.data) {
+    console.log(node.data);
+  }
+  
+  if (node.right) {
+    recursivePostorderTraversal(node.right);
+  }
+}
+</code></pre>
+<h2>Breadth-first search</h2>
+<p><img src="/images/how-to-create-binary-search-tree-in-javascript-with-es6-classes/animated_bfs.gif" alt="Animated BFS"></p>
+<pre><code class="language-js">function breadth() {
+  let currNode = this.root;
+  let queue = [];
+  queue.push(currNode);
+  while(queue.length) {
+    currNode = queue.shift();
+    console.log(currNode.data);
+    if (currNode.left) {
+      queue.push(currNode.left);
+    }
+    if (currNode.right) {
+      queue.push(currNode.right);
+    }
+  }
 }
 </code></pre>
 <h2>JSFiddle</h2>
-<p>&#x3C;iframe width="100%" height="300" src="//jsfiddle.net/r7nx0sda/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe></p>
-<p><em>Happy creating your own linked lists!</em> :)</p>
+<p>&#x3C;script async src="//jsfiddle.net/gudobw9n/11/embed/js/dark/"></script></p>
+<p><em>Happy creating your own binary search trees!</em> :)</p>
       </article>
     </div>
     <div class="wrap"><!-- Google Adsense -->

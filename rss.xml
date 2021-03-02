@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 25 Feb 2021 23:13:49 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 02 Mar 2021 01:40:31 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to create binary search tree in javascript with ES6 classes</h1>]]></title>
+            <description><![CDATA[javascript, data-structure, interview, es6, bst, binary-tree, binary-search-tree, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-create-binary-search-tree-in-javascript-with-es6-classes/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-binary-search-tree-in-javascript-with-es6-classes/</guid>
+            <pubDate>Mon, 01 Mar 2021 08:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>How to create linked list in javascript with ES6 classes</h1>]]></title>
             <description><![CDATA[javascript, data-structure, interview, es6, linked-list, english]]></description>
