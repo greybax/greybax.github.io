@@ -1,6 +1,6 @@
 # Road trip Northwest Coast. Day 9/10. Crater Lake and Diamond Lake, OR
 
-#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #oregon, #youtube, #vlog, #video, #wa-travelers, #travel, #english;
+#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #oregon, #youtube, #vlog, #video, #wa-travelers, #english;
 
 _April 13, 2019_
 

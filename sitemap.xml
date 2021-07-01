@@ -108,6 +108,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://alfilatov.com/posts/twin-falls-trail-hike/</loc>
+  <lastmod>2019-06-06T21:40:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://alfilatov.com/posts/how-to-separate-your-webpack-configs/</loc>
   <lastmod>2019-05-17T15:29:06+00:00</lastmod>
   <priority>0.80</priority>

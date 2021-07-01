@@ -1,6 +1,6 @@
 # Road trip Northwest Coast. Day 10/10. Canyons and Waterfalls of Oregon State
 
-#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #oregon, #washington, #youtube, #vlog, #video, #wa-travelers, #travel, #english;
+#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #oregon, #washington, #youtube, #vlog, #video, #wa-travelers, #english;
 
 _April 14, 2019_
 

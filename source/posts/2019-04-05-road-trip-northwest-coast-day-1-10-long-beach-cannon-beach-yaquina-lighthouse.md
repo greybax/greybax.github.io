@@ -1,6 +1,6 @@
 # Road trip Northwest Coast. Day 1/10. Long Beach, Cannon Beach. Yaquina lighthouse.
 
-#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #washington, #oregon, #youtube, #vlog, #video, #wa-travelers, #travel, #english;
+#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #washington, #oregon, #youtube, #vlog, #video, #wa-travelers, #english;
 
 _April 05, 2019_
 

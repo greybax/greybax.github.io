@@ -1,6 +1,6 @@
 # Road trip Northwest Coast. Day 5/10. Silicon Valley overview - Google, Facebook, Apple, Stanford and Berkeley
 
-#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #california, #facebook, #san-francisco, #stanford, #google, #apple, #berkeley, #youtube, #vlog, #video, #wa-travelers, #travel, #english;
+#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #california, #facebook, #san-francisco, #stanford, #google, #apple, #berkeley, #youtube, #vlog, #video, #wa-travelers, #english;
 
 _April 09, 2019_
 

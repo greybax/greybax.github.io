@@ -1,6 +1,6 @@
 # Road trip Northwest Coast. Day 2/10. Newport town. Giant waves and a cave with sea lions.
 
-#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #oregon, #youtube, #vlog, #video, #wa-travelers, #travel, #english;
+#roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #oregon, #youtube, #vlog, #video, #wa-travelers, #english;
 
 _April 06, 2019_
 
