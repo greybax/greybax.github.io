@@ -108,6 +108,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://alfilatov.com/posts/twin-falls-trail-hike/</loc>
+  <lastmod>2019-06-06T21:40:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://alfilatov.com/posts/how-to-separate-your-webpack-configs/</loc>
   <lastmod>2019-05-17T15:29:06+00:00</lastmod>
   <priority>0.80</priority>
@@ -240,6 +245,11 @@
 <url>
   <loc>https://alfilatov.com/posts/bohemian-rhapsody-review/</loc>
   <lastmod>2018-11-11T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-vacation-in-italy-napoli-the-first-city-to-visit/</loc>
+  <lastmod>2018-04-17T17:05:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>

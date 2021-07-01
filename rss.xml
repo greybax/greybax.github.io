@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 02 Mar 2021 01:40:31 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Jul 2021 22:15:48 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -141,6 +141,13 @@
             <pubDate>Tue, 18 Jun 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[<h1>Twin Falls Trail Hike</h1>]]></title>
+            <description><![CDATA[hike, usa, travel, pacific, pnw, northwest, wildlife, washington, english]]></description>
+            <link>https://alfilatov.com//posts/twin-falls-trail-hike/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/twin-falls-trail-hike/</guid>
+            <pubDate>Thu, 06 Jun 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[<h1>How to separate your Webpack configs?</h1>]]></title>
             <description><![CDATA[webpack, build, optimization, performance, configuration, typescript, english]]></description>
             <link>https://alfilatov.com//posts/how-to-separate-your-webpack-configs/</link>
@@ -156,70 +163,70 @@
         </item>
         <item>
             <title><![CDATA[<h1>Road trip Northwest Coast. Day 10/10. Canyons and Waterfalls of Oregon State</h1>]]></title>
-            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, oregon, washington, youtube, vlog, video, wa-travelers, travel, english]]></description>
+            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, oregon, washington, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/road-trip-northwest-coast-day-10-10-canyons-and-waterfalls-of-oregon-state/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/road-trip-northwest-coast-day-10-10-canyons-and-waterfalls-of-oregon-state/</guid>
             <pubDate>Sun, 14 Apr 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Road trip Northwest Coast. Day 9/10. Crater Lake and Diamond Lake, OR</h1>]]></title>
-            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, oregon, youtube, vlog, video, wa-travelers, travel, english]]></description>
+            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, oregon, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/road-trip-northwest-coast-day-9-10-crater-lake-and-diamond-lake-or/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/road-trip-northwest-coast-day-9-10-crater-lake-and-diamond-lake-or/</guid>
             <pubDate>Sat, 13 Apr 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Road trip Northwest Coast. Day 8/10. Adventures in the Nevada Desert</h1>]]></title>
-            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, nevada, youtube, vlog, video, wa-travelers, travel, english]]></description>
+            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, nevada, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/road-trip-northwest-coast-day-8-10-adventures-in-the-nevada-desert/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/road-trip-northwest-coast-day-8-10-adventures-in-the-nevada-desert/</guid>
             <pubDate>Fri, 12 Apr 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Road trip Northwest Coast. Day 7/10. Lake Tahoe and retro cars national museum in Reno. Spring in Nevada.</h1>]]></title>
-            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, california, nevada, lake-tahoe, reno, youtube, vlog, video, wa-travelers, travel, english]]></description>
+            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, california, nevada, lake-tahoe, reno, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/road-trip-northwest-coast-day-7-10-lake-tahoe-and-retro-cars-national-museum-in-reno-spring-in-nevada/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/road-trip-northwest-coast-day-7-10-lake-tahoe-and-retro-cars-national-museum-in-reno-spring-in-nevada/</guid>
             <pubDate>Thu, 11 Apr 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Road trip Northwest Coast. Day 6/10. Wine tasting at the Napa Valley, CA. Trip to Sacramento - California Capital and Wild West</h1>]]></title>
-            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, california, napa-valley, sacramento, youtube, vlog, video, wa-travelers, travel, english]]></description>
+            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, california, napa-valley, sacramento, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/road-trip-northwest-coast-day-6-10-wine-tasting-at-the-napa-valley-ca-trip-to-sacramento-california-capital-and-wild-west/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/road-trip-northwest-coast-day-6-10-wine-tasting-at-the-napa-valley-ca-trip-to-sacramento-california-capital-and-wild-west/</guid>
             <pubDate>Wed, 10 Apr 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Road trip Northwest Coast. Day 5/10. Silicon Valley overview - Google, Facebook, Apple, Stanford and Berkeley</h1>]]></title>
-            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, california, facebook, san-francisco, stanford, google, apple, berkeley, youtube, vlog, video, wa-travelers, travel, english]]></description>
+            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, california, facebook, san-francisco, stanford, google, apple, berkeley, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/road-trip-northwest-coast-day-5-10-silicon-valley-overview-google-facebook-apple-stanford-and-berkeley/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/road-trip-northwest-coast-day-5-10-silicon-valley-overview-google-facebook-apple-stanford-and-berkeley/</guid>
             <pubDate>Tue, 09 Apr 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Road trip Northwest Coast. Day 4/10. The first Russians in California. Golden Gate Bridge and a walk around the San Francisco</h1>]]></title>
-            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, california, fort-ross, san-francisco, youtube, vlog, video, wa-travelers, travel, english]]></description>
+            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, california, fort-ross, san-francisco, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/road-trip-northwest-coast-day-4-10-the-first-russians-in-california-golden-gate-bridge-and-a-walk-around-the-san-francisco/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/road-trip-northwest-coast-day-4-10-the-first-russians-in-california-golden-gate-bridge-and-a-walk-around-the-san-francisco/</guid>
             <pubDate>Mon, 08 Apr 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Road trip Northwest Coast. Day 3/10. Redwood National Park. Walkins in small and cozy town Eureka</h1>]]></title>
-            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, redwood, california, youtube, vlog, video, wa-travelers, travel, english]]></description>
+            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, redwood, california, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/road-trip-northwest-coast-day-3-10-redwood-national-park-walkins-in-small-and-cozy-town-eureka/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/road-trip-northwest-coast-day-3-10-redwood-national-park-walkins-in-small-and-cozy-town-eureka/</guid>
             <pubDate>Sun, 07 Apr 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Road trip Northwest Coast. Day 2/10. Newport town. Giant waves and a cave with sea lions.</h1>]]></title>
-            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, oregon, youtube, vlog, video, wa-travelers, travel, english]]></description>
+            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, oregon, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/road-trip-northwest-coast-day-2-10-newport-town-giant-waves-and-a-cave-with-sea-lions/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/road-trip-northwest-coast-day-2-10-newport-town-giant-waves-and-a-cave-with-sea-lions/</guid>
             <pubDate>Sat, 06 Apr 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Road trip Northwest Coast. Day 1/10. Long Beach, Cannon Beach. Yaquina lighthouse.</h1>]]></title>
-            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, washington, oregon, youtube, vlog, video, wa-travelers, travel, english]]></description>
+            <description><![CDATA[roadtrip, usa, travel, pacific, pnw, northwest, coast, wildlife, washington, oregon, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/road-trip-northwest-coast-day-1-10-long-beach-cannon-beach-yaquina-lighthouse/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/road-trip-northwest-coast-day-1-10-long-beach-cannon-beach-yaquina-lighthouse/</guid>
             <pubDate>Fri, 05 Apr 2019 07:00:00 GMT</pubDate>
@@ -321,6 +328,13 @@
             <link>https://alfilatov.com//posts/bohemian-rhapsody-review/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/bohemian-rhapsody-review/</guid>
             <pubDate>Sun, 11 Nov 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Vacation in Italy. Napoli - the first city to visit</h1>]]></title>
+            <description><![CDATA[italy, vacation, napoli, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-vacation-in-italy-napoli-the-first-city-to-visit/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-vacation-in-italy-napoli-the-first-city-to-visit/</guid>
+            <pubDate>Tue, 17 Apr 2018 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Netherlands life. Day trip to Haarlem.</h1>]]></title>
@@ -477,17 +491,17 @@
             <pubDate>Mon, 30 Mar 2015 07:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[<h1>Как я побывал на .NEXT'14</h1>]]></title>
-            <description><![CDATA[конференции, .net, russian]]></description>
-            <link>https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</guid>
-            <pubDate>Tue, 09 Dec 2014 08:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[<h1>Впечатления от первого хакатона</h1>]]></title>
             <description><![CDATA[hackaton, unity, gamedev, russian]]></description>
             <link>https://alfilatov.com//posts/vpiechatlieniia-ot-piervogho-khakatona/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/vpiechatlieniia-ot-piervogho-khakatona/</guid>
+            <pubDate>Tue, 09 Dec 2014 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Как я побывал на .NEXT'14</h1>]]></title>
+            <description><![CDATA[конференции, .net, russian]]></description>
+            <link>https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</guid>
             <pubDate>Tue, 09 Dec 2014 08:00:00 GMT</pubDate>
         </item>
         <item>
