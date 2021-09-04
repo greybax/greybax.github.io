@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 01 Jul 2021 22:15:48 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 04 Sep 2021 21:05:06 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to create AWS RDS cluster with imported SQL dump from S3 using Terraform</h1>]]></title>
+            <description><![CDATA[aws, rds, s3, sql, terraform, devops, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-create-aws-rds-cluster-with-imported-sql-dump-from-s3-using-terraform/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-aws-rds-cluster-with-imported-sql-dump-from-s3-using-terraform/</guid>
+            <pubDate>Sat, 04 Sep 2021 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>How to create binary search tree in javascript with ES6 classes</h1>]]></title>
             <description><![CDATA[javascript, data-structure, interview, es6, bst, binary-tree, binary-search-tree, english]]></description>
