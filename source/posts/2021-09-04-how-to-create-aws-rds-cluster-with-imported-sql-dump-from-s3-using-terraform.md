@@ -22,16 +22,16 @@ Our solution will be based on following technologies:
 * [Terraform](https://www.terraform.io)
 * [Github Actions](https://github.com/features/actions)
 
-### Step 1 (Copy SQL dump to TF folder)
+## Step 1 (Copy SQL dump to TF folder)
 
-Int this post I will not describe how to setup initil TF workspace. Assume that we've already set it up already.
+In this post I will not describe how to setup until TF workspace. Assume that we've already set it up already.
 So our first step will be copy `init.sql` dump to Terraform folder, since Terraform doesn't see anything outside of it.
-Locally we will just copy/paste the file, but as I've mentioed above we are going create the pipeline which will do it automatically.
+Locally we will just copy/paste the file, but as I've mentioned above we are going create the pipeline which will do it automatically.
 So we need to add copy/paste of our `init.sql` to our pipeline. In my case I've been using GH Actions:
 
 Copy file action in `sandbox.yml` file:
 ```
-name: copy init.sql dump to Terrafrom folder
+name: copy init.sql dump to Terraform folder
   run: cp -R ./drupal/getanswers/xtrabackup/init.sql.tar.gzf ./terraform/aws-sandbox/s3-data-upload/init.sql.tar.gz
 ```
 
@@ -43,11 +43,11 @@ Remove file action in `sandbox-cleanup.yml`
 
 > **Note:** make sure that, sql dump has been created using [Percona XtraBackup tool](https://www.percona.com/software/mysql-database/percona-xtrabackup), otherwise RDS cluster will not be restored from S3.
 
-### Step 2 (TF definitions for cluster creation)
+## Step 2 (TF definitions for cluster creation)
 
 Below I'll provide my `rds.tf` config. Make sure that you will define variables by yourself.
 
-```tf
+```
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
 resource "aws_s3_bucket" "s3" {
   bucket = "s3-bucket-${var.your_name}"
@@ -107,14 +107,14 @@ resource "aws_rds_cluster_instance" "cluster_instance" {
 }
 ```
 
-### Step 3 (Assign IAM Roles and permissions)
+## Step 3 (Assign IAM Roles and permissions)
 
 Actually this step goes before step 2 in the TF execution pipeline, but we will keep it here just for better understanding.
 Terraform is smart enough to resolve resource executions if they depend on each other.
 
 File `security.tf` with appropriate IAM Roles and permissions:
 
-```tf
+```
 resource "aws_iam_role" "s3_rds" {
   name_prefix = "rds-s3-integration-role-"
 
