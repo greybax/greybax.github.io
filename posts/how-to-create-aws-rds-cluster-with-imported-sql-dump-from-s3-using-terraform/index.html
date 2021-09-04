@@ -79,12 +79,12 @@ So the original task actually is pretty big, and I'd like to share one of the in
 <li><a href="https://www.terraform.io">Terraform</a></li>
 <li><a href="https://github.com/features/actions">Github Actions</a></li>
 </ul>
-<p>Int this post I will not describe how to setup initil TF workspace. Assume that we've already set it up already.
+<p>In this post I will not describe how to setup until TF workspace. Assume that we've already set it up already.
 So our first step will be copy <code>init.sql</code> dump to Terraform folder, since Terraform doesn't see anything outside of it.
-Locally we will just copy/paste the file, but as I've mentioed above we are going create the pipeline which will do it automatically.
+Locally we will just copy/paste the file, but as I've mentioned above we are going create the pipeline which will do it automatically.
 So we need to add copy/paste of our <code>init.sql</code> to our pipeline. In my case I've been using GH Actions:</p>
 <p>Copy file action in <code>sandbox.yml</code> file:</p>
-<pre><code>name: copy init.sql dump to Terrafrom folder
+<pre><code>name: copy init.sql dump to Terraform folder
   run: cp -R ./drupal/getanswers/xtrabackup/init.sql.tar.gzf ./terraform/aws-sandbox/s3-data-upload/init.sql.tar.gz
 </code></pre>
 <p>Remove file action in <code>sandbox-cleanup.yml</code></p>
@@ -95,7 +95,7 @@ So we need to add copy/paste of our <code>init.sql</code> to our pipeline. In my
 <p><strong>Note:</strong> make sure that, sql dump has been created using <a href="https://www.percona.com/software/mysql-database/percona-xtrabackup">Percona XtraBackup tool</a>, otherwise RDS cluster will not be restored from S3.</p>
 </blockquote>
 <p>Below I'll provide my <code>rds.tf</code> config. Make sure that you will define variables by yourself.</p>
-<pre><code class="language-tf"># https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
+<pre><code># https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
 resource "aws_s3_bucket" "s3" {
   bucket = "s3-bucket-${var.your_name}"
   acl    = "private"
@@ -156,7 +156,7 @@ resource "aws_rds_cluster_instance" "cluster_instance" {
 <p>Actually this step goes before step 2 in the TF execution pipeline, but we will keep it here just for better understanding.
 Terraform is smart enough to resolve resource executions if they depend on each other.</p>
 <p>File <code>security.tf</code> with appropriate IAM Roles and permissions:</p>
-<pre><code class="language-tf">resource "aws_iam_role" "s3_rds" {
+<pre><code>resource "aws_iam_role" "s3_rds" {
   name_prefix = "rds-s3-integration-role-"
 
   assume_role_policy = &#x3C;&#x3C;EOF
