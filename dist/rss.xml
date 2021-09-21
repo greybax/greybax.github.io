@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 04 Sep 2021 21:13:50 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 Sep 2021 18:25:50 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -337,6 +337,34 @@
             <pubDate>Sun, 11 Nov 2018 08:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[<h1>Netherlands life. Vacation in Italy. Venice - city of water</h1>]]></title>
+            <description><![CDATA[italy, vacation, venice, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-vacation-in-italy-venice-city-of-water/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-vacation-in-italy-venice-city-of-water/</guid>
+            <pubDate>Wed, 02 May 2018 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Vacation in Italy. Bologna - city of towers</h1>]]></title>
+            <description><![CDATA[italy, vacation, bologna, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-vacation-in-italy-bologna-city-of-towers/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-vacation-in-italy-bologna-city-of-towers/</guid>
+            <pubDate>Mon, 30 Apr 2018 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Vacation in Italy. Florence</h1>]]></title>
+            <description><![CDATA[italy, vacation, florence, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-vacation-in-italy-florence/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-vacation-in-italy-florence/</guid>
+            <pubDate>Fri, 27 Apr 2018 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Vacation in Italy. Rome - the eternal city</h1>]]></title>
+            <description><![CDATA[italy, vacation, rome, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-vacation-in-italy-rome-the-eternal-city/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-vacation-in-italy-rome-the-eternal-city/</guid>
+            <pubDate>Mon, 23 Apr 2018 07:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[<h1>Netherlands life. Vacation in Italy. Napoli - the first city to visit</h1>]]></title>
             <description><![CDATA[italy, vacation, napoli, trip, life, english]]></description>
             <link>https://alfilatov.com//posts/netherlands-life-vacation-in-italy-napoli-the-first-city-to-visit/</link>
@@ -498,17 +526,17 @@
             <pubDate>Mon, 30 Mar 2015 07:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[<h1>Впечатления от первого хакатона</h1>]]></title>
-            <description><![CDATA[hackaton, unity, gamedev, russian]]></description>
-            <link>https://alfilatov.com//posts/vpiechatlieniia-ot-piervogho-khakatona/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/vpiechatlieniia-ot-piervogho-khakatona/</guid>
-            <pubDate>Tue, 09 Dec 2014 08:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[<h1>Как я побывал на .NEXT'14</h1>]]></title>
             <description><![CDATA[конференции, .net, russian]]></description>
             <link>https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</guid>
+            <pubDate>Tue, 09 Dec 2014 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Впечатления от первого хакатона</h1>]]></title>
+            <description><![CDATA[hackaton, unity, gamedev, russian]]></description>
+            <link>https://alfilatov.com//posts/vpiechatlieniia-ot-piervogho-khakatona/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/vpiechatlieniia-ot-piervogho-khakatona/</guid>
             <pubDate>Tue, 09 Dec 2014 08:00:00 GMT</pubDate>
         </item>
         <item>
