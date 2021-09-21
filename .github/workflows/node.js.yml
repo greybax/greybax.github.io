@@ -32,7 +32,7 @@ jobs:
     - name: Copy 'dist' to master branch
       uses: andstor/copycat-action@v3
       with:
-        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        personal_token: ${{ secrets.PERSONAL_BLOG_TOKEN }}
         src_path: dist
         dst_path: /.
         dst_owner: greybax
