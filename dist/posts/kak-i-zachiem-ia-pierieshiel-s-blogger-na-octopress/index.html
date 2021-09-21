@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head><!-- Google Adsense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+       google_ad_client: "ca-pub-2866912874659895",
+       enable_page_level_ads: true
+      });
+    </script><!-- /Google Adsense -->
+    <meta charset="utf-8">
+    <title>Как и зачем я перешел с Blogger на Octopress</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6"><!-- WoT Verification -->
+    <meta name="wot-verification" content="6c0d169b1afe357fe29c">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="blog, ruby, octopress, russian">
+    <meta name="og:url" content="/posts/kak-i-zachiem-ia-pierieshiel-s-blogger-na-octopress/">
+    <meta name="og:title" content="Как и зачем я перешел с Blogger на Octopress">
+    <meta name="og:description" content="blog, ruby, octopress, russian"><!—- ShareThis BEGIN -—>
+    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
+  </head>
+  <body>
+    <header class="no-cover flex-header">
+      <div class="to-main-page"><i class="fa fa-chevron-left"></i><a href="/">Main page</a></div>
+      <div class="profile"><img src="https://www.gravatar.com/avatar/4ef97675943e8fe05f61adb948e42ef0?s=160" width="50" height="50">
+        <nav>
+          <ul>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrap-flex">
+      <div class="related-posts"><span class="header">Related posts</span>
+        <ul>
+          <li><a href="/posts/stylecop/"> StyleCop - или как соблюдать code style? </a></li>
+          <li><a href="/posts/lifecycle-steps-aspnet/"> ASP.NET: Этапы жизненного цикла страницы </a></li>
+          <li><a href="/posts/lifecycle-events-aspnet/"> ASP.NET: События жизненного цикла страницы </a></li>
+          <li><a href="/posts/basics-javascript/"> Основы языка Javascript </a></li>
+          <li><a href="/posts/google-chrome/"> Пишем расширение для браузера Google Chrome </a></li>
+        </ul>
+        <div class="right-banner"><!-- Google Adsense -->
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div>
+      </div>
+      <article>
+        <div class="top-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_top_article_banner --><ins style="display:inline-block;width:980px;height:120px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="4549198145" class="adsbygoogle"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div><h1>Как и зачем я перешел с Blogger на Octopress</h1><i class="fa fa-calendar">
+          <time>August 27, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#blog"> blog </a><a href="/tags/index.html#ruby"> ruby </a><a href="/tags/index.html#octopress"> octopress </a><a href="/tags/index.html#russian"> russian </a></i><p>Я использовал Blogger c 2012 года. Мне эта система показалась недостаточно удобной, чтобы продолжать ее использовать в дальнейшем. Неудобство проявлялось, когда в пост нужно было вставить участки кода или добавлять картинки. HTML редактор генерирует много лишнего кода. В итоге я решил подыскать себе новый блог-движок. </p>
+<h2>Что я хотел получить</h2>
+<ul>
+<li>Писать больше постов, не заморачиваясь на разметку HTML/CSS</li>
+<li>Иметь больше свободы в редизайне своего блога</li>
+</ul>
+<p>Под вышеперечисленное подходит Octopress. Это движок генерации статических веб страниц написанный на <code>Ruby</code>. Окончательное решение было принято после прохождения курса <a href="https://class.coursera.org/webapplications-002">Web Application Architectures</a> на Coursera, где в качестве примера языка использовался <code>Ruby on Rails</code>. В повседневной жизни я пользователь винды, а ставить <code>Ruby</code> окружение на нее дело не из приятных, ставить виртуалку не хочется, и, погуглив, наткнулся на замечательный сайт <a href="https://www.nitrous.io/">nitrous.io</a>. Сайт предлагает на бесплатном аккаунте доступ к box'у с окружением для целого ряда языков. В нашем случае это <code>Ruby</code>
+При таком подходе мы можем писать в блог из любого места, где есть доступ в интернет, и нам не нужно иметь машину или виртуалку с исходниками своего блога. Считаю, что это достаточно весомый аргумент в пользу использования облачного хостинга с поддержкой IDE.</p>
+<h2>Плюсы переезда</h2>
+<ul>
+<li>Markdown разметка. Не нужно уделять большое внимание HTML разметке. Концентрируешься больше на написание поста.</li>
+<li>Версионирование</li>
+<li>Удобно писать из редакторов Vim, хотя это для меня не является основным выбором</li>
+</ul>
+<h2>Минусы переезда</h2>
+<ul>
+<li>Страницы с Blogger стоят выше в результатах поиска гугла при равных условиях</li>
+<li>Не нужно заморачиваться на хостинге. Хотя это не проблема и со случаем Octopress</li>
+</ul>
+<h2>Мигригуем</h2>
+<ul>
+<li>Подготовка</li>
+<li>Развертывание</li>
+</ul>
+<h3>Подготовка</h3>
+<p>Регистрируемся на сайте <a href="https://www.nitrous.io">https://www.nitrous.io</a>. Выбираем в качестве окружения box c <code>Ruby</code>. Далее выполняем все по шагам как описано <a href="https://octopress.org/docs/setup/">тут</a> и <a href="https://octopress.org/docs/configuring/">конфигурируем</a>.</p>
+<p>Для миграции постов на Octopress нужно:</p>
+<ul>
+<li>Экспотировать их в файл в своем аккаунте в Blogger</li>
+<li>Заюзать <a href="https://gist.github.com/1765496">скрипт</a></li>
+</ul>
+<p>После этого вы получите кучу сообщений, которые уже являются частью вашего сайта. Проверьте, все ли корректно.
+Скрипт так же импортирует комментарии, но в неудобном для просмотра виде. (Tip: вы можете отключить комментарии перед экспортом постов из Blogger).
+Теперь все готово для того чтобы равернуть наш блог.</p>
+<h3>Развертывание</h3>
+<p>На этом этапе мы получили блог на Octopress? куда мы импортировали свои посты из Blogger. Для развертывания я использовал  Github Pages, но процесс развертывания на <a href="https://octopress.org/docs/deploying/heroku">Heroku</a> или <a href="https://octopress.org/docs/deploying/rsync/">через RSync на свой хостинг</a> отличаются незначительно.</p>
+<p>Процесс развертывания подробно описан на <a href="https://octopress.org/docs/deploying/github/">сайте Octopress</a>.</p>
+<h2>Итог</h2>
+<ul>
+<li>Получили окружение с IDE для <code>Ruby</code>, которое доступно прямо из браузера.</li>
+<li>Удовольствие от написания постов в markdown разметке, расходуя минимум времени на HTML разметку.</li>
+<li>Поддержку "из коробки" различных социальных плагинов (twitter, github, facebook). Легко добавлять свои.</li>
+<li>Удобная кастомизация design themes свое блога. При желании можно сменить стандартную тему или сделать свою. Большой выбор <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">тут</a></li>
+<li>Стимул изучать <code>Rubу</code> :)</li>
+</ul>
+      </article>
+    </div>
+    <div class="wrap"><!-- Google Adsense -->
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_bottom_article_banner --><ins style="display:block" data-ad-client="ca-pub-2866912874659895" data-ad-slot="2846418099" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense --><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>

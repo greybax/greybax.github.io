@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head><!-- Google Adsense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+       google_ad_client: "ca-pub-2866912874659895",
+       enable_page_level_ads: true
+      });
+    </script><!-- /Google Adsense -->
+    <meta charset="utf-8">
+    <title>Основы языка Javascript</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6"><!-- WoT Verification -->
+    <meta name="wot-verification" content="6c0d169b1afe357fe29c">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="javascript, frontend, russian">
+    <meta name="og:url" content="/posts/basics-javascript/">
+    <meta name="og:title" content="Основы языка Javascript">
+    <meta name="og:description" content="javascript, frontend, russian"><!—- ShareThis BEGIN -—>
+    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
+  </head>
+  <body>
+    <header class="no-cover flex-header">
+      <div class="to-main-page"><i class="fa fa-chevron-left"></i><a href="/">Main page</a></div>
+      <div class="profile"><img src="https://www.gravatar.com/avatar/4ef97675943e8fe05f61adb948e42ef0?s=160" width="50" height="50">
+        <nav>
+          <ul>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrap-flex">
+      <div class="related-posts"><span class="header">Related posts</span>
+        <ul>
+          <li><a href="/posts/profilirovaniie-v-js/"> Профилирование в JS </a></li>
+          <li><a href="/posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/"> Debugging файлов TypeScript в браузере через эмулятор DevExtreme </a></li>
+          <li><a href="/posts/gdie-ia-bieru-informatsiiu-o-mirie-frontend/"> Что можно почитать по frontend'у </a></li>
+          <li><a href="/posts/poluchaiem-spisok-obrabotchikov-eliemienta-stranitsy/"> Получаем список обработчиков элемента в DOM'е </a></li>
+          <li><a href="/posts/es6-classes-final/"> [Frontender Magazine] Классы в ECMAScript 6 </a></li>
+        </ul>
+        <div class="right-banner"><!-- Google Adsense -->
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div>
+      </div>
+      <article>
+        <div class="top-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_top_article_banner --><ins style="display:inline-block;width:980px;height:120px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="4549198145" class="adsbygoogle"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div><h1>Основы языка Javascript</h1><i class="fa fa-calendar">
+          <time>June 13, 2014</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#russian"> russian </a></i><p>Статья посвящена в первую очередь изучающим Javascript. Некоторые из вещей могут показаться очевидными, но я надеюсь, что читатель найдет что-то интересное и для себя. Сам я прочитал достаточное количество статей в сети по этому языку. Но найти материал который бы кратко и просто излагал сущность языка я так и не нашел. Это меня вдохновило на написание собственной статьи.</p>
+<h2>Javascript - это</h2>
+<ul>
+<li>Прототипированный язык программирования</li>
+<li>Уже не только client-side технология, но и server-side (Node.js)</li>
+<li>Не Java :)</li>
+<li>Однопоточный, но асинхронный язык</li>
+</ul>
+<h2>Объявление переменных</h2>
+<p>JS слабо типизированный язык, что демонстрирует следующий пример:</p>
+<pre><code class="language-javascript">var text = 'some text';
+text = 42;  // there is 42 now
+</code></pre>
+<p><em>Важно</em>:</p>
+<ul>
+<li>Не забывайте ставить <code>;</code> в конце каждой строки.</li>
+<li>Всегда используйте <code>var</code> при объявлении переменных.</li>
+</ul>
+<h2>Типы данных</h2>
+<h3>Простые</h3>
+<ul>
+<li>Number</li>
+<li>String</li>
+<li>Boolean</li>
+<li>Undefined</li>
+<li>Null</li>
+</ul>
+<h3>Ссылочные</h3>
+<ul>
+<li>Object</li>
+</ul>
+<p>Разберем каждый тип подробнее:</p>
+<h4>Number</h4>
+<pre><code class="language-javascript">var num = 100500;   // this is a number type
+num = 0.0009;       // also this is a number type
+</code></pre>
+<p>Доступны все стандартные числовые операции: <code>+ - * / % ++ --</code> </p>
+<pre><code class="language-javascript">var thisIsInfinity = 999/0;                 // Infinity
+var thisIsNaN = "this is not number" * 3;   // NaN
+</code></pre>
+<h4>String</h4>
+<p>Пример использования кавычек:</p>
+<pre><code class="language-javascript">var fooString = "I say: 'Yeah!' It's cool.";
+fooString = 'He said: "Yeah!"’;
+</code></pre>
+<p>Конкатенация строк:</p>
+<pre><code class="language-javascript">var text = "a" + "b";   // text has value "ab"
+</code></pre>
+<p>Другие полезные методы:</p>
+<ul>
+<li>charAt()</li>
+<li>indexOf()</li>
+<li>slice()</li>
+<li>toLowerCase()</li>
+<li>toUpperCase()</li>
+</ul>
+<h4>Boolean, undefined and null</h4>
+<ol>
+<li>Boolean (true/false)</li>
+</ol>
+<pre><code class="language-javascript">var thisIsTrue = true;
+</code></pre>
+<ol start="2">
+<li>Undefined - специальный тип, который означает, что переменная не определена</li>
+</ol>
+<pre><code class="language-javascript">var foo;    // foo is undefined
+</code></pre>
+<ol start="3">
+<li>Null - специальный тип, означает буквально "ничего"</li>
+</ol>
+<pre><code class="language-javascript">var bar = null; // foo is null
+</code></pre>
+<h2>Объекты в Javascript</h2>
+<p>Объекты в JS это стандартные ассоциативные массивы, другими словами "хэш".</p>
+<pre><code class="language-javascript">var obj = {
+    name: "John",
+    lastname: "Johnson"
+}
+</code></pre>
+<p>Ассоциативный массив - абстрактный тип данных состоят из набора из пар &#x3C;ключ>: &#x3C;значение>. </p>
+<h3>Создание объектов</h3>
+<p>Оба способа эквивалентны:</p>
+<pre><code class="language-javascript">var obj = {};           // simple creating
+var obj = new Object(); // standard syntax
+</code></pre>
+<p>Литеральный синтаксис:</p>
+<pre><code class="language-javascript">// creation with properties
+var obj = {
+    name: "John",
+    lastname: "Johnson"
+}
+</code></pre>
+<h3>Операции с объектами</h3>
+<pre><code class="language-javascript">obj.name = "John";              // add property
+obj[“lastName”] = "Johnson";
+alert(obj.name);                // get property
+alert(obj["lastName"]);
+delete obj.name;                // delete property
+</code></pre>
+<h4>Оператор <code>in</code></h4>
+<pre><code class="language-javascript">var obj = new Object();
+obj.prop = 'exists';
+'prop' in obj;          // returns true
+'toString' in obj;      // returns true
+</code></pre>
+<h4>Метод <code>hasOwnProperty</code></h4>
+<pre><code class="language-javascript">var obj = new Object();
+obj.prop = 'exists';
+obj.hasOwnProperty('toString'); // returns false
+</code></pre>
+<p>В отличие от оператора in, метод hasOwnProperty не проверяет по объекту цепочку прототипов.</p>
+<h4><code>=== undefined</code></h4>
+<pre><code class="language-javascript">var obj = {};                   // add property with undefined value
+obj.test = undefined;
+alert(obj.test === undefined);  // true
+alert(obj.test2 === undefined); // true
+</code></pre>
+<p>Вполне возможна ситуация, что свойство существует и является равно undefined</p>
+<h2>Преобразование типов</h2>
+<h3>String</h3>
+<pre><code class="language-javascript">var str1 = String(1);   // string '1'
+var str2 = '' + 1;      // string '1'
+</code></pre>
+<h3>Numerical</h3>
+<pre><code class="language-javascript">var num1 = Number('42');    // number 42
+var num2 = +'42';           // number 42
+</code></pre>
+<h3>Boolean</h3>
+<pre><code class="language-javascript">var bool1 = Boolean(null);  // false
+var bool2 = !null;          // false
+</code></pre>
+<h2>Операторы сравнения</h2>
+<p>Приведение типов используется в операторах: <code>&#x3C; > &#x3C;= >= == !=</code>
+Приведение типов НЕ используется в операторах: <code>=== !==</code>&#x3C;</p>
+<p>Советую использовать для более наглядного сравнения равенства/неравенства операторы <code>===</code> и <code>!==</code> соответственно.</p>
+<p>Примеры для демонстрации:</p>
+<pre><code class="language-javascript">"" == "0"   // false
+0 == ""     // true
+0 == "0"    // true
+
+false == "false"    // false
+false == "0"        // true
+false == undefined  // false
+false == null       // false
+
+null == undefined  // true
+
+"\t \r \n" == 0     // true
+
+"" === "0"  // false
+0 === ""    // false
+0 === "0"   // false
+0 === "0"   // false
+
+false === "false"       // false
+false === "0"           // false
+false === undefined     // false
+
+false === null      // false
+
+null === undefined  // false
+
+"\t \r \n" === 0    // false
+</code></pre>
+<h2>Массивы</h2>
+<p>Одно из важных и отличительных свойств массивов в Javascript является то, что массивы могут содержать переменные разных типов.</p>
+<pre><code class="language-javascript">var emptyArray = [];
+var numberArrray = [1, 2, 3];
+var myCollection = [1, 'my_string', true];
+myCollection[0];    // 1
+</code></pre>
+<p>Некоторые полезные функции работы с массивами:</p>
+<ul>
+<li>push/pop</li>
+<li>shift/unshift</li>
+<li>splice</li>
+<li>join/split</li>
+<li>sort</li>
+<li>reverse</li>
+<li>concat</li>
+<li>indexOf/lastIndexOf</li>
+</ul>
+<p>Особое внимание хочется уделить свойству массива <code>length</code>.</p>
+<pre><code class="language-javascript">var myArray = [1, 2, 3];
+myArray.length;     // equals 3
+myArray.length = 4;
+myArray.length = 2; // [1, 2]
+myArray[1000000] = 4;
+</code></pre>
+<p>Таким образом <em> <code>length</code> = последний индекс массива + 1</em>. Если часть элементов массива не будут инициализированы, то они будут равны <code>undefined</code>.</p>
+<h2>Функции</h2>
+<p>Функции - это объекты в Javascript. Поэтому их можно присваивать переменным, передавать и, конечно, у них есть свойства. Существует 3 способа создать функцию. Основное отличие в результате их работы - в том, что именованная функция видна везде, а анонимная - только после объявления.</p>
+<h3>Именнованные</h3>
+<pre><code class="language-javascript">sayAnithing("Hi");
+function(message) {
+    alert(mesage);
+}
+</code></pre>
+<h3>Анонимные</h3>
+<pre><code class="language-javascript">var sayBonjour = function () {
+    alert("Bonjour!");
+}
+sayBonjour();   // Says "Bonjour!"
+</code></pre>
+<h3>Аргументы функции</h3>
+<p>Функции можно запускать с любым числом параметров. Если функции передано меньше параметров, чем есть в определении, то отсутствующие считаются <code>undefined</code>.</p>
+<pre><code class="language-javascript">foo(0, 1, 2, 3, 4);
+function foo (a, b, c) { 
+    arguments[0] = 2;
+    a;              // 2
+    b = 17;
+    arguments[1];   // 17
+    arguments[4];   // 4
+}
+</code></pre>
+<p>Аргументы можно изменять.</p>
+<p>Одной из любопытных функций является <code>typeof()</code>, которая возвращает тип переменной.</p>
+<pre><code class="language-javascript">typeof undefined     // undefined
+typeof 0             // number
+typeof true          // boolean
+typeof "foo"         // string
+</code></pre>
+<p>Специфика языка Javascript:</p>
+<pre><code class="language-javascript">typeof {}            // object
+typeof null          // object
+typeof function() {} // function
+</code></pre>
+<h2>Scope и контекст выполнения</h2>
+<pre><code class="language-javascript">typeof {}            // object
+typeof null          // object
+typeof function() {} // function
+</code></pre>
+<p>Выполнение JavaScript представляет из себя стэк контекстов выполнения. Контекст, который активирует другой контекст, называется вызывающим контекстом (<em>caller</em>). Контекст, который вызывают, называется вызываемым контекстом (<em>callee</em>). При этом callee-контекст может являться caller’ом для другого callee, что частенько и происходит когда один из одной функции вызывается другая.</p>
+<pre><code class="language-javascript">var color = "blue"; // Global scope
+function changeColor () {
+    // changeColor scope
+    var anotherColor = "red";
+    function swapColors () {
+        // swapColors scope
+        var tempColor = anotherColor;
+        anotherColor = color;
+        color = tempColor;
+    }
+    swapColors(); // function call
+}
+changeColor();  // function call
+</code></pre>
+<p>Схема ниже иллюстрирует контекст выполнения функций:</p>
+<p><img src="https://2.bp.blogspot.com/-JkQD5nm6wtI/U5rkqe9m1_I/AAAAAAAABBY/JsYrX9EW0u8/s1600/2014-06-13+15-43-51+%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82+%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0.png" alt="func_scope"></p>
+<p>Переменные видны внутри контекста функции не зависимо где они объявлены. Необычно для новичков в JS выглядит следующий пример:</p>
+<pre><code class="language-javascript">function myFunc () {
+    If (true) {
+        var localVar = "I’m local";
+    }
+    console.log(localVar);  //Shows "I’m local" in myFunc
+}
+</code></pre>
+<h2>Замыкания</h2>
+<p>Замыкание - внутренняя функция. Javascript позволяет создавать функции по ходу выполнения скрипта. И эти функции имеют доступ к переменным внешней функции.</p>
+<p>Рассмотрим пример:</p>
+<pre><code class="language-javascript">function Counter () {
+    var count = 0;
+    return function () {
+        return ++count;
+    }
+}
+
+var increaseCount = Counter();
+alert(increaseCount()); // Shows 1
+alert(increaseCount()); // Shows 2
+</code></pre>
+<p>Внутренняя анонимная функция замыкает на себе функцию Counter. Это означает что когда заканчивает работать функция Counter, внутренняя функция остается жить, ее можно запускать в другом месте кода. В этой функции мы используем переменную count, т.е получается что внутренняя функция замыкает на себе переменную count внешней функции. </p>
+<h2>Прототипы</h2>
+<p>В Javascript все объекты наследуют Object, поэтому каждый объект имеет свойство prototype. Prototype это объект, которое позволяет шарить свойства с другими объектами.</p>
+<p><img src="https://3.bp.blogspot.com/-aE93elcAvL4/U5sBdhK_YUI/AAAAAAAABBo/SWEMu8srCJc/s1600/2014-06-13+17-49-12+%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82+%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0.png" alt="prototypes"></p>
+<p>Например, когда у объекта свойство "jump", то интерпретатор языка ищет сначала это свойство у самого объекта, а потом спускаясь по цепочке прототипов ищет в них пока не найдет.</p>
+<h2>"Классы"</h2>
+<p>В спецификации ECMAScript 5 нет понятия класса. Реализовать класс в привычном понятии для ООП можно путем создания конструктора с прототипом. Принадлежность к классу проверяет оператор <code>instanceof</code>.</p>
+<pre><code class="language-javascript">function Animal (name) {
+    //constructor
+    this..name = name;
+}
+
+Animal.prototype.speed = 0; //Property with value by default
+Animal.prototype.run = function (speed) {
+    //Method of prototype
+    this.speed += speed;
+    alert(this.name + ' run, speed is: ' + this.speed);
+}
+</code></pre>
+<h2><code>this</code></h2>
+<p><code>this</code> зависит от контекста вызова. Рассмотрим возможные варианты:</p>
+<h3><code>this</code> в простом вызове</h3>
+<p>В этом случае <code>this</code> - это глобальный объект</p>
+<pre><code class="language-javascript">function simpleFunction () {
+    this;
+}
+simpleFunction();
+</code></pre>
+<h3><code>this</code> в конструкторе</h3>
+<p>В этом случае <code>this</code> - это новый объект</p>
+<pre><code class="language-javascript">function simpleConstructor () {
+    this.someProperty = "This is some property";
+}
+var someObject = new simpleConstructor();
+</code></pre>
+<h3><code>this</code> в методе объекта</h3>
+<p>В данном примере <code>this</code> это объект country:</p>
+<pre><code class="language-javascript">var country = {
+    name: "Sparta",
+}
+
+var say = function () {
+    alert("This is " + this.country.sayName();
+}
+
+country.sayName = say;
+country.sayName();
+</code></pre>
+<h3><code>this</code> как первый аргумент в <code>call/apply</code></h3>
+<h2>Наследование</h2>
+<p>В JS в отличие от других языков программирования реализация наследования как одного из принципов ООП, может быть реализовано несколькими способами. Думаю в данной статье будет излишне описывать каждый из способов, подробно о них можно прочитать в книге: "Professional JavaScript for Web Developers", N. Zakas.</p>
+<ul>
+<li>Prototype Chaining</li>
+<li>Object Masquerading inheritance</li>
+<li>Combination Inheritance</li>
+<li>Prototypal Inheritance</li>
+<li>Parasitic Inheritance</li>
+<li>Parasitic Combination Inheritance</li>
+</ul>
+<h2>Литература</h2>
+<ul>
+<li><a href="https://www.ecmascript.org/">https://www.ecmascript.org</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide</a></li>
+<li>Larry Ulman "Modern JavaScript Develop and Design"</li>
+<li>David Flanagan "JavaScript: The Definitive Guide"</li>
+<li>Nicholas C. Zakas "Professional JavaScript for Web Developers"</li>
+</ul>
+      </article>
+    </div>
+    <div class="wrap"><!-- Google Adsense -->
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_bottom_article_banner --><ins style="display:block" data-ad-client="ca-pub-2866912874659895" data-ad-slot="2846418099" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense --><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>

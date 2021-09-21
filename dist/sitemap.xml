@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://alfilatov.com/</loc>
+  <lastmod>2021-02-25T15:18:06+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/about/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://alfilatov.com/posts/how-to-create-aws-rds-cluster-with-imported-sql-dump-from-s3-using-terraform/</loc>
+  <lastmod>2021-09-04T14:23:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-create-binary-search-tree-in-javascript-with-es6-classes/</loc>
+  <lastmod>2021-03-01T17:42:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-create-linked-list-in-javascript-with-es6-classes/</loc>
+  <lastmod>2021-02-25T15:18:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-create-debug-and-deploy-your-ms-teams-apps-using-vscode/</loc>
+  <lastmod>2021-02-20T13:50:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-create-self-signed-certificate/</loc>
+  <lastmod>2021-01-09T16:55:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-lease-a-car-in-usa/</loc>
+  <lastmod>2020-11-18T17:08:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</loc>
+  <lastmod>2020-11-06T20:45:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-open-links-from-iframe/</loc>
+  <lastmod>2020-10-01T15:57:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-pass-data-between-iframe-and-parent-window/</loc>
+  <lastmod>2020-09-08T14:55:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/</loc>
+  <lastmod>2020-05-13T23:36:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-i-have-developed-simple-and-useful-markdown-cheatsheet-browser-extension/</loc>
+  <lastmod>2020-01-25T15:46:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-use-react-routing-into-webview-for-vscode-extensions/</loc>
+  <lastmod>2020-01-09T14:21:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/cyrillic-to-translit-js-library-for-converting-cyrillic-symbols-to-translit-and-vice-versa/</loc>
+  <lastmod>2019-12-01T15:54:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/apache-cordova-vs-react-native/</loc>
+  <lastmod>2019-09-06T12:25:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/getting-cool-free-swags-via-microsoft-rewards-program/</loc>
+  <lastmod>2019-08-09T12:22:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-make-your-blog-grow-fast-1000-visitors-per-day/</loc>
+  <lastmod>2019-07-11T12:10:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-setup-proguard-in-cordova-application/</loc>
+  <lastmod>2019-07-01T12:20:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-make-your-js-code-faster-just-adding-some-parenthesis/</loc>
+  <lastmod>2019-06-21T11:30:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-use-unsplash-in-your-projects/</loc>
+  <lastmod>2019-06-18T13:55:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/twin-falls-trail-hike/</loc>
+  <lastmod>2019-06-06T21:40:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-separate-your-webpack-configs/</loc>
+  <lastmod>2019-05-17T15:29:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/</loc>
+  <lastmod>2019-05-10T14:23:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/road-trip-northwest-coast-day-10-10-canyons-and-waterfalls-of-oregon-state/</loc>
+  <lastmod>2019-04-14T15:31:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/road-trip-northwest-coast-day-9-10-crater-lake-and-diamond-lake-or/</loc>
+  <lastmod>2019-04-13T17:28:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/road-trip-northwest-coast-day-8-10-adventures-in-the-nevada-desert/</loc>
+  <lastmod>2019-04-12T18:21:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/road-trip-northwest-coast-day-7-10-lake-tahoe-and-retro-cars-national-museum-in-reno-spring-in-nevada/</loc>
+  <lastmod>2019-04-11T18:16:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/road-trip-northwest-coast-day-6-10-wine-tasting-at-the-napa-valley-ca-trip-to-sacramento-california-capital-and-wild-west/</loc>
+  <lastmod>2019-04-10T14:26:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/road-trip-northwest-coast-day-5-10-silicon-valley-overview-google-facebook-apple-stanford-and-berkeley/</loc>
+  <lastmod>2019-04-09T16:16:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/road-trip-northwest-coast-day-4-10-the-first-russians-in-california-golden-gate-bridge-and-a-walk-around-the-san-francisco/</loc>
+  <lastmod>2019-04-08T15:46:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/road-trip-northwest-coast-day-3-10-redwood-national-park-walkins-in-small-and-cozy-town-eureka/</loc>
+  <lastmod>2019-04-07T13:14:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/road-trip-northwest-coast-day-2-10-newport-town-giant-waves-and-a-cave-with-sea-lions/</loc>
+  <lastmod>2019-04-06T19:24:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/road-trip-northwest-coast-day-1-10-long-beach-cannon-beach-yaquina-lighthouse/</loc>
+  <lastmod>2019-04-05T18:32:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/useful-extensions-for-amazon-shopping/</loc>
+  <lastmod>2019-04-01T16:32:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/we-started-our-youtube-channel/</loc>
+  <lastmod>2019-03-28T18:15:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/my-collection-of-useful-github-extensions/</loc>
+  <lastmod>2019-03-27T16:41:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-add-dynamic-data-badges-from-shields-io/</loc>
+  <lastmod>2019-03-21T14:40:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/lets-make-awesome-it-films-popular-again/</loc>
+  <lastmod>2019-03-17T13:42:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/useful-js-snippets/</loc>
+  <lastmod>2019-02-08T21:40:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/is-your-npm-install-still-too-slow/</loc>
+  <lastmod>2019-01-21T21:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-do-everything-and-do-not-forget-anything/</loc>
+  <lastmod>2018-12-16T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/progulka-po-rattlesnake-lake-i-rattlesnake-ledge/</loc>
+  <lastmod>2018-12-01T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/</loc>
+  <lastmod>2018-11-25T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-buy-a-car-in-usa/</loc>
+  <lastmod>2018-11-21T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-get-driver-license-in-washington-state/</loc>
+  <lastmod>2018-11-17T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/run-chrome-without-cors/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/tags/index.html</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/bohemian-rhapsody-review/</loc>
+  <lastmod>2018-11-11T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-vacation-in-italy-venice-city-of-water/</loc>
+  <lastmod>2018-05-02T17:02:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-vacation-in-italy-bologna-city-of-towers/</loc>
+  <lastmod>2018-04-30T16:37:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-vacation-in-italy-florence/</loc>
+  <lastmod>2018-04-27T16:10:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-vacation-in-italy-rome-the-eternal-city/</loc>
+  <lastmod>2018-04-23T15:57:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-vacation-in-italy-napoli-the-first-city-to-visit/</loc>
+  <lastmod>2018-04-17T17:05:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-day-trip-to-haarlem/</loc>
+  <lastmod>2018-03-25T17:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-weekend-trip-to-belgium-brussels/</loc>
+  <lastmod>2018-03-15T15:05:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-weekend-trip-to-belgium-ghent/</loc>
+  <lastmod>2018-03-13T14:58:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-day-trip-to-rotterdam/</loc>
+  <lastmod>2018-01-28T13:24:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-old-utrecht-and-the-castle-de-haar/</loc>
+  <lastmod>2017-12-31T13:24:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/netherlands-life-day-trip-to-edam-and-volendam/</loc>
+  <lastmod>2017-12-24T13:24:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-we-have-validated-the-theory-of-6-handshakes-six-degrees-of-separation-via-social-network/</loc>
+  <lastmod>2017-06-01T13:24:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/awesome-vscode-plugins/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/es6-in-depth-symbols/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/essential-javascript-functions/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/thoughts-about-typescript/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/github-pages-secure-with-cloudflare/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/testirovanie-verstki-na-vizualne-regressii-s-pomosh'yu-phantomcss/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/vy-reshili-stat-frontederom-tutorial-for-juniors/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/yarfrontend-speaker/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/checkout-faster-with-Autofill/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/es6-classes-final/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/probuiem-es2015-es6-v-dieistvii/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/mighriruiem-js-kod-v-typescript/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/poiezdka-v-shri-lanku/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/poluchaiem-spisok-obrabotchikov-eliemienta-stranitsy/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/gdie-ia-bieru-informatsiiu-o-mirie-frontend/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/vpiechatlieniia-ot-piervogho-khakatona/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/kak-ia-pobyval-na-next-14/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/vpiechatlieniia-ot-konfierientsii-go-number-moscow/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/pishiem-ighru-na-html5-slash-js/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/ispol'zuiem-fiddler-v-kachiestvie-proksi/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/profilirovaniie-v-js/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/kak-i-zachiem-ia-pierieshiel-s-blogger-na-octopress/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/devconf14/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/google-chrome/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/basics-javascript/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/lifecycle-events-aspnet/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/lifecycle-steps-aspnet/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/stylecop/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/windows-7-hotkeys/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/yandex-browser-it-need-or-not/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/my-contribution-in-mozilla-society/</loc>
+  <lastmod>2018-11-13T22:37:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

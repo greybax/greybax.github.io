@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head><!-- Google Adsense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+       google_ad_client: "ca-pub-2866912874659895",
+       enable_page_level_ads: true
+      });
+    </script><!-- /Google Adsense -->
+    <meta charset="utf-8">
+    <title>How to pass data between iframe and parent window</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6"><!-- WoT Verification -->
+    <meta name="wot-verification" content="6c0d169b1afe357fe29c">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="iframe, vscode, extensions, html, javascript, data-transfer, english">
+    <meta name="og:url" content="/posts/how-to-pass-data-between-iframe-and-parent-window/">
+    <meta name="og:title" content="How to pass data between iframe and parent window">
+    <meta name="og:description" content="iframe, vscode, extensions, html, javascript, data-transfer, english"><!—- ShareThis BEGIN -—>
+    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
+  </head>
+  <body>
+    <header class="no-cover flex-header">
+      <div class="to-main-page"><i class="fa fa-chevron-left"></i><a href="/">Main page</a></div>
+      <div class="profile"><img src="https://www.gravatar.com/avatar/4ef97675943e8fe05f61adb948e42ef0?s=160" width="50" height="50">
+        <nav>
+          <ul>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrap-flex">
+      <div class="related-posts"><span class="header">Related posts</span>
+        <ul>
+          <li><a href="/posts/how-to-open-links-from-iframe/"> How to open links from iframe </a></li>
+          <li><a href="/posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/"> How to pass file into an iframe and convert it to Blob for further AJAX request </a></li>
+          <li><a href="/posts/how-to-create-debug-and-deploy-your-ms-teams-apps-using-vscode/"> How to create, debug and deploy your MS Teams apps using VSCode </a></li>
+          <li><a href="/posts/my-collection-of-useful-github-extensions/"> My collection of useful Github extension </a></li>
+          <li><a href="/posts/useful-extensions-for-amazon-shopping/"> Useful extensions for Amazon shopping </a></li>
+        </ul>
+        <div class="right-banner"><!-- Google Adsense -->
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div>
+      </div>
+      <article>
+        <div class="top-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_top_article_banner --><ins style="display:inline-block;width:980px;height:120px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="4549198145" class="adsbygoogle"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div><h1>How to pass data between iframe and parent window</h1><i class="fa fa-calendar">
+          <time>September 8, 2020</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#iframe"> iframe </a><a href="/tags/index.html#vscode"> vscode </a><a href="/tags/index.html#extensions"> extensions </a><a href="/tags/index.html#html"> html </a><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#data-transfer"> data-transfer </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
+<p>Last several months I've been worked on the VSCode extension which should have a pretty rich interface and UI has been shared by multiple platforms using iframes, so the decision was implement UI part using VSCode built-in webview (<a href="https://code.visualstudio.com/api/extension-guides/webview">which is using iframe underhood actually</a>). There aren't so much info about VSCode extension development in the internet, so I've decided to share some of my tweaks in my blog.</p>
+<p>I've already wrote post about <a href="/posts/how-to-use-react-routing-into-webview-for-vscode-extensions/">How to use React Routing into Webview for VSCode extensions?</a>. So here I'd like to describe another solution which I've faced while developed this extension.</p>
+<h2>Tag <code>iframe</code></h2>
+<blockquote>
+<p>The <code>&#x3C;iframe></code> tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document.</p>
+</blockquote>
+<p><a href="https://www.w3schools.com/tags/tag_iframe.asp">Link to Definition on w3schools</a></p>
+<h2>Communication</h2>
+<p>Since the main app has been deployed to host and was using by VSCode via iframe, we have to figure out about data communication in our VSCode extension. The solution is cross-document messaging model using <code>postMessage</code>/<code>onMessage</code> mechanism. In our case we will <code>postMessage</code> from our UI app to VSCode extension code where we will <code>onReceiveMessage</code> our data which comes through iframe. </p>
+<h3><code>postMessage</code></h3>
+<blockquote>
+<p>The window.postMessage() method safely enables cross-origin communication between Window objects; e.g., between a page and a pop-up that it spawned, or between a page and an iframe embedded within it.</p>
+</blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">Link to MDN</a></p>
+<p><em><strong>Usage:</strong></em></p>
+<pre><code class="language-javascript">// call it in the code where you want to pass your data through iframe
+window.parent.postMessage({ message: "getAppData", value: MyDataToPass }, "*");
+</code></pre>
+<h3><code>onMessage</code>/<code>onReceiveMessage</code></h3>
+<p><em><strong>Usage:</strong></em></p>
+<pre><code class="language-javascript">export default class WelcomePanel extends React.Component&#x3C;any, any> {
+  constructor(props: any) {
+    super(props);
+    ...
+  }
+
+  componentDidMount() {
+    window.addEventListener("message", this.receiveMessage, false);
+    ...
+  }
+
+  receiveMessage = (event: any) => {
+    const message = event.data.message;
+
+    switch (message) {
+      case 'getAppData':
+        this.ToDoSomethingInVSCWebview(event.data.value);
+        break;
+    }
+    ...
+  }
+</code></pre>
+<p>The same data communication model VSCode is using in the <a href="https://code.visualstudio.com/api/extension-guides/webview#passing-messages-from-a-webview-to-an-extension">built-in webview</a>. </p>
+<p>Happy data transferring between your iframes and windows! :y:</p>
+      </article>
+    </div>
+    <div class="wrap"><!-- Google Adsense -->
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_bottom_article_banner --><ins style="display:block" data-ad-client="ca-pub-2866912874659895" data-ad-slot="2846418099" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense --><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>

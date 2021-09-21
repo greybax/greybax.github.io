@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head><!-- Google Adsense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+       google_ad_client: "ca-pub-2866912874659895",
+       enable_page_level_ads: true
+      });
+    </script><!-- /Google Adsense -->
+    <meta charset="utf-8">
+    <title>How to add dynamic data badges from Shields.io</title><!-- Yandex Webmaster -->
+    <meta name="yandex-verification" content="610e7b6bb48fc4d6"><!-- WoT Verification -->
+    <meta name="wot-verification" content="6c0d169b1afe357fe29c">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta property="article:author" content="https://alfilatov.com/about/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta property="description" content="awesome-it-films, json, badges, endpoint, markdown, frontend, english">
+    <meta name="og:url" content="/posts/how-to-add-dynamic-data-badges-from-shields-io/">
+    <meta name="og:title" content="How to add dynamic data badges from Shields.io">
+    <meta name="og:description" content="awesome-it-films, json, badges, endpoint, markdown, frontend, english"><!—- ShareThis BEGIN -—>
+    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
+  </head>
+  <body>
+    <header class="no-cover flex-header">
+      <div class="to-main-page"><i class="fa fa-chevron-left"></i><a href="/">Main page</a></div>
+      <div class="profile"><img src="https://www.gravatar.com/avatar/4ef97675943e8fe05f61adb948e42ef0?s=160" width="50" height="50">
+        <nav>
+          <ul>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrap-flex">
+      <div class="related-posts"><span class="header">Related posts</span>
+        <ul>
+          <li><a href="/posts/lets-make-awesome-it-films-popular-again/"> Let's make &quot;Awesome IT Films&quot; popular again! </a></li>
+          <li><a href="/posts/basics-javascript/"> Основы языка Javascript </a></li>
+          <li><a href="/posts/google-chrome/"> Пишем расширение для браузера Google Chrome </a></li>
+          <li><a href="/posts/mighriruiem-js-kod-v-typescript/"> Мигрируем Javascript код в TypeScript </a></li>
+          <li><a href="/posts/yarfrontend-speaker/"> Мой доклад на Yaroslavl Frontend Meetup </a></li>
+        </ul>
+        <div class="right-banner"><!-- Google Adsense -->
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_right_article_banner --><ins style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="5210093029" class="adsbygoogle"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div>
+      </div>
+      <article>
+        <div class="top-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_top_article_banner --><ins style="display:inline-block;width:980px;height:120px" data-ad-client="ca-pub-2866912874659895" data-ad-slot="4549198145" class="adsbygoogle"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div><h1>How to add dynamic data badges from Shields.io</h1><i class="fa fa-calendar">
+          <time>March 21, 2019</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#awesome-it-films"> awesome-it-films </a><a href="/tags/index.html#json"> json </a><a href="/tags/index.html#badges"> badges </a><a href="/tags/index.html#endpoint"> endpoint </a><a href="/tags/index.html#markdown"> markdown </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
+<p>As I wrote in my recent post <a href="/posts/lets-make-awesome-it-films-popular-again/">Let's make "Awesome IT Films" popular again!</a> I've got a nice achievement which stimulate me to do more features for this project.</p>
+<p>One of this was born in discussion in thread issue <a href="https://github.com/greybax/awesome-IT-films/issues/24">More useful badges?</a> and in one day I've got PR with interesting idea <a href="https://github.com/greybax/awesome-IT-films/pull/28">Added badges for number of movies,tv-series and documentaries.</a> but implementation could much to be desired. </p>
+<p>So here I would like to describe how to achieve it without any pain. </p>
+<h2>Shields.IO</h2>
+<p><img src="/images/how-to-add-dynamic-data-badges-from-shields-io/shields_io_logo.svg" alt="Shields.io Logo"></p>
+<p>I believe everybody knows about <a href="https://shields.io/">shields.io</a> and how to create find and <strong>create</strong> nice badge there. If you still didn't know about this service check it now. It provides also nice feature to create dynamic badges based on your endpoint via <a href="https://shields.io/endpoint">their API</a>. That's exactly what I want for my task.</p>
+<h2>Endpoint</h2>
+<p>In my case I just count javascript objects for each entities: movies, shows, documentaries and create <a href="https://github.com/greybax/awesome-IT-films/blob/master/badge_endpoint.json">badge_endpoint.json</a> in gulp task. </p>
+<blockquote>
+<p><strong>Important:</strong> <code>badge_endpoint.json</code> have to be with required and proper fields how id describes in <a href="https://shields.io/endpoint">Shields.io endpoint manual</a>.</p>
+</blockquote>
+<p>After that on the same page you need to validate <code>endpoint.json</code> file. For that you need to put a link on raw json file and shields.io will generate link for badge which you can use wherever you want.</p>
+<p>In my case I'm putting it in readme.md file like this</p>
+<pre><code class="language-markdown">![Awesome-IT-Films Badge](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgreybax%2Fawesome-IT-films%2Fmaster%2Fbadge_endpoint.json)
+</code></pre>
+<p><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgreybax%2Fawesome-IT-films%2Fmaster%2Fbadge_endpoint.json" alt="Awesome-IT-Films Badge"></p>
+<p><em>Happy creating badges!</em> :v:</p>
+      </article>
+    </div>
+    <div class="wrap"><!-- Google Adsense -->
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- google_adsense_bottom_article_banner --><ins style="display:block" data-ad-client="ca-pub-2866912874659895" data-ad-slot="2846418099" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense --><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (d, w, c) {
+         (w[c] = w[c] || []).push(function() {
+             try {
+                 w.yaCounter25504124 = new Ya.Metrika({id:25504124,
+                         clickmap:true,
+                         trackLinks:true,
+                         accurateTrackBounce:true});
+             } catch(e) { }
+         });
+         var n = d.getElementsByTagName("script")[0],
+             s = d.createElement("script"),
+             f = function () { n.parentNode.insertBefore(s, n); };
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+         if (w.opera == "[object Opera]") {
+             d.addEventListener("DOMContentLoaded", f, false);
+         } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+      <div><img src="//mc.yandex.ru/watch/25504124" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript><!-- /Yandex.Metrika counter --><!-- Google Analytics -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-86970863-1', 'auto');
+      ga('send', 'pageview');
+    </script><!-- /Google Analytics -->
+  </body>
+  <footer>
+    <hr>
+    <center>Made with ❤ and <a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://travis-ci.org/">Travis CI</a>♦ <a href="https://pages.github.com/">GitHub Pages</a></center>
+  </footer>
+</html>
