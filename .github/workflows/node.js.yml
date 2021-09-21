@@ -33,7 +33,7 @@ jobs:
       uses: andstor/copycat-action@v3
       with:
         personal_token: ${{ secrets.greybax_blog_token }}
-        src_path: ./dist
+        src_path: /dist/
         dst_path: /.
         dst_owner: greybax
         dst_repo_name: greybax.github.io
