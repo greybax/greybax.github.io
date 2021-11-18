@@ -8,7 +8,7 @@ We got to Kinderdijk accidentally. We approached just in time for the departure 
 
 ![Kinderdijk mill 1](/images/netherlands-life-kinderdijk-the-city-of-mills/1.jpg "Kinderdijk mill 1")
 
-Earlier in the Netherlands there were a lot of mills of various types - for pumping water, grinding cereals, sawmills ... There is not much left - most of it burned out (when trying to stop the blades, a spark can be struck from the friction of wood against wood). They were replaced by modern windmills.
+Earlier in the Netherlands there were a lot of mills of various types - for pumping water, grinding cereals, sawmills... There is not much left - most of it burned out (when trying to stop the blades, a spark can be struck from the friction of wood against wood). They were replaced by modern windmills.
 
 ![Kinderdijk mill 2](/images/netherlands-life-kinderdijk-the-city-of-mills/2.jpg "Kinderdijk mill 2")
 
