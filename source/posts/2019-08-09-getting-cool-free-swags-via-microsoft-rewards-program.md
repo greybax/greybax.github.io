@@ -30,7 +30,7 @@ Browse through the different rewards. If you have enough points for a specific r
 
 ## Shopping on portal
 
-I've redeemed 20$ on [merchandise shopping portal](https://microsoftmerchandise.com/Shop/) and made some donations in [non-profit organizations](https://account.microsoft.com/rewards/redeem/donate). After that I've got some badges where you can find on [badges page](https://account.microsoft.com/rewards/badges/).
+I've redeemed 20$ on [merchandise shopping portal](https://microsoftmerchandise.com/Shop/) and made some donations in [non-profit organizations](https://account.microsoft.com/rewards/redeem/donate). After that I've got some badges where you can find on [badges page](https://rewards.microsoft.com/welcome/).
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just earned the Congratulations! badge with Microsoft Rewards. Check it out! <a href="https://twitter.com/hashtag/MicrosoftRewards?src=hash&amp;ref_src=twsrc%5Etfw">#MicrosoftRewards</a> <a href="https://t.co/RxPvohfmtt">https://t.co/RxPvohfmtt</a></p>&mdash; Aleksandr Filatov 🇷🇺 🇳🇱 🇺🇸 (@greybax) <a href="https://twitter.com/greybax/status/1159902275520720896?ref_src=twsrc%5Etfw">August 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
