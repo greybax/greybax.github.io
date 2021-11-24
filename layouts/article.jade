@@ -4,7 +4,8 @@ block title
   title #{title.text}
 
 block meta
-  meta(property="description" content=tags.text)
+  meta(name="keywords"        content=tags.text)
+  meta(name="description"     content=title.text)
   meta(name="og:url"          content=url)
   meta(name="og:title"        content=title.text)
   meta(name="og:description"  content=tags.text)
