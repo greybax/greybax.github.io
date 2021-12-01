@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 30 Nov 2021 00:58:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Dec 2021 00:56:32 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -335,6 +335,13 @@
             <link>https://alfilatov.com//posts/bohemian-rhapsody-review/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/bohemian-rhapsody-review/</guid>
             <pubDate>Sun, 11 Nov 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Vacation in Germany. Dusseldorf - the capital of the North Rhine-Westphalia</h1>]]></title>
+            <description><![CDATA[germany, vacation, dusseldorf, lifestyle, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-vacation-in-germany-dusseldorf-the-capital-of-the-north-rhine-westphalia/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-vacation-in-germany-dusseldorf-the-capital-of-the-north-rhine-westphalia/</guid>
+            <pubDate>Mon, 23 Jul 2018 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Netherlands life. Vacation in Germany. Cologne - the city of the famous perfume name</h1>]]></title>
