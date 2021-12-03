@@ -2,7 +2,7 @@
 
 #germany, #vacation, #fussen, #neuschwanstein-castle, #lifestyle, #trip, #life, #english;
 
-_August 08, 2018_
+_August 12, 2018_
 
 Füssen, Germany **(9 hours by night bus from Amsterdam to Stuttgart Airport, 1.5 hours waiting and 3 hours by bus to Füssen)**
 

@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 03 Dec 2021 19:52:15 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Dec 2021 19:56:54 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -337,17 +337,17 @@
             <pubDate>Sun, 11 Nov 2018 08:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[<h1>Netherlands life. Zandvoort aan zee - beach and city</h1>]]></title>
-            <description><![CDATA[netherlands, zandvoort-aan-zee, holland, lifestyle, trip, life, english]]></description>
-            <link>https://alfilatov.com//posts/netherlands-life-zandvoort-aan-zee-beach-and-city/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-zandvoort-aan-zee-beach-and-city/</guid>
-            <pubDate>Wed, 08 Aug 2018 07:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[<h1>Netherlands life. Vacation in Germany. Füssen and Neuschwanstein Castle</h1>]]></title>
             <description><![CDATA[germany, vacation, fussen, neuschwanstein-castle, lifestyle, trip, life, english]]></description>
             <link>https://alfilatov.com//posts/netherlands-life-vacation-in-germany-fussen-and-neuschwanstein-castle/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-vacation-in-germany-fussen-and-neuschwanstein-castle/</guid>
+            <pubDate>Sun, 12 Aug 2018 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Zandvoort aan zee - beach and city</h1>]]></title>
+            <description><![CDATA[netherlands, zandvoort-aan-zee, holland, lifestyle, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-zandvoort-aan-zee-beach-and-city/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-zandvoort-aan-zee-beach-and-city/</guid>
             <pubDate>Wed, 08 Aug 2018 07:00:00 GMT</pubDate>
         </item>
         <item>
