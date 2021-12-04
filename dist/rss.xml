@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 03 Dec 2021 20:56:49 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 04 Dec 2021 04:03:33 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -335,6 +335,13 @@
             <link>https://alfilatov.com//posts/bohemian-rhapsody-review/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/bohemian-rhapsody-review/</guid>
             <pubDate>Sun, 11 Nov 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Vacation in France. Paris - the city of inspiration</h1>]]></title>
+            <description><![CDATA[france, vacation, paris, lifestyle, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-vacation-in-france-paris-the-city-of-inspiration/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-vacation-in-france-paris-the-city-of-inspiration/</guid>
+            <pubDate>Fri, 31 Aug 2018 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Netherlands life. Muiden and Maiderslot castle</h1>]]></title>
