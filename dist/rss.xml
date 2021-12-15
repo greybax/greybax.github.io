@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 11 Dec 2021 01:14:10 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Dec 2021 23:24:04 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -335,6 +335,13 @@
             <link>https://alfilatov.com//posts/bohemian-rhapsody-review/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/bohemian-rhapsody-review/</guid>
             <pubDate>Sun, 11 Nov 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Vacation in Spain. Barcelona - is the heart of Catalonia</h1>]]></title>
+            <description><![CDATA[spain, vacation, barcelona, catalonia, lifestyle, trip, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-vacation-in-spain-barcelona-is-the-heart-of-catalonia/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-vacation-in-spain-barcelona-is-the-heart-of-catalonia/</guid>
+            <pubDate>Sat, 06 Oct 2018 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Netherlands life. Vacation in Great Britain. London - is the city from schoolbook</h1>]]></title>
