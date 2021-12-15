@@ -22,9 +22,7 @@ Here it is as if you find yourself inside the films - here Notre Dame (dark as i
 
 From the Pyramid in a straight line - the Luxor Obelisk, the Champs Elysees, the Arc de Triomphe, and at the very end you can see the square building-arch of La Defense.
 
-![Paris Luxor Obelisk](/images/netherlands-life-vacation-in-france-paris-the-city-of-inspiration/6.jpg "Paris Luxor Obelisk")
-
-![Paris](/images/netherlands-life-vacation-in-france-paris-the-city-of-inspiration/7.jpg "Paris")
+![Paris Luxor Obelisk](/images/netherlands-life-vacation-in-france-paris-the-city-of-inspiration/7.jpg "Paris Luxor Obelisk")
 
 All 2 days only French music plays in my head - depending on the area - from Edith Piaf to “Alor on Danse”.
 
