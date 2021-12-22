@@ -16,7 +16,6 @@ Fantasy is limitless. You can sit in an impromptu boat and row oars, conduct a v
 
 ![The chair in museum](/images/netherlands-life-the-netherlands-museums/4.jpg "The chair in museum")
 
-
 One of the memorable jokes is that if you carefully read the descriptions in one of the museums and look into the drawers, you will find the key word. If you say this word in a souvenir shop, the cashier will give you a small gift to choose from. Yes, a trifle, but the principle of the quest is intriguing and interesting to be more attentive. And after all, no one anywhere in the museum said that there was such a quest at all :)
 
 ![The cosmonaut](/images/netherlands-life-the-netherlands-museums/5.jpg "The cosmonaut")
@@ -34,6 +33,7 @@ Near the zoo, in Amsterdam there is a unique museum - Micropia. It opened only 4
 It can be listed for a very long time, and it is very difficult to get around them in a year. I would only like to note the Rijksmuseum - the largest in the country. 4 floors, 30 thousand square meters, there is the legendary "Night Watch" by Rembrandt... And now imagine - in the summer there was opened a quest room. More precisely, not so. The museum has become a quest room! 4 basic clues are given and you need to find answers throughout the museum!
 
 Our Top 5 memorable museums/places in Amsterdam:
+
 1. Rijksmuseum
 2. Van Gogh Museum
 3. Rembrandt House
