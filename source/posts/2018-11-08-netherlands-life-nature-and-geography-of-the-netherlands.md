@@ -1,6 +1,6 @@
 # Netherlands life. Nature and geography of the Netherlands
 
-#netherlands, #nature, #holland, #lifestyle, #trip, #life, #english;
+#netherlands, #nature, #holland, #lifestyle, #life, #english;
 
 _November 08, 2018_
 

@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 22 Dec 2021 23:59:07 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Dec 2021 00:36:08 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -323,6 +323,13 @@
             <pubDate>Sat, 17 Nov 2018 08:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[<h1>Netherlands life. The Dutch language</h1>]]></title>
+            <description><![CDATA[netherlands, dutch, language, holland, lifestyle, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-the-dutch-language/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-the-dutch-language/</guid>
+            <pubDate>Fri, 16 Nov 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[<h1>Run Chrome browser without CORS</h1>]]></title>
             <description><![CDATA[chrome, browser, cors, debug, development, english]]></description>
             <link>https://alfilatov.com//posts/run-chrome-without-cors/</link>
@@ -338,14 +345,14 @@
         </item>
         <item>
             <title><![CDATA[<h1>Netherlands life. Nature and geography of the Netherlands</h1>]]></title>
-            <description><![CDATA[netherlands, nature, holland, lifestyle, trip, life, english]]></description>
+            <description><![CDATA[netherlands, nature, holland, lifestyle, life, english]]></description>
             <link>https://alfilatov.com//posts/netherlands-life-nature-and-geography-of-the-netherlands/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-nature-and-geography-of-the-netherlands/</guid>
             <pubDate>Thu, 08 Nov 2018 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Netherlands life. The Netherlands museums</h1>]]></title>
-            <description><![CDATA[netherlands, museums, holland, lifestyle, trip, life, english]]></description>
+            <description><![CDATA[netherlands, museums, holland, lifestyle, life, english]]></description>
             <link>https://alfilatov.com//posts/netherlands-life-the-netherlands-museums/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-the-netherlands-museums/</guid>
             <pubDate>Sat, 03 Nov 2018 07:00:00 GMT</pubDate>

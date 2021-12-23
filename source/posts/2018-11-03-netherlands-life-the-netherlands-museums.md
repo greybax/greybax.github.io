@@ -1,6 +1,6 @@
 # Netherlands life. The Netherlands museums
 
-#netherlands, #museums, #holland, #lifestyle, #trip, #life, #english;
+#netherlands, #museums, #holland, #lifestyle, #life, #english;
 
 _November 03, 2018_
 
