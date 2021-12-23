@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 23 Dec 2021 00:36:08 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Dec 2021 01:29:54 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -307,6 +307,13 @@
             <link>https://alfilatov.com//posts/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/</guid>
             <pubDate>Sun, 25 Nov 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. The Dutch cuisine</h1>]]></title>
+            <description><![CDATA[netherlands, dutch, cuisine, holland, lifestyle, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-the-dutch-cuisine/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-the-dutch-cuisine/</guid>
+            <pubDate>Thu, 22 Nov 2018 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Покупка машины в Америке</h1>]]></title>
