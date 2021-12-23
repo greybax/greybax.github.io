@@ -1,4 +1,4 @@
-# Netherlands life. Time to move forwardd
+# Netherlands life. Time to move forward
 
 #netherlands, #dutch, #holland, #lifestyle, #life, #english;
 
