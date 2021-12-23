@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 23 Dec 2021 01:29:54 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Dec 2021 02:06:07 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -300,6 +300,13 @@
             <link>https://alfilatov.com//posts/progulka-po-rattlesnake-lake-i-rattlesnake-ledge/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/progulka-po-rattlesnake-lake-i-rattlesnake-ledge/</guid>
             <pubDate>Sat, 01 Dec 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. Time to move forwardd</h1>]]></title>
+            <description><![CDATA[netherlands, dutch, holland, lifestyle, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-time-to-move-forward/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-time-to-move-forward/</guid>
+            <pubDate>Mon, 26 Nov 2018 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Snoqualmie Falls или прогулка по следам съемок Twin Peaks</h1>]]></title>
