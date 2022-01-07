@@ -1,6 +1,6 @@
 # Прогулка по Rattlesnake Lake и Rattlesnake Ledge
 
-#usa, #wa, #life, #nature, #trails, #russian;
+#usa, #wa, #pnw, #life, #nature, #trails, #russian;
 
 _December 1, 2018_
 
