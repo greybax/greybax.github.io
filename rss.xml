@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 07 Jan 2022 01:49:29 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Jan 2022 20:52:16 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -265,6 +265,13 @@
             <link>https://alfilatov.com//posts/how-to-add-dynamic-data-badges-from-shields-io/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-add-dynamic-data-badges-from-shields-io/</guid>
             <pubDate>Thu, 21 Mar 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Leavenworth - bavarian village in the middle of pacific northwest</h1>]]></title>
+            <description><![CDATA[usa, wa, pnw, life, leavenworth, germany, english]]></description>
+            <link>https://alfilatov.com//posts/leavenworth-bavarian-village-in-the-middle-of-pacific-northwest/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/leavenworth-bavarian-village-in-the-middle-of-pacific-northwest/</guid>
+            <pubDate>Wed, 20 Mar 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Let's make "Awesome IT Films" popular again!</h1>]]></title>
