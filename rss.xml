@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 20 Jan 2022 01:10:40 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Jan 2022 18:41:01 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -244,6 +244,13 @@
             <link>https://alfilatov.com//posts/useful-extensions-for-amazon-shopping/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/useful-extensions-for-amazon-shopping/</guid>
             <pubDate>Mon, 01 Apr 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Summit at Snoqualmie - the most popular ski resort in Washington state</h1>]]></title>
+            <description><![CDATA[usa, wa, pnw, life, summit-at-snoqualmie, ski, ski-resort, youtube, vlog, video, wa-travelers, english]]></description>
+            <link>https://alfilatov.com//posts/summit-at-snoqualmie-the-most-popular-ski-resort-in-washington-state/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/summit-at-snoqualmie-the-most-popular-ski-resort-in-washington-state/</guid>
+            <pubDate>Sun, 31 Mar 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>We started our YouTube channel</h1>]]></title>
