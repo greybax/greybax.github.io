@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 13 Jan 2022 20:52:16 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Jan 2022 01:10:40 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -258,6 +258,13 @@
             <link>https://alfilatov.com//posts/my-collection-of-useful-github-extensions/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/my-collection-of-useful-github-extensions/</guid>
             <pubDate>Wed, 27 Mar 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Port Angeles - biggest town on Olympic peninsula</h1>]]></title>
+            <description><![CDATA[usa, wa, pnw, life, port-angeles, olympic-peninsula, english]]></description>
+            <link>https://alfilatov.com//posts/port-angeles-biggest-town-on-olympic-peninsula/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/port-angeles-biggest-town-on-olympic-peninsula/</guid>
+            <pubDate>Tue, 26 Mar 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>How to add dynamic data badges from Shields.io</h1>]]></title>
