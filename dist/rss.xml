@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 21 Jan 2022 00:35:27 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Jan 2022 06:23:03 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -167,6 +167,13 @@
             <link>https://alfilatov.com//posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/</guid>
             <pubDate>Fri, 10 May 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Skagit Valley - small peace of Holland in US Pacific Northwest</h1>]]></title>
+            <description><![CDATA[usa, wa, pnw, life, skagit-valley, youtube, vlog, video, wa-travelers, english]]></description>
+            <link>https://alfilatov.com//posts/skagit-valley-small-peace-of-holland-in-us-pacific-northwest/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/skagit-valley-small-peace-of-holland-in-us-pacific-northwest/</guid>
+            <pubDate>Tue, 23 Apr 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Whidbey Island - is the largest island in Puget Sound</h1>]]></title>
