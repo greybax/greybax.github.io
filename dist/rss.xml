@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 28 Jan 2022 06:23:03 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 11 Feb 2022 06:24:15 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -146,6 +146,13 @@
             <link>https://alfilatov.com//posts/how-to-use-unsplash-in-your-projects/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-use-unsplash-in-your-projects/</guid>
             <pubDate>Tue, 18 Jun 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Silverdale, WA - small town with scenic views</h1>]]></title>
+            <description><![CDATA[silverdale, usa, travel, pacific, pnw, northwest, wildlife, washington, english]]></description>
+            <link>https://alfilatov.com//posts/silverdale-wa-small-town-with-scenic-views/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/silverdale-wa-small-town-with-scenic-views/</guid>
+            <pubDate>Thu, 13 Jun 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Twin Falls Trail Hike</h1>]]></title>
