@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 22 Feb 2022 23:53:01 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 03 Mar 2022 21:54:06 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -132,6 +132,13 @@
             <link>https://alfilatov.com//posts/how-to-setup-proguard-in-cordova-application/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-setup-proguard-in-cordova-application/</guid>
             <pubDate>Mon, 01 Jul 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Weekend day trip to Port Angeles, WA</h1>]]></title>
+            <description><![CDATA[port-angeles, usa, travel, pacific, pnw, northwest, wildlife, washington, english]]></description>
+            <link>https://alfilatov.com//posts/weekend-day-trip-to-port-angeles-wa/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/weekend-day-trip-to-port-angeles-wa/</guid>
+            <pubDate>Fri, 28 Jun 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Weekend day trip to Tipsoo Lake, WA</h1>]]></title>
