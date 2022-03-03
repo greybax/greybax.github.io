@@ -37,4 +37,8 @@ I decided to return by another road, through Ellensburg (40 minutes from Yakima)
 
 The road home - another 2 hours on the highway. It was very interesting to watch the transformation: deserted - wooded - mountains - suburbs of civilization - skyscrapers of Seattle.
 
+## Our YouTube video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kJkgoHDaCwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 _Happy Tipsoo Lake hiking!_ :v:
