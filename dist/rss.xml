@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 03 Mar 2022 21:59:41 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 04 Mar 2022 06:29:08 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -127,6 +127,13 @@
             <pubDate>Thu, 11 Jul 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[<h1>Mount Little Si trail hike</h1>]]></title>
+            <description><![CDATA[hike, usa, travel, pacific, pnw, northwest, wildlife, washington, english]]></description>
+            <link>https://alfilatov.com//posts/mount-little-si-trail-hike/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/mount-little-si-trail-hike/</guid>
+            <pubDate>Fri, 05 Jul 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[<h1>How to setup Proguard in Cordova application?</h1>]]></title>
             <description><![CDATA[proguard, optimization, performance, configuration, cordova, mobile, github, english]]></description>
             <link>https://alfilatov.com//posts/how-to-setup-proguard-in-cordova-application/</link>
@@ -169,7 +176,7 @@
             <pubDate>Thu, 13 Jun 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[<h1>Twin Falls Trail Hike</h1>]]></title>
+            <title><![CDATA[<h1>Twin Falls trail hike</h1>]]></title>
             <description><![CDATA[hike, usa, travel, pacific, pnw, northwest, wildlife, washington, english]]></description>
             <link>https://alfilatov.com//posts/twin-falls-trail-hike/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/twin-falls-trail-hike/</guid>

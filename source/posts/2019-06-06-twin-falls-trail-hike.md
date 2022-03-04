@@ -1,4 +1,4 @@
-# Twin Falls Trail Hike
+# Twin Falls trail hike
 
 #hike, #usa, #travel, #pacific, #pnw, #northwest, #wildlife, #washington, #english;
 
