@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 04 Mar 2022 06:29:08 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Mar 2022 18:10:45 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -680,27 +680,6 @@
             <pubDate>Sun, 06 Nov 2016 07:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[<h1>[Frontender Magazine] ES6 в деталях: символы</h1>]]></title>
-            <description><![CDATA[FrontenderMagazine, перевод, es6, javascript, russian]]></description>
-            <link>https://alfilatov.com//posts/es6-in-depth-symbols/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/es6-in-depth-symbols/</guid>
-            <pubDate>Tue, 09 Feb 2016 08:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>[Frontender Magazine] 7 жизненно важных функций в JavaScript</h1>]]></title>
-            <description><![CDATA[FrontenderMagazine, перевод, javascript, russian]]></description>
-            <link>https://alfilatov.com//posts/essential-javascript-functions/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/essential-javascript-functions/</guid>
-            <pubDate>Tue, 26 Jan 2016 08:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>[habrahabr] Мысли вслух о TypeScript</h1>]]></title>
-            <description><![CDATA[habrahabr, typescript, russian]]></description>
-            <link>https://alfilatov.com//posts/thoughts-about-typescript/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/thoughts-about-typescript/</guid>
-            <pubDate>Mon, 21 Dec 2015 08:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[<h1>HTTPS для Github Pages через CloudFare</h1>]]></title>
             <description><![CDATA[https, cloudflare, russian]]></description>
             <link>https://alfilatov.com//posts/github-pages-secure-with-cloudflare/</link>
@@ -708,39 +687,11 @@
             <pubDate>Wed, 09 Dec 2015 08:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[<h1>[habrahabr] Тестирование вёрстки на визуальные регрессии с помощью PhantomCSS</h1>]]></title>
-            <description><![CDATA[habrahabr, перевод, тестирование, css, javascript, russian]]></description>
-            <link>https://alfilatov.com//posts/testirovanie-verstki-na-vizualne-regressii-s-pomosh&apos;yu-phantomcss/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/testirovanie-verstki-na-vizualne-regressii-s-pomosh&apos;yu-phantomcss/</guid>
-            <pubDate>Wed, 25 Nov 2015 08:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>[habrahabr] Итак, вы решили стать фронтендером: практическое руководство для роста начинающего разработчика</h1>]]></title>
-            <description><![CDATA[habrahabr, перевод, junior, frontend, russian]]></description>
-            <link>https://alfilatov.com//posts/vy-reshili-stat-frontederom-tutorial-for-juniors/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/vy-reshili-stat-frontederom-tutorial-for-juniors/</guid>
-            <pubDate>Thu, 19 Nov 2015 08:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[<h1>Мой доклад на Yaroslavl Frontend Meetup</h1>]]></title>
             <description><![CDATA[yarfrontend, meetup, frontend, es6, russian]]></description>
             <link>https://alfilatov.com//posts/yarfrontend-speaker/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/yarfrontend-speaker/</guid>
             <pubDate>Fri, 13 Nov 2015 08:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>[Frontender Magazine] Упрощаем заполнение форм с помощью Autofill</h1>]]></title>
-            <description><![CDATA[FrontenderMagazine, перевод, autocomplete, javascript, russian]]></description>
-            <link>https://alfilatov.com//posts/checkout-faster-with-Autofill/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/checkout-faster-with-Autofill/</guid>
-            <pubDate>Thu, 10 Sep 2015 07:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>[Frontender Magazine] Классы в ECMAScript 6</h1>]]></title>
-            <description><![CDATA[FrontenderMagazine, перевод, es6, javascript, russian]]></description>
-            <link>https://alfilatov.com//posts/es6-classes-final/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/es6-classes-final/</guid>
-            <pubDate>Mon, 06 Jul 2015 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Пробуем ES2015/ES6 в действии</h1>]]></title>
