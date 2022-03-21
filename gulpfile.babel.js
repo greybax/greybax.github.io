@@ -12,7 +12,6 @@ import del from 'del';
 import { outputFile as output } from 'fs-extra';
 import express from 'express';
 import assign from 'object-assign';
-import sequence from 'run-sequence';
 import each from 'each-done';
 import path from 'path';
 import extract from 'md-article';
