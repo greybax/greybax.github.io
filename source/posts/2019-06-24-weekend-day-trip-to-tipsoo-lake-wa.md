@@ -1,6 +1,6 @@
 # Weekend day trip to Tipsoo Lake, WA
 
-#tipsoo-lake, #usa, #travel, #pacific, #pnw, #northwest, #wildlife, #washington, #english;
+#tipsoo-lake, #usa, #travel, #pacific, #pnw, #northwest, #wildlife, #washington, #youtube, #vlog, #video, #wa-travelers, #english;
 
 _June 24, 2019_
 

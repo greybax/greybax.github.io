@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 21 Mar 2022 01:19:58 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Mar 2022 06:56:07 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -120,6 +120,13 @@
             <pubDate>Fri, 09 Aug 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[<h1>City of Anacortes Washington Park</h1>]]></title>
+            <description><![CDATA[anacortes, usa, travel, pacific, pnw, northwest, washington, youtube, vlog, video, wa-travelers, english]]></description>
+            <link>https://alfilatov.com//posts/city-of-anacortes-washington-park/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/city-of-anacortes-washington-park/</guid>
+            <pubDate>Wed, 24 Jul 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[<h1>How to make your blog grow fast (1000 visitors per day)?</h1>]]></title>
             <description><![CDATA[blog, english]]></description>
             <link>https://alfilatov.com//posts/how-to-make-your-blog-grow-fast-1000-visitors-per-day/</link>
@@ -142,14 +149,14 @@
         </item>
         <item>
             <title><![CDATA[<h1>Weekend day trip to Port Angeles, WA</h1>]]></title>
-            <description><![CDATA[port-angeles, usa, travel, pacific, pnw, northwest, wildlife, washington, english]]></description>
+            <description><![CDATA[port-angeles, usa, travel, pacific, pnw, northwest, wildlife, washington, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/weekend-day-trip-to-port-angeles-wa/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/weekend-day-trip-to-port-angeles-wa/</guid>
             <pubDate>Fri, 28 Jun 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Weekend day trip to Tipsoo Lake, WA</h1>]]></title>
-            <description><![CDATA[tipsoo-lake, usa, travel, pacific, pnw, northwest, wildlife, washington, english]]></description>
+            <description><![CDATA[tipsoo-lake, usa, travel, pacific, pnw, northwest, wildlife, washington, youtube, vlog, video, wa-travelers, english]]></description>
             <link>https://alfilatov.com//posts/weekend-day-trip-to-tipsoo-lake-wa/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/weekend-day-trip-to-tipsoo-lake-wa/</guid>
             <pubDate>Mon, 24 Jun 2019 07:00:00 GMT</pubDate>

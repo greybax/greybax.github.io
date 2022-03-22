@@ -1,6 +1,6 @@
 # Weekend day trip to Port Angeles, WA
 
-#port-angeles, #usa, #travel, #pacific, #pnw, #northwest, #wildlife, #washington, #english;
+#port-angeles, #usa, #travel, #pacific, #pnw, #northwest, #wildlife, #washington, #youtube, #vlog, #video, #wa-travelers, #english;
 
 _June 28, 2019_
 
