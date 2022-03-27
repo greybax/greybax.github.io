@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 22 Mar 2022 06:56:07 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Mar 2022 05:38:04 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -111,6 +111,13 @@
             <link>https://alfilatov.com//posts/apache-cordova-vs-react-native/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/apache-cordova-vs-react-native/</guid>
             <pubDate>Fri, 06 Sep 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Lavender fields in Sequim, WA</h1>]]></title>
+            <description><![CDATA[sequim, lavender-fields, usa, travel, pacific, pnw, northwest, washington, english]]></description>
+            <link>https://alfilatov.com//posts/lavender-fields-in-sequim-wa/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/lavender-fields-in-sequim-wa/</guid>
+            <pubDate>Thu, 15 Aug 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Getting cool free swags via Microsoft Rewards Program</h1>]]></title>
