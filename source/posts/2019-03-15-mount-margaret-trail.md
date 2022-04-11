@@ -21,8 +21,6 @@ In the cities, and at the foothills of the mountains, where the road is well cle
 It was the first good and deep snow. It would be more convenient, of course, in the snow accesses, but even so it was normal.
 From the height, a rather picturesque view opened up - on the nearest slopes, and at the top of Snoqualmee - a ski resort, where many people travel.
 
-![mt margaret 5](/images/mount-margaret-trail/5.jpg "mt margaret 5")
-
 ![mt margaret 6](/images/mount-margaret-trail/6.jpg "mt margaret 6")
 
 The most exciting moment - heard the roar of a bear, which (hopefully) was somewhere not very close. We stopped rooted to the spot, listening for further sounds. But it looks like the bear was just making sounds, scaring us off. We continued our journey, continuing to talk, the algorithm that there are people here, but we do not hunt him.

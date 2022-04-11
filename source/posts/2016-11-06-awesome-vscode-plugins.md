@@ -100,14 +100,10 @@ Full list of plugins you can find on [VisualStudio Marketplace](https://marketpl
 
 > Display git blame info along with your code. Can open the diff of a particullar commit from here.
 
-6. [Spelling and Grammar Checker](https://marketplace.visualstudio.com/items?itemName=seanmcbreen.Spell)
-
-> Using a web service to detect mistakes and suggest fixes - great for Markdown or any plain text.
-
-7. [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
+6. [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
 
 > Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX.
 
-8. [Cordova Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools) (usefull only if you a working with Cordova)
+7. [Cordova Tools](https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools) (usefull only if you a working with Cordova)
 
 > Code-hinting, debugging and integrated commands for Apache Cordova (PhoneGap). With added support for ionic framework.

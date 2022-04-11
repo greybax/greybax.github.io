@@ -24,13 +24,13 @@ or browse something via Edge desktop browser and Bing mobile browser.
 
 ## Redeem points
 
-When you'll get some points which is required for reward you can redeem them on the [Redeem page](https://account.microsoft.com/rewards/redeem/).
+When you'll get some points which is required for reward you can redeem them on the [Redeem page](https://rewards.microsoft.com/redeem).
 
 Browse through the different rewards. If you have enough points for a specific reward, a link to Redeem Reward appears for that item. If you don’t have enough points, a graph shows your current number of points and the number of points needed to redeem that reward. Click the link to Redeem Reward for one that interests you and for which you have enough points.
 
 ## Shopping on portal
 
-I've redeemed 20$ on [merchandise shopping portal](https://microsoftmerchandise.com/Shop/) and made some donations in [non-profit organizations](https://account.microsoft.com/rewards/redeem/donate). After that I've got some badges where you can find on [badges page](https://rewards.microsoft.com/welcome/).
+I've redeemed 20$ on [merchandise shopping portal](https://microsoftmerchandise.com/Shop/) and made some donations in [non-profit organizations](https://rewards.microsoft.com/redeem/donate). After that I've got some badges where you can find on [badges page](https://rewards.microsoft.com/welcome/).
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just earned the Congratulations! badge with Microsoft Rewards. Check it out! <a href="https://twitter.com/hashtag/MicrosoftRewards?src=hash&amp;ref_src=twsrc%5Etfw">#MicrosoftRewards</a> <a href="https://t.co/RxPvohfmtt">https://t.co/RxPvohfmtt</a></p>&mdash; Aleksandr Filatov 🇷🇺 🇳🇱 🇺🇸 (@greybax) <a href="https://twitter.com/greybax/status/1159902275520720896?ref_src=twsrc%5Etfw">August 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

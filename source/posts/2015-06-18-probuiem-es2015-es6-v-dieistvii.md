@@ -40,9 +40,9 @@ _June 29, 2015_
 
 * **Поддержка классов** [14.5](https://www.ecma-international.org/ecma-262/6.0/#sec-class-definitions).
 * **Шаблоны строк** [12.2.9](https://www.ecma-international.org/ecma-262/6.0/#sec-template-literals), [12.3.7](https://www.ecma-international.org/ecma-262/6.0/#sec-tagged-templates), предоставляющие удобные средства для форматирования строк.
-* Поддержка **лексических объявлений переменных** [13.2.1](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-let-and-const-declarations) (Lexical Declarations), позволяющих ограничить текущим блоком область видимости ключевых слов, через их повторное определение при помощи оператора ```let``` вместо ```var```
-* **Оператор const** [13.2.1](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-let-and-const-declarations) для определения переменных, доступных только для чтения
-* **Сокращённый формат задания объектов** [13.2.1](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-let-and-const-declarations) (запись ```var a = {'obj1': obj1, 'obj2': obj2}``` теперь можно сократить до ```var a = {obj1, obj2}``` )
+* Поддержка **лексических объявлений переменных** [13.2.1](https://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations) (Lexical Declarations), позволяющих ограничить текущим блоком область видимости ключевых слов, через их повторное определение при помощи оператора ```let``` вместо ```var```
+* **Оператор const** [13.2.1](https://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations) для определения переменных, доступных только для чтения
+* **Сокращённый формат задания объектов** [13.2.1](https://www.ecma-international.org/ecma-262/6.0/#sec-let-and-const-declarations) (запись ```var a = {'obj1': obj1, 'obj2': obj2}``` теперь можно сократить до ```var a = {obj1, obj2}``` )
 * **Модули** [15.2](https://www.ecma-international.org/ecma-262/6.0/#sec-modules). Для экспорта и импорта модулей введены операторы export и import, например, ```import * as mymodule from "lib/mymodule```. Предоставляются средства динамической загрузки модулей, пространства имён и изоляция состояния
 * **Arrow-функции** [14.2](https://www.ecma-international.org/ecma-262/6.0/#sec-arrow-function-definitions) (синтаксис ```=>```) для быстрого определения анонимных функций (например, ```x.map(x => console.log(x * x));```)
 * Добавлен новый тип **Symbol** [19.4](https://www.ecma-international.org/ecma-262/6.0/#sec-symbol-objects), применимый для идентификаторов свойств объектов
