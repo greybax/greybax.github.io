@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 11 Apr 2022 19:27:42 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 11 Apr 2022 21:20:01 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -106,11 +106,25 @@
             <pubDate>Sun, 01 Dec 2019 08:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[<h1>Mukilteo Lighthouse Festival</h1>]]></title>
+            <description><![CDATA[mukilteo, lighthouse, usa, travel, pacific, pnw, northwest, washington, english]]></description>
+            <link>https://alfilatov.com//posts/mukilteo-lighthouse-festival/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/mukilteo-lighthouse-festival/</guid>
+            <pubDate>Thu, 19 Sep 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[<h1>Apache Cordova vs. React Native</h1>]]></title>
             <description><![CDATA[mobile, cordova, ReactNative, performance, debugging, cross-platform, english]]></description>
             <link>https://alfilatov.com//posts/apache-cordova-vs-react-native/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/apache-cordova-vs-react-native/</guid>
             <pubDate>Fri, 06 Sep 2019 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Lake Crescent - beautiful lake on Olympic peninsula</h1>]]></title>
+            <description><![CDATA[lake, lake-crescent, usa, travel, pacific, pnw, northwest, washington, english]]></description>
+            <link>https://alfilatov.com//posts/lake-crescent-beautiful-lake-on-olympic-peninsula/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/lake-crescent-beautiful-lake-on-olympic-peninsula/</guid>
+            <pubDate>Fri, 23 Aug 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Lavender fields in Sequim, WA</h1>]]></title>
