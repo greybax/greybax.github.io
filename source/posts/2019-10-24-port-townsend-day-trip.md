@@ -14,7 +14,6 @@ Along the way, we also stopped in the town of Poulsbo, which positions itself as
 
 ![Port Townsend 3, WA](/images/port-townsend-day-trip/3.jpg "Port Townsend 3, WA")
 
-
 We liked Port Townsend a lot more. There are the same number of people, but the houses are more European and somehow more comfortable. Nearby is Fort Warden, but we only stopped at the embankment next to it, from where you can see the shore of Fort Casey, where we stopped at Whidbey Island. There is also a lighthouse - Point Wilson, but it belongs to the coast guard, so there is no access there...
 
 ![Port Townsend 4, WA](/images/port-townsend-day-trip/4.jpg "Port Townsend 4, WA")
