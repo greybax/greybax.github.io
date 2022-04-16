@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 12 Apr 2022 20:38:08 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 16 Apr 2022 05:47:27 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -104,6 +104,13 @@
             <link>https://alfilatov.com//posts/cyrillic-to-translit-js-library-for-converting-cyrillic-symbols-to-translit-and-vice-versa/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/cyrillic-to-translit-js-library-for-converting-cyrillic-symbols-to-translit-and-vice-versa/</guid>
             <pubDate>Sun, 01 Dec 2019 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Port Townsend day trip</h1>]]></title>
+            <description><![CDATA[port-townsend, town, usa, seattle, travel, pacific, pnw, northwest, washington, youtube, vlog, video, wa-travelers, english]]></description>
+            <link>https://alfilatov.com//posts/port-townsend-day-trip/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/port-townsend-day-trip/</guid>
+            <pubDate>Thu, 24 Oct 2019 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Crystal Mountain Resort in mid-September</h1>]]></title>
