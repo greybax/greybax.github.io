@@ -10,7 +10,7 @@ But its not a secret that Netherlands pretty famous with their local beer and br
 
 During our staying in NL I've created my collection of Amsterdam Breweries on Yelp. Check it out!
 
-<div id="collection-container-ef62d740" style="height: 400px; overflow-y: auto;"></div><script src="https://www.yelp.com/collection/pw1rMyB0lvaOTm-yV2hOLQ/embed?container=collection-container-ef62d740&sort_by=date&limit=20"></script>
+<div id="collection-container-ef62d740" style="height: 700px; overflow-y: auto;"></div><script src="https://www.yelp.com/collection/pw1rMyB0lvaOTm-yV2hOLQ/embed?container=collection-container-ef62d740&sort_by=date&limit=20"></script>
 
 Feel free to create your own breweries collection based on mine. Or just let me know if I miss ones to add (since I no longer live in NL its hard to maintain it and keep up-to-date)
 
