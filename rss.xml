@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 21 Apr 2022 22:42:15 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 22 Apr 2022 21:11:40 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -454,6 +454,13 @@
             <link>https://alfilatov.com//posts/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/snoqualmie-falls-ili-po-sledam-semok-twin-peaks/</guid>
             <pubDate>Sun, 25 Nov 2018 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Netherlands life. The Amsterdam Breweries</h1>]]></title>
+            <description><![CDATA[netherlands, dutch, breweries, amsterdam, holland, lifestyle, life, english]]></description>
+            <link>https://alfilatov.com//posts/netherlands-life-the-amsterdam-breweries/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/netherlands-life-the-amsterdam-breweries/</guid>
+            <pubDate>Fri, 23 Nov 2018 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Netherlands life. The Dutch cuisine</h1>]]></title>
