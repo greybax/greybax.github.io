@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 22 Apr 2022 21:17:49 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 May 2022 06:17:42 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -104,6 +104,13 @@
             <link>https://alfilatov.com//posts/cyrillic-to-translit-js-library-for-converting-cyrillic-symbols-to-translit-and-vice-versa/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/cyrillic-to-translit-js-library-for-converting-cyrillic-symbols-to-translit-and-vice-versa/</guid>
             <pubDate>Sun, 01 Dec 2019 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Business trip. The city of Philadelphia</h1>]]></title>
+            <description><![CDATA[philadelphia, pennsylvania, business-trip, usa, travel, youtube, vlog, video, wa-travelers, english]]></description>
+            <link>https://alfilatov.com//posts/business-trip-the-city-of-philadelphia/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/business-trip-the-city-of-philadelphia/</guid>
+            <pubDate>Thu, 21 Nov 2019 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Business trip. The vibe of NYC</h1>]]></title>
