@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 13 May 2022 05:40:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 May 2022 00:27:09 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to create AWS EC2 Image Builder with hosted Solr and run it on EC2 using Terraform</h1>]]></title>
+            <description><![CDATA[aws, ec2, s3, ec2-builder, solr, terraform, devops, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-create-aws-ec2-image-builder-with-hosted-solr-and-run-it-on-ec2-using-terraform/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-aws-ec2-image-builder-with-hosted-solr-and-run-it-on-ec2-using-terraform/</guid>
+            <pubDate>Tue, 24 May 2022 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>How to create AWS RDS cluster with imported SQL dump from S3 using Terraform</h1>]]></title>
             <description><![CDATA[aws, rds, s3, sql, terraform, devops, english]]></description>
