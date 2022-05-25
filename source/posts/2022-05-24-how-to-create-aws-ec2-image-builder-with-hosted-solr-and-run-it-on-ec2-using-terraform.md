@@ -182,33 +182,33 @@ resource "aws_iam_role_policy" "ec2_solr" {
 
   policy = <<EOF
 {
-    "Version": "2012-10-17",
-    "Statement": [
-      {
-          "Effect": "Allow",
-          "Action": "s3:ListAllMyBuckets",
-          "Resource": "*"
-      },
-      {
-          "Effect": "Allow",
-          "Action": [
-              "s3:ListBucket",
-              "s3:GetBucketACL",
-              "s3:GetBucketLocation"
-          ],
-          "Resource": "arn:aws:s3:::${aws_s3_bucket.solr_conf_s3.bucket}"
-      },
-      {
-          "Effect": "Allow",
-          "Action": [
-              "s3:GetObject",
-              "s3:PutObject",
-              "s3:ListMultipartUploadParts",
-              "s3:AbortMultipartUpload"
-          ],
-          "Resource": "arn:aws:s3:::${aws_s3_bucket.solr_conf_s3.bucket}/*"
-      }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:ListAllMyBuckets",
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket",
+        "s3:GetBucketACL",
+        "s3:GetBucketLocation"
+      ],
+      "Resource": "arn:aws:s3:::${aws_s3_bucket.solr_conf_s3.bucket}"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:ListMultipartUploadParts",
+        "s3:AbortMultipartUpload"
+      ],
+      "Resource": "arn:aws:s3:::${aws_s3_bucket.solr_conf_s3.bucket}/*"
+    }
+  ]
 }
 EOF
 }
@@ -218,17 +218,17 @@ resource "aws_iam_role" "ec2_solr" {
 
   assume_role_policy = <<EOF
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Action": "sts:AssumeRole",
-            "Principal": {
-               "Service": "ec2.amazonaws.com"
-            },
-            "Effect": "Allow",
-            "Sid": ""
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": "sts:AssumeRole",
+      "Principal": {
+        "Service": "ec2.amazonaws.com"
+      },
+      "Effect": "Allow",
+      "Sid": ""
+    }
+  ]
 }
 EOF
 }
