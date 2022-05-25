@@ -43,7 +43,11 @@ resource "aws_s3_bucket_object" "solr_conf_s3_object" {
 }
 ```
 
+How to deal with Solr config files you can find here [Solr Configuration Files](https://solr.apache.org/guide/7_0/solr-configuration-files.html)
+
 ## Step 2 (Initialize AWS Image Builder with Solr pre-installed component)
+
+I've used official post [Taking Solr to Production](https://solr.apache.org/guide/8_4/taking-solr-to-production.html) in purpose to install and deploy Solr on EC2 cluster.
 
 ```
 resource "aws_imagebuilder_image_pipeline" "solr" {
