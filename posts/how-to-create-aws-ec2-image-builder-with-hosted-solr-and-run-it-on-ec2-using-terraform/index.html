@@ -92,8 +92,10 @@ resource "aws_s3_bucket_object" "solr_conf_s3_object" {
   source   = "${path.module}/s3-data-upload/solr-conf/conf/${each.value}"
   etag     = filemd5("${path.module}/s3-data-upload/solr-conf/conf/${each.value}")
 }
-
-resource "aws_imagebuilder_image_pipeline" "solr" {
+</code></pre>
+<p>How to deal with Solr config files you can find here <a href="https://solr.apache.org/guide/7_0/solr-configuration-files.html">Solr Configuration Files</a></p>
+<p>I've used official post <a href="https://solr.apache.org/guide/8_4/taking-solr-to-production.html">Taking Solr to Production</a> in purpose to install and deploy Solr on EC2 cluster.</p>
+<pre><code>resource "aws_imagebuilder_image_pipeline" "solr" {
   name                             = "solr_image_pipeline_${var.short_name}"
   image_recipe_arn                 = aws_imagebuilder_image_recipe.solr.arn
   infrastructure_configuration_arn = aws_imagebuilder_infrastructure_configuration.solr.arn
