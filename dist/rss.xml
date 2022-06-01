@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 25 May 2022 00:50:53 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Jun 2022 05:49:17 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -104,6 +104,13 @@
             <link>https://alfilatov.com//posts/how-to-use-react-routing-into-webview-for-vscode-extensions/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-use-react-routing-into-webview-for-vscode-extensions/</guid>
             <pubDate>Thu, 09 Jan 2020 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Trip to Lynden. The Dutch town in Washington State</h1>]]></title>
+            <description><![CDATA[lynden, dutch, wa, town, usa, pnw, northwest, washington, travel, youtube, vlog, video, wa-travelers, english]]></description>
+            <link>https://alfilatov.com//posts/trip-to-lynden-the-dutch-town-in-washington-state/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/trip-to-lynden-the-dutch-town-in-washington-state/</guid>
+            <pubDate>Sun, 08 Dec 2019 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>cyrillic-to-translit-js - library for converting cyrillic symbols to translit and vice versa</h1>]]></title>
