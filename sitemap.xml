@@ -18,6 +18,11 @@
 </url>
 
 <url>
+  <loc>https://alfilatov.com/posts/washington-state-breweries/</loc>
+  <lastmod>2022-06-10T14:28:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://alfilatov.com/posts/how-to-create-aws-ec2-image-builder-with-hosted-solr-and-run-it-on-ec2-using-terraform/</loc>
   <lastmod>2022-05-24T17:28:06+00:00</lastmod>
   <priority>0.80</priority>
