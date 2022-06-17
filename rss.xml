@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 17 Jun 2022 16:48:37 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Jun 2022 16:52:29 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -113,10 +113,10 @@
             <pubDate>Thu, 09 Jan 2020 08:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[<h1>Our first trip tp to Vanvucer BC, Canada.</h1>]]></title>
-            <description><![CDATA[vancuver, british-columbia, canada, travel, youtube, vlog, video, wa-travelers, english]]></description>
-            <link>https://alfilatov.com//posts/our-first-trip-to-vancuver-bc-canada/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/our-first-trip-to-vancuver-bc-canada/</guid>
+            <title><![CDATA[<h1>Our first trip tp to Vancouver BC, Canada.</h1>]]></title>
+            <description><![CDATA[vancouver, british-columbia, canada, travel, youtube, vlog, video, wa-travelers, english]]></description>
+            <link>https://alfilatov.com//posts/our-first-trip-to-vancouver-bc-canada/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/our-first-trip-to-vancouver-bc-canada/</guid>
             <pubDate>Thu, 12 Dec 2019 08:00:00 GMT</pubDate>
         </item>
         <item>
