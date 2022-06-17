@@ -10,6 +10,6 @@ Since I've moved to Seattle, WA and live it quite for a while already I've decid
 
 Please feel free to check it out and let me know what breweries I have been missing there and should to add.
 
-<div id="collection-container-f93f2bec" style="height: 500px; overflow-y: auto;"></div><script src="https://www.yelp.com/collection/Rszx7mmqgwnrniIEqQ-qRg/embed?container=collection-container-f93f2bec&sort_by=distance&limit=50"></script>
+<div id="collection-container-f93f2bec" style="height: 700px; overflow-y: auto;"></div><script src="https://www.yelp.com/collection/Rszx7mmqgwnrniIEqQ-qRg/embed?container=collection-container-f93f2bec&sort_by=distance&limit=50"></script>
 
 Happy WA State beer tasting! :y:
