@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 17 Jun 2022 16:52:29 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Jun 2022 05:22:22 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -111,6 +111,13 @@
             <link>https://alfilatov.com//posts/how-to-use-react-routing-into-webview-for-vscode-extensions/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-use-react-routing-into-webview-for-vscode-extensions/</guid>
             <pubDate>Thu, 09 Jan 2020 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>What to do in North Vancouver BC, Canada.</h1>]]></title>
+            <description><![CDATA[vancouver, british-columbia, canada, travel, english]]></description>
+            <link>https://alfilatov.com//posts/what-to-do-in-north-vancouver-bc-canada/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/what-to-do-in-north-vancouver-bc-canada/</guid>
+            <pubDate>Thu, 19 Dec 2019 08:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Our first trip tp to Vancouver BC, Canada.</h1>]]></title>

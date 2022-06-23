@@ -1,6 +1,6 @@
 # Our first trip tp to Vancouver BC, Canada.
 
-#vancouver, #british-columbia, #canada, travel, #youtube, #vlog, #video, #wa-travelers, #english;
+#vancouver, #british-columbia, #canada, #travel, #youtube, #vlog, #video, #wa-travelers, #english;
 
 _December 12, 2019_
 
