@@ -15,7 +15,7 @@ At the coast, the road is very winding, with frequent turns of 180 degrees, with
 
 ## Redwood Forest, CA
 
-All the way passed through the [Redwood National Park (California)](https://en.wikipedia.org/wiki/Redwood_National_and_State_Parks). It looks very mystical, especially with teman and rains, which we got into. These gigantic sequoias, going up into the air, which probably cannot be grasped even by three! The girth of such trees is from 3 to 7 meters in diameter, and they are up to 115 meters high!
+All the way passed through the [Redwood National Park (California)](https://en.wikipedia.org/wiki/Redwood_National_and_State_Parks). It looks very mystical, especially with fog and rains, which we got into. These gigantic sequoias, going up into the air, which probably cannot be grasped even by three! The girth of such trees is from 3 to 7 meters in diameter, and they are up to 115 meters high!
 
 ![Redwood Forest, CA](/images/redwood-national-park-walkins-in-small-and-cozy-town-eureka/redwood.jpg)
 
