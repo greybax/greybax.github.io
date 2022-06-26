@@ -212,6 +212,7 @@ header ul.social li:not(:first-child):before {
   flex-direction: column;
   flex-wrap: wrap;
   flex-grow: 1;
+  flex-basis: 10%;
 }
 
 .related-posts .header {
