@@ -221,12 +221,11 @@ header ul.social li:not(:first-child):before {
   padding-left: 1em;
 }
 
-
 .related-posts .header {
   text-align: left;
   max-width: 100%;
   margin-top: .61111em;
-  font: 300 1.5em;
+  font: 300 1.4em Helvetica,sans-serif;
   text-shadow: 0 1px 1px #fff;
 }
 
