@@ -27,14 +27,15 @@ block header
 block content
   if relatedPosts
     div(class="related-posts")
-      span(class="header") Related posts
-      ul
-        - var count = 0;
-        each val, post in relatedPosts[article.url]
-          if count < 5
-            li
-              a(href=`${post}`)= " " + val.title + " "
-          - count++;
+      div
+        span(class="header") Related posts
+        ul
+          - var count = 0;
+          each val, post in relatedPosts[article.url]
+            if count < 5
+              li
+                a(href=`${post}`)= " " + val.title + " "
+            - count++;
       div(class="right-banner")
         include google_adsense_right_article_banner
   article

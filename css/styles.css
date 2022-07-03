@@ -232,6 +232,7 @@ header ul.social li:not(:first-child):before {
 .related-posts .right-banner,
 .tags-cloud .right-banner {
   margin: 1em auto;
+  width: 100%;
 }
 
 .wrap-flex article {
