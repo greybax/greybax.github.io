@@ -213,6 +213,7 @@ header ul.social li:not(:first-child):before {
   flex-wrap: wrap;
   flex-grow: 1;
   flex-basis: 10%;
+  min-width: 8em;
 }
 
 .related-posts .header {
@@ -231,7 +232,7 @@ header ul.social li:not(:first-child):before {
 .wrap-flex article {
   min-width: 10em;
   flex-grow: 4;
-  flex-basis: 80%;
+  flex-basis: 90%;
 }
 
 article img {
