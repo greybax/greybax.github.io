@@ -219,6 +219,15 @@ header ul.social li:not(:first-child):before {
 
 .wrap-flex .related-posts ul {
   padding-left: 1em;
+  list-style: decimal;
+}
+
+.wrap-flex .related-posts ul li {
+  margin: 0.5em auto;
+}
+
+.wrap-flex .related-posts ul li a {
+  text-decoration: none;
 }
 
 .related-posts .header {
