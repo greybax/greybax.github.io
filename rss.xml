@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 03 Jul 2022 00:55:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Jul 2022 19:29:55 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,7 +14,6 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
-        <category><![CDATA[travel]]></category>
         <item>
             <title><![CDATA[<h1>Washington State Breweries 🍻</h1>]]></title>
             <description><![CDATA[washington, breweries, lifestyle, life, english]]></description>
