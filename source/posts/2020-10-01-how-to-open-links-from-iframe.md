@@ -21,6 +21,8 @@ export default function openLinkThroughIframe(uri: string) {
 }
 ```
 
+Make sure that you should put actual domain value where are you going to send requests instead of `"*"` argument. Otherwise your app will be open for requests from any domains.
+
 ```jsx
 <a
   onClick={() => openLinkThroughIframe("https://alfilatov.com")}
