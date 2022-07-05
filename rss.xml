@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 04 Jul 2022 19:29:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Jul 2022 21:04:47 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>Frontend DTO Challenge</h1>]]></title>
+            <description><![CDATA[dto, frontend, javascript, typescript, react, nodejs, socket-io, english]]></description>
+            <link>https://alfilatov.com//posts/frontend-dto-challenge/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/frontend-dto-challenge/</guid>
+            <pubDate>Tue, 05 Jul 2022 04:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>Washington State Breweries 🍻</h1>]]></title>
             <description><![CDATA[washington, breweries, lifestyle, life, english]]></description>
