@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 06 Jul 2022 21:46:58 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Jul 2022 22:09:36 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -104,6 +104,13 @@
             <link>https://alfilatov.com//posts/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/</guid>
             <pubDate>Wed, 13 May 2020 04:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Port Angeles Harbor, WA</h1>]]></title>
+            <description><![CDATA[port-angeles, town, washington, pacific, pnw, northwest, usa, travel, english]]></description>
+            <link>https://alfilatov.com//posts/port-angeles-harbor-wa/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/port-angeles-harbor-wa/</guid>
+            <pubDate>Wed, 04 Mar 2020 05:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>How I have developed simple and useful "Markdown Cheatsheet" browser extension</h1>]]></title>
