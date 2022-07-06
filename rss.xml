@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 05 Jul 2022 21:04:47 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Jul 2022 21:46:58 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -111,6 +111,13 @@
             <link>https://alfilatov.com//posts/how-i-have-developed-simple-and-useful-markdown-cheatsheet-browser-extension/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-i-have-developed-simple-and-useful-markdown-cheatsheet-browser-extension/</guid>
             <pubDate>Sat, 25 Jan 2020 05:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Vantage - far east of Washington state</h1>]]></title>
+            <description><![CDATA[vantage, town, washington, pacific, pnw, northwest, usa, travel, english]]></description>
+            <link>https://alfilatov.com//posts/vantage-far-east-of-washington-state/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/vantage-far-east-of-washington-state/</guid>
+            <pubDate>Fri, 24 Jan 2020 05:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>How to use React Routing into Webview for VSCode extensions?</h1>]]></title>
