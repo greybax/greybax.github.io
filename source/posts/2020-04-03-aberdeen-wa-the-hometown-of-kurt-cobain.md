@@ -1,6 +1,6 @@
 # Aberdeen, WA - the hometown of Kurt Cobain
 
-#aberdeen, #washington, #usa, #nirvana, #kurt-cobain, #travel, #pacific, #pnw, #youtube, #vlog, #video, #wa-travelers, #english;
+#aberdeen, #town, #washington, #usa, #nirvana, #kurt-cobain, #travel, #pacific, #pnw, #youtube, #vlog, #video, #wa-travelers, #english;
 
 _April 03, 2020_
 
