@@ -2,7 +2,7 @@
 
 #tacoma, #town, #washington, #usa, #travel, #pacific, #pnw, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_May_ 08, 2020_
+_May 08, 2020_
 
 **Tacoma, an hour from Seattle by car**
 
