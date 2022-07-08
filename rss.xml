@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 08 Jul 2022 14:30:05 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 08 Jul 2022 14:54:17 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -104,6 +104,20 @@
             <link>https://alfilatov.com//posts/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/</guid>
             <pubDate>Wed, 13 May 2020 04:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Our overall resume of skiing season</h1>]]></title>
+            <description><![CDATA[skiing, ski, washington, usa, pacific, pnw, english]]></description>
+            <link>https://alfilatov.com//posts/our-overall-resume-of-skiing-season/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/our-overall-resume-of-skiing-season/</guid>
+            <pubDate>Tue, 12 May 2020 04:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Day trip to Tacoma, WA</h1>]]></title>
+            <description><![CDATA[tacoma, town, washington, usa, travel, pacific, pnw, youtube, vlog, video, wa-travelers, english]]></description>
+            <link>https://alfilatov.com//posts/day-trip-to-tacoma-wa/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/day-trip-to-tacoma-wa/</guid>
+            <pubDate>Fri, 08 May 2020 04:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Aberdeen, WA - the hometown of Kurt Cobain</h1>]]></title>
