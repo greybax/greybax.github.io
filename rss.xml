@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 16 Sep 2022 18:16:53 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 Sep 2022 23:54:29 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -16,7 +16,7 @@
         <category><![CDATA[life]]></category>
         <item>
             <title><![CDATA[<h1>Cordova Plugin Native Spinner</h1>]]></title>
-            <description><![CDATA[cordova, plugin, ionic, configuration, cordova, mobile, github, english]]></description>
+            <description><![CDATA[cordova, plugin, ionic, configuration, mobile, github, english]]></description>
             <link>https://alfilatov.com//posts/cordova-plugin-native-spinner/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/cordova-plugin-native-spinner/</guid>
             <pubDate>Wed, 10 Aug 2022 07:00:00 GMT</pubDate>
@@ -104,6 +104,13 @@
             <link>https://alfilatov.com//posts/how-to-pass-data-between-iframe-and-parent-window/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-pass-data-between-iframe-and-parent-window/</guid>
             <pubDate>Tue, 08 Sep 2020 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Day trip to Vashon Island (WA State)</h1>]]></title>
+            <description><![CDATA[daytrip, vashon, island, washington, usa, pacific, pnw, english]]></description>
+            <link>https://alfilatov.com//posts/day-trip-to-vashon-island-wa/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/day-trip-to-vashon-island-wa/</guid>
+            <pubDate>Thu, 21 May 2020 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>How to fix security vulnerabilities in NPM/Yarn dependencies</h1>]]></title>
