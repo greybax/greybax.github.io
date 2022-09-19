@@ -1,6 +1,6 @@
 # Cordova Plugin Native Spinner
 
-#cordova, #plugin, #ionic, #configuration, #cordova, #mobile, #github, #english;
+#cordova, #plugin, #ionic, #configuration, #mobile, #github, #english;
 
 _August 10, 2022_
 
