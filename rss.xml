@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 19 Sep 2022 23:54:29 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 20 Sep 2022 00:26:59 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -104,6 +104,13 @@
             <link>https://alfilatov.com//posts/how-to-pass-data-between-iframe-and-parent-window/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-pass-data-between-iframe-and-parent-window/</guid>
             <pubDate>Tue, 08 Sep 2020 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Trip to California during COVID-19. Malibu Beach, CA</h1>]]></title>
+            <description><![CDATA[california, malibu, beach, trip, usa, pacific, pnw, english]]></description>
+            <link>https://alfilatov.com//posts/trip-to-california-during-covid-19-malibu-beach-ca/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/trip-to-california-during-covid-19-malibu-beach-ca/</guid>
+            <pubDate>Mon, 08 Jun 2020 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Day trip to Vashon Island (WA State)</h1>]]></title>
