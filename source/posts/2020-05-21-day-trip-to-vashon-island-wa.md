@@ -26,4 +26,8 @@ Finally, before sailing, the island showed us Inspiration Point, where the peak 
 
 The island hosts a strawberry festival in mid-July, and Seattle's Best Coffee was once brewed on the island until it was bought by Starbucks in 2003.
 
+## Our YoutTube video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IddaDO6dIS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 _Happy visiting Vashon Island!_ :v:
