@@ -1,6 +1,6 @@
 # Trip to California during COVID-19. Malibu Beach, CA
 
-#california, #malibu, #beach, #los-angeles, #trip, #usa, #pacific, #english;
+#california, #malibu, #beach, #los-angeles, #trip, #usa, #pacific, #youtube, #vlog, #video, #wa-travelers, #english;
 
 _June 08, 2020_
 
