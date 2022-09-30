@@ -103,4 +103,4 @@ lodash@4.17.12, lodash@^3.9.3:
 * [Detailed information and remediation guidance for known vulnerabilities](https://snyk.io/vuln)
 
 
-Happy fix vulnerabilities and make your code safe! :y:
+Happy fix vulnerabilities and make your code safe! ✌🏼

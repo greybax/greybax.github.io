@@ -43,4 +43,4 @@ London pubs look very cool and authentic and it seems that most pubs that have m
 Of course, two weekends are not enough here. There are many places nearby where you can call, and not everything has been studied in the city. But at least the minimum program has been completed.
 
 
-Happy London visiting! :y:
+Happy London visiting! ✌🏼

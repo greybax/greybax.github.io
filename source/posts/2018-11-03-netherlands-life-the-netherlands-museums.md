@@ -40,4 +40,4 @@ Our Top 5 memorable museums/places in Amsterdam:
 4. Shipping Museum 
 5. Royal Palace.
 
-Happy Netherlands museums visiting! :y:
+Happy Netherlands museums visiting! ✌🏼

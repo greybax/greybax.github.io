@@ -101,4 +101,4 @@ On the other hand, if you have an existing web application code and you want to 
 * [Apache Cordova Official Docs](https://cordova.apache.org/)
 * [React Native Official Docs](https://facebook.github.io/react-native/)
 
-Happy cross-platform mobile development! :y:
+Happy cross-platform mobile development! ✌🏼

@@ -44,4 +44,4 @@ But impressions remain for a long time :)
 
 P.S. Back to Amsterdam - 2 hours by plane
 
-Happy Valencia visiting! :y:
+Happy Valencia visiting! ✌🏼

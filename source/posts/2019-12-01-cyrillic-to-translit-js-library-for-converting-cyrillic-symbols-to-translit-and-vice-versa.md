@@ -52,4 +52,4 @@ If you want to contribute feel free to take any [open issues](https://github.com
 
 Stay tuned and try [demo page](https://greybax.github.io/cyrillic-to-translit-js) :)
 
-Happy converting your cyrillic/translit symbols! :y:
+Happy converting your cyrillic/translit symbols! ✌🏼

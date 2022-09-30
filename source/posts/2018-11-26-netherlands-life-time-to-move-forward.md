@@ -22,4 +22,4 @@ It's a little sad to leave, but there are many impressions, both positive and ne
 
 ![View from our Amsterdam home](/images/netherlands-life-time-to-move-forward/5.jpg "View from our Amsterdam home")
 
-Happy Amsterdam living! :y:
+Happy Amsterdam living! ✌🏼

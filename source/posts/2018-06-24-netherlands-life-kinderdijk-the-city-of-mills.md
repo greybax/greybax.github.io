@@ -20,4 +20,4 @@ Rotterdam is even more beautiful in summer. Everything is buried in greenery, ma
 
 ![Rotterdam bridge](/images/netherlands-life-kinderdijk-the-city-of-mills/4.jpg "Rotterdam bridge")
 
-Happy Kinderdijk visiting! :y:
+Happy Kinderdijk visiting! ✌🏼

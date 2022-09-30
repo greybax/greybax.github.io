@@ -27,4 +27,4 @@ It was played by Mozart at the age of 10.
 ![Haarlem street 3](/images/netherlands-life-day-trip-to-haarlem/6.jpg "Haarlem street 3")
 
 
-Happy visiting Haarlem! :y:
+Happy visiting Haarlem! ✌🏼

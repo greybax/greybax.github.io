@@ -30,4 +30,4 @@ But what is the cutest and most amazing - teenage deer who can be fed with grass
 
 ![Hoorn rooftops](/images/netherlands-life-hoorn-the-small-cozy-town-with-big-history/8.jpg "Hoorn rooftops")
 
-Happy Hoorn visiting! :y:
+Happy Hoorn visiting! ✌🏼

@@ -40,4 +40,4 @@ A more tourist destination, with a beautiful promenade and a labyrinth of small 
 
 ![The XMas lights](/images/netherlands-life-day-trip-to-edam-and-volendam/12.jpg "The XMas lights")
 
-Happy visiting Edam and Volendam! :y:
+Happy visiting Edam and Volendam! ✌🏼

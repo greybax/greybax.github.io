@@ -25,4 +25,4 @@ The sea is very salty, you dive - and it lifts you back. You don't even have to 
 
 The funnest thing is to watch the kids on the beach. They dig deep holes (with such strong metal shovels) and build dams so that the sea does not flood. National occupation :)
 
-Happy Zandvoort aan zee visiting! :y:
+Happy Zandvoort aan zee visiting! ✌🏼

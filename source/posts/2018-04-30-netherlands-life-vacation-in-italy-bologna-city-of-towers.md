@@ -31,4 +31,4 @@ The city looks calm, with a lot of greenery, an original highlight - galleries. 
 The oldest university, founded in 1088, is also located here.
 Local culinary specialties are tortellini and tagliatelle pasta and of course many other dishes.
 
-Happy Bologna visiting! :y:
+Happy Bologna visiting! ✌🏼

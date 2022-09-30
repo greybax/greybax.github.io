@@ -28,4 +28,4 @@ Now it is a port city, from where you can take a ferry to Victoria, Canada in ju
 
 ![Port Angeles street art](/images/port-angeles-biggest-town-on-olympic-peninsula/7.jpg "Port Angeles street art")
 
-Happy Port Angeles visiting! :y:
+Happy Port Angeles visiting! ✌🏼

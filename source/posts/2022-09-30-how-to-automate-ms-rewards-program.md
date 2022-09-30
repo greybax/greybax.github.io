@@ -24,9 +24,9 @@ _**Please note**_: these numbers only for US region.
 
 So that's how my project [MSEdgeSearchClicker](https://github.com/greybax/MSEdgeSearchClicker) was born on Github.
 
-If you want to see it in action you can check it here [https://alfilatov.com/MSEdgeSearchClicker/](https://alfilatov.com/MSEdgeSearchClicker/). 
+If you want to see it in action you can check it here https://alfilatov.com/MSEdgeSearchClicker/. 
 But for better experience make sure that you open this link via MS Edge.
 
 For now it supports only points automation for search only. But feel free to send [fork and send your PRs](https://github.com/greybax/MSEdgeSearchClicker/fork) or suggest improvements via [issues page](https://github.com/greybax/MSEdgeSearchClicker/issues) 
 
-Happy your routine automation! :y:
+Happy your routine automation! ✌🏼

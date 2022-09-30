@@ -111,4 +111,4 @@ We've used this function to convert our `dataURI` into `Blob` for passing it thr
 * [SO question: How to convert dataURL to file object in javascript?](https://stackoverflow.com/questions/6850276)
 
 
-Happy passing files into iframes! :y:
+Happy passing files into iframes! ✌🏼

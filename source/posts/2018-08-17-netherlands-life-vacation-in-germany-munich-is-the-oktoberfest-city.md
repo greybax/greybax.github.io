@@ -30,4 +30,4 @@ And of course, where without an apple strudel :) although there are many differe
 
 P. S. Back to Amsterdam - by plane 1.5 hours
 
-Happy Munich visiting! :y:
+Happy Munich visiting! ✌🏼

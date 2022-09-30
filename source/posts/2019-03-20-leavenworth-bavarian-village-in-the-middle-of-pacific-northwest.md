@@ -26,4 +26,4 @@ The road to the village runs through the mountains, rather winding, but very sce
 
 ![Leavenworth road to home](/images/leavenworth-bavarian-village-in-the-middle-of-pacific-northwest/6.jpg "Leavenworth road to home")
 
-Happy Leavenworth visiting! :y:
+Happy Leavenworth visiting! ✌🏼

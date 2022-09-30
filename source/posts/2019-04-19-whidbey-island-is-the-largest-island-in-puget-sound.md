@@ -32,4 +32,4 @@ Not far from the fort there is a lighthouse where you can climb the turret, and 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uMBooFhyy2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Happy Whidbey Island visiting! :y:
+Happy Whidbey Island visiting! ✌🏼

@@ -50,4 +50,4 @@ Using powerful API you can get photos based on a lot of parameters which is actu
 
 For example, you can show photos for group of people based on their geoposition or time of the day. You can show images from specific collections or setup daily or weekly update for the image (not on each request).
 
-Happy unsplashing! :y:
+Happy unsplashing! ✌🏼

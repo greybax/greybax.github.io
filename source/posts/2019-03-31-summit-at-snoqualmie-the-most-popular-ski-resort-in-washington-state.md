@@ -41,4 +41,4 @@ Of course, we still have to grow and grow - our skating is still far from ideal.
 * Skiing end season 2018-2019. Sun Halo at Summit West. Light freeride on Summit East.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lBgtpOF1OhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Happy Summit at Snoqualmie visiting! :y:
+Happy Summit at Snoqualmie visiting! ✌🏼

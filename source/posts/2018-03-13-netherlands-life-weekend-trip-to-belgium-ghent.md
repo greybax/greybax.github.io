@@ -26,4 +26,4 @@ When looking at the panorama of the city, one is saddened by a very large number
 
 ![Ghent cranes](/images/netherlands-life-weekend-trip-to-belgium-ghent/6.jpg "Ghent cranes")
 
-Happy visiting Ghent! :y:
+Happy visiting Ghent! ✌🏼

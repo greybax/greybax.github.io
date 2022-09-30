@@ -27,4 +27,4 @@ The village is located in the suburbs of Zaandam (through which our path ran). I
 ![Zaanse Schans bridge across the river](/images/netherlands-life-zaanse-schans-the-city-of-open-air-museums/6.jpg "Zaanse Schans bridge across the river")
 
 
-Happy Zaanse Schans visiting! :y:
+Happy Zaanse Schans visiting! ✌🏼

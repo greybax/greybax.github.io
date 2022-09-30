@@ -24,4 +24,4 @@ It is interesting that the owners of this farm are trying to make the place as s
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SEAWcSzhTq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Happy Skagit Valley visiting! :y:
+Happy Skagit Valley visiting! ✌🏼

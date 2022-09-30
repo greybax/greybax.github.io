@@ -36,4 +36,4 @@ So I believe that someone will find this post helpful for yourself and oneday wi
 
 **_P.S._:** More my posts about perf improvements you can find tag: [#performance](/tags/index.html#performance)
 
-Happy improving your js code perf! :y:
+Happy improving your js code perf! ✌🏼

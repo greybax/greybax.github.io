@@ -24,4 +24,4 @@ Experience compactness - just 3 kilometers from Muiden - the town of Weesp. Ther
 
 ![Muiden city hall](/images/netherlands-life-muiden-and-maiderslot-castle/6.jpg "Muiden city hall")
 
-Happy Muiden visiting! :y:
+Happy Muiden visiting! ✌🏼

@@ -39,4 +39,4 @@ A wonderful ending to your vacation is to spend the sunset sitting on the promen
 
 Ci vediamo, Italia!
 
-Happy Venice visiting! :y:
+Happy Venice visiting! ✌🏼

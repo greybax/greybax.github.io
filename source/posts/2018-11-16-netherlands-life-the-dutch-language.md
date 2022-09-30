@@ -48,4 +48,4 @@ all those lights late at night on the square;
 no one could wish for anything
 better than to be an Amsterdammer
 
-Happy Dutch learning! :y:
+Happy Dutch learning! ✌🏼

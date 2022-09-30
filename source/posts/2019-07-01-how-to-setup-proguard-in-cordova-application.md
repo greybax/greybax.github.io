@@ -77,4 +77,4 @@ Please feel free to contribute in this plugin on github and ask me anything rega
 
 * [Obfuscating Android code with ProGuard](https://www.ibm.com/support/knowledgecenter/SSHS8R_7.1.0/com.ibm.worklight.deploy.doc/admin/c_pg_obfus_intro.html)
 
-Happy obfuscation! :y:
+Happy obfuscation! ✌🏼

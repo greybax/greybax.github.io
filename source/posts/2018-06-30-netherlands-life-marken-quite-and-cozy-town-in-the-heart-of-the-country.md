@@ -18,4 +18,4 @@ Only half a century ago, the island was connected by a dam with the mainland. Th
 
 ![Marken door](/images/netherlands-life-marken-quite-and-cozy-town-in-the-heart-of-the-country/4.jpg "Marken door")
 
-Happy Marken visiting! :y:
+Happy Marken visiting! ✌🏼

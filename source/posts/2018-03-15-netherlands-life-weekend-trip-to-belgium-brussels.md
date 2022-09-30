@@ -42,4 +42,4 @@ This is the birthplace of comics, so you can often see beautiful graffiti comics
 
 And the Belgians are also very fond of sweets. Waffles, sweets, all kinds of chocolate. I admit it's delicious. But why add jam to a sandwich with butter and salmon?
 
-Happy visiting Brussels! :y:
+Happy visiting Brussels! ✌🏼

@@ -29,4 +29,4 @@ Füssen himself is also pretty nice. Town houses are painted in pastel houses, t
 
 ![Füssen river](/images/netherlands-life-vacation-in-germany-fussen-and-neuschwanstein-castle/6.jpg "Füssen river")
 
-Happy Füssen visiting! :y:
+Happy Füssen visiting! ✌🏼

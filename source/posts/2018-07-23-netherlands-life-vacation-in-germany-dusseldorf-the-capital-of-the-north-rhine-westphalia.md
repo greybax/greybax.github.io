@@ -28,4 +28,4 @@ Of the oddities - quite realistic figures of people on advertising stands, and c
 
 ![Dusseldorf street 2](/images/netherlands-life-vacation-in-germany-dusseldorf-the-capital-of-the-north-rhine-westphalia/6.jpg "Dusseldorf street 2")
 
-Happy Dusseldorf visiting! :y:
+Happy Dusseldorf visiting! ✌🏼

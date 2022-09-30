@@ -100,4 +100,4 @@ case 'add': {
 
 Feel free to check code and fork it on my github [order-data-challenge](https://github.com/greybax/order-data-challenge)
 
-Happy working on your ReactJS app with Socket.IO! :y:
+Happy working on your ReactJS app with Socket.IO! ✌🏼

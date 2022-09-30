@@ -55,4 +55,4 @@ In this example I've used [build-in vscode extension API function](https://code.
 
 But also you can use the standard js method [window.open(url, windowName, [windowFeatures]);](https://developer.mozilla.org/en-US/docs/Web/API/Window/open).
 
-Happy open links from iframes! :y:
+Happy open links from iframes! ✌🏼

@@ -28,4 +28,4 @@ In this post I'd like to introduce google chrome extension which I've developed 
 * You can install extension from official [Google Chrome Marketplace](https://chrome.google.com/webstore/detail/markdown-cheatsheet/hoglmefbfenoehjeblinfijldanifljm). Don't forget to set a rating and leave comments ;)
 
 
-Happy coding browser extensions! :y:
+Happy coding browser extensions! ✌🏼

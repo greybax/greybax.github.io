@@ -34,4 +34,4 @@ It's actually quite fun trying to find a familiar product without knowing the la
 
 ![Amsterdam ice cream](/images/netherlands-life-the-dutch-cuisine/7.jpg "Amsterdam ice cream")
 
-Happy Dutch cuisine tasting! :y:
+Happy Dutch cuisine tasting! ✌🏼

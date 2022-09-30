@@ -81,4 +81,4 @@ export default class FirstPage extends React.Component {
 * [About on MemoryRouter reacttraining.com](https://reacttraining.com/react-router/web/api/MemoryRouter)
 * [SO question "React Router Without Changing URL"](https://stackoverflow.com/questions/39721812/react-router-without-changing-url)
 
-Happy coding and navigating into VSCode extensions :y:
+Happy coding and navigating into VSCode extensions ✌🏼

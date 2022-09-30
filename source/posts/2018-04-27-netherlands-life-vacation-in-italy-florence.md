@@ -32,5 +32,5 @@ The neighboring hill offers a postcard view of the entire city. There is also a 
 
 ![Ponte Vecchio](/images/netherlands-life-vacation-in-italy-florence/6.jpeg "Ponte Vecchio")
 
-Happy Florence visiting! :y:
+Happy Florence visiting! ✌🏼
 

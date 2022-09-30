@@ -54,4 +54,4 @@ Goosebumps run from the gypsum-filled voids in the shape of people ... The city 
 
 It is worth going to Naples at least for a trip to Pompeii :) and, if you are lucky with the weather, you should also visit Vesuvius, and time will remain. There are also islands and beaches nearby - Capri, Sorrento, so there is something to see there besides Naples itself.
 
-Happy visiting Napoli! :y:
+Happy visiting Napoli! ✌🏼

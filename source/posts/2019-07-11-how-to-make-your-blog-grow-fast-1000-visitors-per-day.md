@@ -113,4 +113,4 @@ Don't put a lot advertise on your blog pages. That's will negatively affect your
 
 Hope I don't forget anything. :) Feel free to share some thoughts and considerations in comments.
 
-Happy blogging! :y:
+Happy blogging! ✌🏼

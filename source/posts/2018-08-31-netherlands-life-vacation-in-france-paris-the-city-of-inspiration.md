@@ -38,4 +38,4 @@ Unfortunately, there are some disappointing moments - a trampled field of Mars, 
 
 But in general, the impression remained romantic, it's a pity that such tender croissants are sold only there...
 
-Happy Paris visiting! :y:
+Happy Paris visiting! ✌🏼

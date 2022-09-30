@@ -32,4 +32,4 @@ A unique feature for Holland is the local two-level channels. On the lower "floo
 
 ![The Utrecht channels](/images/netherlands-life-old-utrecht-and-the-castle-de-haar/4.jpg "The Utrecht channels")
 
-Happy visiting Utrecht! :y:
+Happy visiting Utrecht! ✌🏼

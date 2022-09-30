@@ -27,4 +27,4 @@ The most exciting moment - heard the roar of a bear, which (hopefully) was somew
 
 ![mt margaret 7](/images/mount-margaret-trail/7.jpg "mt margaret 7")
 
-Happy Mount Margaret trail hiking! :y:
+Happy Mount Margaret trail hiking! ✌🏼

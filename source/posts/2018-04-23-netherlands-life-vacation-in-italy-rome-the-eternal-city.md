@@ -46,5 +46,5 @@ A significant crowd had already gathered in the street, and under the hot sun it
 
 Buona Pasqua!
 
-Happy Rome visiting! :y:
+Happy Rome visiting! ✌🏼
 

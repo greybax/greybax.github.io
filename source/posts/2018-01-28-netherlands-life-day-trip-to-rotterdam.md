@@ -35,4 +35,4 @@ The statue of Peter the Great in Rotterdam:
 
 ![Peter the Great](/images/netherlands-life-day-trip-to-rotterdam/4.jpg "Peter the Great")
 
-Happy visiting Rotterdam! :y:
+Happy visiting Rotterdam! ✌🏼

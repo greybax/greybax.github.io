@@ -28,4 +28,4 @@ This city attracts and repels at the same time, and cannot leave you indifferent
 
 ![Amsterdam Amstel river](/images/netherlands-life-so-different-amsterdam/7.jpg "Amsterdam Amstel river")
 
-Happy Amsterdam visiting! :y:
+Happy Amsterdam visiting! ✌🏼

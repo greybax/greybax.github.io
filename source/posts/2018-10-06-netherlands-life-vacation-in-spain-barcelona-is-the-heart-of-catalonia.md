@@ -34,4 +34,4 @@ And of course, the Mediterranean Sea. It is very salty, sinks sharply into the d
 
 ![Barcelona food](/images/netherlands-life-vacation-in-spain-barcelona-is-the-heart-of-catalonia/8.jpg "Barcelona food")
 
-Happy Barcelona visiting! :y:
+Happy Barcelona visiting! ✌🏼

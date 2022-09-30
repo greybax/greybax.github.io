@@ -28,4 +28,4 @@ Expected temperature: from +1 - +3 in winter to +17 - +22 in summer. In fact, up
 
 ![Cranes nest](/images/netherlands-life-nature-and-geography-of-the-netherlands/7.jpg "Cranes nest")
 
-Happy Netherlands visiting! :y:
+Happy Netherlands visiting! ✌🏼

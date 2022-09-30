@@ -36,4 +36,4 @@ Since everyone is local - at least 1.8-1.9m tall, and on a bicycle - even taller
 
 But they taught us to look 5 times in ALL directions (not only to the right and to the left), when you cross the road - they can leave at any moment from any side and do not even think to give way or at least slow down...
 
-Happy cycling in Amsterdam! :y:
+Happy cycling in Amsterdam! ✌🏼

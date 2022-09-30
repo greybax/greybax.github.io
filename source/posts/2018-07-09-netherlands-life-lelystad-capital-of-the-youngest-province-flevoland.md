@@ -30,4 +30,4 @@ In addition to the ship itself, there are workshops nearby, where you will be al
 
 ![Lelystad batavia cannons](/images/netherlands-life-lelystad-capital-of-the-youngest-province-flevoland/6.jpg "Lelystad batavia cannons")
 
-Happy Lelystad visiting! :y:
+Happy Lelystad visiting! ✌🏼

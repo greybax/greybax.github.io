@@ -14,4 +14,4 @@ Please feel free to check it out and let me know what breweries I have been miss
 
 <div id="collection-container-f93f2bec" style="height: 700px; overflow-y: auto;"></div><script src="https://www.yelp.com/collection/Rszx7mmqgwnrniIEqQ-qRg/embed?container=collection-container-f93f2bec&sort_by=distance&limit=50"></script>
 
-Happy WA State beer tasting! :y:
+Happy WA State beer tasting! ✌🏼

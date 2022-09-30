@@ -16,4 +16,4 @@ The center, on the other hand, combines well historical buildings and high-rise 
 
 It also houses the Peace Palace - the official residence of the UN International Court of Justice and the Permanent Court of Arbitration.
 
-Happy Hague visiting! :y:
+Happy Hague visiting! ✌🏼

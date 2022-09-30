@@ -20,4 +20,4 @@ The city coast was surprising - it was reinforced with some kind of glued gravel
 
 ![Den Helder house](/images/netherlands-life-den-helder-the-most-north-point-of-north-holland/4.jpg "Den Helder house")
 
-Happy Den Helder visiting! :y:
+Happy Den Helder visiting! ✌🏼

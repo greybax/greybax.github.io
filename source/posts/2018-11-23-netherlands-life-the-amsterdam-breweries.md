@@ -14,4 +14,4 @@ During our staying in NL I've created my collection of Amsterdam Breweries on Ye
 
 Feel free to create your own breweries collection based on mine. Or just let me know if I miss ones to add (since I no longer live in NL its hard to maintain it and keep up-to-date)
 
-Happy NL Beer tasting! :y:
+Happy NL Beer tasting! ✌🏼

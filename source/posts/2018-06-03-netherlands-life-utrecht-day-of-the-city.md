@@ -15,4 +15,4 @@ But the history of this place goes back to the Roman Empire, when there was a fo
 It is surprising that in that terrible hurricane that destroyed half of the cathedral, the bell tower (the highest in the country) survived. It now houses 2 sets of bells - one for New Years and a musical festival in August, and includes large bells dating from 1505. The second set is played every day by automatic equipment - every 15 minutes, and by a bell ringer - on Saturdays from 11 to 12.
 In addition, organ concerts are held in the cathedral on Saturdays. And yesterday, in addition, symphony orchestras played all day on the square in front of the bell tower. Just a celebration of music!
 
-Happy Utrecht visiting! :y:
+Happy Utrecht visiting! ✌🏼

@@ -26,4 +26,4 @@ In general, the impression of the city was pleasant. Clean, tidy, though few spe
 
 **P.S.** Did you know that Cologne is literally translated as "Water from Cologne"?
 
-Happy Cologne visiting! :y:
+Happy Cologne visiting! ✌🏼

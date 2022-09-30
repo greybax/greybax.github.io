@@ -63,4 +63,4 @@ export default class WelcomePanel extends React.Component<any, any> {
 
 The same data communication model VSCode is using in the [built-in webview](https://code.visualstudio.com/api/extension-guides/webview#passing-messages-from-a-webview-to-an-extension). 
 
-Happy data transferring between your iframes and windows! :y:
+Happy data transferring between your iframes and windows! ✌🏼

@@ -31,4 +31,4 @@ Remember the Internet meme "Zhdun"? It was authored by a local artist and can no
 
 ![Leiden Zhdun](/images/netherlands-life-leiden-the-poetic-city/8.jpg "Leiden Zhdun")
 
-Happy Leiden visiting! :y:
+Happy Leiden visiting! ✌🏼

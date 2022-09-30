@@ -37,4 +37,4 @@ cordova plugin add cordova-plugin-native-spinner
 cordova prepare
 ```
 
-Happy using native plugins in your mobile apps! :y:
+Happy using native plugins in your mobile apps! ✌🏼
