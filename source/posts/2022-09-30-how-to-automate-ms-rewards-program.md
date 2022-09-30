@@ -20,11 +20,15 @@ Pretty obvious solution is:
 
 _**Please note**_: these numbers only for US region.
 
+For run mobile simulation you can use Dev Tools (press **F12**) and click `Toggle device emilation`.
+
+![mobile simulation](/images/how-to-automate-ms-rewards-program/1.jpg "mobile simulation")
+
 ## MSEdgeSearchClicker
 
-So that's how my project [MSEdgeSearchClicker](https://github.com/greybax/MSEdgeSearchClicker) was born on Github.
+So that's [how this project was born on Github](https://github.com/greybax/MSEdgeSearchClicker).
 
-If you want to see it in action you can check it here https://alfilatov.com/MSEdgeSearchClicker/. 
+If you want to see it in action you can check it [here](https://alfilatov.com/MSEdgeSearchClicker/). 
 But for better experience make sure that you open this link via MS Edge.
 
 For now it supports only points automation for search only. But feel free to send [fork and send your PRs](https://github.com/greybax/MSEdgeSearchClicker/fork) or suggest improvements via [issues page](https://github.com/greybax/MSEdgeSearchClicker/issues) 
