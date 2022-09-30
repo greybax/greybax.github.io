@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 21 Sep 2022 20:46:54 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Sep 2022 06:28:03 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to automate MS Rewards Program</h1>]]></title>
+            <description><![CDATA[swags, free, microsoft, redeem, rewards, github, clicker, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-automate-ms-rewards-program/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-automate-ms-rewards-program/</guid>
+            <pubDate>Fri, 30 Sep 2022 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>Cordova Plugin Native Spinner</h1>]]></title>
             <description><![CDATA[cordova, plugin, ionic, configuration, mobile, github, english]]></description>
