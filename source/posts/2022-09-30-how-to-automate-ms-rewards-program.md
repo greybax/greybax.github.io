@@ -29,8 +29,13 @@ For run mobile simulation you can use Dev Tools (press **F12**) and click `Toggl
 So that's [how this project was born on Github](https://github.com/greybax/MSEdgeSearchClicker).
 
 If you want to see it in action you can check it [here](https://alfilatov.com/MSEdgeSearchClicker/). 
-But for better experience make sure that you open this link via MS Edge.
+But for better experience make sure that you open this link via MS Edge. It allows you to earn extra 20 points on Edge search.
+
+You may notice another solutions on Github and curious why this one is better. I have 2 options here:
+ * it's pretty handy and doesn't require from you any extra actions. Just open a link in browser.
+ * Its not a bot, so your account will not be blocked.
 
 For now it supports only points automation for search only. But feel free to send [fork and send your PRs](https://github.com/greybax/MSEdgeSearchClicker/fork) or suggest improvements via [issues page](https://github.com/greybax/MSEdgeSearchClicker/issues) 
+
 
 Happy your routine automation! ✌🏼
