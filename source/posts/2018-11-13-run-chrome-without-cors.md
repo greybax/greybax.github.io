@@ -12,7 +12,7 @@ I created a separate shortcut on my Windows 10 laptop, so that it never is used 
 Just do follow steps:
 
 * Right click on desktop, add new shortcut
-* Add the target as `"[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp`
+* Add the target as `"[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=%LOCALAPPDATA%\Google\chromeTemp`
 * Click OK.
 
 > _**NOTE**_: On Windows command will be:
