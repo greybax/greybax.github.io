@@ -15,7 +15,7 @@ Just do follow steps:
 * Add the target as `"[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp`
 * Click OK.
 
-> _**NOTE**_: On Windows 10 command will be:
+> _**NOTE**_: On Windows command will be:
 `"C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=%LOCALAPPDATA%\Google\chromeTemp`
 
 ## OSX
