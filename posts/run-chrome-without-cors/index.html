@@ -69,12 +69,12 @@ I created a separate shortcut on my Windows 10 laptop, so that it never is used 
 <p>Just do follow steps:</p>
 <ul>
 <li>Right click on desktop, add new shortcut</li>
-<li>Add the target as <code>"[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp</code></li>
+<li>Add the target as <code>"[PATH_TO_CHROME]\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=%LOCALAPPDATA%\Google\chromeTemp</code></li>
 <li>Click OK.</li>
 </ul>
 <blockquote>
-<p><em><strong>NOTE</strong></em>: On Windows 10 command will be:
-<code>"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp</code></p>
+<p><em><strong>NOTE</strong></em>: On Windows command will be:
+<code>"C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=%LOCALAPPDATA%\Google\chromeTemp</code></p>
 </blockquote>
 <h2>OSX</h2>
 <p><code>open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security</code></p>
