@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 29 Mar 2023 19:42:16 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Mar 2023 20:39:40 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -118,6 +118,13 @@
             <link>https://alfilatov.com//posts/how-to-pass-data-between-iframe-and-parent-window/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-pass-data-between-iframe-and-parent-window/</guid>
             <pubDate>Tue, 08 Sep 2020 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Trip to California during COVID-19. San Diego, CA</h1>]]></title>
+            <description><![CDATA[california, san-diego, trip, usa, youtube, vlog, video, wa-travelers, pacific, english]]></description>
+            <link>https://alfilatov.com//posts/trip-to-california-during-covid-19-san-diego-ca/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/trip-to-california-during-covid-19-san-diego-ca/</guid>
+            <pubDate>Thu, 16 Jul 2020 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Trip to California during COVID-19. San Clemente, CA</h1>]]></title>
