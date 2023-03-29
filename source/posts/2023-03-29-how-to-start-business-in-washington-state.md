@@ -24,4 +24,6 @@ Recently, I started a new chapter in my career as a business owner, aka founder.
 
 By following these steps, you can successfully open an LLC in Washington State. It is important to consult with a business attorney or accountant to ensure that you are complying with all legal and tax requirements. Once your LLC is formed, you can focus on growing your business and achieving your goals.
 
+In next posts I'll share a bit more about company and what we are doing. So keep in touch ;)
+
 Happy opening your business in WA State! ✌🏼
