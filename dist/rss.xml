@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 29 Mar 2023 22:16:56 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Mar 2023 22:24:59 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -111,6 +111,13 @@
             <link>https://alfilatov.com//posts/how-to-open-links-from-iframe/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-open-links-from-iframe/</guid>
             <pubDate>Thu, 01 Oct 2020 07:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Olympic National Park. Hurricane Ridge</h1>]]></title>
+            <description><![CDATA[wa, trip, national-park, usa, youtube, vlog, video, wa-travelers, pacific, english]]></description>
+            <link>https://alfilatov.com//posts/olympic-national-park-hurricane-ridge/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/olympic-national-park-hurricane-ridge/</guid>
+            <pubDate>Thu, 10 Sep 2020 07:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>How to pass data between iframe and parent window</h1>]]></title>
