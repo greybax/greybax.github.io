@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 14 Oct 2022 00:08:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Mar 2023 19:42:16 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to start a business in Washington State</h1>]]></title>
+            <description><![CDATA[business, wa, entrepreneur, english, LLC, startingabusiness, businessformation, smallbusiness, legalrequirements, taxes, licensesandpermits, registeredagent, operatingagreement, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-start-business-in-washington-state/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-start-business-in-washington-state/</guid>
+            <pubDate>Wed, 29 Mar 2023 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>How to automate MS Rewards Program</h1>]]></title>
             <description><![CDATA[swags, free, microsoft, redeem, rewards, github, clicker, english]]></description>
@@ -1016,17 +1023,17 @@
             <pubDate>Mon, 30 Mar 2015 07:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[<h1>Как я побывал на .NEXT'14</h1>]]></title>
-            <description><![CDATA[конференции, .net, russian]]></description>
-            <link>https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</guid>
-            <pubDate>Tue, 09 Dec 2014 08:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[<h1>Впечатления от первого хакатона</h1>]]></title>
             <description><![CDATA[hackaton, unity, gamedev, russian]]></description>
             <link>https://alfilatov.com//posts/vpiechatlieniia-ot-piervogho-khakatona/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/vpiechatlieniia-ot-piervogho-khakatona/</guid>
+            <pubDate>Tue, 09 Dec 2014 08:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Как я побывал на .NEXT'14</h1>]]></title>
+            <description><![CDATA[конференции, .net, russian]]></description>
+            <link>https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/kak-ia-pobyval-na-next-14/</guid>
             <pubDate>Tue, 09 Dec 2014 08:00:00 GMT</pubDate>
         </item>
         <item>
