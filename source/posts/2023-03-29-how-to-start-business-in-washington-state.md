@@ -1,6 +1,6 @@
 # How to start a business in Washington State
 
-#business, #wa, #entrepreneur, #english, #LLC, #startingabusiness, #businessformation, #smallbusiness, #legalrequirements, #taxes, #licensesandpermits, #registeredagent, #operatingagreement, #english;
+#business, #wa, #entrepreneur, #english, #LLC, #taxes, #life, #english;
 
 _March 29, 2023_
 
