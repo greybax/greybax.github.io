@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 03 Oct 2023 21:49:42 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Oct 2023 00:49:23 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to handle different versions of Core Data Models</h1>]]></title>
+            <description><![CDATA[ios, macos, swiftui, appstore, development, xcode, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-handle-different-versions-of-core-data-models/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-handle-different-versions-of-core-data-models/</guid>
+            <pubDate>Sat, 07 Oct 2023 07:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>How I have visited Coldplay show in Seattle, WA</h1>]]></title>
             <description><![CDATA[concert, coldplay, seattle, wa, youtube, vlog, video, wa-travelers, english]]></description>
