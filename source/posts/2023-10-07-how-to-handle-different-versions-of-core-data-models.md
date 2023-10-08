@@ -6,7 +6,7 @@ _October 7, 2023_
 
 ## Intro
 
-As i mentioned earlier [I've started my own business](/posts/how-to-start-business-in-washington-state/). For now I'm working on different apps for AppStore (iOS/MacOS). I've encountered issues when migrating my data models between different versions, as I work on various apps for the AppStore (iOS/MacOS). In this post, I want to clarify the process for myself and hopefully help someone else who may find it useful.
+As i mentioned earlier [I've started my own business](/posts/how-to-start-business-in-washington-state/). I've encountered issues when migrating my data models between different versions, as I work on various apps for the AppStore (iOS/MacOS). In this post, I want to clarify the process for myself and hopefully help someone else who may find it useful.
 
 ## Data Migration
 
@@ -18,6 +18,7 @@ So one of my common issues for data migrations that my app doesn't start anymore
 It happens because ordering in the process of Data Migration and Versioning matters.
 
 So there are steps:
+
 1. Select your DB -> `Editor` -> `Add Model Version...`
 2. In popup window name your new model version and select `Based on Model` as latest one
 3. After that do your changes with your models in this newly created model version.

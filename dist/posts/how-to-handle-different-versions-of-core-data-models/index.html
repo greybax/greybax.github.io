@@ -64,20 +64,22 @@
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
         </div><h1>How to handle different versions of Core Data Models</h1><i class="fa fa-calendar">
           <time>October 7, 2023</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#ios"> ios </a><a href="/tags/index.html#macos"> macos </a><a href="/tags/index.html#swiftui"> swiftui </a><a href="/tags/index.html#appstore"> appstore </a><a href="/tags/index.html#development"> development </a><a href="/tags/index.html#xcode"> xcode </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
-<p>As i mentioned earlier <a href="/posts/how-to-start-business-in-washington-state/">I've started my own business</a>. For now I'm working on different apps for AppStore (iOS/MacOS). I've encountered issues when migrating my data models between different versions, as I work on various apps for the AppStore (iOS/MacOS). In this post, I want to clarify the process for myself and hopefully help someone else who may find it useful.</p>
+<p>As i mentioned earlier <a href="/posts/how-to-start-business-in-washington-state/">I've started my own business</a>. I've encountered issues when migrating my data models between different versions, as I work on various apps for the AppStore (iOS/MacOS). In this post, I want to clarify the process for myself and hopefully help someone else who may find it useful.</p>
 <h2>Data Migration</h2>
 <p>Apple provides extensive documentation, but it can be challenging to navigate, especially in the context of SwiftUI.
 So I've found this article related to <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html">Core Data Model Versioning and Data Migration
 </a>. But reading takes too much time and doesn't clarify too much.</p>
 <p>So one of my common issues for data migrations that my app doesn't start anymore due to DB migration errors.
 It happens because ordering in the process of Data Migration and Versioning matters.</p>
-<p>So there are steps:
-1. Select your DB -> <code>Editor</code> -> <code>Add Model Version...</code>
-2. In popup window name your new model version and select <code>Based on Model</code> as latest one
-3. After that do your changes with your models in this newly created model version.
-4. <code>Editor</code> -> <code>Create NSManagedObject Subclass...</code>
-5. In Settings of your Model select Model Version Current as your latest one where you've made changes
-6. Build your project</p>
+<p>So there are steps:</p>
+<ol>
+<li>Select your DB -> <code>Editor</code> -> <code>Add Model Version...</code></li>
+<li>In popup window name your new model version and select <code>Based on Model</code> as latest one</li>
+<li>After that do your changes with your models in this newly created model version.</li>
+<li><code>Editor</code> -> <code>Create NSManagedObject Subclass...</code></li>
+<li>In Settings of your Model select Model Version Current as your latest one where you've made changes</li>
+<li>Build your project</li>
+</ol>
 <p>Make sure that option <code>NSMigratePersistentStoresAutomaticallyOption: true</code> exists in your CoreData Manager file. This settings allows to merge DB Model migrations automatically. In most cases it will be enough except some specific cases where you need to migrate your models manually.</p>
 <p>Following these steps should ensure that your project opens successfully without encountering issues during the database migration process.</p>
 <p>Enjoy you Core Data Model migrations! ✌🏼</p>
