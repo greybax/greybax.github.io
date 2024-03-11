@@ -6,9 +6,11 @@ _March 11, 2024_
 
 ## Intro
 
-Hey there, fellow iOS App Devs! Recently I've started my journey as iOS Developer and after creating my first app I've faced with issue creating screenshots of my app for AppStore. It's kind tough to create them if you don't know specific tool which best suites for it. I've tried Canva, different website specialized on it and all these tools looks too complex and monstrough for me. I just wanted simple UI which does simple job - create App Screenshots for AppStore. After bunch of investigations I've found [AppScreen Studio](https://appscreen.studio/). 
+Hey there, fellow iOS App Devs! Recently I've started my journey as iOS Developer and after creating my first app I've faced with issue creating screenshots of my app for AppStore. It's kind tough to create them if you don't know specific tool which best suites for it. I've tried Canva, different website specialized on it and all these tools looks too complex and monstrough for me. I just wanted simple UI which does simple job - create App Screenshots for AppStore. After bunch of investigations I've found [AppScreen Studio](https://appscreen.studio/).
 
 ## AppScreen Studio
+
+![Icon](/images/appscreen-studio-macos-app-to-create-screenshots-and-previews-for-your-appstore-apps/1.png "Icon")
 
 This tool has Free Tier with 3 projects screenshot generations per month (no limit on amount of screenshots or projects. Limit only on screenshots generations itself).
 
@@ -18,7 +20,7 @@ This app has all features what I need and has pretty common UI for MacOS apps:
 
 * Work from Anywhere: No Wi-Fi? No problem! With AppScreen Studio, you can whip up eye-catching screenshots from anywhere – whether you're lounging on a beach or jet-setting across the globe. No internet access needed, just you and your creative genius.
 
-Reliable: Kiss goodbye to those nerve-wracking moments when you accidentally close a tab and lose all your hard work. AppScreen Studio's got your back with automatic saving. Your edits are safe and sound, right on your machine.
+* Reliable: Kiss goodbye to those nerve-wracking moments when you accidentally close a tab and lose all your hard work. AppScreen Studio's got your back with automatic saving. Your edits are safe and sound, right on your machine.
 
 * Fast: Time is money, right? That's why AppScreen Studio's "Generate" button is your new best friend. Need ready-to-publish screenshots in a flash? Just click and go. No more waiting around – it's time to make moves.
 
