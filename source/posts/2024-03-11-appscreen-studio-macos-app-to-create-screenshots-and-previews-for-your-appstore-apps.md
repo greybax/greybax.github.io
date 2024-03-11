@@ -32,6 +32,6 @@ This app has all the features I need and has a pretty common UI for MacOS apps:
 4. Get Creative: This is where the magic happens. Experiment, play, and let your creativity run wild. There are no rules here – just pure imagination.
 5. Automatic Project Saving: Forget about hitting 'Save' every five seconds. AppScreen Studio's got your back with automatic saving. You focus on creating; we'll handle the rest.
 
-Link to Mac AppStore: [AppScreen Studio](https://apps.apple.com/us/app/appscreen-studio/id6467930383)
+Link to Mac AppStore: [https://apps.apple.com/us/app/appscreen-studio/id6467930383](https://apps.apple.com/us/app/appscreen-studio/id6467930383)
 
 Enjoy creating awesome app screenshots with AppScreen Studio! ✌🏼
