@@ -6,15 +6,15 @@ _March 11, 2024_
 
 ## Intro
 
-Hey there, fellow iOS App Devs! Recently I've started my journey as iOS Developer and after creating my first app I've faced with issue creating screenshots of my app for AppStore. It's kind tough to create them if you don't know specific tool which best suites for it. I've tried Canva, different website specialized on it and all these tools looks too complex and monstrough for me. I just wanted simple UI which does simple job - create App Screenshots for AppStore. After bunch of investigations I've found [AppScreen Studio](https://appscreen.studio/).
+Hey there, fellow iOS App Devs! Recently, I've started my journey as an iOS Developer, and after creating my first app, I faced the issue of creating screenshots for the App Store. It's kind of tough to create them if you don't know the specific tool that best suits your needs. I've tried Canva, different websites specialized in it, and all these tools look too complex and monstrous for me. I just wanted a simple UI that does a simple job - create App Screenshots for the App Store. After a bunch of investigations, I found [AppScreen Studio](https://appscreen.studio/).
 
 ## AppScreen Studio
 
 ![Icon](/images/appscreen-studio-macos-app-to-create-screenshots-and-previews-for-your-appstore-apps/1.png "Icon")
 
-This tool has Free Tier with 3 projects screenshot generations per month (no limit on amount of screenshots or projects. Limit only on screenshots generations itself).
+This tool has a Free Tier with 3 projects screenshot generations per month (no limit on the number of screenshots or projects. Limit only on screenshot generations itself).
 
-This app has all features what I need and has pretty common UI for MacOS apps:
+This app has all the features I need and has a pretty common UI for MacOS apps:
 
 * All Types of Devices: Want to show off your masterpiece on a variety of devices? AppScreen Studio lets you choose from MacBook, iPhone, iPad, Apple Watch, and iMac screens. Whether you're flexing your app's versatility or targeting a specific audience, we've got your back.
 
@@ -27,11 +27,11 @@ This app has all features what I need and has pretty common UI for MacOS apps:
 ## How to Use
 
 1. Create a New Project: Hit the '+' button or tap CMD + N to kick off your next big project.
-Add Panels: Panels are your canvas. Add 'em, move 'em, stack 'em – it's your world, we're just living in it.
-2. Customize Layers: Get your Picasso on! Add images, tweak layers, and sprinkle in some effects to make your app shine.
-3. Get Creative: This is where the magic happens. Experiment, play, and let your creativity run wild. There are no rules here – just pure imagination.
-4. Automatic Project Saving: Forget about hitting 'Save' every five seconds. AppScreen Studio's got your back with automatic saving. You focus on creating, we'll handle the rest.
+2. Add Panels: Panels are your canvas. Add 'em, move 'em, stack 'em – it's your world, we're just living in it.
+3. Customize Layers: Get your Picasso on! Add images, tweak layers, and sprinkle in some effects to make your app shine.
+4. Get Creative: This is where the magic happens. Experiment, play, and let your creativity run wild. There are no rules here – just pure imagination.
+5. Automatic Project Saving: Forget about hitting 'Save' every five seconds. AppScreen Studio's got your back with automatic saving. You focus on creating; we'll handle the rest.
 
-Link to Mac AppStore: https://apps.apple.com/us/app/appscreen-studio/id6467930383
+Link to Mac AppStore: [AppScreen Studio](https://apps.apple.com/us/app/appscreen-studio/id6467930383)
 
-Enjoy your awesome app screenshots making in AppScreen Studio! ✌🏼
+Enjoy creating awesome app screenshots with AppScreen Studio! ✌🏼
