@@ -1,6 +1,6 @@
 # How to handle different versions of Core Data Models
 
-#ios, #macos, #swiftui, #appstore, #development, #xcode, #english;
+#ios, #macos, #swiftui, #appstore, #development, #coredata, #xcode, #english;
 
 _October 7, 2023_
 

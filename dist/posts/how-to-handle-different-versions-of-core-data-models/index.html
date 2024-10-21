@@ -24,11 +24,11 @@
     <meta property="article:author" content="https://alfilatov.com/about/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@greybax">
-    <meta name="keywords" content="ios, macos, swiftui, appstore, development, xcode, english">
+    <meta name="keywords" content="ios, macos, swiftui, appstore, development, coredata, xcode, english">
     <meta name="description" content="How to handle different versions of Core Data Models">
     <meta name="og:url" content="/posts/how-to-handle-different-versions-of-core-data-models/">
     <meta name="og:title" content="How to handle different versions of Core Data Models">
-    <meta name="og:description" content="ios, macos, swiftui, appstore, development, xcode, english"><!—- ShareThis BEGIN -—>
+    <meta name="og:description" content="ios, macos, swiftui, appstore, development, coredata, xcode, english"><!—- ShareThis BEGIN -—>
     <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
   </head>
   <body>
@@ -47,10 +47,10 @@
         <div><span class="header">Related posts</span>
           <ul>
             <li><a href="/posts/appscreen-studio-macos-app-to-create-screenshots-and-previews-for-your-appstore-apps/"> AppScreen Studio - macOS App to Create Screenshots and Previews for Your AppStore Apps </a></li>
+            <li><a href="/posts/coredata-studio-macos-app-to-view-and-debug-your-coredata-projects/"> CoreData Studio - macOS App to View and Debug your CoreData projects </a></li>
             <li><a href="/posts/run-chrome-without-cors/"> Run Chrome browser without CORS </a></li>
             <li><a href="/posts/my-contribution-in-mozilla-society/"> My contribution in Mozilla society </a></li>
             <li><a href="/posts/yandex-browser-it-need-or-not/"> Yandex browser - it's need or not? </a></li>
-            <li><a href="/posts/windows-7-hotkeys/"> Windows 7 HotKeys </a></li>
           </ul>
         </div>
         <div class="right-banner"><!-- Google Adsense -->
@@ -63,7 +63,7 @@
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_top_article_banner --><ins style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="9573555341" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
         </div><h1>How to handle different versions of Core Data Models</h1><i class="fa fa-calendar">
-          <time>October 7, 2023</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#ios"> ios </a><a href="/tags/index.html#macos"> macos </a><a href="/tags/index.html#swiftui"> swiftui </a><a href="/tags/index.html#appstore"> appstore </a><a href="/tags/index.html#development"> development </a><a href="/tags/index.html#xcode"> xcode </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
+          <time>October 7, 2023</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#ios"> ios </a><a href="/tags/index.html#macos"> macos </a><a href="/tags/index.html#swiftui"> swiftui </a><a href="/tags/index.html#appstore"> appstore </a><a href="/tags/index.html#development"> development </a><a href="/tags/index.html#coredata"> coredata </a><a href="/tags/index.html#xcode"> xcode </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
 <p>As i mentioned earlier <a href="/posts/how-to-start-business-in-washington-state/">I've started my own business</a>. I've encountered issues when migrating my data models between different versions, as I work on various apps for the AppStore (iOS/MacOS). In this post, I want to clarify the process for myself and hopefully help someone else who may find it useful.</p>
 <h2>Data Migration</h2>
 <p>Apple provides extensive documentation, but it can be challenging to navigate, especially in the context of SwiftUI.
