@@ -58,6 +58,10 @@ A: CoreData Studio is a macOS app that allows you to view and debug your CoreDat
 * Q: How do I get started with CoreData Studio?
 A: Simply download the app from the Mac AppStore and follow our tutorial to get started.
 
+### Promo Launches
+
+<script defer data-url="https://devhunt.org/tool/coredata-studio" src="https://cdn.jsdelivr.net/gh/sidiDev/devhunt-banner/indexV0.js" />
+
 ### Try it Out!
 
 Link to Mac AppStore: [https://apps.apple.com/us/app/coredata-studio/id6670322925](https://apps.apple.com/us/app/coredata-studio/id6670322925)
