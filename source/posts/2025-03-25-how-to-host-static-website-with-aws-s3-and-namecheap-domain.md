@@ -23,6 +23,8 @@ So below I'm going to highlight some core parts:
 6. Time to build your website. Our assuming we already have one.
 7. Create S3 Bucket. See video for setup.
 8. Drag'n'Drop website files to that bucket
+9. Setup CDN. Go to Cloudfront and click "Create new distrubution". See for details in video.
+
 
 
 Happy deploying your static website to AWS ✌🏼
