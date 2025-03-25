@@ -19,7 +19,7 @@ So below I'm going to highlight some core parts which are neccessary to do durin
 5. Configure Route 53
   * Genearte Hosted Zone
   * Copy-paste DNS servers from generated hosted zone to Namecheap. You need to select "Custom DNS" for it in "Nameservers" section.
-  * Save changes
+  * Save changes. Now we've redirected our Namecheap domain to Amazon.
 6. 
 
 Happy deploying your static website to AWS ✌🏼
