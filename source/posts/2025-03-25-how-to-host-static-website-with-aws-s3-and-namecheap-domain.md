@@ -10,7 +10,7 @@ I've followed this awesome tutorial from YouTube.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9WPlC5RKfjs?si=h9NcSq0Wq7pZU-EX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-So below I'm going to highlight some core parts which are neccessary to do during that stuff:
+So below I'm going to highlight some core parts:
 
 1. Have bought domain from Namecheap provider
 2. Have AWS account
@@ -20,6 +20,7 @@ So below I'm going to highlight some core parts which are neccessary to do durin
   * Genearte Hosted Zone
   * Copy-paste DNS servers from generated hosted zone to Namecheap. You need to select "Custom DNS" for it in "Nameservers" section.
   * Save changes. Now we've redirected our Namecheap domain to Amazon.
-6. 
+6. Time to build your website. Our assuming we already have one.
+7. Create S3 Bucket
 
 Happy deploying your static website to AWS ✌🏼
