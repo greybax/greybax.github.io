@@ -21,6 +21,8 @@ So below I'm going to highlight some core parts:
   * Copy-paste DNS servers from generated hosted zone to Namecheap. You need to select "Custom DNS" for it in "Nameservers" section.
   * Save changes. Now we've redirected our Namecheap domain to Amazon.
 6. Time to build your website. Our assuming we already have one.
-7. Create S3 Bucket
+7. Create S3 Bucket. See video for setup.
+8. Drag'n'Drop website files to that bucket
+
 
 Happy deploying your static website to AWS ✌🏼
