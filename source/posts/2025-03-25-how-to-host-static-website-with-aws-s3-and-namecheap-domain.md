@@ -14,6 +14,8 @@ So below I'm going to highlight some core parts which are neccessary to do durin
 
 1. Have bought domain from Namecheap provider
 2. Have AWS account
-3. 
+3. Request certificate in AWS for using them in Namecheap
+4. Configure Advanced DNS in Namecheap using issued certificates
+
 
 Happy deploying your static website to AWS ✌🏼
