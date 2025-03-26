@@ -24,6 +24,8 @@ So below I'm going to highlight some core parts:
 7. Create S3 Bucket. See video for setup.
 8. Drag'n'Drop website files to that bucket
 9. Setup CDN. Go to Cloudfront and click "Create new distrubution". See for details in video.
+10. Make sure that your website opens via domain name in your Distributions `xxxxx.cloudfront.net`.
+11. Now we want to make our website available via its real domain name. so we need to go to Route 53 and create an "A New Record" for routing. And add alias for "Route traffic to" our CloudFront distribution.
 
 
 
