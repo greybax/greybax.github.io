@@ -34,12 +34,9 @@ So below I'm going to highlight some core parts:
   * Delete all content from `yourwebsite.com` bucket, since its a redirect bucket.
   * Go to `Properties` -> `Static website hosting`. Edit `Hosting Type` to `Redirect requests for an object`. Select `https` Protocol. Save Changes.
   * Copy Endpoint URL it should looks like this: `http://your___website.s3-website-us-east-1.amazonaws.com/`. And we need to create new CloudFront distribution for it. 
-  * Create CloudFront Distribution. Paste link which wi've copied into Origin Domain field. Select `Viewer protocol policy` -> `Redirect HTTP to HTTPS`. Disable caching `Cache policy` -> `CachingDisabled`. CNAME -> `yourdomainname.com` without `www.` prefix Select Custom SSL certificat which we've created before. Click `Save Changes`. P.S. We should leave `default root object` blank here.
+  * Create CloudFront Distribution. Paste link which wi've copied into Origin Domain field. Select `Viewer protocol policy` -> `Redirect HTTP to HTTPS`. Disable caching `Cache policy` -> `CachingDisabled`. CNAME -> `yourdomainname.com` without `www.` prefix Select Custom SSL certificat which we've created before. Click `Save Changes`. P.S. We should leave `default root object` blank here and disable `Compress objects automatically`.
   * Go to Route 53 and create new record. Enable `Alias` -> `Route traffic to` -> `Alias to CloudFront Distrubution` and select just created distribution. Save Changes.
-
-
-
-
+13. Once all these steps are done you should be able to open your website on `yourwebsitename.com` and `www.yourwebsitename.com` without any issues. Morethover `yourwebsitename.com` will redirect be to `wwww.yourwebsitename.com` automatically
 
 
 Happy deploying your static website to AWS ✌🏼
