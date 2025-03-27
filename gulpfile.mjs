@@ -1,6 +1,5 @@
 import through from 'through2';
 import gulp from 'gulp';
-import watch from 'gulp-watch';
 import rename from 'gulp-rename';
 import data from 'gulp-data';
 import pug from 'gulp-pug';
@@ -236,7 +235,7 @@ gulp.task('gh', gulp.series('build', (done) => {
 }));
 
 gulp.task('watch', gulp.series('express', 'build', () => {
-  watch(['**/*{pug,md,json}', '*.css'], () => { gulp.start('build'); });
+  gulp.watch(['**/*.{jade,md,json}', '*.css'], gulp.series('build'));
 }));
 
 gulp.task('default', gulp.series('watch'));
