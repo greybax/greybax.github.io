@@ -13,6 +13,7 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import cssvariables from 'postcss-css-variables';
 import newer from 'gulp-newer';
+import changed from 'gulp-changed';
 import glob from 'glob';
 
 import pkg from './package.json' with { type: 'json' };
@@ -293,7 +294,7 @@ gulp.task('generate-html-sitemap', async () => {
 
 gulp.task('css', () =>
   gulp.src('css/*.css')
-    .pipe(newer('dist/css')) // Only process newer files
+    .pipe(changed('dist/css')) // Only process changed files
     .pipe(postcss([
       autoprefixer(),
       cssvariables()
