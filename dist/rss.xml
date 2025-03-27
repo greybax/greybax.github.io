@@ -4,7 +4,7 @@
         <description><![CDATA[Blog about life and software development]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 24 Oct 2024 18:52:54 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Mar 2025 17:26:17 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to host static website with AWS S3 and Namecheap domain?</h1>]]></title>
+            <description><![CDATA[website, hosting, namecheap, aws, s3, static, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-host-static-website-with-aws-s3-and-namecheap-domain/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-host-static-website-with-aws-s3-and-namecheap-domain/</guid>
+            <pubDate>Tue, 25 Mar 2025 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>CoreData Studio - macOS App to View and Debug your CoreData projects</h1>]]></title>
             <description><![CDATA[ios, macos, swiftui, appstore, coredata, database, sqlite, app_promo, xcode, english]]></description>
