@@ -16,9 +16,6 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import cssvariables from 'postcss-css-variables';
 
-import fsExtra from 'fs-extra';
-const { outputFile: output } = fsExtra;
-
 import pkg from './package.json' with { type: 'json' };
 const { site } = pkg;
 
@@ -168,8 +165,8 @@ gulp.task('tags', () =>
 gulp.task('each-article', async () => {
   await Promise.all(articlesList.map((article) => buildArticle(article)));
 });
-gulp.task('rss', (done) => {
-  output('dist/rss.xml', getRSS(site, articlesList), done);
+gulp.task('rss', async () => {
+  await fs.writeFile('dist/rss.xml', getRSS(site, articlesList));
 });
 
 gulp.task('css', () =>

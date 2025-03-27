@@ -1346,15 +1346,6 @@ fresh@0.5.2:
   resolved "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac= sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==
 
-fs-extra@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-7.0.1.tgz"
-  integrity sha1-TxicRKoSO4lfcigE9V6iPq3DSOk= sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
-  dependencies:
-    graceful-fs "^4.1.2"
-    jsonfile "^4.0.0"
-    universalify "^0.1.0"
-
 fs-mkdirp-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs-mkdirp-stream/-/fs-mkdirp-stream-1.0.0.tgz"
@@ -2142,13 +2133,6 @@ json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz"
   integrity sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==
-
-jsonfile@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/jsonfile/-/jsonfile-4.0.0.tgz"
-  integrity sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss= sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==
-  optionalDependencies:
-    graceful-fs "^4.1.6"
 
 jstransformer@0.0.2:
   version "0.0.2"
@@ -3996,11 +3980,6 @@ unist-util-visit@^1.0.0, unist-util-visit@^1.1.0:
   integrity sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==
   dependencies:
     unist-util-visit-parents "^2.0.0"
-
-universalify@^0.1.0:
-  version "0.1.2"
-  resolved "https://registry.npmjs.org/universalify/-/universalify-0.1.2.tgz"
-  integrity sha1-tkb2m+OULavOzJ1mOcgNwQXvqmY= sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
 unpipe@~1.0.0, unpipe@1.0.0:
   version "1.0.0"
