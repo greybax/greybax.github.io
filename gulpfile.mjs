@@ -8,17 +8,16 @@ import replace from 'gulp-replace';
 import log from 'fancy-log';
 import buildbranch from 'buildbranch';
 import rss from 'rss';
-import del from 'del';
-
-import fsExtra from 'fs-extra';
-const { outputFile: output } = fsExtra;
-
+import { promises as fs } from 'fs';
 import express from 'express';
 import path from 'path';
 import extract from 'md-article';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import cssvariables from 'postcss-css-variables';
+
+import fsExtra from 'fs-extra';
+const { outputFile: output } = fsExtra;
 
 import pkg from './package.json' with { type: 'json' };
 const { site } = pkg;
@@ -208,11 +207,8 @@ gulp.task('copy-presentations', () =>
     .pipe(gulp.dest('dist/es6_presentation'))
 );
 
-gulp.task('clean', (done) => {
-  del(['dist'])
-    .then(() => {
-      done();
-    });
+gulp.task('clean', async () => {
+  await fs.rm('dist', { recursive: true, force: true });
 });
 
 gulp.task('express', () => {
@@ -221,15 +217,15 @@ gulp.task('express', () => {
 });
 
 gulp.task('build', gulp.series(
-  'clean'
-  , 'articles-registry'
-  , 'tags'
-  , gulp.parallel('index-page', 'each-article', 'rss')
-  , 'css'
-  , 'copy-font-awesome'
-  , 'copy-images'
-  , 'copy-files'
-  , 'copy-presentations'
+  'clean',
+  'articles-registry',
+  'tags',
+  gulp.parallel('index-page', 'each-article', 'rss'),
+  'css',
+  'copy-font-awesome',
+  'copy-images',
+  'copy-files',
+  'copy-presentations'
 ), (done) => {
   done();
 });
