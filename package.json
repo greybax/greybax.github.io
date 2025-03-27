@@ -1,7 +1,7 @@
 {
   "name": "alfilatov.com",
-  "version": "1.4.0",
-  "description": "Blog about life and software development",
+  "version": "1.5.0",
+  "description": "Thoughts and stuff",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/greybax/greybax.github.io",
   "site": {
     "title": "Aleksandr Filatov",
-    "description": "Blog about life and software development",
+    "description": "Thoughts and stuff",
     "feed_url": "https://alfilatov.com/rss.xml",
     "site_url": "https://alfilatov.com/",
     "managingEditor": "greybax@gmail.com (Aleksandr Filatov)",
