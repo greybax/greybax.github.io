@@ -11,14 +11,11 @@ import rss from 'rss';
 import del from 'del';
 import { outputFile as output } from 'fs-extra';
 import express from 'express';
-import assign from 'object-assign';
-import each from 'each-done';
 import path from 'path';
 import extract from 'md-article';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import cssvariables from 'postcss-css-variables';
-import Multimap from 'multimap';
 
 import { site } from './package.json';
 
@@ -29,7 +26,7 @@ const getBasename = (file) => path.basename(file.relative, path.extname(file.rel
 
 let articlesList = [];
 let relatedPosts = {};
-let tagMap = new Multimap();
+let tagMap = new Map();
 
 const addToList = (file, article) => {
   let fileBaseName = getBasename(file).substr('11');
@@ -45,17 +42,23 @@ const addToList = (file, article) => {
 
   // Construct tagMap with linked articles url
   for (let tag of articleObj.tags) {
-    tagMap.set(tag, {
+    if (!tagMap.has(tag)) {
+      tagMap.set(tag, []);
+    }
+    tagMap.get(tag).push({
       name: articleObj.name,
-      url: articleObj.url
+      url: articleObj.url,
     });
   }
 
-  articlesList.push(assign({}, {
-    site: site,
-    filename: file.relative,
-    url: pathPosts + fileBaseName + '/',
-  }, extract(article, 'MMMM D, YYYY', 'en')));
+  articlesList.push({
+    ...{
+      site: site,
+      filename: file.relative,
+      url: pathPosts + fileBaseName + '/',
+    },
+    ...extract(article, 'MMMM D, YYYY', 'en'),
+  });
 };
 
 const buildRelated = (articlesList) => {
@@ -95,7 +98,7 @@ const buildArticle = (article) =>
     .pipe(data(() => article))
     .pipe(data(() => ({
       relatedPosts,
-      article
+      article,
     })))
     .pipe(jade({ pretty: true }))
     .pipe(rename({ dirname: article.url }))
@@ -159,7 +162,9 @@ gulp.task('tags', () =>
     .pipe(gulp.dest('dist/tags'))
 );
 
-gulp.task('each-article', (done) => { each(articlesList, buildArticle, done); });
+gulp.task('each-article', async () => {
+  await Promise.all(articlesList.map((article) => buildArticle(article)));
+});
 gulp.task('rss', (done) => { output('dist/rss.xml', getRSS(site, articlesList), done); });
 
 gulp.task('css', () =>
