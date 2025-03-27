@@ -241,6 +241,56 @@ gulp.task('generate-sitemap', async () => {
   console.log(`Sitemap generated at: ${sitemapPath}`);
 });
 
+gulp.task('generate-html-sitemap', async () => {
+  const postsDir = './source/posts';
+  const distDir = './dist';
+  const sitemapPath = path.join(distDir, 'sitemap.html');
+
+  // Base URL for your site
+  const baseUrl = 'https://alfilatov.com';
+
+  // Header for the HTML sitemap
+  const sitemapHeader = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Sitemap</title>
+</head>
+<body>
+  <h1>HTML Sitemap</h1>
+  <ul>
+`;
+
+  // Footer for the HTML sitemap
+  const sitemapFooter = `  </ul>
+</body>
+</html>`;
+
+  // Get all Markdown files in the posts directory
+  const files = glob.sync(`${postsDir}/*.md`);
+
+  // Generate <li> entries for each post
+  const links = files.map((file) => {
+    const fileName = path.basename(file, '.md'); // e.g., "2025-03-25-how-to-host-static-website-with-aws-s3-and-namecheap-domain"
+    const [year, month, day, ...slugParts] = fileName.split('-'); // Extract year, month, day, and slug
+    const slug = slugParts.join('-'); // Combine slug parts
+    const url = `${baseUrl}/posts/${slug}/`;
+
+    return `    <li><a href="${url}">${slug.replace(/-/g, ' ')}</a> (${year}-${month}-${day})</li>`;
+  });
+
+  // Combine header, links, and footer
+  const sitemapContent = `${sitemapHeader}\n${links.join('\n')}\n${sitemapFooter}`;
+
+  // Ensure the dist directory exists
+  await fs.mkdir(distDir, { recursive: true });
+
+  // Write the HTML sitemap to the dist directory
+  await fs.writeFile(sitemapPath, sitemapContent, 'utf8');
+  console.log(`HTML Sitemap generated at: ${sitemapPath}`);
+});
+
 gulp.task('css', () =>
   gulp.src('css/*.css')
     .pipe(newer('dist/css')) // Only process newer files
@@ -288,16 +338,19 @@ gulp.task('express', () => {
 
 gulp.task('build', gulp.series(
   'clean',
-  'articles-registry',
+  'articles-registry', // Ensure articles are registered first
   gulp.parallel(
-    'tags',
+    'tags', // Populate relatedPosts here
     'index-page',
-    'each-article',
     'rss',
     'css',
     gulp.parallel('copy-font-awesome', 'copy-images', 'copy-files', 'copy-presentations')
   ),
-  'generate-sitemap'
+  'each-article', // Render articles after relatedPosts is populated
+  gulp.parallel( // Run sitemap tasks in parallel
+    'generate-sitemap', // Generate XML sitemap
+    'generate-html-sitemap' // Generate HTML sitemap
+  )
 ));
 
 gulp.task('watch', gulp.series('express', 'build', () => {
