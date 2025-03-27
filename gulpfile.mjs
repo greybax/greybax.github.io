@@ -3,9 +3,7 @@ import gulp from 'gulp';
 import rename from 'gulp-rename';
 import data from 'gulp-data';
 import pug from 'gulp-pug';
-import replace from 'gulp-replace';
 import log from 'fancy-log';
-import buildbranch from 'buildbranch';
 import rss from 'rss';
 import { promises as fs } from 'fs';
 import express from 'express';
@@ -123,8 +121,18 @@ const getRSS = (site, list) => {
 gulp.task('articles-registry', () => {
   articlesList = [];
   return gulp.src(env === 'dev' ? ['source/drafts/*.md'] : ['source/posts/*.md'])
-    .pipe(replace('https://alfilatov.com/', '/'))
-    .pipe(replace('https://alfilatov.com', '/'))
+    .pipe(through.obj((file, enc, cb) => {
+      file.contents = Buffer.from(
+        file.contents.toString().replace('https://alfilatov.com/', '/')
+      );
+      cb(null, file);
+    }))
+    .pipe(through.obj((file, enc, cb) => {
+      file.contents = Buffer.from(
+        file.contents.toString().replace('https://alfilatov.com', '/')
+      );
+      cb(null, file);
+    }))
     .pipe((() => through.obj((file, enc, cb) => {
       addToList(file, file.contents.toString());
       cb(null, file);
@@ -225,14 +233,6 @@ gulp.task('build', gulp.series(
 ), (done) => {
   done();
 });
-
-gulp.task('gh', gulp.series('build', (done) => {
-  buildbranch({
-    branch: 'master',
-    folder: 'dist',
-    noVerify: true
-  }, done);
-}));
 
 gulp.task('watch', gulp.series('express', 'build', () => {
   gulp.watch(['**/*.{jade,md,json}', '*.css'], gulp.series('build'));
