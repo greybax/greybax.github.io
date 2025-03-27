@@ -12,6 +12,8 @@ import extract from 'md-article';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import cssvariables from 'postcss-css-variables';
+import newer from 'gulp-newer';
+import moment from 'moment';
 
 import pkg from './package.json' with { type: 'json' };
 const { site } = pkg;
@@ -28,6 +30,9 @@ let tagMap = new Map();
 const addToList = (file, article) => {
   let fileBaseName = getBasename(file).substr('11');
   let articleData = extract(article, 'MMMM D, YYYY', 'en');
+  if (!moment(articleData.date.text, moment.ISO_8601, true).isValid()) {
+    console.warn(`Invalid date format: ${articleData.date.text}`);
+  }
   let tags = articleData.tags;
 
   let articleObj = {
@@ -122,21 +127,12 @@ gulp.task('articles-registry', () => {
   articlesList = [];
   return gulp.src(env === 'dev' ? ['source/drafts/*.md'] : ['source/posts/*.md'])
     .pipe(through.obj((file, enc, cb) => {
-      file.contents = Buffer.from(
-        file.contents.toString().replace('https://alfilatov.com/', '/')
-      );
+      // Combine replacements into one step
+      const content = file.contents.toString().replace(/https:\/\/alfilatov\.com\/?/g, '/');
+      file.contents = Buffer.from(content);
+      addToList(file, content);
       cb(null, file);
-    }))
-    .pipe(through.obj((file, enc, cb) => {
-      file.contents = Buffer.from(
-        file.contents.toString().replace('https://alfilatov.com', '/')
-      );
-      cb(null, file);
-    }))
-    .pipe((() => through.obj((file, enc, cb) => {
-      addToList(file, file.contents.toString());
-      cb(null, file);
-    }))());
+    }));
 });
 
 gulp.task('index-page', () =>
@@ -173,11 +169,13 @@ gulp.task('each-article', async () => {
   await Promise.all(articlesList.map((article) => buildArticle(article)));
 });
 gulp.task('rss', async () => {
+  await fs.mkdir('dist', { recursive: true }); // Ensure the `dist` directory exists
   await fs.writeFile('dist/rss.xml', getRSS(site, articlesList));
 });
 
 gulp.task('css', () =>
   gulp.src('css/*.css')
+    .pipe(newer('dist/css')) // Only process newer files
     .pipe(postcss([
       autoprefixer(),
       cssvariables()
@@ -192,6 +190,7 @@ gulp.task('copy-font-awesome', () =>
 
 gulp.task('copy-images', () =>
   gulp.src(['images/**/*'])
+    .pipe(newer('dist/images')) // Only copy newer files
     .pipe(gulp.dest('dist/images'))
 );
 
@@ -223,16 +222,15 @@ gulp.task('express', () => {
 gulp.task('build', gulp.series(
   'clean',
   'articles-registry',
-  'tags',
-  gulp.parallel('index-page', 'each-article', 'rss'),
-  'css',
-  'copy-font-awesome',
-  'copy-images',
-  'copy-files',
-  'copy-presentations'
-), (done) => {
-  done();
-});
+  gulp.parallel(
+    'tags',
+    'index-page',
+    'each-article',
+    'rss',
+    'css',
+    gulp.parallel('copy-font-awesome', 'copy-images', 'copy-files', 'copy-presentations')
+  )
+));
 
 gulp.task('watch', gulp.series('express', 'build', () => {
   gulp.watch(['**/*.{jade,md,json}', '*.css'], gulp.series('build'));
