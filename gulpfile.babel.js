@@ -22,7 +22,6 @@ import Multimap from 'multimap';
 
 import { site } from './package.json';
 
-// const env = process.env.NODE_ENV || 'dev';
 const env = 'prod';
 
 const pathPosts = '/posts/';
