@@ -31,7 +31,6 @@ const getBasename = (file) => path.basename(file.relative, path.extname(file.rel
 let articlesList = [];
 let relatedPosts = {};
 let tagMap = new Multimap();
-let aboutPage = [];
 
 const addToList = (file, article) => {
   let fileBaseName = getBasename(file).substr('11');
@@ -146,26 +145,6 @@ gulp.task('index-page', () =>
     .pipe(gulp.dest('dist'))
 );
 
-gulp.task('about-registry', () => {
-  return gulp.src(['source/about/about.md'])
-    .pipe((() => through.obj((file, enc, cb) => {
-      aboutPage = extract(file.contents.toString(), 'MMMM D, YYYY', 'en');
-      cb(null, file);
-    }))());
-});
-
-gulp.task('about-page', () =>
-  gulp.src('layouts/about.jade')
-    .pipe(data(() => ({
-      site,
-      title: aboutPage.title,
-      content: aboutPage.content
-    })))
-    .pipe(jade({ pretty: env === 'dev' }))
-    .pipe(rename({ basename: 'index' }))
-    .pipe(gulp.dest('dist/about'))
-);
-
 gulp.task('tags', () =>
   gulp.src('layouts/tags.jade')
     .pipe(data(() => ({
@@ -234,10 +213,8 @@ gulp.task('express', () => {
 gulp.task('build', gulp.series(
   'clean'
   , 'articles-registry'
-  , 'about-registry'
   , 'tags'
   , gulp.parallel('index-page', 'each-article', 'rss')
-  , 'about-page'
   , 'css'
   , 'copy-font-awesome'
   , 'copy-images'
