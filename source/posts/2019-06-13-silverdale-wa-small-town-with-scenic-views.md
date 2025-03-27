@@ -2,7 +2,7 @@
 
 #silverdale, #usa, #travel, #pacific, #pnw, #northwest, #wildlife, #washington, #english;
 
-_June 13, 2019_
+_2019-06-13_
 
 We had to go to Bremerton, so after the usual hour on the ferry from Seattle and the completion of all cases, we decided to drive around the nearest county and return on another ferry.
 

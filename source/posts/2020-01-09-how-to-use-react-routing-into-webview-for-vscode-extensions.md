@@ -2,7 +2,7 @@
 
 #vscode, #extensions, #react, #routing, #javascript, #js-library, #github, #english;
 
-_January 09, 2020_
+_2020-01-09_
 
 ## Intro
 

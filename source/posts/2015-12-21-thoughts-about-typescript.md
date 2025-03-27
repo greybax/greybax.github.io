@@ -6,4 +6,4 @@
 
 #habrahabr, #typescript, #russian;
 
-_December 21, 2015_
+_2015-12-21_

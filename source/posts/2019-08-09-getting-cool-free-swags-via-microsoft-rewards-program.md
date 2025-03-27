@@ -2,7 +2,7 @@
 
 #swags, #free, #microsoft, #redeem, #rewards, #english;
 
-_August 09, 2019_
+_2019-08-09_
 
 ## Intro
 

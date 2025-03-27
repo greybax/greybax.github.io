@@ -2,7 +2,7 @@
 
 #roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #nevada, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_April 12, 2019_
+_2019-04-12_
 
 ## Intro
 

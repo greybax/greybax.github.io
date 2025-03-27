@@ -2,7 +2,7 @@
 
 #england, #vacation, #london, #lifestyle, #trip, #life, #english;
 
-_September 21, 2018_
+_2018-09-21_
 
 London **(45 minutes by plane from Amsterdam and back again - as by minibus)**
 

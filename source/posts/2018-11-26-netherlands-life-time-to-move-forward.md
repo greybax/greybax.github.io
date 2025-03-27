@@ -2,7 +2,7 @@
 
 #netherlands, #dutch, #holland, #lifestyle, #life, #english;
 
-_November 26, 2018_
+_2018-11-26_
 
 ![Our home in Amsterdam](/images/netherlands-life-time-to-move-forward/1.jpg "Our home in Amsterdam")
 

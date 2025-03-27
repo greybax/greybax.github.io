@@ -2,7 +2,7 @@
 
 #usa, #wa, #pnw, #life, #port-angeles, #olympic-peninsula, #english;
 
-_March 26, 2019_
+_2019-03-26_
 
 Port Angeles **(1 hour by ferry + 2 hours by car from Seattle)**
 

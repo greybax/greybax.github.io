@@ -2,7 +2,7 @@
 
 #netherlands, #Zaanse-Schans, #lifestyle, #trip, #life, #english;
 
-_July 13, 2018_
+_2018-07-13_
 
 Zaanse Schans **(hour by bike from Amsterdam)**
 

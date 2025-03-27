@@ -2,7 +2,7 @@
 
 #tipsoo-lake, #usa, #travel, #pacific, #pnw, #northwest, #wildlife, #washington, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_June 24, 2019_
+_2019-06-24_
 
 On the first day of summer, we decided to rush to the mountains closer to Rainier, Windows told us one lake with a green lawn and a view of the volcano...
 

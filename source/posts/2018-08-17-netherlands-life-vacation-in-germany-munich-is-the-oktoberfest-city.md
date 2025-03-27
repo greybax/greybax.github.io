@@ -2,7 +2,7 @@
 
 #germany, #vacation, #munich, #oktoberfest, #hofbräuhaus, #lifestyle, #trip, #life, #english;
 
-_August 17, 2018_
+_2018-08-17_
 
 Munich, Germany **(2h by train from Fussen)**
 

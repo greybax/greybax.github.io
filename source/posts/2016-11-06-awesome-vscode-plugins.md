@@ -2,7 +2,7 @@
 
 #vscode, #tools, #plugins, #english;
 
-_November 06, 2016_
+_2016-11-06_
 
 I'm using VSCode as my main code editor for a long time. 
 This is a good open source project done by Microsoft, code based on [github](https://github.com/Microsoft/vscode).

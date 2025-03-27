@@ -2,7 +2,7 @@
 
 #port-townsend, #town, #usa, #seattle, #travel, #pacific, #pnw, #northwest, #washington, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_October 24, 2019_
+_2019-10-24_
 
 [Port Townsend](https://enjoypt.com/), an hour by ferry and an hour by car
 

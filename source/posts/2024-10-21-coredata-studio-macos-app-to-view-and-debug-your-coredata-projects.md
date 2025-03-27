@@ -2,7 +2,7 @@
 
 #ios, #macos, #swiftui, #appstore, #coredata, #database, #sqlite, #app_promo, #xcode, #english;
 
-_October 21, 2024_
+_2024-10-21_
 
 ## Intro
 

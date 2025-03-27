@@ -2,7 +2,7 @@
 
 #netherlands, #amsterdam, #rotterdam, #trip, #life, #english;
 
-_January 28, 2018_
+_2018-01-28_
 
 ## Rotterdam
 

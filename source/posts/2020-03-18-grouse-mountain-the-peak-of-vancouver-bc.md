@@ -2,7 +2,7 @@
 
 #grouse-mountain, #ski, #ski-resort, #vancouver, #canada, #travel, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_March 18, 2020_
+_2020-03-18_
 
 Since our “home” mountains in Snoqualmie Pass have become very popular this year - both in the parking lot and on the slopes, and the shuttles can not cope, we decided to get skiing somewhere else. We chose this other place… And its the Vancouver mountains :)
 

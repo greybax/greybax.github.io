@@ -2,7 +2,7 @@
 
 #netherlands, #leiden, #holland, #lifestyle, #trip, #life, #english;
 
-_August 02, 2018_
+_2018-08-02_
 
 Night, street, lantern, pharmacy...
 These and other lines can be found on the walls of Leiden (half an hour by train from Amsterdam)

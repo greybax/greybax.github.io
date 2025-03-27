@@ -2,7 +2,7 @@
 
 #netherlands, #marken, #beach, #lifestyle, #trip, #life, #english;
 
-_June 30, 2018_
+_2018-06-30_
 
 Marken (**30min by bus from Amsterdam**) - is a traditional Dutch village where you can learn Zen by watching swans, cows, horses, sheep, goats and other animals (the main thing is not to get blown away).
 

@@ -2,7 +2,7 @@
 
 #hike, #usa, #travel, #pacific, #pnw, #northwest, #wildlife, #washington, #english;
 
-_June 06, 2019_
+_2019-06-06_
 
 **April 2019. _1 hour by car from Seattle_**
 

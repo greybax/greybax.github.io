@@ -2,7 +2,7 @@
 
 #california, #los-angeles, #trip, #usa, #youtube, #vlog, #video, #wa-travelers, #pacific, #english;
 
-_July 30, 2020_
+_2020-07-30_
 
 Downtown Los Angeles, 20 minutes by car from Santa Monica and the airport, was our destination on the fourth day before our departure. Before leaving, we took one last look at the cloudy ocean, then headed to USC (University of Southern California). It's not as famous as other universities, but Phoebe from Charmed studied there and it was in one of the buildings (where we sat on a bench) that she met Cole. Nearby is a park with a passenger airplane, a Lockheed A-12 spy plane, the Endeavour space shuttle, and other aircraft in the aerospace exhibition center. Next to it is the Coliseum, a sports complex that is the only one in the world to have hosted two Olympics (in 1932 and 1984), two Super Bowls (the first and seventh), and the speeches of three presidents (Kennedy, Nixon, and Reagan). But two Olympics are not enough, as there will be a third in 2028!
 

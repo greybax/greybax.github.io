@@ -2,7 +2,7 @@
 
 #france, #vacation, #paris, #lifestyle, #trip, #life, #english;
 
-_August 31, 2018_
+_2018-08-31_
 
 Paris, France **(7 hours by night bus from Amsterdam there and back again)**
 

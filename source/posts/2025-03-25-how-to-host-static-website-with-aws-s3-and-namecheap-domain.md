@@ -2,7 +2,7 @@
 
 #website, #hosting, #static, #namecheap, #aws, #s3, #route53, #cloudfront, #english;
 
-_March 25, 2025_
+_2025-03-25_
 
 Recently, I've been faced with the task of using my static website on the AWS infrastructure. It's just cheaper than using different 3rd party static website generators. So I've built it myself and just need to host it on AWS S3.
 

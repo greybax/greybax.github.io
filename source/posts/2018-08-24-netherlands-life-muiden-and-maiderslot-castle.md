@@ -2,7 +2,7 @@
 
 #netherlands, #muiden, #holland, #lifestyle, #trip, #life, #english;
 
-_August 24, 2018_
+_2018-08-24_
 
 Muiden, Netherlands **(hour by bike - 17 km from Amsterdam)**
 

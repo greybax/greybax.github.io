@@ -2,7 +2,7 @@
 
 #netherlands, #lelystad, #flevoland, #lifestyle, #trip, #life, #english;
 
-_July 09, 2018_
+_2018-07-09_
 
 Lelystad **(1 hour by train from Amsterdam)**
 

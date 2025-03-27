@@ -2,7 +2,7 @@
 
 #awesome-it-films, #json, #badges, #endpoint, #markdown, #frontend, #english;
 
-_March 21, 2019_
+_2019-03-21_
 
 ## Intro
 

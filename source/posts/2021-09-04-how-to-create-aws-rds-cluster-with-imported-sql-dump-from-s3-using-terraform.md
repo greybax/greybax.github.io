@@ -2,7 +2,7 @@
 
 #aws, #rds, #s3, #sql, #terraform, #devops, #english;
 
-_September 04, 2021_
+_2021-09-04_
 
 ## Intro
 

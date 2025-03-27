@@ -2,7 +2,7 @@
 
 #netherlands, #kinderdijk, #mill, #lifestyle, #trip, #life, #english;
 
-_June 24, 2018_
+_2018-06-24_
 
 We got to Kinderdijk accidentally. We approached just in time for the departure of the steamer from Rotterdam - to sail for only half an hour (and another half hour and you can sail to the neighboring city - Dordrecht # nano-country).
 

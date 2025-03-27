@@ -2,7 +2,7 @@
 
 #css, #configuration, #unsplash, #english;
 
-_June 18, 2019_
+_2019-06-18_
 
 ## Intro
 

@@ -2,7 +2,7 @@
 
 #netherlands, #den-helder, #texel, #holland, #lifestyle, #trip, #life, #english;
 
-_July 05, 2018_
+_2018-07-05_
 
 Den Helder **(1.5 hours by train from Amsterdam)**
 

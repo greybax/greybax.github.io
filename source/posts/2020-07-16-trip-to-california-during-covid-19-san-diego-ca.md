@@ -2,7 +2,7 @@
 
 #california, #san-diego, #trip, #usa, #youtube, #vlog, #video, #wa-travelers, #pacific, #english;
 
-_July 16, 2020_
+_2020-07-16_
 
 San Diego, an hour's drive from San Clemente, is right by Mexico.
 

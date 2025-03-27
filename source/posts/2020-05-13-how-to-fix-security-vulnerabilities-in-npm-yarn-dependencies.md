@@ -2,7 +2,7 @@
 
 #javascript, #npm, #yarn, #security, #vulnerability, #english;
 
-_May 13, 2020_
+_2020-05-13_
 
 ## Intro
 

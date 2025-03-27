@@ -2,7 +2,7 @@
 
 #italy, #vacation, #napoli, #trip, #life, #english;
 
-_April 17, 2018_
+_2018-04-17_
 
 ## Vacation in Italy (part 1)
 

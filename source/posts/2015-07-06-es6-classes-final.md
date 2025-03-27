@@ -6,4 +6,4 @@
 
 #FrontenderMagazine, #перевод, #es6, #javascript, #russian;
 
-_July 06, 2015_
+_2015-07-06_

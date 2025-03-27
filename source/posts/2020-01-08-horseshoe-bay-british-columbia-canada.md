@@ -2,7 +2,7 @@
 
 #vancouver, #british-columbia, #canada, #horseshoe-bay, #travel, #english;
 
-_January 08, 2020_
+_2020-01-08_
 
 What a compact Vancouver! On the way to this bay, we stopped at Lighthouse Park (75 hectares) - it’s 20 minutes away, and that’s because after the route you only need to go down the serpentine. We went here "for good luck" and did not lose - we did not notice a little, walked and found a point from which you can see the downtown, although not close.
 

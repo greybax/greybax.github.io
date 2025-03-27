@@ -2,7 +2,7 @@
 
 #florida, #city, #orlando, #business-trip, #usa, #travel, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_November 04, 2019_
+_2019-11-04_
 
 Orlando, FL - 6 hour overnight flight from Seattle, WA.
 

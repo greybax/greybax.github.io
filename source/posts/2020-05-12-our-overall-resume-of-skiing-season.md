@@ -2,7 +2,7 @@
 
 #skiing, #ski, #washington, #usa, #pacific, #pnw, #english;
 
-_May 12, 2020_
+_2020-05-12_
 
 Yes, it's a little late in May to write about skiing, but we just turned in the equipment, so why not.
 

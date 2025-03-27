@@ -6,4 +6,4 @@
 
 #habrahabr, #перевод, #тестирование, #css, #javascript, #russian;
 
-_November 25, 2015_
+_2015-11-25_

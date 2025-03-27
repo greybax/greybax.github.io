@@ -13,7 +13,6 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import cssvariables from 'postcss-css-variables';
 import newer from 'gulp-newer';
-import moment from 'moment';
 
 import pkg from './package.json' with { type: 'json' };
 const { site } = pkg;
@@ -29,10 +28,14 @@ let tagMap = new Map();
 
 const addToList = (file, article) => {
   let fileBaseName = getBasename(file).substr('11');
-  let articleData = extract(article, 'MMMM D, YYYY', 'en');
-  if (!moment(articleData.date.text, moment.ISO_8601, true).isValid()) {
-    console.warn(`Invalid date format: ${articleData.date.text}`);
+  let articleData = extract(article, 'YYYY-MM-DD', 'en');
+
+  // Ensure articleData.date exists; fallback to current date if missing
+  if (!articleData.date || !articleData.date.text) {
+    console.warn(`Invalid or missing date for file: ${file.relative}. Using fallback date.`);
+    articleData.date = { text: new Date().toISOString().split('T')[0] }; // Use current date as fallback
   }
+
   let tags = articleData.tags;
 
   let articleObj = {
@@ -59,7 +62,7 @@ const addToList = (file, article) => {
       filename: file.relative,
       url: pathPosts + fileBaseName + '/',
     },
-    ...extract(article, 'MMMM D, YYYY', 'en'),
+    ...articleData,
   });
 };
 

@@ -2,7 +2,7 @@
 
 #iframe, #vscode, #extensions, #javascript, #typescript, #data-transfer, #datauri, #blob, #english;
 
-_November 6, 2020_
+_2020-11-06_
 
 ## Intro
 

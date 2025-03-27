@@ -2,7 +2,7 @@
 
 #javascript, #jquery, #d3, #vk, #vk-api, #social-network, #big-data, #english;
 
-_June 01, 2017_
+_2017-06-01_
 
 ## Intro
 

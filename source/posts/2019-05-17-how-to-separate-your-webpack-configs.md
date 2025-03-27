@@ -2,7 +2,7 @@
 
 #webpack, #build, #optimization, #performance, #configuration, #typescript, #english;
 
-_May 17, 2019_
+_2019-05-17_
 
 ## Intro
 

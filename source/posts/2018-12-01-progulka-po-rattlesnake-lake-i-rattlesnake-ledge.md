@@ -2,7 +2,7 @@
 
 #usa, #wa, #pnw, #life, #nature, #trails, #russian;
 
-_December 1, 2018_
+_2018-12-01_
 
 Новые выходные - новый выезд на природу. В этот раз мы собрались на Rattlesnake Ledge trail. Больше описаний можно найти по ссылкам [WTA](https://www.wta.org/go-hiking/hikes/rattle-snake-ledge) и [AllTrails](https://www.alltrails.com/trail/us/washington/rattlesnake-ledge). Я же хочу поделитсья своим опытом и фотографиями. 
 

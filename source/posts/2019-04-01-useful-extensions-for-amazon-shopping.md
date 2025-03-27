@@ -2,7 +2,7 @@
 
 #amazon, #shopping, #collection, #extensions, #chrome-extension, #english;
 
-_April 01, 2019_
+_2019-04-01_
 
 ## Intro
 

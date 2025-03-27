@@ -2,7 +2,7 @@
 
 #port-angeles, #usa, #travel, #pacific, #pnw, #northwest, #wildlife, #washington, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_June 28, 2019_
+_2019-06-28_
 
 A couple of weeks ago we again headed towards the Olympic Peninsula.
 

@@ -2,7 +2,7 @@
 
 #usa, #wa, #pnw, #life, #whidbey-island, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_April 19, 2019_
+_2019-04-19_
 
 Whidbey Island, **(an hour by car from Seattle and 15 minutes by ferry to the nearest point)**
 

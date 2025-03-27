@@ -2,7 +2,7 @@
 
 #javascript, #optimization, #performance, #configuration, #english;
 
-_June 21, 2019_
+_2019-06-21_
 
 ## Intro
 

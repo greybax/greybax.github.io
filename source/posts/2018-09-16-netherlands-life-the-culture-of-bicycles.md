@@ -2,7 +2,7 @@
 
 #netherlands, #bicycles, #holland, #lifestyle, #trip, #life, #english;
 
-_September 16, 2018_
+_2018-09-16_
 
 ![NL bicycles no parking sign](/images/netherlands-life-the-culture-of-bicycles/1.jpg "NL bicycles no parking sign")
 

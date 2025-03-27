@@ -2,7 +2,7 @@
 
 #germany, #vacation, #dusseldorf, #lifestyle, #trip, #life, #english;
 
-_July 23, 2018_
+_2018-07-23_
 
 Dusseldorf **(half an hour by train from Cologne)**
 

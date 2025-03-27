@@ -2,7 +2,7 @@
 
 #vancouver, #british-columbia, #canada, #travel, #english;
 
-_December 19, 2019_
+_2019-12-19_
 
 Could it be that this is an area of ​​the city of Vancouver? But this is not so - the fantasy of urban planners suggested that the city north of Vancouver could be called North Vancouver :) It was here that we spent the night, and the view was just wonderful - the downtown, the bay on one side, and the mountain - on the other. Nearby is the Cleveland Dam, which holds Lake Capilano and the impressive river that forms the gorge, a suspension bridge stretches over the objects - in the observed park.
 

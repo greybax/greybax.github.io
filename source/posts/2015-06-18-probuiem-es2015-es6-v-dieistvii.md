@@ -2,7 +2,7 @@
 
 #javascript, #ES6/ES2015, #babel, #compilers, #russian;
 
-_June 29, 2015_
+_2015-06-29_
 
 Буквально на днях (17 июня) свершилось то, чего ждали почти 6 лет в мире Javascript. Генеральное собрание Ecma International [официально одобрило](https://www.ecma-international.org/news/index.html) стандарт ECMA-262 6 версии, который является спецификацией языка ECMAScript 6 (ES6), который так же называют ECMAScript 2015. Предыдущий стандарт языка Javascript был одобрен в 2009 году (ES5).
 

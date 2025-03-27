@@ -2,7 +2,7 @@
 
 #netherlands, #dutch, #breweries, #amsterdam, #holland, #lifestyle, #life, #english;
 
-_November 23, 2018_
+_2018-11-23_
 
 As I already mentioned in my previous post [Netherlands life. The Dutch cuisine](/posts/netherlands-life-the-dutch-cuisine/) Netherlads has the awesome authentic local cuisine. We've enjoyied and discovered new dishes while staying in NL.
 

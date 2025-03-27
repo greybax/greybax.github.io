@@ -2,7 +2,7 @@
 
 #roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #oregon, #washington, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_April 14, 2019_
+_2019-04-14_
 
 ## Day 10 (final)
 **Travel time: _8 hours, 380 miles (605 km)_**

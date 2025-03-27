@@ -2,7 +2,7 @@
 
 #daytrip, #vashon, #island, #washington, #usa, #pacific, #pnw, #english;
 
-_May 21, 2020_
+_2020-05-21_
 
 Vashon Island - half an hour by car and 15 minutes by ferry.
 

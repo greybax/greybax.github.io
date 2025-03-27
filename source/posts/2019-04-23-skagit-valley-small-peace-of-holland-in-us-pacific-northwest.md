@@ -2,7 +2,7 @@
 
 #usa, #wa, #pnw, #life, #skagit-valley, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_April 23, 2019_
+_2019-04-23_
 
 Skagit Valley, **(2 hours by car from Seattle)**
 

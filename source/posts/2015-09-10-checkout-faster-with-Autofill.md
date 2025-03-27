@@ -6,4 +6,4 @@
 
 #FrontenderMagazine, #перевод, #autocomplete, #javascript, #russian;
 
-_September 10, 2015_
+_2015-09-10_

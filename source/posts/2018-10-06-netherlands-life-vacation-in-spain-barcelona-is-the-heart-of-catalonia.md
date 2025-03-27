@@ -2,7 +2,7 @@
 
 #spain, #vacation, #barcelona, #catalonia, #lifestyle, #trip, #life, #english;
 
-_October 06, 2018_
+_2018-10-06_
 
 Barcelona **(2 hours by plane from Amsterdam), 4 days**
 

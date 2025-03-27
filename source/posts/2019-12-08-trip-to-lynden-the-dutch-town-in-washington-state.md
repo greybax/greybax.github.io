@@ -2,7 +2,7 @@
 
 #lynden, #dutch, #wa, #town, #usa, #pnw, #northwest, #washington, travel, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_December 08, 2019_
+_2019-12-08_
 
 Lynden, WA, 2 hours by car from Seattle
 

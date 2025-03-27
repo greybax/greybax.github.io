@@ -2,7 +2,7 @@
 
 #javascript, #typescript, #frontend, #migration, #russian;
 
-_June 05, 2015_
+_2015-06-05_
 
 Не так давно стояла задача перевести один старый проект из кода на ```Javascript``` в ```TypeScript```. Хочу поделиться своим опытом такого перехода. Рассмотрим на примере разработки в Visual Studio.
 

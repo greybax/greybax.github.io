@@ -2,7 +2,7 @@
 
 #microsoft, #teams, #msteams, #debug, #deploy, #vscode, #extension, #react, #english;
 
-_February 20, 2021_
+_2021-02-20_
 
 ## Intro
 

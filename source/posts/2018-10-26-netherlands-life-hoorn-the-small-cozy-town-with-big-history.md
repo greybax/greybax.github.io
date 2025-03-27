@@ -2,7 +2,7 @@
 
 #netherlands, #hoorn, #holland, #lifestyle, #trip, #life, #english;
 
-_October 26, 2018_
+_2018-10-26_
 
 Hoorn **(40 minutes by bus from Amsterdam)**
 

@@ -2,7 +2,7 @@
 
 #washington, #breweries, #lifestyle, #life, #english;
 
-_June 10, 2022_
+_2022-06-10_
 
 ![Washington State Breweries](/images/washington-state-breweries/1.jpg "Washington State Breweries")
 

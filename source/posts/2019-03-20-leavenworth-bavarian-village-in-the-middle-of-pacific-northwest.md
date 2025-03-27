@@ -2,7 +2,7 @@
 
 #usa, #wa, #pnw, #life, #leavenworth, #germany, #english;
 
-_March 20, 2019_
+_2019-03-20_
 
 Leavenworth, **(2.5 hours by car from Seattle)**
 

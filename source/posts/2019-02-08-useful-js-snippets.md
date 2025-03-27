@@ -2,7 +2,7 @@
 
 #javascript, #snippets, #frontend, #gist, #english;
 
-_February 08, 2019_
+_2019-02-08_
 
 Javascript is nice programming language with some features of functional programming languages. And some of routine methods could be done pretty nice with elegant syntax. Here I've collected some useful method tips.
 _**Note:**_ the list is not final and may be expanded further. New ideas and tips are always welcome!

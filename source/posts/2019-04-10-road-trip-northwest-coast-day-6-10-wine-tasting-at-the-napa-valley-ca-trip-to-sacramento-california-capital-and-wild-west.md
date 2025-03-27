@@ -2,7 +2,7 @@
 
 #roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #california, #napa-valley, #sacramento, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_April 10, 2019_
+_2019-04-10_
 
 ## Day 6
 

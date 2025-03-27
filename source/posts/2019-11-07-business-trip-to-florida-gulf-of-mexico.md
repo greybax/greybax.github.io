@@ -2,7 +2,7 @@
 
 #florida, #gulf, #tampa-bay, #clearwater-beach, #business-trip, #usa, #travel, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_November 07, 2019_
+_2019-11-07_
 
 Since we arrived early for the conference, it was time to explore the surroundings. First we went to Tampa (1.5 hours by car from Orlando). The first stop was in the historical part - the so-called Ybor City. Paving stones instead of asphalt, old trams, one-story houses and crowds of roosters and hens! What we didn't expect was to see the roosters when we first got out of the car. They are quietly walking in the park and picking seeds. It was fun to watch a chicken learn how to dig from a chicken :) Then we moved to downtown with skyscrapers and the Tampa Bay Lightnings hockey stadium. It was very nice to see streamers with the Russian names of hockey players: Kucherov and Vasilevsky, and their faces adorn the arena :) There is a nice park next to it, where there is a lot of greenery and the embankment of the canal. But there are a lot of construction sites, detours nearby, so it’s hard to find parking, and it’s hot outside.
 

@@ -2,7 +2,7 @@
 
 #roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #california, #facebook, #san-francisco, #stanford, #google, #apple, #berkeley, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_April 09, 2019_
+_2019-04-09_
 
 ## Intro
 

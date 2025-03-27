@@ -2,7 +2,7 @@
 
 #cordova, #plugin, #ionic, #configuration, #mobile, #github, #english;
 
-_August 10, 2022_
+_2022-08-10_
 
 ## Intro
 

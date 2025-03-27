@@ -2,7 +2,7 @@
 
 #mukilteo, #lighthouse, #usa, #travel, #pacific, #pnw, #northwest, #washington, #english;
 
-_September 19, 2019_
+_2019-09-19_
 
 Mukilteo - half an hour by car from Seattle.
 

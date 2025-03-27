@@ -2,7 +2,7 @@
 
 #wa, #trip, #national-park, #usa, #youtube, #vlog, #video, #wa-travelers, #pacific, #english;
 
-_September 10, 2020_
+_2020-09-10_
 
 We decided to explore Olympic National Park more thoroughly. On the way, we stopped in Port Gamble for coffee. The town is very small - just one and a half streets, but everything is very nicely decorated, and you can have breakfast near the cliff overlooking the bay.
 

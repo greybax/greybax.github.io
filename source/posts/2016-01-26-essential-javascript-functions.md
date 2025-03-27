@@ -6,4 +6,4 @@
 
 #FrontenderMagazine, #перевод, #javascript, #russian;
 
-_January 26, 2016_
+_2016-01-26_

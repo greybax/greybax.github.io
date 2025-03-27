@@ -2,7 +2,7 @@
 
 #vancouver, #british-columbia, #canada, #travel, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_December 12, 2019_
+_2019-12-12_
 
 Vancouver, British Columbia, Canada - 15 minutes at the border and an hour and a half by car to the city center
 

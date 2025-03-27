@@ -2,7 +2,7 @@
 
 #netherlands, #zandvoort-aan-zee, #holland, #lifestyle, #trip, #life, #english;
 
-_August 08, 2018_
+_2018-08-08_
 
 The North Sea...
 The first meeting took place at the end of May, near Hillegoma. It was very cloudy, and the water just cramped my legs.

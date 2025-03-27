@@ -2,7 +2,7 @@
 
 #chrome, #extensions, #javascript, #github, #frontend, #userjs, #browser, #english;
 
-_January 25, 2020_
+_2020-01-25_
 
 ## Intro
 

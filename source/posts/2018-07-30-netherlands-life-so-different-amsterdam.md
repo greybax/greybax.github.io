@@ -2,7 +2,7 @@
 
 #netherlands, #amsterdam, #holland, #lifestyle, #trip, #life, #english;
 
-_July 30, 2018_
+_2018-07-30_
 
 Amsterdam in the summer can be very different. It is unpredictable - one day it can be +37 by celsius (which is completely uncharacteristic), and the next morning - a refreshing rain from +22 by celsius.
 

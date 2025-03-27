@@ -2,7 +2,7 @@
 
 #crystal-mountain, #skiing-resort, #usa, #seattle, #travel, #pacific, #pnw, #northwest, #wildlife, #washington, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_September 26, 2019_
+_2019-09-26_
 
 In mid-September, we managed to catch the last warm days, and the cable car on Mount Crystal, which is closed before winter. It's about a two-hour drive from Seattle to get there.
 

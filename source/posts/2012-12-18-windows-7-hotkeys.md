@@ -2,7 +2,7 @@
 
 #windows, #hotkeys, #english;
 
-_December 18, 2012_
+_2012-12-18_
 
 I would like propose to your attention the list of hotkeys, the use of which makes the work with the Windows 7 more usability. Some hotkeys may be available in Windows 8.
 

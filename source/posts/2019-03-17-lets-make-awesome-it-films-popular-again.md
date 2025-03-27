@@ -2,7 +2,7 @@
 
 #javascript, #awesome, #awesome-it-films, #collection, #frontend, #github, #english;
 
-_March 17, 2019_
+_2019-03-17_
 
 ![Awesome IT Films Logo](/images/lets-make-awesome-it-films-popular-again/awesome_it_films_logo.png)
 

@@ -6,4 +6,4 @@
 
 #habrahabr, #перевод, #junior, #frontend, #russian;
 
-_November 19, 2015_
+_2015-11-19_

@@ -2,7 +2,7 @@
 
 #iframe, #vscode, #extensions, #html, #javascript, #typescript, #data-transfer, #english;
 
-_October 1, 2020_
+_2020-10-01_
 
 ## Intro
 

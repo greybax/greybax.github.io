@@ -2,7 +2,7 @@
 
 #usa, #wa, #pnw, #life, #summit-at-snoqualmie, #ski, #ski-resort, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_March 31, 2019_
+_2019-03-31_
 
 Summit at Snoqualmie **(around 1 hour by car from Seattle)**
 

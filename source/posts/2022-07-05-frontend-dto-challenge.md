@@ -2,7 +2,7 @@
 
 #dto, #frontend, #javascript, #typescript, #react, #nodejs, #socket-io, #english;
 
-_July 05, 2022_
+_2022-07-05_
 
 Recently I've been working on some kinda coding assesment "challenge". The task already includes server side code based on `NodeJS` and `Socket.IO` and it requires to implement ReactJS app which will gets data from server and renders it in proper way.
 

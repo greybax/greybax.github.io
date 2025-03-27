@@ -2,7 +2,7 @@
 
 #ios, #macos, #swiftui, #appstore, #screenshots, #app_promo, #xcode, #english;
 
-_March 11, 2024_
+_2024-03-11_
 
 ## Intro
 

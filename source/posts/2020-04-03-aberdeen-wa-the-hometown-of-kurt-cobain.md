@@ -2,7 +2,7 @@
 
 #aberdeen, #town, #washington, #usa, #nirvana, #kurt-cobain, #travel, #pacific, #pnw, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_April 03, 2020_
+_2020-04-03_
 
 Aberdeen, WA, 2 hours by car from Seattle
 

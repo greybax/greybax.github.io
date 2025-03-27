@@ -2,7 +2,7 @@
 
 #anacortes, #usa, #travel, #pacific, #pnw, #northwest, #washington, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_July 24, 2019_
+_2019-07-24_
 
 We decided that we hadn’t climbed mountains for a long time and went to the slopes of Little Si (45 minutes by car from Seattle)
 

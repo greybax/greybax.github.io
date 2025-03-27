@@ -2,7 +2,7 @@
 
 #concert, #coldplay, #seattle, #wa, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_October 3, 2023_
+_2023-10-03_
 
 ## Intro
 

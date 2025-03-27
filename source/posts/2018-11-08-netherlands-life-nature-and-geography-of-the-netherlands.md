@@ -2,7 +2,7 @@
 
 #netherlands, #nature, #holland, #lifestyle, #life, #english;
 
-_November 08, 2018_
+_2018-11-08_
 
 ![Amsterdam channel](/images/netherlands-life-nature-and-geography-of-the-netherlands/1.jpg "Amsterdam channel")
 

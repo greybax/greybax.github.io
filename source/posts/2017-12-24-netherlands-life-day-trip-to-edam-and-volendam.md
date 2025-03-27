@@ -2,7 +2,7 @@
 
 #netherlands, #amsterdam, #edam, #volendam, #lifestyle, #trip, #life, #english;
 
-_December 24, 2017_
+_2017-12-24_
 
 ## Edam
 

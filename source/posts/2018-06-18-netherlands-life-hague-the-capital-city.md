@@ -2,7 +2,7 @@
 
 #netherlands, #hague, #capital, #lifestyle, #trip, #life, #english;
 
-_June 14, 2018_
+_2018-06-14_
 
 ![Hague old town](/images/netherlands-life-hague-the-capital-city/1.jpg "Hague old town")
 

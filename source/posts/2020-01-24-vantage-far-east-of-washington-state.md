@@ -2,7 +2,7 @@
 
 #vantage, #town, #washington, #pacific, #pnw, #northwest, #usa, #travel, #english;
 
-_January 24, 2020_
+_2020-01-24_
 
 Vantage is a census-designated place (CDP) in Kittitas County, Washington, United States. The population was 74 at the 2010 census.
 

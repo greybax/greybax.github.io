@@ -2,7 +2,7 @@
 
 #california, #malibu, #beach, #los-angeles, #trip, #usa, #pacific, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_June 08, 2020_
+_2020-06-08_
 
 Malibu Beach, California. 40 minutes to Seattle airport, 2 hours flight and 40 minutes by car
 

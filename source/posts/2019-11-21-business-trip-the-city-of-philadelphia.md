@@ -2,7 +2,7 @@
 
 #philadelphia, #pennsylvania, #business-trip, #usa, #travel, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_November 21, 2019_
+_2019-11-21_
 
 Philadelphia, 1.5 hours by train from New York
 

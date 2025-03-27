@@ -2,7 +2,7 @@
 
 #ios, #macos, #swiftui, #appstore, #development, #coredata, #xcode, #english;
 
-_October 7, 2023_
+_2023-10-07_
 
 ## Intro
 

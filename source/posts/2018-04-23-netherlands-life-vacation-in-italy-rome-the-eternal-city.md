@@ -2,7 +2,7 @@
 
 #italy, #vacation, #rome, #trip, #life, #english;
 
-_April 23, 2018_
+_2018-04-23_
 
 ## Vacation in Italy (part 2)
 

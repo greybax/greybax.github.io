@@ -2,7 +2,7 @@
 
 #california, #beverly-hills, #los-angeles, #trip, #usa, #pacific, #english;
 
-_June 12, 2020_
+_2020-06-12_
 
 Beverly Hills, 20 minutes from Santa Monica by car
 

@@ -2,7 +2,7 @@
 
 #javascript, #data-structure, #interview, #es6, #bst, #binary-tree, #binary-search-tree, #english;
 
-_March 01, 2021_
+_2021-03-01_
 
 ## Intro
 

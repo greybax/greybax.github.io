@@ -2,7 +2,7 @@
 
 #webpack, #jspm, #systemjs, #migration, #build, #optimization, #performance, #configuration, #english;
 
-_May 10, 2019_
+_2019-05-10_
 
 ## Intro
 

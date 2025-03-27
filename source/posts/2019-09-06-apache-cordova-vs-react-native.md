@@ -2,7 +2,7 @@
 
 #mobile, #cordova, #ReactNative, #performance, #debugging, #cross-platform, #english;
 
-_September 06, 2019_
+_2019-09-06_
 
 ## Intro
 

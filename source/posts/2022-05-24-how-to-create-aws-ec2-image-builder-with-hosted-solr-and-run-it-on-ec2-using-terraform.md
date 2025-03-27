@@ -2,7 +2,7 @@
 
 #aws, #ec2, #s3, #ec2-builder, #solr, #terraform, #devops, #english;
 
-_May 24, 2022_
+_2022-05-24_
 
 ## Intro
 

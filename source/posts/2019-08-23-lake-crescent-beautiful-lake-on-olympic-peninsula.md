@@ -2,7 +2,7 @@
 
 #lake, #lake-crescent, #usa, #travel, #pacific, #pnw, #northwest, #washington, #english;
 
-_August 23, 2019_
+_2019-08-23_
 
 Being on a lavender farm, quite by chance, we discovered that there is a lake nearby, and decided to go to it (an hour from the fields). It turned out to be just magical!
 

@@ -2,7 +2,7 @@
 
 #youtube, #vlog, #video, #wa-travelers, #travel, #english;
 
-_March 28, 2019_
+_2019-03-28_
 
 Hi everyone who read this post right now and perhaps found this blog helpful for yourself. I'm so excited to announce that we started our YouTube channel about travels, outdoor activities and life as is. Actually we started this channel about 1 month ago and it has already 13 videos. Some of videos without backstage voice, only music. But for now most of videos we've decided to make in russian.  If channel will grows and people will ask about english version we will think about translation and creating video on english.
 

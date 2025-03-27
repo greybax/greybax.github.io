@@ -2,7 +2,7 @@
 
 #blog, #english;
 
-_July 11, 2019_
+_2019-07-11_
 
 ## Intro
 

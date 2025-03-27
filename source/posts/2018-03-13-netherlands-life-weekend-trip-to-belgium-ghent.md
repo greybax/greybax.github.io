@@ -2,7 +2,7 @@
 
 #netherlands, #amsterdam, #ghent, #belgium, #trip, #life, #english;
 
-_March 13, 2018_
+_2018-03-13_
 
 ## Ghent
 

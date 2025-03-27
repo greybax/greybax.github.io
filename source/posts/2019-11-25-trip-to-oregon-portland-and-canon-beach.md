@@ -2,7 +2,7 @@
 
 #oregon, #portland, #canon-beach, #usa, #travel, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_November 25, 2019_
+_2019-11-25_
 
 Portland, Oregon, 4 hour traffic from Seattle by car
 

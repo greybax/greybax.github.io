@@ -2,7 +2,7 @@
 
 #business, #wa, #entrepreneur, #english, #LLC, #taxes, #life, #english;
 
-_March 29, 2023_
+_2023-03-29_
 
 ## Intro
 

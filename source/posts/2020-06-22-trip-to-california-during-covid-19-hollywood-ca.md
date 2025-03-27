@@ -2,7 +2,7 @@
 
 #california, #hollywood, #los-angeles, #trip, #usa, #youtube, #vlog, #video, #wa-travelers, #pacific, #english;
 
-_June 22, 2020_
+_2020-06-22_
 
 Hollywood, 20 minutes by car from Beverly Hills
 

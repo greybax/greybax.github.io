@@ -2,7 +2,7 @@
 
 #roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #washington, #oregon, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_April 05, 2019_
+_2019-04-05_
 
 ## Intro
 It happens that for the second April in a row we are arranging a 10-day trip. Once it was Italy, now it's a trip to Northwest America by car.

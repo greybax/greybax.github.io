@@ -2,7 +2,7 @@
 
 #DevExtreme, #configuration, #debugging, #typescript, #javascript, #russian;
 
-_December 02, 2014_
+_2014-12-02_
 
 Недавно встала задача добавить поддержку debugging'а файлов ```*.ts``` в браузере. В нашем случае это Google Chrome. 
 Постараюсь как можно подробнее описать этот процесс.

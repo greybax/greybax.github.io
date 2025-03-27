@@ -2,7 +2,7 @@
 
 #california, #hollywood, #pasadena, #los-angeles, #trip, #usa, #youtube, #vlog, #video, #wa-travelers, #pacific, #english;
 
-_June 25, 2020_
+_2020-06-25_
 
 Pasadena, night drive from the Hollywood Hills
 

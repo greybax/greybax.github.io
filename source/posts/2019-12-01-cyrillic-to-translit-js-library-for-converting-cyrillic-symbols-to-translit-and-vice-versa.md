@@ -2,7 +2,7 @@
 
 #cyrillic, #translit, #converter, #symbols, #javascript, #js-library, #github, #english;
 
-_December 01, 2019_
+_2019-12-01_
 
 ## Intro
 

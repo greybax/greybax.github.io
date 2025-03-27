@@ -2,7 +2,7 @@
 
 #netherlands, #museums, #holland, #lifestyle, #life, #english;
 
-_November 03, 2018_
+_2018-11-03_
 
 ![The NL museums Van Gogh](/images/netherlands-life-the-netherlands-museums/1.jpg "The NL museums Van Gogh")
 

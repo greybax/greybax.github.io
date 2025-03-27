@@ -2,7 +2,7 @@
 
 #roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #california, #fort-ross, #san-francisco, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_April 08, 2019_
+_2019-04-08_
 
 ## Day 4
 

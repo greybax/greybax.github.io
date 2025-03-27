@@ -2,7 +2,7 @@
 
 #roadtrip, #usa, #travel, #pacific, #pnw, #northwest, #coast, #wildlife, #california, #nevada, #lake-tahoe, #reno, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_April 11, 2019_
+_2019-04-11_
 
 ## Day 7
 

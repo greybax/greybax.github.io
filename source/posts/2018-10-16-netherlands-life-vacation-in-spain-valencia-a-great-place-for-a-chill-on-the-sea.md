@@ -2,7 +2,7 @@
 
 #spain, #vacation, #valencia, #beach, #lifestyle, #trip, #life, #english;
 
-_October 16, 2018_
+_2018-10-16_
 
 Valencia **(5 hours by bus from Barcelona), 5 days**
 

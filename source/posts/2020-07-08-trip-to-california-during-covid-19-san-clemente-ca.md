@@ -2,7 +2,7 @@
 
 #california, #san-clemente, #los-angeles, #trip, #usa, #youtube, #vlog, #video, #wa-travelers, #pacific, #english;
 
-_July 08, 2020_
+_2020-07-08_
 
 The third day in California we rescheduled in the morning of the same day :)
 

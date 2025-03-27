@@ -2,7 +2,7 @@
 
 #netherlands, #dutch, #cuisine, #holland, #lifestyle, #life, #english;
 
-_November 22, 2018_
+_2018-11-22_
 
 The very first impression and memory - when we walked into a local grocery store and saw a giant section of the store, given over to cheeses! This variety was unexpected. There are also "foreign" cheeses, but mostly - local, Dutch, production. They differ in varieties, the amount of fat, and the same type of cheese can be sold with different aging periods - from two weeks to five years. The youngest cheese (jongen, from two weeks) is soft, the older (belegen, 2-6 months) is harder, and salt crystals already appear there, and the oldest (oude, from a year) is the hardest and most salty.
 

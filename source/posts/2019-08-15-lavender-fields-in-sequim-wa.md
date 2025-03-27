@@ -2,7 +2,7 @@
 
 #sequim, #lavender-fields, #usa, #travel, #pacific, #pnw, #northwest, #washington, #english;
 
-_August 15, 2019_
+_2019-08-15_
 
 In mid-July, lavender, of various kinds, reaches its peak of bloom, and before its harvest, farms organize festivals. In essence, people just come, take pictures with flowers, can collect a bouquet, listen to a short story and presentation about the farm and the collection / processing of lavender, and buy cosmetics / souvenirs on the same topic.
 

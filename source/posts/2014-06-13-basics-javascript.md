@@ -1,6 +1,6 @@
 # Основы языка Javascript
 
-_June 13, 2014_
+_2014-06-13_
 
 #javascript, #frontend, #russian;
 

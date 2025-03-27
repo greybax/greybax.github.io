@@ -2,7 +2,7 @@
 
 #netherlands, #utrecht, #lifestyle, #trip, #life, #english;
 
-_June 03, 2018_
+_2018-06-03_
 
 June 2 turned out to be the day of the city in Utrecht - in 1122, on this day, the settlement assumed the status of a city.
 

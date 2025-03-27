@@ -2,7 +2,7 @@
 
 #netherlands, #dutch, #language, #holland, #lifestyle, #life, #english;
 
-_November 16, 2018_
+_2018-11-16_
 
 It is not necessary to know him in the Netherlands - the vast majority speak English. Speak English correctly. Of course, all the documentation is in Dutch, but Google will help you :)
 

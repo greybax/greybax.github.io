@@ -2,7 +2,7 @@
 
 #usa, #wa, #pnw, #life, #nature, #trails, #english;
 
-_March 15, 2019_
+_2019-03-15_
 
 Margaret Mountain Trail **(1.5 hours by car from Seattle)**
 

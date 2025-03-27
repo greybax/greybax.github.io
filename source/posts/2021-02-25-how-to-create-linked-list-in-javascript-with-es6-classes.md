@@ -2,7 +2,7 @@
 
 #javascript, #data-structure, #interview, #es6, #linked-list, #english;
 
-_February 25, 2021_
+_2021-02-25_
 
 ## Intro
 

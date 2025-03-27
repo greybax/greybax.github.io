@@ -2,7 +2,7 @@
 
 #collection, #github, #extensions, #chrome-extension, #english;
 
-_March 27, 2019_
+_2019-03-27_
 
 ## Intro
 

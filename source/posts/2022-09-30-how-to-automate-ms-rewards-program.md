@@ -2,7 +2,7 @@
 
 #swags, #free, #microsoft, #redeem, #rewards, #github, #clicker, #english;
 
-_September 30, 2022_
+_2022-09-30_
 
 ## Intro
 

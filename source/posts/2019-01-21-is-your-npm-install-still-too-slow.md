@@ -2,7 +2,7 @@
 
 #npm, #performance, #optimization, #pnpm, #build, #frontend, #english;
 
-_January 21, 2019_
+_2019-01-21_
 
 Today we have a big choice of package managers for our frontend apps such as JSPM, NPM, Yarn, Bower, etc.. Some of them has been outdated and some of them still grow its popularity such as NPM and Yarn. And everybody who worked with NPM faced with huge size `npm_modules` directory and dependencies hell in our apps. All these leads us to big performance gaps in build pipelines of our apps.
 

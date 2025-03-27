@@ -2,7 +2,7 @@
 
 #florida, #cape-canaveral, #cocoa-beach, #business-trip, #usa, #travel, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_November 12, 2019_
+_2019-11-12_
 
 When we realized that to Cape Canaveral, from where to throw spaceships 🚀 within easy reach - only an hour by car, we did not hesitate for a long time. But, unfortunately, on none of the days when we were in Florida - there was not a single launch! More precisely, one developed, but in the end it was postponed.
 

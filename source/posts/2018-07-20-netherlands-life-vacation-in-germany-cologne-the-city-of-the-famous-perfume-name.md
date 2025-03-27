@@ -2,7 +2,7 @@
 
 #germany, #vacation, #cologne, #lifestyle, #trip, #life, #english;
 
-_July 20, 2018_
+_2018-07-20_
 
 Cologne **(4h by bus from Amsterdam)**
 

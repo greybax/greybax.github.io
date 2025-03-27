@@ -2,7 +2,7 @@
 
 #Mozilla, #contributon, #browser, #english;
 
-_December 10, 2012_
+_2012-12-10_
 
 It's my first publication on english. And it's blog some training for my english. And so on, in this topic I'd like to tell about Mozilla society. And how I become in mozilla contribution list. For me it's very intresting to participate in some activities. But I'm not a mozilla evangelist. :) 
 

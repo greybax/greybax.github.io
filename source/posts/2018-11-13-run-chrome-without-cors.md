@@ -2,7 +2,7 @@
 
 #chrome, #browser, #cors, #debug, #development, #english;
 
-_November 13, 2018_
+_2018-11-13_
 
 I use this sometimes, for posting a localhost frontend app to a localhost backend API. 
 I created a separate shortcut on my Windows 10 laptop, so that it never is used for normal browsing, only for debugging locally.

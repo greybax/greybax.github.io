@@ -2,7 +2,7 @@
 
 #netherlands, #amsterdam, #brussels, #belgium, #trip, #life, #english;
 
-_March 15, 2018_
+_2018-03-15_
 
 ## Brussels
 

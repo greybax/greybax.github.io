@@ -2,7 +2,7 @@
 
 #port-angeles, #town, #washington, #pacific, #pnw, #northwest, #usa, #travel, #english;
 
-_March 04, 2020_
+_2020-03-04_
 
 The trip began with a surprise - while we were on the ferry, the captain said something over the speakerphone, but we didn’t make it out, and therefore when we approached the opposite side, we saw only diverging waves from a killer whale, very close to the ship ... But in the distance we saw several dorsal fins of other killer whales, one even released a small fountain from its blowhole. This was our first encounter with these whales!
 

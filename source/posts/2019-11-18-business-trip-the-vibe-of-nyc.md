@@ -2,7 +2,7 @@
 
 #new-york, #business-trip, #usa, #travel, #youtube, #vlog, #video, #wa-travelers, #english;
 
-_November 18, 2019_
+_2019-11-18_
 
 New York, 2.5 hour flight from Orlando
 

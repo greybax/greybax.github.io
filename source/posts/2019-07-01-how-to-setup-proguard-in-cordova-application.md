@@ -2,7 +2,7 @@
 
 #proguard, #optimization, #performance, #configuration, #cordova, #mobile, #github, #english;
 
-_July 01, 2019_
+_2019-07-01_
 
 ## Intro
 

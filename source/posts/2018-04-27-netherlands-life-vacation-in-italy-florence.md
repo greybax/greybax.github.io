@@ -2,7 +2,7 @@
 
 #italy, #vacation, #florence, #trip, #life, #english;
 
-_April 27, 2018_
+_2018-04-27_
 
 ## Vacation in Italy (part 3)
 

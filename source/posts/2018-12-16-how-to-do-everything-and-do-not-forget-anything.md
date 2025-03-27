@@ -2,7 +2,7 @@
 
 #todoist, #evernote, #notes, #notekeepers, #reminders, #english;
 
-_December 16, 2018_
+_2018-12-16_
 
 In our days we have to remember tons of information: from job, family, personal. There are huge amount of information we getting from internet. That's really great to keep training your memory and in fact that human brain could remember everything. But sometimes we can't remember some important thing which could be very urgent on that moment. So in this case we've put some tasks from our memory to paper. Just let our brain to be free out of some works. This is pretty cool, but what if you will lost your paper or will forgot to bring it with you.
 

@@ -2,7 +2,7 @@
 
 #italy, #vacation, #bologna, #trip, #life, #english;
 
-_April 30, 2018_
+_2018-04-30_
 
 ## Vacation in Italy (part 4)
 
