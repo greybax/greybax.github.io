@@ -13,7 +13,7 @@ html, body {
 .no-cover.main-header {
   min-height: 160px;
   max-height: 40vh;
-  background: url(https://source.unsplash.com/1600x900/?seattle,sunrise) no-repeat center;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b, #fdd692, #f8b195); /* Warm, cohesive gradient */
   background-size: cover;
   background-attachment: scroll;
 }
@@ -462,10 +462,24 @@ h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-footer hr {
-  width: calc(100% - 5em);
+footer {
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0); /* Subtle gray gradient */
+  color: #333; /* Darker gray text for contrast */
+  text-align: center;
+  padding: 2em 0; /* Add padding for spacing */
 }
 
-footer a:hover{
+footer a {
+  color: #555; /* Medium gray for links */
+  text-decoration: none;
+}
+
+footer a:hover {
   text-decoration: underline;
+  color: #000; /* Black for hover effect */
+}
+
+footer p {
+  margin: 0.5em 0;
+  font-size: 0.9em; /* Slightly smaller text */
 }
