@@ -12,6 +12,7 @@
   <priority>1.00</priority>
 </url>
 
+<!-- add new posts below this line -->
 <url>
   <loc>https://alfilatov.com/posts/how-to-host-static-website-with-aws-s3-and-namecheap-domain/</loc>
   <lastmod>2025-03-25T12:31:06+00:00</lastmod>
