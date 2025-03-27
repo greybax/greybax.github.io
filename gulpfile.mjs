@@ -13,6 +13,7 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import cssvariables from 'postcss-css-variables';
 import newer from 'gulp-newer';
+import glob from 'glob';
 
 import pkg from './package.json' with { type: 'json' };
 const { site } = pkg;
@@ -171,9 +172,73 @@ gulp.task('tags', () =>
 gulp.task('each-article', async () => {
   await Promise.all(articlesList.map((article) => buildArticle(article)));
 });
+
 gulp.task('rss', async () => {
   await fs.mkdir('dist', { recursive: true }); // Ensure the `dist` directory exists
   await fs.writeFile('dist/rss.xml', getRSS(site, articlesList));
+});
+
+gulp.task('generate-sitemap', async () => {
+  const postsDir = './source/posts';
+  const distDir = './dist';
+  const sitemapPath = path.join(distDir, 'sitemap.xml');
+
+  // Base URL for your site
+  const baseUrl = 'https://alfilatov.com';
+
+  // Header for the sitemap
+  const sitemapHeader = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created dynamically during build -->
+<url>
+  <loc>${baseUrl}/</loc>
+  <lastmod>${new Date().toISOString()}</lastmod>
+  <priority>1.00</priority>
+</url>
+`;
+
+  // Footer for the sitemap
+  const sitemapFooter = `</urlset>`;
+
+  // Get all Markdown files in the posts directory
+  const files = glob.sync(`${postsDir}/*.md`);
+
+  // Generate <url> entries for each post
+  const urls = files.map((file) => {
+    const fileName = path.basename(file, '.md'); // e.g., "2025-03-25-how-to-host-static-website-with-aws-s3-and-namecheap-domain"
+    const [year, month, day, ...slugParts] = fileName.split('-'); // Extract year, month, day, and slug
+    const slug = slugParts.join('-'); // Combine slug parts
+    const url = `${baseUrl}/posts/${slug}/`;
+
+    // Validate and format the date
+    let lastmod;
+    if (year && month && day) {
+      lastmod = `${year}-${month}-${day}T12:00:00+00:00`; // Format as ISO 8601
+    } else {
+      console.warn(`Invalid date in file name: ${fileName}. Using current date as fallback.`);
+      lastmod = new Date().toISOString(); // Use current date as fallback
+    }
+
+    return `<url>
+  <loc>${url}</loc>
+  <lastmod>${lastmod}</lastmod>
+  <priority>0.80</priority>
+</url>`;
+  });
+
+  // Combine header, URLs, and footer
+  const sitemapContent = `${sitemapHeader}\n${urls.join('\n')}\n${sitemapFooter}`;
+
+  // Ensure the dist directory exists
+  await fs.mkdir(distDir, { recursive: true });
+
+  // Write the sitemap to the dist directory
+  await fs.writeFile(sitemapPath, sitemapContent, 'utf8');
+  console.log(`Sitemap generated at: ${sitemapPath}`);
 });
 
 gulp.task('css', () =>
@@ -200,7 +265,6 @@ gulp.task('copy-images', () =>
 gulp.task('copy-files', () =>
   gulp.src([
     'favicon.ico',
-    'sitemap.xml',
     'robots.txt',
     'ads.txt',
     'CNAME'
@@ -232,7 +296,8 @@ gulp.task('build', gulp.series(
     'rss',
     'css',
     gulp.parallel('copy-font-awesome', 'copy-images', 'copy-files', 'copy-presentations')
-  )
+  ),
+  'generate-sitemap'
 ));
 
 gulp.task('watch', gulp.series('express', 'build', () => {
