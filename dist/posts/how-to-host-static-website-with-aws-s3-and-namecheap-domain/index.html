@@ -24,11 +24,11 @@
     <meta property="article:author" content="https://alfilatov.com/about/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@greybax">
-    <meta name="keywords" content="website, hosting, namecheap, aws, s3, static, english">
+    <meta name="keywords" content="website, hosting, static, namecheap, aws, s3, route53, cloudfront, english">
     <meta name="description" content="How to host static website with AWS S3 and Namecheap domain?">
     <meta name="og:url" content="/posts/how-to-host-static-website-with-aws-s3-and-namecheap-domain/">
     <meta name="og:title" content="How to host static website with AWS S3 and Namecheap domain?">
-    <meta name="og:description" content="website, hosting, namecheap, aws, s3, static, english"><!—- ShareThis BEGIN -—>
+    <meta name="og:description" content="website, hosting, static, namecheap, aws, s3, route53, cloudfront, english"><!—- ShareThis BEGIN -—>
     <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
   </head>
   <body>
@@ -63,26 +63,32 @@
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_top_article_banner --><ins style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="9573555341" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
         </div><h1>How to host static website with AWS S3 and Namecheap domain?</h1><i class="fa fa-calendar">
-          <time>March 25, 2025</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#website"> website </a><a href="/tags/index.html#hosting"> hosting </a><a href="/tags/index.html#namecheap"> namecheap </a><a href="/tags/index.html#aws"> aws </a><a href="/tags/index.html#s3"> s3 </a><a href="/tags/index.html#static"> static </a><a href="/tags/index.html#english"> english </a></i><p>Recently, I've been faced with the task of using my static website on the AWS infrastructure. It's just cheaper than using different 3rd party static website generators. So I've built it myself and just need to host it on AWS S3.</p>
+          <time>March 25, 2025</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#website"> website </a><a href="/tags/index.html#hosting"> hosting </a><a href="/tags/index.html#static"> static </a><a href="/tags/index.html#namecheap"> namecheap </a><a href="/tags/index.html#aws"> aws </a><a href="/tags/index.html#s3"> s3 </a><a href="/tags/index.html#route53"> route53 </a><a href="/tags/index.html#cloudfront"> cloudfront </a><a href="/tags/index.html#english"> english </a></i><p>Recently, I've been faced with the task of using my static website on the AWS infrastructure. It's just cheaper than using different 3rd party static website generators. So I've built it myself and just need to host it on AWS S3.</p>
 <p>I've followed this good tutorial from YouTube.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9WPlC5RKfjs?si=h9NcSq0Wq7pZU-EX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p>Below, I'm going to highlight some core parts from it in case you don't want to see all 30 minutes of video:</p>
-<ol>
+<ul>
 <li>Have bought domain from Namecheap provider</li>
 <li>Have AWS account</li>
 <li>Request certificate in AWS for using them in Namecheap</li>
 <li>Configure Advanced DNS in Namecheap using issued certificates</li>
-<li>Configure Route 53</li>
+<li>
+<p>Configure Route 53</p>
+<ul>
 <li>Genearte Hosted Zone</li>
 <li>Copy-paste DNS servers from generated hosted zone to Namecheap. You need to select "Custom DNS" for it in "Nameservers" section.</li>
 <li>Save changes. Now we've redirected our Namecheap domain to Amazon.</li>
+</ul>
+</li>
 <li>Time to build your website. Our assuming we already have one.</li>
 <li>Create S3 Bucket. See video for setup.</li>
 <li>Drag'n'Drop website files to that bucket</li>
 <li>Setup CDN. Go to Cloudfront and click "Create new distrubution". See for details in video.</li>
 <li>Make sure that your website opens via domain name in your Distributions <code>xxxxx.cloudfront.net</code>.</li>
 <li>Now we want to make our website available via its real domain name. so we need to go to Route 53 and create an "A New Record" for routing. And add alias for "Route traffic to" our CloudFront distribution. Make sure that alternative domain name (CNAMEs record) has <code>www.</code> prefix in cloudfront distribution. So after it you should be able to open your website via <code>www.yourwebsite.com</code></li>
-<li>Now let's make it work without <code>www.</code> prefix as well. So for this we need to setup a redirect S3 bucket. And setup CloudFront and Route 53 accordingly.</li>
+<li>
+<p>Now let's make it work without <code>www.</code> prefix as well. So for this we need to setup a redirect S3 bucket. And setup CloudFront and Route 53 accordingly.</p>
+<ul>
 <li>Create new S3 bucket with <code>www.yourwebsitename.com</code></li>
 <li>Upload your website to that S3 Bucket</li>
 <li>In CloudFront we should keep only 1 CNAME for <code>www.yourwebsite.com</code> and remove <code>yourwebsite.com</code> if we have it, since we are going to redirect from it to <code>www.</code></li>
@@ -92,9 +98,11 @@
 <li>Copy Endpoint URL it should looks like this: <code>http://your___website.s3-website-us-east-1.amazonaws.com/</code>. And we need to create new CloudFront distribution for it. </li>
 <li>Create CloudFront Distribution. Paste link which wi've copied into Origin Domain field. Select <code>Viewer protocol policy</code> -> <code>Redirect HTTP to HTTPS</code>. Disable caching <code>Cache policy</code> -> <code>CachingDisabled</code>. CNAME -> <code>yourdomainname.com</code> without <code>www.</code> prefix Select Custom SSL certificat which we've created before. Click <code>Save Changes</code>. P.S. We should leave <code>default root object</code> blank here and disable <code>Compress objects automatically</code>.</li>
 <li>Go to Route 53 and create new record. Enable <code>Alias</code> -> <code>Route traffic to</code> -> <code>Alias to CloudFront Distrubution</code> and select just created distribution. Save Changes.</li>
+</ul>
+</li>
 <li>Once all these steps are done, you can open your website on <code>yourwebsitename.com</code> and <code>www.yourwebsitename.com</code> without issues. Moreover <code>yourwebsitename.com</code> will redirect to <code>wwww.yourwebsitename.com</code> automatically.</li>
 <li>In case you see an old website version, just create a new caching policy or disable and re-enable it from the CloudFront Distributions console in the behavior tab of your primary domain.</li>
-</ol>
+</ul>
 <p>Happy deploying your static website to AWS ✌🏼</p>
       </article>
     </div>
