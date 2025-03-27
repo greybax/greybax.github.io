@@ -6,11 +6,11 @@ _March 25, 2025_
 
 Recently, I've been faced with the task of using my static website on the AWS infrastructure. It's just cheaper than using different 3rd party static website generators. So I've built it myself and just need to host it on AWS S3.
 
-I've followed this awesome tutorial from YouTube.
+I've followed this good tutorial from YouTube.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9WPlC5RKfjs?si=h9NcSq0Wq7pZU-EX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-So below I'm going to highlight some core parts:
+Below, I'm going to highlight some core parts from it in case you don't want to see all 30 minutes of video:
 
 1. Have bought domain from Namecheap provider
 2. Have AWS account
@@ -37,5 +37,6 @@ So below I'm going to highlight some core parts:
   * Create CloudFront Distribution. Paste link which wi've copied into Origin Domain field. Select `Viewer protocol policy` -> `Redirect HTTP to HTTPS`. Disable caching `Cache policy` -> `CachingDisabled`. CNAME -> `yourdomainname.com` without `www.` prefix Select Custom SSL certificat which we've created before. Click `Save Changes`. P.S. We should leave `default root object` blank here and disable `Compress objects automatically`.
   * Go to Route 53 and create new record. Enable `Alias` -> `Route traffic to` -> `Alias to CloudFront Distrubution` and select just created distribution. Save Changes.
 13. Once all these steps are done, you can open your website on `yourwebsitename.com` and `www.yourwebsitename.com` without issues. Moreover `yourwebsitename.com` will redirect to `wwww.yourwebsitename.com` automatically.
+14. In case you see an old website version, just create a new caching policy or disable and re-enable it from the CloudFront Distributions console in the behavior tab of your primary domain.
 
 Happy deploying your static website to AWS ✌🏼
