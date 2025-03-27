@@ -35,7 +35,7 @@
     ]
   },
   "dependencies": {
-    "autoprefixer": "^9.8.8",
+    "autoprefixer": "^10.4.21",
     "buildbranch": "2.0.1",
     "express": "^4.16.4",
     "gulp": "^4.0.2",
