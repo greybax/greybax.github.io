@@ -2908,7 +2908,7 @@ ret@~0.1.10:
 rss@^1.2.2:
   version "1.2.2"
   resolved "https://registry.npmjs.org/rss/-/rss-1.2.2.tgz"
-  integrity sha1-UKFpiHYTgTOnT5oF0r3I240nqSE= sha512-xUhRTgslHeCBeHAqaWSbOYTydN2f0tAzNXvzh3stjz7QDhQMzdgHf3pfgNIngeytQflrFPfy6axHilTETr6gDg==
+  integrity sha512-xUhRTgslHeCBeHAqaWSbOYTydN2f0tAzNXvzh3stjz7QDhQMzdgHf3pfgNIngeytQflrFPfy6axHilTETr6gDg==
   dependencies:
     mime-types "2.1.13"
     xml "1.0.1"
