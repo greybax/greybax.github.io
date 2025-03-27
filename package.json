@@ -9,6 +9,7 @@
   },
   "author": "Aleksandr Filatov <greybax@gmail.com> (https://alfilatov.com/)",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "gulp",
     "deploy": "NODE_ENV=prod gulp gh"
@@ -56,8 +57,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/register": "^7.12.10"
+    "@babel/register": "^7.12.10",
+    "fancy-log": "^2.0.0"
   }
 }

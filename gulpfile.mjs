@@ -5,11 +5,14 @@ import rename from 'gulp-rename';
 import data from 'gulp-data';
 import jade from 'gulp-jade';
 import replace from 'gulp-replace';
-import { log } from 'gulp-util';
+import log from 'fancy-log';
 import buildbranch from 'buildbranch';
 import rss from 'rss';
 import del from 'del';
-import { outputFile as output } from 'fs-extra';
+
+import fsExtra from 'fs-extra';
+const { outputFile: output } = fsExtra;
+
 import express from 'express';
 import path from 'path';
 import extract from 'md-article';
@@ -17,7 +20,8 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import cssvariables from 'postcss-css-variables';
 
-import { site } from './package.json';
+import pkg from './package.json' with { type: 'json' };
+const { site } = pkg;
 
 const env = 'prod';
 
@@ -165,7 +169,9 @@ gulp.task('tags', () =>
 gulp.task('each-article', async () => {
   await Promise.all(articlesList.map((article) => buildArticle(article)));
 });
-gulp.task('rss', (done) => { output('dist/rss.xml', getRSS(site, articlesList), done); });
+gulp.task('rss', (done) => {
+  output('dist/rss.xml', getRSS(site, articlesList), done);
+});
 
 gulp.task('css', () =>
   gulp.src('css/*.css')
