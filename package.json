@@ -11,8 +11,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "gulp",
-    "deploy": "NODE_ENV=prod gulp gh"
+    "start": "gulp"
   },
   "bugs": {
     "url": "https://github.com/greybax/greybax.github.io/issues"
