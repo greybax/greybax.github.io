@@ -3,7 +3,7 @@ import gulp from 'gulp';
 import watch from 'gulp-watch';
 import rename from 'gulp-rename';
 import data from 'gulp-data';
-import jade from 'gulp-jade';
+import pug from 'gulp-pug';
 import replace from 'gulp-replace';
 import log from 'fancy-log';
 import buildbranch from 'buildbranch';
@@ -94,13 +94,13 @@ const buildRelated = (articlesList) => {
 }
 
 const buildArticle = (article) =>
-  gulp.src('layouts/article.jade')
+  gulp.src('layouts/article.pug')
     .pipe(data(() => article))
     .pipe(data(() => ({
       relatedPosts,
       article,
     })))
-    .pipe(jade({ pretty: true }))
+    .pipe(pug({ pretty: true }))
     .pipe(rename({ dirname: article.url }))
     .pipe(rename({ basename: 'index' }))
     .pipe(gulp.dest('dist'));
@@ -133,7 +133,7 @@ gulp.task('articles-registry', () => {
 });
 
 gulp.task('index-page', () =>
-  gulp.src('layouts/index.jade')
+  gulp.src('layouts/index.pug')
     .pipe(data(() => ({
       site,
       list: articlesList
@@ -142,19 +142,19 @@ gulp.task('index-page', () =>
       tagMap,
       tags: Array.from(tagMap.keys()).sort((a, b) => tagMap.get(b).length - tagMap.get(a).length)
     })))
-    .pipe(jade({ pretty: env === 'dev' }))
+    .pipe(pug({ pretty: env === 'dev' }))
     .pipe(rename({ basename: 'index' }))
     .pipe(gulp.dest('dist'))
 );
 
 gulp.task('tags', () =>
-  gulp.src('layouts/tags.jade')
+  gulp.src('layouts/tags.pug')
     .pipe(data(() => ({
       site,
       tagMap,
       tags: Array.from(tagMap.keys()).sort((a, b) => tagMap.get(b).length - tagMap.get(a).length)
     })))
-    .pipe(jade({ pretty: env === 'dev' }))
+    .pipe(pug({ pretty: env === 'dev' }))
     .pipe(rename({ basename: 'index' }))
     .pipe(data(() =>
       buildRelated(articlesList)
@@ -236,7 +236,7 @@ gulp.task('gh', gulp.series('build', (done) => {
 }));
 
 gulp.task('watch', gulp.series('express', 'build', () => {
-  watch(['**/*{jade,md,json}', '*.css'], () => { gulp.start('build'); });
+  watch(['**/*{pug,md,json}', '*.css'], () => { gulp.start('build'); });
 }));
 
 gulp.task('default', gulp.series('watch'));
