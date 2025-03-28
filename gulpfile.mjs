@@ -302,6 +302,11 @@ gulp.task('css', () =>
     .pipe(gulp.dest('dist/css'))
 );
 
+gulp.task('copy-scripts', () =>
+  gulp.src('scripts/*.js') // Source all JavaScript files in the scripts folder
+    .pipe(gulp.dest('dist/scripts')) // Copy them to the dist/scripts folder
+);
+
 gulp.task('copy-font-awesome', () =>
   gulp.src(['font-awesome/**/*'])
     .pipe(gulp.dest('dist/font-awesome'))
@@ -339,18 +344,18 @@ gulp.task('express', () => {
 
 gulp.task('build', gulp.series(
   'clean',
-  'articles-registry', // Ensure articles are registered first
+  'articles-registry',
   gulp.parallel(
-    'tags', // Populate relatedPosts here
+    'tags',
     'index-page',
     'rss',
     'css',
-    gulp.parallel('copy-font-awesome', 'copy-images', 'copy-files', 'copy-presentations')
+    gulp.parallel('copy-font-awesome', 'copy-images', 'copy-files', 'copy-presentations', 'copy-scripts') // Include copy-scripts here
   ),
-  'each-article', // Render articles after relatedPosts is populated
-  gulp.parallel( // Run sitemap tasks in parallel
-    'generate-sitemap', // Generate XML sitemap
-    'generate-html-sitemap' // Generate HTML sitemap
+  'each-article',
+  gulp.parallel(
+    'generate-sitemap',
+    'generate-html-sitemap'
   )
 ));
 
