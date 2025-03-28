@@ -48,14 +48,19 @@ html(dir="LTR" lang="en")
           div(class="right-banner")
             include google_adsense_right_main_page_banner
         article(id="archives" class="archives")
-          ul.list
-            each article in list
-              li.list__item
-                a(href=article.url)= article.title.text
-                  time= article.date.text
-                p.list__item-tags
-                  each tag in article.tags.list
-                    a(href=`/tags/index.html#${tag}`)= tag
+          // Sort years in descending order
+          each year in Object.keys(articlesByYear).sort((a, b) => b - a)
+            h2= year
+            ul.list
+              each article in articlesByYear[year]
+                li.list__item
+                  div
+                    a(href=article.url)= article.title.text
+                    p.list__item-tags
+                      each tag in article.tags.list
+                        a(href=`/tags/index.html#${tag}`)= tag
+                  div 
+                    time= article.date.text
 
     include google_analytics_4
 

@@ -140,20 +140,28 @@ gulp.task('articles-registry', () => {
     }));
 });
 
-gulp.task('index-page', () =>
-  gulp.src('layouts/index.pug')
+gulp.task('index-page', () => {
+  // Group articles by year
+  const articlesByYear = articlesList.reduce((acc, article) => {
+    const year = article.date.text.split('-')[0]; // Extract the year from the date
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+    acc[year].push(article);
+    return acc;
+  }, {});
+
+  return gulp.src('layouts/index.pug')
     .pipe(data(() => ({
       site,
-      list: articlesList
-        .filter(i => !!i.date)
-        .sort((a, b) => b.date.unix - a.date.unix),
+      articlesByYear, // Pass grouped articles to the template
       tagMap,
-      tags: Array.from(tagMap.keys()).sort((a, b) => tagMap.get(b).length - tagMap.get(a).length)
+      tags: Array.from(tagMap.keys()).sort((a, b) => tagMap.get(b).length - tagMap.get(a).length),
     })))
     .pipe(pug({ pretty: env === 'dev' }))
     .pipe(rename({ basename: 'index' }))
-    .pipe(gulp.dest('dist'))
-);
+    .pipe(gulp.dest('dist'));
+});
 
 gulp.task('tags', () =>
   gulp.src('layouts/tags.pug')

@@ -417,6 +417,12 @@ h2, h3, h4, h5, h6 {
   float: right;
 }
 
+.list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .list__item-tags {
   font-size: 0.8em;
   overflow: hidden;
