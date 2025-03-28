@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head><!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- /Google Adsense -->
+    <meta charset="utf-8">
+    <title>Пишем расширение для браузера Google Chrome</title><!-- WoT Verification -->
+    <meta name="wot-verification" content="6c0d169b1afe357fe29c"><!-- Pinterest Verification -->
+    <meta name="p:domain_verify" content="e021b373eb236145372efe911356b021"><!-- Ahrefs Verification -->
+    <meta name="ahrefs-site-verification" content="359a26c55784fe22202b19d04418e0bb6e38056e28f6cb3a75b6971de49c2867">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <script async defer data-pin-hover="true" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta name="keywords" content="javascript, userjs, frontend, Chromium, browser, russian">
+    <meta name="description" content="Пишем расширение для браузера Google Chrome">
+    <meta name="og:url" content="/posts/google-chrome/">
+    <meta name="og:title" content="Пишем расширение для браузера Google Chrome">
+    <meta name="og:description" content="javascript, userjs, frontend, Chromium, browser, russian"><!—- ShareThis BEGIN -—>
+    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
+    <script src="/js/lightbox.js"></script>
+  </head>
+  <body>
+    <header class="no-cover flex-header">
+      <div class="to-main-page"><i class="fa fa-chevron-left"></i><a href="/">Main page</a></div>
+    </header>
+    <div class="wrap-flex">
+      <div class="related-posts">
+        <div><span class="header">Related posts</span>
+          <ul>
+            <li><a href="/posts/profilirovaniie-v-js/"> Профилирование в JS </a></li>
+            <li><a href="/posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/"> Debugging файлов TypeScript в браузере через эмулятор DevExtreme </a></li>
+            <li><a href="/posts/gdie-ia-bieru-informatsiiu-o-mirie-frontend/"> Что можно почитать по frontend'у </a></li>
+            <li><a href="/posts/poluchaiem-spisok-obrabotchikov-eliemienta-stranitsy/"> Получаем список обработчиков элемента в DOM'е </a></li>
+            <li><a href="/posts/es6-classes-final/"> [Frontender Magazine] Классы в ECMAScript 6 </a></li>
+          </ul>
+        </div>
+        <div class="right-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_right_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="3612504428" data-ad-format="auto"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div>
+      </div>
+      <article>
+        <div class="top-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_top_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="9573555341" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div><h1>Пишем расширение для браузера Google Chrome</h1><i class="fa fa-calendar">
+          <time>2014-06-27</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#userjs"> userjs </a><a href="/tags/index.html#frontend"> frontend </a><a href="/tags/index.html#Chromium"> Chromium </a><a href="/tags/index.html#browser"> browser </a><a href="/tags/index.html#russian"> russian </a></i><p>В интернете много сайтов на которых реализована возможность пролистывать страницу вверх без помощи мыши или полосы прокрутки. Но в то же время еще есть сайты где такой реализации нет. "Почему бы не попробовать написать скрипт который бы добавлял такую кнопку на все сайты?" - подумал я и принялся за реализацию. Такие скрипты называются пользовательскими и имеют расширение <code>*.user.js</code>. Почитать к примеру можно на <a href="https://habrahabr.ru/post/129343/">хабре</a>. К сожалению без "подводных камней" не обходится. Существуют некоторые различия в реализации <code>userjs</code> под разные браузеры. Я остановлюсь на описании реализации нашего <code>userjs</code> скрипта как расширения для браузера <code>Google Chrome</code>.</p>
+<h2>manifest.json</h2>
+<p>Обязательным для расширения <code>Google Chrome</code> является файл <strong><em>manifest.json</em></strong> в котором описываются параметры, пути к внешним файлам (<code>*.js, *.css</code> и др.), поддержка версии и т.п. для расширения. Подробнее о файле можно почитать <a href="https://developer.chrome.com/extensions/manifest">тут</a>. В нашем случае файл <code>manifest.json</code> выглядит следующим образом:</p>
+<pre><code class="language-javascript">{
+    "manifest_version": 2,
+    "content_scripts": [ {
+        "exclude_globs":    [  ],
+        "include_globs":    [ "*" ],
+        "js":               [ "jquery.js", "backTopUserJS.user.js" ],
+        "css":              [ "css/style.css" ],
+        "matches":          [   "http://*/*",
+                                "https://*/*"
+                            ],
+        "run_at": "document_end"
+    } ],
+    "converted_from_user_script": true,
+    "description":  "Back top userscript extension for google chrome",
+    "name":         "backTopUserJS",
+    "version":      "1"
+}
+</code></pre>
+<p>Для удобства мы используем библиотеку <code>JQuery</code> которую положили рядом с файлом <code>manifest.json</code> и основным файлом скрипта (в нашем случае это <code>backTopUserJS.user.js</code>). Его содержимое следующее:</p>
+<pre><code class="language-javascript">// ==UserScript==
+// @name backTopUserJS
+// @author Aleksandr Filatov
+// @license MIT
+// @version 1.0
+// ==/UserScript==
+
+function main() {
+    var disp = $(window).scrollTop() > 400 ? 'block' : 'none';
+    var $upButton = $('&#x3C;div class="up-button" title="Наверх" style="display:' + disp + '">Наверх&#x3C;/div>');
+
+    $(document).find('body').append($upButton);
+    $upButton.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+    });
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 400) $upButton.fadeIn('slow');
+        else $upButton.fadeOut('slow');
+    });
+};
+
+var script = document.createElement('script');
+script.appendChild(document.createTextNode('('+ main +')();'));
+(document.body || document.head || document.documentElement).appendChild(script);
+</code></pre>
+<p>Думаю скрипт достаточно понятен, чтобы его подробно рассматривать. Пояснить стоит лишь последние 3 строчки. На самом деле это мелкий хак, который вставляет наш скрипт в код страницы сайта. Если кто-то из вас найдет способ лучше можете написать к комментах свои фиксы :)</p>
+<h2>Установка расширения в браузере</h2>
+<p>В <code>Google Chrome</code> можно устанавливать пользовательские скрипты, аналогично другим браузерам, но поскольку Google печется о нашей с вами безопасности, то их приходится оборачивать в расширения для браузера. Разберем установку по шагам.</p>
+<p>Создаем папку для нашего расширения например так <code>C:\MyChromeExtensionUserJS</code></p>
+<p>Для каждого расширения создаем свою директорию например в нашем случае назовем ее так <code>C:\MyChromeExtensionUserJS\backTopUserJS</code>. Добавляем файлы расширения в эту директорию.</p>
+<p>Заходим "О браузере Google Chrome" -> вкладка "Расширения" или в адресной строке пишем <code>chrome://extensions/</code></p>
+<p>Ставим галочку "Режим разработчика"
+<img src="https://1.bp.blogspot.com/-bax0UMkP6dU/U60tEjgXiLI/AAAAAAAABCQ/MRKVYzCoHjc/s1600/qwerty.png" alt="developer_mode"></p>
+<p>Нажимаем кнопку "Загрузить распакованное расширение" и выбираем директорию нашего расширения. Нажимаем "OK".</p>
+<p>Расширение установлено и готово к работе. Чтобы обновить расширения после того как вы внесли в него изменения достаточно просто нажать кнопку "Обновить расширение" или в режиме разработчика сочетание клавиш <code>Ctrl+R</code>.</p>
+<h2>Итог</h2>
+<p>Посмотреть исходники скрипта можно на <a href="https://github.com/greybax/backTopUserJS">github</a>. Скрипт не претендует на звание идеального, а служит лишь примером и толчком к написанию собственных пользовательских скриптов для <code>Google Chrome</code>.</p>
+      </article>
+    </div>
+    <div class="wrap"><!-- Google Adsense -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_bottom_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="6947392006" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense --><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFQBKNKE0N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QFQBKNKE0N');
+    </script><!-- /Global site tag (gtag.js) - Google Analytics -->
+  </body>
+  <footer>
+    <div class="footer-columns">
+      <!-- Column 1-->
+      <div class="column">
+        <p>Made with ❤ in 🇺🇸 and </p><a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://pages.github.com/">GitHub Pages</a>♦ <a href="https://pugjs.org/api/getting-started.html">Pug</a>
+      </div>
+      <!-- Column 2-->
+      <div class="column">
+        <p>The content on this site represents my own personal opinions and thoughts at the time of posting.</p>
+        <p>Content licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons CC BY 4.0.</a></p>
+        <p>Source code examples published with <a href="https://opensource.org/licenses/MIT">MIT License </a>(if not mentioned in the post).</p>
+      </div>
+      <!-- Column 3-->
+      <div class="column"><a href="/sitemap.html">Sitemap</a></div>
+    </div>
+  </footer>
+</html>

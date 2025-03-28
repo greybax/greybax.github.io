@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head><!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- /Google Adsense -->
+    <meta charset="utf-8">
+    <title>How to fix security vulnerabilities in NPM/Yarn dependencies</title><!-- WoT Verification -->
+    <meta name="wot-verification" content="6c0d169b1afe357fe29c"><!-- Pinterest Verification -->
+    <meta name="p:domain_verify" content="e021b373eb236145372efe911356b021"><!-- Ahrefs Verification -->
+    <meta name="ahrefs-site-verification" content="359a26c55784fe22202b19d04418e0bb6e38056e28f6cb3a75b6971de49c2867">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <script async defer data-pin-hover="true" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta name="keywords" content="javascript, npm, yarn, security, vulnerability, english">
+    <meta name="description" content="How to fix security vulnerabilities in NPM/Yarn dependencies">
+    <meta name="og:url" content="/posts/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/">
+    <meta name="og:title" content="How to fix security vulnerabilities in NPM/Yarn dependencies">
+    <meta name="og:description" content="javascript, npm, yarn, security, vulnerability, english"><!—- ShareThis BEGIN -—>
+    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
+    <script src="/js/lightbox.js"></script>
+  </head>
+  <body>
+    <header class="no-cover flex-header">
+      <div class="to-main-page"><i class="fa fa-chevron-left"></i><a href="/">Main page</a></div>
+    </header>
+    <div class="wrap-flex">
+      <div class="related-posts">
+        <div><span class="header">Related posts</span>
+          <ul>
+            <li><a href="/posts/profilirovaniie-v-js/"> Профилирование в JS </a></li>
+            <li><a href="/posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/"> Debugging файлов TypeScript в браузере через эмулятор DevExtreme </a></li>
+            <li><a href="/posts/gdie-ia-bieru-informatsiiu-o-mirie-frontend/"> Что можно почитать по frontend'у </a></li>
+            <li><a href="/posts/poluchaiem-spisok-obrabotchikov-eliemienta-stranitsy/"> Получаем список обработчиков элемента в DOM'е </a></li>
+            <li><a href="/posts/es6-classes-final/"> [Frontender Magazine] Классы в ECMAScript 6 </a></li>
+          </ul>
+        </div>
+        <div class="right-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_right_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="3612504428" data-ad-format="auto"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div>
+      </div>
+      <article>
+        <div class="top-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_top_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="9573555341" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div><h1>How to fix security vulnerabilities in NPM/Yarn dependencies</h1><i class="fa fa-calendar">
+          <time>2020-05-13</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#npm"> npm </a><a href="/tags/index.html#yarn"> yarn </a><a href="/tags/index.html#security"> security </a><a href="/tags/index.html#vulnerability"> vulnerability </a><a href="/tags/index.html#english"> english </a></i><h2>Intro</h2>
+<p>Not so long ago Github introduced security alerts:</p>
+<p><img src="/images/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/image1.PNG" alt="Github security alert"></p>
+<p>So lot of developers started to use in their applications to make them secure. However we still facing with issues that 3rd party packages from your <code>package.json</code> dependecies have vulnerabilities. So it that case it's not so obvious how to fix that issues.</p>
+<p>But we have some options how to fix them. </p>
+<h2><code>NPM/Yarn update</code></h2>
+<p><code>npm update</code> or <code>yarn update</code></p>
+<p>This is the simplest way to fix security issue, but sometimes it will doesn't work because it may cause updates to many packages and as result deep testing of your app.</p>
+<h2>NPM packages</h2>
+<p>If you are using npm <strong><em>greater than 6 version</em></strong>, so you can use pretty good intrument like:</p>
+<p>Show only potential vulnerabilities in your dependecies:</p>
+<pre><code class="language-bash">npm audit
+</code></pre>
+<p>Execute vulnerabilities fix mechanism:</p>
+<pre><code class="language-bash">npm audit fix
+</code></pre>
+<ul>
+<li>remove <code>node_modules</code> before run this command</li>
+<li>Do not recomend you to use <code>--force</code> flag here, because in that case <code>npm audit</code> will override some deps which might be not compatible with existing ones.</li>
+</ul>
+<h2>Yarn packages</h2>
+<p>Yarn also has <code>yarn audit</code> mechanism, but it hasn't <code>yarn audit fix</code> mechanism. So in most cases you have to fix these issues manually. So how it works. As example will demonstrate it for <code>minimist</code> package:</p>
+<ol>
+<li>
+<p>Add a resolutions key in your <code>package.json</code> file:</p>
+<ul>
+<li>This resolution will override minimist entirely your project.</li>
+</ul>
+<pre><code class="language-json">{
+  "resolutions": {
+    "minimist": "^1.2.5"
+  }
+}
+</code></pre>
+<ul>
+<li>But in most cases that changes could break your app, so I would suggest to use better case. Let's see how it works on example of <code>package-merge-lodash-4</code> package. Audit says that <code>lodash@3.9.3</code> has vulnerabilities.
+<img src="/images/how-to-fix-security-vulnerabilities-in-npm-yarn-dependencies/image2.PNG" alt="NPM Lodash audit">
+Also we can check them here <a href="https://snyk.io/test/npm/lodash/3.9.3">https://snyk.io/test/npm/lodash/3.9.3</a>. And this resource suggest us to upgrade <code>lodash@3.9.3 -> 4.17.12</code>. So let's do it:</li>
+</ul>
+<pre><code class="language-json">{
+  "resolutions": {
+    "package-merge-lodash-4/*/lodash": "4.17.12"
+  },
+}
+</code></pre>
+</li>
+</ol>
+<ol start="2">
+<li>Use <code>npm-force-resolutions</code> (<a href="https://www.npmjs.com/package/npm-force-resolutions">https://www.npmjs.com/package/npm-force-resolutions</a>) by adding <code>preinstall</code> command under <code>"script"</code> category:</li>
+</ol>
+<pre><code class="language-json">"scripts": {
+  "preinstall": "npx npm-force-resolutions"
+}
+</code></pre>
+<ol start="3">
+<li>Run <code>npm install</code>.</li>
+</ol>
+<p>That’s it. It will update your <code>package-lock.json</code>/<code>yarn.lock</code> files accordingly. That solves the dependency issues which can not be updated using either npm update or by uninstalling and reinstalling a new dependency.</p>
+<p>In case of overriding all version of <code>minimist</code> to v1.2.5 <code>yarn.lock</code> will look like:</p>
+<pre><code>minimist@0.0.8, minimist@1.2.0, minimist@^1.1.0, minimist@^1.1.1, minimist@^1.1.3, minimist@^1.2.0, minimist@^1.2.5, minimist@~0.0.1:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
+  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+</code></pre>
+<p>In case of lodash our <code>yarn.lock</code> will contains following lines:</p>
+<pre><code>lodash@4.17.12, lodash@^3.9.3:
+  version "4.17.12"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.12.tgz#a712c74fdc31f7ecb20fe44f157d802d208097ef"
+  integrity sha512-+CiwtLnsJhX03p20mwXuvhoebatoh5B3tt+VvYlrPgZC1g36y+RRbkufX95Xa+X4I59aWEacDFYwnJZiyB
+</code></pre>
+<p><strong>Please keep in mind</strong> if some packages are only compatible with an older version, then this change might break your app. So be careful while resolving to a particular version and test your app before releasing this change.</p>
+<h2>Useful links</h2>
+<ul>
+<li><a href="https://docs.npmjs.com/cli/audit">npm audit</a></li>
+<li><a href="https://classic.yarnpkg.com/en/docs/cli/audit/">yarn audit</a></li>
+<li><a href="https://snyk.io/vuln">Detailed information and remediation guidance for known vulnerabilities</a></li>
+</ul>
+<p>Happy fix vulnerabilities and make your code safe! ✌🏼</p>
+      </article>
+    </div>
+    <div class="wrap"><!-- Google Adsense -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_bottom_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="6947392006" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense --><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFQBKNKE0N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QFQBKNKE0N');
+    </script><!-- /Global site tag (gtag.js) - Google Analytics -->
+  </body>
+  <footer>
+    <div class="footer-columns">
+      <!-- Column 1-->
+      <div class="column">
+        <p>Made with ❤ in 🇺🇸 and </p><a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://pages.github.com/">GitHub Pages</a>♦ <a href="https://pugjs.org/api/getting-started.html">Pug</a>
+      </div>
+      <!-- Column 2-->
+      <div class="column">
+        <p>The content on this site represents my own personal opinions and thoughts at the time of posting.</p>
+        <p>Content licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons CC BY 4.0.</a></p>
+        <p>Source code examples published with <a href="https://opensource.org/licenses/MIT">MIT License </a>(if not mentioned in the post).</p>
+      </div>
+      <!-- Column 3-->
+      <div class="column"><a href="/sitemap.html">Sitemap</a></div>
+    </div>
+  </footer>
+</html>

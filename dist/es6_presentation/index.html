@@ -1,0 +1,940 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	
+	<style>
+		.slide pre code:before {
+		    position: relative;
+		    margin-left: 0;
+		    color: #BBB;
+		    content: '';
+		}
+		.slide:not(.cover):not(.shout):not(.intro):before {
+			content: "";
+			display: block;
+			width: 65px;
+			height: 65px;
+			position: absolute;
+			right: 10px;
+			bottom: 15px;
+			background: url(pictures/yarfrontend.svg) no-repeat;
+			background-size: cover;
+		}
+		.intro:before {
+			content: "";
+			display: block;
+			width: 65px;
+			height: 65px;
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			background: url(pictures/yarfrontend.svg) no-repeat;
+			background-size: cover;
+		}
+		.slide pre code {
+			line-height: 1.5;
+		}
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1 id="overivew-es2015-aka-es6">Обзор ES2015(ES6)</h1>
+		<p>
+			<a href="http://alfilatov.com">Александр Филатов</a>
+		</p>
+	</header>
+
+	<section class="slide intro" id="Introduction">
+		<div>
+			<h2>Обзор ES2015(ES6)</h2>
+			<img src="pictures/ecma262.jpg" alt="ecma262">
+			<div class="about">
+				<p class="fio">Александр Филатов</p>
+				<p class="twitter">
+					<img class="logo" src="pictures/twitter.svg">
+						<a target="_blank" class="tw" href="https://twitter.com/greybax">greybax</a>
+					</img>
+				</p>
+				<p class="company">Фронтенд разработчик в Akvelon</p>
+				<p class="company">(vendor в Microsoft)</p>
+			</div>
+			<style>
+				.about {
+					position: absolute;
+					font-size: 14pt;									
+					right: 15px;
+					text-align: right;
+					bottom: 15px;
+				}
+				.fio {
+					font-size: 16pt;
+					font-weight: bold;
+				}
+				img.logo {
+					width: 16px;
+					height: 16px;
+				}
+				.intro.slide:after {
+					background: none;
+				}
+				a.tw {
+					background: none;
+				}
+			</style>
+		</div>
+	</section>
+
+	<section class="slide cover" id="shtil">
+		<div>
+			<h2>10 лет в мире JavaScript был штиль...</h2>
+			<img src="pictures/shtil.jpg" alt="">
+			<style>
+				#shtil h2 {
+					color:#FFF;
+				}
+			</style>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Как вдруг...</h2>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<p>17 июня 2015 года генеральное собрание Ecma International официально одобрило стандарт ECMA-262 6 версии</p>
+			<img src="pictures/approved.gif" id="approved" alt="approved" class="shrink">
+			<style>
+				#approved {
+					float: right;
+					margin-right: -5em;
+				}
+				.slide p {
+				  margin: 0 0 -10px;
+				}
+			</style>
+		</div>
+	</section>
+	
+	<section class="slide shout">
+		<div>
+			<h2>Термины</h2>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<ul>
+				<li>TC39 (Ecma Technical Committee 39): комитет по развитию стандарта ECMA-262.</li>
+				<li>ECMAScript: официальное название языка</li>
+				<li>JavaScript - это диалект языка ECMAScript</li>
+				<li>ECMAScript Harmony: улучшения после ECMAScript 5 (ES6 и ES7)</li>
+				<li>ECMAScript.next: кодовое название ECMAScript 6</li>
+			</ul>		
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>История</h2>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>История</h2>
+			<center>
+				<img src="pictures/history.png" alt="">
+			</center>
+		</div>
+	</section>
+	
+	<section class="slide shout">
+		<div>
+			<h2>Что нового?</h2>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Шаблоны строк</h2>
+			<pre>
+				<code class="language-javascript">"В ES5 \n - это перенос строки."</code>
+			</pre>
+			<pre class="next">
+				<code class="language-javascript">`В ES6 стало возможным</code>
+				<code>писать так.`</code>
+			</pre>
+			<br/>
+			<pre class="next">
+				<code class="language-javascript">var name = 'John', age = 22;</code>
+				<code>`${name} is ${age} years old`</code>
+			</pre>
+			<p class="note">Спецификация 12.2.9, 12.3.7</p>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>let + const</h2>
+<pre>
+<code class="language-javascript">
+function f() {
+  <mark>let</mark> x; 
+  {
+    <mark>const</mark> x = "sneaky"; // ok, block scoped name
+    x = "foo"; // error, const
+  }
+  <mark>let</mark> x = "inner"; // error, already declared in block
+}
+</code>
+</pre>
+			<p class="note">Спецификация 13.2.1</p>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Сокращённый формат задания объектов</h2>
+			<pre>
+				<code class="language-javascript">var a = {'obj1': obj1, 'obj2': obj2}</code>
+				<code>// аналогично</code>
+				<code>var a = {obj1, obj2}</code>
+			</pre>
+			<p class="note">Спецификация 13.2.1</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Значения по умолчанию для аргументов функций</h2>
+			<pre>
+				<code class="language-javascript">function f(x, <mark>y=12</mark>) {</code>
+				<code>  return x + y;</code>
+				<code>}</code>
+				<code>f(3) == 15 //true</code>
+			</pre>
+			<p class="note">Спецификация 19.2</p>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Модули</h2>
+			<p class="note">Спецификация 15.2</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Модули</h2>
+			<p>Позволяют загружать код по требованию (асинхронно) и обеспечивают уровень абстракции</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Модули</h2>
+			<b>Экспорт</b>
+			<pre>
+				<code class="language-javascript">// calculator/lib/calc.js</code>
+				<code>let notExported = 'abc';</code>
+				<code><mark>export</mark> function square(x) {</code>
+				<code>  return x * x;</code>
+				<code>}</code>
+				<code><mark>export</mark> const MY_CONSTANT = 123;</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Модули</h2>
+			<b>Импорт</b>
+			<pre>
+				<code class="language-javascript">// calculator/main.js</code>
+				<code><mark>import</mark> { square } from 'lib/calc';</code>
+				<code>console.log(square(3));</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Модули</h2>
+			<b>Импорт</b>
+			<pre>
+				<code class="next language-javascript">import { square, MY_CONSTANT } from 'lib/calc';</code>
+				<code class="next language-javascript">import 'lib/calc' as c;</code>
+				<code class="next language-javascript">import { square as squ } from 'lib/calc';</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Модули</h2>
+			<b>Настройка загрузки модулей</b>
+			<ul>
+				<li class="next">проверка валидности модуля при импорте (к примеру при помощи JSHint)</li>
+				<li class="next">автоматическая трансляция модулей при импорте (они могут содержать код CoffeeScript или TypeScript);</li>
+				<li class="next">использовать существующие модули (AMD, Node.js)</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Arrow-функции</h2>
+			<p class="note">Спецификация 14.2</p>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Arrow-функции</h2>
+			<b>Для быстрого определения анонимных функций</b>
+			<ul><code><mark>var</mark> x = <mark>function</mark>() {}</code>
+				<li class="next">собственный scope</li>
+				<li class="next">нет неявного return</li>
+			</ul>
+			<ul class="next"><code><mark>let</mark> x = () => {}</code>
+				<li class="next">"лексический" scope</li>
+				<li class="next">есть неявный return, но не всегда</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Arrow-функции</h2>
+			<b>По-старому: сохраняем <mark>this</mark></b>
+<pre>
+	<code class="language-javascript">
+this.x = "yes";
+var <mark class="important">self</mark> = this;
+var y = <mark>function</mark>(){
+  "use strict"
+  console.log(<mark class="important">self</mark>.x)
+};
+	</code>
+</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Arrow-функции</h2>
+			<b>По-новому: <mark>this</mark> из внешнего scope</b>
+<pre>
+	<code class="language-javascript">
+this.x = "yes";
+let y = <mark>()</mark> => {
+  "use strict"
+  console.log(this.x)
+};
+y();  //'yes'
+	</code>
+</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Arrow-функции</h2>
+			<b>Неявный return</b>
+			<pre>
+				<code class="language-javascript">let add = (a,b) => <mark>a + b;</mark></code>
+				<code>add(2, 3);	//5</code>
+			</pre>
+			<b>Явный return</b>
+			<pre>
+				<code class="language-javascript">let add = (a,b) => <mark>{ return a + b };</mark></code>
+				<code>add(2, 3);	//5</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Symbol</h2>
+			<p class="note">Спецификация 14.2</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Тип Symbol</h2>
+			<b>Применяется для идентификаторов свойств объектов.</b>
+			<pre>
+				<code class="language-javascript">var sym1 = Symbol();</code>
+				<code>var sym2 = Symbol("foo");</code>
+				<code>var sym3 = Symbol("foo");</code>
+				<code> </code>
+				<code>Symbol("foo") === Symbol("foo"); // false O_o</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Тип Symbol</h2>
+			<b>Пример</b>
+<pre>
+	<code class="language-javascript">var MyClass = (function() {</code>
+	<code>  var key = <mark>Symbol("key")</mark>; // module scoped symbol</code>
+	<code>  function MyClass(prvtData) { </code>
+	<code>    <mark>this[key]</mark> = prvtData; </code>
+	<code>  }</code>
+	<code>  return MyClass;</code>
+	<code>})();</code>
+	<code>var c = new MyClass("hello")</code>
+	<code><mark>c["key"] === undefined</mark></code>
+</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Тип Symbol</h2>
+			<b>Символы не приватные!</b>
+			<p>Симовол <mark>уникален</mark>, но <mark>не приватен</mark>, т.к он может быть получен в результате рефлексии через метод
+			<code class="language-javascript">Object.getOwnPropertySymbols</code> </p>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Cтруктуры данных</h2>
+			<p class="note">Спецификация 23.1 - 23.4</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Map и Set</h2>
+			<p>Упрощают работу со специфичными типами коллекций. Map позволяет определять коллекции наборов в формате ключ/значение. В качестве ключа и значения могут выступать любые выражения JavaScript. По аналогии Set позволяет задать множество любых выражений JavaScript</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Map</h2>
+			<pre>
+				<code class="language-javascript">let data = new Map();</code>
+				<code>data.set('key', 100);</code>
+				<code>data.set(undefined, 'some text');</code>
+				<code>data.has('tag');	//false</code>
+				<code>data.has(undefined);	//true</code>
+				<code>data.delete(undefined);</code>
+				<code>data.has(undefined);	//false</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Set</h2>
+			<pre>
+				<code class="language-javascript">let data = new Set([1, 3, 5, 3]);</code>
+				<code>data.add(3);</code>
+				<code>data.size;    //<mark>3</mark></code>				
+				<code>data.add(7);</code>
+				<code>data.has(3);    //true</code>
+				<code>data.has(9);    //false</code>
+				<code>data.delete(3);</code>
+				<code>data.has(3);    //false</code>
+			</pre>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>WeakSet и WeakMap</h2>
+			<p>То же самое, но <mark>безопасно</mark>, т.е не заботимся об утечках памяти!</p>
+			<p>Объект удаляется, если на него больше не осталось ссылок, кроме ссылки из текущей коллекции, что позволяет не беспокоиться об утечках памяти.</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>WeakMap</h2>
+			<iframe height='406' scrolling='no' src='http://codepen.io/greybax/embed/vNjJQr/?height=406&theme-id=16380&default-tab=js' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/greybax/pen/vNjJQr/'>vNjJQr</a> by Alex Filatov (<a href='http://codepen.io/greybax'>@greybax</a>) on <a href='http://codepen.io'>CodePen</a>.
+			</iframe>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Cтруктуры данных</h2>
+			<b>Итог</b>
+			<ul>
+				<li><mark>Map</mark> — коллекция записей вида ключ: значение. Допускает любые ключи.</li>
+				<li><mark>Set</mark> — коллекция уникальных элементов, также допускает любые ключи. </li>
+				<li><mark>WeakMap и WeakSet</mark> — «урезанные» варианты Map/Set. Не коллекции. Ключи только Object. Если ссылка на объект осталась только в WeakMap/WeakSet — объект удаляется.</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>For-of</h2>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>For-of</h2>
+			<b>Как 20 лет назад...</b>
+<pre>
+	<code class="language-javascript">
+<mark>for</mark> (var index = 0; index < myArray.length; index++) {
+  console.log(myArray[index]);
+}
+	</code>
+</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>For-of</h2>
+			<b>Как в ES5</b>
+<pre>
+	<code class="language-javascript">
+myArray.<mark>forEach</mark>(function (value) {
+  console.log(value);
+});
+	</code>
+</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+		<style>
+		.slide pre {
+			margin: 0 0 10px;
+		}
+		</style>
+			<h2>For-of</h2>
+			<b>А как насчет For-in?</b>
+<pre>
+	<code class="language-javascript" style="height: 155px;">
+<mark>for</mark> (var index <mark>in</mark> myArray) {
+  console.log(myArray[index]);
+}
+	</code>
+</pre>
+			<ul class="next"> <b>но так делать не стоит...</b>
+				<li class="next">строковая арифметика (index - строка)</li>
+				<li class="next">проходит по expando-свойствам и свойствам из цепочки прототипов</li>
+				<li class="next">проход в случайном порядке! О_о</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>For-of</h2>
+			<b>Нас спасет!</b>
+<pre>
+	<code class="language-javascript" style="height: 155px;">
+<mark>for</mark> (var index <mark>of</mark> myArray) {
+  console.log(myArray[index]);
+}
+	</code>
+</pre>
+			<ul class="next"><b>Выглядит неплохо</b>
+				<li>самый лаконичный и наглядный синтаксис</li>
+				<li>нет недостатков for-in</li>
+				<li>в отличие от forEach(), он работает с break, continue и return</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>For-of</h2>
+			<b>Итог</b>
+			<ul>
+				<li class="next"><mark>for-in</mark> нужен для перебора свойств объекта.</li>
+				<li class="next"><mark>for-of</mark> нужен для перебора данных, например, значений массива</li>
+				<li class="next">for-of также хорошо работает с большинством массивоподобных объектов, вроде списков NodeList в DOM</li>
+				<li class="next">Работает с объектами Map и Set</li>
+				<li class="next">Работает со строками, рассматривая строку как набор символов Unicode</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Генераторы</h2>
+			<p class="note">Спецификация 25.2</p>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Генераторы</h2>
+			<p>Генератор - позволяет организовать эффективное выполнение функций в асинхронном режиме.</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Генераторы</h2>
+			<iframe height='404' scrolling='no' src='http://codepen.io/greybax/embed/wKjrPa/?height=404&theme-id=16380&default-tab=js' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/greybax/pen/wKjrPa/'>wKjrPa</a> by Alex Filatov (<a href='http://codepen.io/greybax'>@greybax</a>) on <a href='http://codepen.io'>CodePen</a>.
+			</iframe>
+		</div>
+	</section>
+
+	<section class="slide whyGenerators">
+		<div>
+			<h2>Генераторы. Зачем?</h2>
+			<style>
+			.whyGenerators.slide h2 {
+				margin: 0 0 5px;
+			}
+			</style>
+			<div style="float:left; width: 50%;">
+				<p>Итератор: </p>
+				<iframe height='425' scrolling='no' src='http://codepen.io/greybax/embed/MwBzaN/?height=425&theme-id=16380&default-tab=js' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/greybax/pen/MwBzaN/'>MwBzaN</a> by Alex Filatov (<a href='http://codepen.io/greybax'>@greybax</a>) on <a href='http://codepen.io'>CodePen</a>.
+				</iframe>
+			</div>
+			<div style="float:right; width: 50%;" class="next">
+				<p>Генератор: </p>
+				<iframe height='425' scrolling='no' src='http://codepen.io/greybax/embed/JdBeGR/?height=425&theme-id=16380&default-tab=js' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/greybax/pen/JdBeGR/'>JdBeGR</a> by Alex Filatov (<a href='http://codepen.io/greybax'>@greybax</a>) on <a href='http://codepen.io'>CodePen</a>.
+				</iframe>
+			</div>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Генераторы</h2>
+<pre>
+	<code class="language-javascript"> 
+for (var value of <mark>range(10, 1000)</mark>) {
+  console.log(value);
+}
+	</code>
+</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Генераторы</h2>
+			<b>Где применить возможность генераторов вести себя как итераторы?</b>
+			<ul>
+				<li>Преобразование любого объекта в итерируемый</li>
+				<li>Упрощение функций, создающих массивы</li>
+				<li>Результаты необычной длины</li>
+				<li>Рефакторинг сложных циклов</li>
+				<li>Утилиты для работы с итерируемыми объектами</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Генераторы</h2>
+			<b>Генератор это</b>
+			<ul>
+				<li class="next">Итератор, а итератор — это новый стандарт для данных и циклов во всём ES6</li>
+				<li class="next">Попытка избежать спагетти кода в асинхронном коде. К примеру <a href="https://github.com/kriskowal/q/tree/v1/examples/async-generators">Q.async()</a> - это экспериментальная попытка сделать асинхронный код похожим на синхронный при помощи генераторов и промисов</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Promise</h2>
+			<p class="note">Спецификация 25.4</p>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Promise</h2>
+			<p>Предназначен для получения значений в асинхронном режиме. Позволяет определить значение, которое пока неизвестно, но будут определено через какое-то время</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Promise</h2>
+			<pre>
+				<code class="language-javascript">          };</code>
+				<code>        })</code>
+				<code>      });</code>
+				<code>    });</code>
+				<code>  });</code>
+				<code>});</code>
+			</pre>
+			<b class="next">Это боль...</b>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Promise</h2>
+			<pre>
+				<code class="language-javascript">new <mark>Promise</mark>(<mark>resolve</mark>, <mark>reject</mark>) {</code>
+				<code>  if (testSomething) {</code>
+				<code>    <mark>resolve</mark>(resValue);</code>
+				<code>  } else {</code>
+				<code>    <mark>reject</mark>(errValue);</code>
+				<code>});</code>				
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Promise</h2>
+			<pre>
+				<code class="language-javascript">requestFromServer()</code>
+				<code>.then(function(res) {return res2;})</code>
+				<code>.then(function(res2) {return res3;})</code>
+				<code>...</code>
+				<code>.then(function(res3) {return res4;})</code>
+			</pre>
+			<b class="next">Так лучше!</b>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Классы</h2>
+			<p class="note">Спецификация 14.5</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Классы</h2>
+			<pre>
+				<code class="language-javascript">class Animal {</code>
+				<code>  constructor() {</code>
+				<code>    this.speed = 0;</code>
+				<code>  }</code>
+				<code>  toString() {</code>
+				<code>    return this.speed === 0 ? ' sleep' : ' play'</code>
+				<code>  }</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Классы</h2>
+			<b>extends</b>
+			<pre>
+				<code class="language-javascript">class Cat extends Animal {</code>
+				<code>  constructor() {</code>
+				<code>    <mark>super();</mark></code>
+				<code>    this.speed = 10;</code>
+				<code>  }</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Классы</h2>
+			<pre>
+				<code class="language-javascript">let dog = new Animal();</code>
+				<code>let cat = new Cat();</code>
+				<code>console.log(dog.toString());	// sleep</code>
+				<code>console.log(cat.toString());	// play</code>
+				<code>console.log(cat instanceof Animal);	// true</code>
+				<code>console.log(cat instanceof Cat);	// true</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Классы</h2>
+			<b>static</b>
+			<pre>
+				<code class="language-javascript">class Util {</code>
+				<code>  <mark>static</mark> inc(x) {return x + 1},</code>
+				<code>  <mark>static</mark> dec(x) {return x - 1}</code>
+				<code>}</code>
+				<code>console.log(Util.inc(5));	// 6</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Классы</h2>
+			<b>get/set</b>
+			<pre>
+				<code class="language-javascript">class O {</code>
+				<code>  constructor() {</code>
+				<code>    this.mx = 'initial';</code>
+				<code>  }</code>
+				<code>  <mark>get</mark> x() { return this.mx; }</code>
+				<code>  <mark>set</mark> x(val) { this.mx = val; }</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Классы</h2>
+			<b>"поднятие"</b>
+			<pre>
+				<code class="language-javascript">var a = new ClassA(2);  <mark>// ReferenceError</mark></code>
+				<code>class ClassA {</code>
+				<code>  constructor(n) {</code>
+				<code>    this.x = n;</code>
+				<code>  }</code>
+				<code>}</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Новые методы базовых объектов</h2>
+			<ul>
+				<li>String</li>
+				<li>Object</li>
+				<li>Array</li>
+				<li>Number</li>
+				<li>Math</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Новые методы базовых объектов</h2>			
+			<pre>
+				<code class="language-javascript">Object.is(0, -0); // false</code>
+				<code>Object.is(NaN, NaN) // <mark>true</mark>!</code>
+				<code> </code>
+				<code>0 === -0; // true</code>
+				<code>NaN === NaN; // false</code>
+			</pre>
+			<b>Использует <a target="_blank" href="http://www.ecma-international.org/ecma-262/6.0/index.html#sec-samevalue">SameValue(x, y)</a> алгоритм </b>
+		</div>
+	</section>
+	
+	<section class="slide shout">
+		<div>
+			<h2>Ситуация сейчас</h2>
+		</div>
+	</section>
+
+	<section class="slide cover" id="kangax">
+		<div>
+			<img src="pictures/kangax.png" alt="">
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Хочу использовать уже сейчас!</h2>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Как использовать новые возможности ES2015 уже сейчас?</h2>
+			<ul>
+				<li>chrome://flags/ -> Включить
+					<img src="pictures/harmony.png" alt="harmony">
+				</li>
+				<li class="next">в io.js или Node достаточно включить флаг --harmony </li>
+				<li class="next">использовать транспайлеры <a target="_blank" href="https://github.com/addyosmani/es6-tools">es6-tools</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<center style="margin-top: 10%;">
+			<img src="pictures/babel.png" alt="">
+		</center>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Что умеет Babel?</h2>
+			<ul>
+				<li class="next">Поддержка новых фич и синтаксиса ES2015(ES6)</li>
+				<li class="next">Поддержка новых фич и синтаксиса ES2016(ES7)</li>
+				<li class="next">Транспайлинг некоторых фич напрямую в ES5</li>
+				<li class="next">Поддержка некоторых фич через полифилы</li>
+				<li class="next">Поддерживается пока не все (в частности Proxy)</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Что дальше?</h2>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Будущее Javascript</h2>
+			<ul>
+				<li class="next">Транспайлинг - не только как переходный этап</li>
+				<li class="next">Как только браузер начнет поддерживать новую фичу, отключаем ее транспайлинг</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section class="slide shout">
+		<div>
+			<h2>И это еще не все...</h2>
+		</div>
+	</section>
+	
+	<section class="slide">
+		<div>
+			<h2>Ссылки</h2>
+			<ul>
+				<li><a target="_blank" href="http://www.ecma-international.org/ecma-262/6.0/">Официальная спецификация ES 2015</a></li>
+				<li><a target="_blank" href="http://exploringjs.com/">Exploring ES6: Upgrade to the next version of JavaScript</a></li>
+				<li><a target="_blank" href="http://es6-features.org">es6-features.org</a></li>
+				<li><a target="_blank" href="https://hacks.mozilla.org/category/es6-in-depth/">Цикл статей ES6 In Depth</a></li>
+				<li><a target="_blank" href="http://frontender.info/">Frontender Magazine</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>Спасибо!</h2>
+		</div>
+	</section>
+
+	<section class="slide shout grow">
+		<div>
+			<h2>Вопросы?</h2>
+		</div>
+	</section>
+	
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Shower: http://shwr.me -->
+</body>
+</html>

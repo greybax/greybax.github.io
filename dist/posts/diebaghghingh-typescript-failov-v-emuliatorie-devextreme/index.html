@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head><!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- /Google Adsense -->
+    <meta charset="utf-8">
+    <title>Debugging файлов TypeScript в браузере через эмулятор DevExtreme</title><!-- WoT Verification -->
+    <meta name="wot-verification" content="6c0d169b1afe357fe29c"><!-- Pinterest Verification -->
+    <meta name="p:domain_verify" content="e021b373eb236145372efe911356b021"><!-- Ahrefs Verification -->
+    <meta name="ahrefs-site-verification" content="359a26c55784fe22202b19d04418e0bb6e38056e28f6cb3a75b6971de49c2867">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <script async defer data-pin-hover="true" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta name="keywords" content="DevExtreme, configuration, debugging, typescript, javascript, russian">
+    <meta name="description" content="Debugging файлов TypeScript в браузере через эмулятор DevExtreme">
+    <meta name="og:url" content="/posts/diebaghghingh-typescript-failov-v-emuliatorie-devextreme/">
+    <meta name="og:title" content="Debugging файлов TypeScript в браузере через эмулятор DevExtreme">
+    <meta name="og:description" content="DevExtreme, configuration, debugging, typescript, javascript, russian"><!—- ShareThis BEGIN -—>
+    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
+    <script src="/js/lightbox.js"></script>
+  </head>
+  <body>
+    <header class="no-cover flex-header">
+      <div class="to-main-page"><i class="fa fa-chevron-left"></i><a href="/">Main page</a></div>
+    </header>
+    <div class="wrap-flex">
+      <div class="related-posts">
+        <div><span class="header">Related posts</span>
+          <ul>
+            <li><a href="/posts/ispol'zuiem-fiddler-v-kachiestvie-proksi/"> Используем Fiddler в качестве прокси </a></li>
+            <li><a href="/posts/how-to-migrate-your-spa-from-jspm-systemsjs-to-webpack/"> How to migrate your SPA from JSPM/SystemsJS to Webpack? </a></li>
+            <li><a href="/posts/how-to-separate-your-webpack-configs/"> How to separate your Webpack configs? </a></li>
+            <li><a href="/posts/how-to-use-unsplash-in-your-projects/"> How to use Unsplash in your projects? </a></li>
+            <li><a href="/posts/how-to-make-your-js-code-faster-just-adding-some-parenthesis/"> How to make your JS code faster just adding some parenthesis? </a></li>
+          </ul>
+        </div>
+        <div class="right-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_right_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="3612504428" data-ad-format="auto"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div>
+      </div>
+      <article>
+        <div class="top-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_top_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="9573555341" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div><h1>Debugging файлов TypeScript в браузере через эмулятор DevExtreme</h1><i class="fa fa-calendar">
+          <time>2014-12-02</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#DevExtreme"> DevExtreme </a><a href="/tags/index.html#configuration"> configuration </a><a href="/tags/index.html#debugging"> debugging </a><a href="/tags/index.html#typescript"> typescript </a><a href="/tags/index.html#javascript"> javascript </a><a href="/tags/index.html#russian"> russian </a></i><p>Недавно встала задача добавить поддержку debugging'а файлов <code>*.ts</code> в браузере. В нашем случае это Google Chrome.
+Постараюсь как можно подробнее описать этот процесс.</p>
+<ol>
+<li>
+<p>Для начала нужно определить в какой директории находится DevExtreme сервер, который запускает приложение, когда мы нажимаем в VS кнопку <code>Запустить в браузере Google Chrome</code>. Ответ на этот вопрос был найден в одном из тикетов на сайте <a href="https://www.devexpress.com/Support/Center/Question/Details/Q523956">DevExpress</a>. В случае Visual Studio 2012 это путь <code>C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\DevExtreme\WebServer</code></p>
+</li>
+<li>
+<p>Добавляем в проект <code>*.map файл</code>. Это необходимо для связи файлов <code>js</code> и <code>ts</code></p>
+</li>
+<li>
+<p>Заключительный этап - добавление "символической ссылки" на проект в директории веб сервера DevExtreme. Можно просто скопировать проект в директорию указаную выше. В этом случае мы лишим сервер возможности автоматически подхватывать изменения в проекте. Чтобы это учесть, выполним команду <a href="https://ss64.com/nt/mklink.html">mklink</a>. Для этого:</p>
+<ul>
+<li>Запускаем <code>cmd</code> под администратором</li>
+<li>Переходим в каталог DevExpress WebServer</li>
+<li>Выполняем команду <code>mklink /D &#x3C;project_link_name> &#x3C;project_path></code>. В моем случае это <code>mklink /D Pos C:\Projects\Pos</code></li>
+<li>Символическая ссылка <code>project_link_name</code> создана в директории <code>project_path</code></li>
+</ul>
+</li>
+</ol>
+<h2>Дополнительный ссылки:</h2>
+<ul>
+<li><a href="https://js.devexpress.com/Documentation/Howto/SPA_Framework/Application_Design/?version=14_1#Running">Running, Debugging and Deploy DevExtreme applications</a></li>
+<li><a href="https://stackoverflow.com/questions/12683820/typescript-in-vs2012-automatically-generating-js-from-ts">Typescript in VS2012: (automatically) generating .js from .ts</a></li>
+<li><a href="https://ss64.com/nt/">An A-Z Index of the Windows CMD command line</a></li>
+</ul>
+      </article>
+    </div>
+    <div class="wrap"><!-- Google Adsense -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_bottom_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="6947392006" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense --><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFQBKNKE0N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QFQBKNKE0N');
+    </script><!-- /Global site tag (gtag.js) - Google Analytics -->
+  </body>
+  <footer>
+    <div class="footer-columns">
+      <!-- Column 1-->
+      <div class="column">
+        <p>Made with ❤ in 🇺🇸 and </p><a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://pages.github.com/">GitHub Pages</a>♦ <a href="https://pugjs.org/api/getting-started.html">Pug</a>
+      </div>
+      <!-- Column 2-->
+      <div class="column">
+        <p>The content on this site represents my own personal opinions and thoughts at the time of posting.</p>
+        <p>Content licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons CC BY 4.0.</a></p>
+        <p>Source code examples published with <a href="https://opensource.org/licenses/MIT">MIT License </a>(if not mentioned in the post).</p>
+      </div>
+      <!-- Column 3-->
+      <div class="column"><a href="/sitemap.html">Sitemap</a></div>
+    </div>
+  </footer>
+</html>
