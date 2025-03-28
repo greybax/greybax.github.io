@@ -302,9 +302,9 @@ gulp.task('css', () =>
     .pipe(gulp.dest('dist/css'))
 );
 
-gulp.task('copy-scripts', () =>
-  gulp.src('scripts/*.js') // Source all JavaScript files in the scripts folder
-    .pipe(gulp.dest('dist/scripts')) // Copy them to the dist/scripts folder
+gulp.task('copy-js', () =>
+  gulp.src('js/*.js') // Source all JavaScript files in the js folder
+    .pipe(gulp.dest('dist/js')) // Copy them to the dist/js folder
 );
 
 gulp.task('copy-font-awesome', () =>
@@ -350,7 +350,7 @@ gulp.task('build', gulp.series(
     'index-page',
     'rss',
     'css',
-    gulp.parallel('copy-font-awesome', 'copy-images', 'copy-files', 'copy-presentations', 'copy-scripts') // Include copy-scripts here
+    gulp.parallel('copy-font-awesome', 'copy-images', 'copy-files', 'copy-presentations', 'copy-js')
   ),
   'each-article',
   gulp.parallel(
