@@ -247,7 +247,12 @@ header ul.social li:not(:first-child):before {
 }
 
 article img {
-  max-width: 100%;
+  max-width: 90%; /* Increase the width to 90% of the container */
+  max-height: 600px; /* Increase the maximum height */
+  margin: 20px auto; /* Add spacing and center the image */
+  display: block; /* Center the image by making it a block element */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
 code {
