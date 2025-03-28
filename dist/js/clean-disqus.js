@@ -11,6 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
   
+      // Remove the element with id="disqus_recommendations"
+      const recommendations = document.getElementById('disqus_recommendations');
+      if (recommendations) {
+        recommendations.remove();
+        //console.log('Removed element with ID: disqus_recommendations');
+      }
+  
       //console.log(`Processed ${elements.length} elements.`);
     }, 2000); // Delay execution by 2000 milliseconds (2 seconds)
   });
