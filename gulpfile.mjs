@@ -13,7 +13,6 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import cssvariables from 'postcss-css-variables';
 import newer from 'gulp-newer';
-import changed from 'gulp-changed';
 import glob from 'glob';
 import cleanCSS from 'gulp-clean-css';
 import uglify from 'gulp-uglify';
