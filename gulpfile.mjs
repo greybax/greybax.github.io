@@ -310,6 +310,7 @@ gulp.task('copy-js', () =>
 
 gulp.task('copy-images', () =>
   gulp.src(['images/**/*'], { encoding: false })
+    .pipe(newer('dist/images')) // Only copy newer files
     .pipe(gulp.dest('dist/images'))
 );
 
