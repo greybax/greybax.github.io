@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /cyrillic-to-translit-js/
-Disallow: /brandifyjs/
-Disallow: /towers_game2d/
-Disallow: /awesome-IT-films/
-Disallow: /MSEdgeSearchClicker/
-Sitemap: https://alfilatov.com/sitemap.xml
