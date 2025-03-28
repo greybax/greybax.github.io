@@ -38,7 +38,7 @@ jobs:
       with:
         personal_token: ${{ secrets.PERSONAL_BLOG_TOKEN }}
         src_path: dist/.
-        dst_path: /.
+        dst_path: /
         dst_owner: greybax
         dst_repo_name: greybax.github.io
         src_branch: premaster
