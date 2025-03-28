@@ -244,15 +244,54 @@ header ul.social li:not(:first-child):before {
   min-width: 10em;
   flex-grow: 4;
   flex-basis: 90%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  background-color: #fff; /* Optional: Add a background color */
 }
 
+/* Hover effect for article images */
 article img {
-  max-width: 90%; /* Increase the width to 90% of the container */
-  max-height: 600px; /* Increase the maximum height */
+  max-width: 95%; /* Increase the width to 95% of the container */
+  max-height: 700px; /* Increase the maximum height */
   margin: 20px auto; /* Add spacing and center the image */
-  display: block; /* Center the image by making it a block element */
+  display: block; /* Ensure the image is a block-level element */
   border-radius: 8px; /* Optional: Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  cursor: zoom-in; /* Indicate that the image can be clicked */
+  transition: transform 0.2s ease-in-out;
+}
+
+article img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Lightbox styles */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.lightbox.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 code {
