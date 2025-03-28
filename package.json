@@ -50,6 +50,8 @@
   "devDependencies": {
     "fancy-log": "^2.0.0",
     "gulp-changed": "^5.0.2",
-    "gulp-newer": "^1.4.0"
+    "gulp-clean-css": "^4.3.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-uglify": "^3.0.2"
   }
 }

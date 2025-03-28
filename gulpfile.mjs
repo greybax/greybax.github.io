@@ -15,6 +15,8 @@ import cssvariables from 'postcss-css-variables';
 import newer from 'gulp-newer';
 import changed from 'gulp-changed';
 import glob from 'glob';
+import cleanCSS from 'gulp-clean-css';
+import uglify from 'gulp-uglify';
 
 import pkg from './package.json' with { type: 'json' };
 const { site } = pkg;
@@ -300,26 +302,28 @@ gulp.task('generate-html-sitemap', async () => {
   console.log(`HTML Sitemap generated at: ${sitemapPath}`);
 });
 
-gulp.task('css', () =>
-  gulp.src('css/*.css')
-    .pipe(changed('dist/css')) // Only process changed files
-    .pipe(postcss([
-      autoprefixer(),
-      cssvariables()
-    ]))
-    .pipe(gulp.dest('dist/css'))
-);
-
-gulp.task('copy-js', () =>
-  gulp.src('js/*.js') // Source all JavaScript files in the js folder
-    .pipe(gulp.dest('dist/js')) // Copy them to the dist/js folder
-);
-
-
 gulp.task('copy-images', () =>
   gulp.src(['images/**/*'], { encoding: false })
     .pipe(newer('dist/images')) // Only copy newer files
     .pipe(gulp.dest('dist/images'))
+);
+
+gulp.task('minify-css', () =>
+  gulp.src('css/*.css') // Source all CSS files
+    .pipe(postcss([
+      autoprefixer(), // Add vendor prefixes
+      cssvariables()  // Process CSS variables
+    ]))
+    .pipe(cleanCSS({ compatibility: 'ie8' })) // Minify CSS
+    .pipe(rename({ suffix: '.min' })) // Add `.min` suffix to filenames
+    .pipe(gulp.dest('dist/css')) // Output processed and minified CSS to `dist/css`
+);
+
+gulp.task('minify-js', () =>
+  gulp.src('js/*.js') // Source all JavaScript files
+    .pipe(uglify()) // Minify JavaScript
+    .pipe(rename({ suffix: '.min' })) // Add `.min` suffix to filenames
+    .pipe(gulp.dest('dist/js')) // Output minified JS to `dist/js`
 );
 
 gulp.task('copy-files', () =>
@@ -353,8 +357,9 @@ gulp.task('build', gulp.series(
     'tags',
     'index-page',
     'rss',
-    'css',
-    gulp.parallel('copy-images', 'copy-files', 'copy-presentations', 'copy-js')
+    'minify-css', // Minify CSS
+    'minify-js',  // Minify JS
+    gulp.parallel('copy-images', 'copy-files', 'copy-presentations')
   ),
   'each-article',
   gulp.parallel(
