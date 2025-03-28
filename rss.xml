@@ -4,7 +4,7 @@
         <description><![CDATA[Thoughts and stuff]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 28 Mar 2025 02:11:55 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Mar 2025 19:13:36 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,6 +14,13 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
+        <item>
+            <title><![CDATA[<h1>How to remove Ads from Disqus on your website for free?</h1>]]></title>
+            <description><![CDATA[disqus, snippet, js, no-ads, free-to-use, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-remove-ads-from-disqus-on-your-website-for-free/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-remove-ads-from-disqus-on-your-website-for-free/</guid>
+            <pubDate>Fri, 28 Mar 2025 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[<h1>How to host static website with AWS S3 and Namecheap domain?</h1>]]></title>
             <description><![CDATA[website, hosting, static, namecheap, aws, s3, route53, cloudfront, english]]></description>
