@@ -76,9 +76,6 @@ header nav li:not(:first-child):before {
 }
 
 header ul.social {
-  width: 15em;
-  margin: 0.1em auto;
-  text-align: center;
   padding: 0px;
   color: #fff;
 }
