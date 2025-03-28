@@ -18,7 +18,7 @@ block meta
 block header
   header(class="no-cover flex-header")
     div(class="to-main-page")
-      i(class="fa fa-chevron-left")
+      i(class="fas fa-chevron-left")
       a(href="/") Main page
 block content
   if relatedPosts
@@ -39,10 +39,10 @@ block content
       include google_adsense_top_article_banner
     | !{title.html}
     if date
-      i(class="fa fa-calendar"): time !{date.text}
+      i(class="fas fa-calendar"): time !{date.text}
     br
     if tags
-      i(class="fa fa-tags")
+      i(class="fas fa-tags")
         each tag in tags.list
             a(href=`/tags/index.html#${tag}`)= " " + tag + " "
     | !{content.html}
