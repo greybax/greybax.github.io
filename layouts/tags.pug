@@ -43,13 +43,13 @@ html(dir="LTR" lang="en")
         div(class='tags-cloud')
           each tag in tags
             div
-              a(class='text' href='/tags/##{tag}')= tag
+              a(class='text' href=`/tags/index.html#${tag}`)= tag
                 span(class='badge')=`${tagMap.get(tag).length}`
 
         article.tags
           each tag in tags
             h2
-              a(href='##{tag}' name=tag)= tag
+              a(href=`/tags/index.html#${tag}` name=tag)= tag
             ul.list
               each article in tagMap.get(tag)
                 li.list__item
