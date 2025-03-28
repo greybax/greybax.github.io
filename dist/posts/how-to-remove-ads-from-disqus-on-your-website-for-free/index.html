@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en">
+  <head><!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- /Google Adsense -->
+    <meta charset="utf-8">
+    <title>How to remove Ads from Disqus on your website for free?</title><!-- WoT Verification -->
+    <meta name="wot-verification" content="6c0d169b1afe357fe29c"><!-- Pinterest Verification -->
+    <meta name="p:domain_verify" content="e021b373eb236145372efe911356b021"><!-- Ahrefs Verification -->
+    <meta name="ahrefs-site-verification" content="359a26c55784fe22202b19d04418e0bb6e38056e28f6cb3a75b6971de49c2867">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Aleksandr Filatov">
+    <link href="https://alfilatov.com/rss.xml" title="Aleksandr Filatov" rel="alternate" type="application/rss+xml"><!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- My Styles -->
+    <link href="/css/styles.css" rel="stylesheet"><!-- highlight.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/monokai_sublime.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <script async defer data-pin-hover="true" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
+    <meta property="og:site_name" content="Aleksandr Filatov">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@greybax">
+    <meta name="keywords" content="disqus, snippet, js, no-ads, free-to-use, english">
+    <meta name="description" content="How to remove Ads from Disqus on your website for free?">
+    <meta name="og:url" content="/posts/how-to-remove-ads-from-disqus-on-your-website-for-free/">
+    <meta name="og:title" content="How to remove Ads from Disqus on your website for free?">
+    <meta name="og:description" content="disqus, snippet, js, no-ads, free-to-use, english"><!—- ShareThis BEGIN -—>
+    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=5d2f8fb7735046001257ffab&amp;product='sticky-share-buttons'"></script><!—- ShareThis END -—>
+    <script src="/js/lightbox.js"></script>
+    <script src="/js/clean-disqus.js"></script>
+  </head>
+  <body>
+    <header class="no-cover flex-header">
+      <div class="to-main-page"><i class="fa fa-chevron-left"></i><a href="/">Main page</a></div>
+    </header>
+    <div class="wrap-flex">
+      <div class="related-posts">
+        <div><span class="header">Related posts</span>
+          <ul>
+            <li><a href="/posts/my-contribution-in-mozilla-society/"> My contribution in Mozilla society </a></li>
+            <li><a href="/posts/yandex-browser-it-need-or-not/"> Yandex browser - it's need or not? </a></li>
+            <li><a href="/posts/windows-7-hotkeys/"> Windows 7 HotKeys </a></li>
+            <li><a href="/posts/awesome-vscode-plugins/"> My VSCode settings </a></li>
+            <li><a href="/posts/how-we-have-validated-the-theory-of-6-handshakes-six-degrees-of-separation-via-social-network/"> How we have validated the theory of 6 handshakes (six degrees of separation) via social network? </a></li>
+          </ul>
+        </div>
+        <div class="right-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_right_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="3612504428" data-ad-format="auto"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div>
+      </div>
+      <article>
+        <div class="top-banner"><!-- Google Adsense -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_top_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="9573555341" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense -->
+        </div><h1>How to remove Ads from Disqus on your website for free?</h1><i class="fa fa-calendar">
+          <time>2025-03-28</time></i><br><i class="fa fa-tags"><a href="/tags/index.html#disqus"> disqus </a><a href="/tags/index.html#snippet"> snippet </a><a href="/tags/index.html#js"> js </a><a href="/tags/index.html#no-ads"> no-ads </a><a href="/tags/index.html#free-to-use"> free-to-use </a><a href="/tags/index.html#english"> english </a></i><p>I use Disqus currently in this blog. And I was too lazy to migrate somewhere when they introduced ads for free plan. So I created small snippet which fixes my problem:</p>
+<pre><code class="language-js">document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    // Select all elements with IDs matching the pattern "dsq-appXXXX"
+    const elements = document.querySelectorAll('[id^="dsq-app"]');
+
+    elements.forEach((element) => {
+      // Check if the element has a `src` attribute and if it does not contain "https://disqus.com"
+      if (element.src &#x26;&#x26; !element.src.includes('https://disqus.com')) {
+        element.remove(); // Remove the element
+        //console.log(`Removed element with ID: ${element.id} and src: ${element.src}`);
+      }
+    });
+
+    // Remove the element with id="disqus_recommendations"
+    const recommendations = document.getElementById('disqus_recommendations');
+    if (recommendations) {
+      recommendations.remove();
+      //console.log('Removed element with ID: disqus_recommendations');
+    }
+
+    //console.log(`Processed ${elements.length} elements.`);
+  }, 2000); // Delay execution by 2000 milliseconds (2 seconds)
+});
+</code></pre>
+<p>Keep in mind that using this script may cause a ban from Disqus for your website where your are using it.</p>
+<p>Happy using Disqus! ✌🏼</p>
+      </article>
+    </div>
+    <div class="wrap"><!-- Google Adsense -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5911768621562708" crossorigin="anonymous"></script><!-- google_adsense_bottom_article_banner --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5911768621562708" data-ad-slot="6947392006" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><!-- /Google Adsense --><!-- Disqus -->
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        (function() {
+           var d = document, s = d.createElement('script');    
+           s.src = '//alfilatov.disqus.com/embed.js';
+           s.setAttribute('data-timestamp', +new Date());
+           (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><!-- /Disqus -->
+    </div><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFQBKNKE0N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QFQBKNKE0N');
+    </script><!-- /Global site tag (gtag.js) - Google Analytics -->
+  </body>
+  <footer>
+    <div class="footer-columns">
+      <!-- Column 1-->
+      <div class="column">
+        <p>Made with ❤ in 🇺🇸 and </p><a href="https://gulpjs.com/">Gulp </a>♦ <a href="https://pages.github.com/">GitHub Pages</a>♦ <a href="https://pugjs.org/api/getting-started.html">Pug</a>
+      </div>
+      <!-- Column 2-->
+      <div class="column">
+        <p>The content on this site represents my own personal opinions and thoughts at the time of posting.</p>
+        <p>Content licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons CC BY 4.0.</a></p>
+        <p>Source code examples published with <a href="https://opensource.org/licenses/MIT">MIT License </a>(if not mentioned in the post).</p>
+      </div>
+      <!-- Column 3-->
+      <div class="column"><a href="/sitemap.html">Sitemap</a></div>
+    </div>
+  </footer>
+</html>
