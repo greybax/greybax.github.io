@@ -52,7 +52,8 @@ html(dir="LTR" lang="en")
           each year in Object.keys(articlesByYear).sort((a, b) => b - a)
             h2= year
             ul.list
-              each article in articlesByYear[year]
+              // Sort articles by date in descending order
+              each article in articlesByYear[year].sort((a, b) => new Date(b.date.text) - new Date(a.date.text))
                 li.list__item
                   div
                     a(href=article.url)= article.title.text
