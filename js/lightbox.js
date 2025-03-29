@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Add click event to all article images
   const articleImages = document.querySelectorAll('article img');
-  console.log('Found images:', articleImages); // Log the images found
   articleImages.forEach((img) => {
     img.addEventListener('click', () => {
       lightbox.innerHTML = ''; // Clear previous content
