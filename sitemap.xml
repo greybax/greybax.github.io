@@ -7,7 +7,7 @@
 <!-- created dynamically during build -->
 <url>
   <loc>https://alfilatov.com/</loc>
-  <lastmod>2025-03-29T03:13:06.333Z</lastmod>
+  <lastmod>2025-04-03T17:37:20.677Z</lastmod>
   <priority>1.00</priority>
 </url>
 
@@ -859,6 +859,11 @@
 <url>
   <loc>https://alfilatov.com/posts/how-to-remove-ads-from-disqus-for-free/</loc>
   <lastmod>2025-03-28T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/my-first-producthunt-launch/</loc>
+  <lastmod>2025-04-03T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 </urlset>
