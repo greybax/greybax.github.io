@@ -13,7 +13,9 @@ I've never been to their concerts before. So it was my first experience. And fro
 
 I've filmed almost all the concert. So feel free to enjoy it on our YouTube channel:
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FkZCItyu7fU?si=dgTZOOosJZW3HTbf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 At the current time, for less than a week, this is our most viewed video on the channel with almost 1.9k views.
 

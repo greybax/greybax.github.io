@@ -25,6 +25,8 @@ The weather has improved slightly and the view of the lighthouse, the ocean is e
 
 ![Yaquina Lighthouse, OR](/images/road-trip-northwest-coast-day-1-10-long-beach-cannon-beach-yaquina-lighthouse/yaquina_lighthouse.jpg)
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Pxv_1DsA2oA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy road trippin'!_ :v:

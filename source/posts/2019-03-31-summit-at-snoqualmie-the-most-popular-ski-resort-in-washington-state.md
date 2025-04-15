@@ -27,18 +27,28 @@ Of course, we still have to grow and grow - our skating is still far from ideal.
 ## Our YouTube videos
 
 * Skiing at Summit East green trails Milwaukee Ridge and Creek Run
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hrlJ2PzjFvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 * Skiing at Summit West Green and Blue trails
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JGBJHdA9GXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 * Jumping on skis in Snoqualmie Summit Terrain Park
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QJxZ59fWGjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 * Rear view full downhill on Summit East trails
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2j-XD4_KuR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 * Skiing end season 2018-2019. Sun Halo at Summit West. Light freeride on Summit East.
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lBgtpOF1OhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Happy Summit at Snoqualmie visiting! ✌🏼

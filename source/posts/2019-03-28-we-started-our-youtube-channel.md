@@ -12,7 +12,9 @@ At this moment most of our video on channel about skiing. Welcome and just check
 
 Here one of our video timelapse:
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ir3hzxq1j-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Link to our channel [WA Travellers](https://www.youtube.com/channel/UCMlDLVoNxAD59tLlKpAbPYQ)
 

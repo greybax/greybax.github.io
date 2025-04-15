@@ -38,6 +38,8 @@ Along the main road, the [Alley of Giants](http://avenueofthegiants.net/) runs t
 ## Eureka, CA
 In fact, this road, together with a city called Eureka, is very much reminiscent of the series of the same name. According to his plot, the town was in Oregon, but it is not far. The city itself is a classic one-story America, but the “old” city is pretty cute, complete with a promenade and original buildings.
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/76d6X2uZNVk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy road trippin'!_ :v:

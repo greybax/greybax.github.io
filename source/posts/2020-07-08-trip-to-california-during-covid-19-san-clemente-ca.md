@@ -34,6 +34,8 @@ And although the town is an hour's drive from LA - the water here is already war
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-d_gIMydzMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy visiting San Clemente, CA!_ :v:

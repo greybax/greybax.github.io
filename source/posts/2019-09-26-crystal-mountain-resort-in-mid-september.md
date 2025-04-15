@@ -32,6 +32,8 @@ P.S. Chipmunks here are not afraid of people at all - obviously, they are alread
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NNUTtq2ngUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy Crystal Mountain Resort visiting!_ :v:

@@ -28,6 +28,8 @@ Another 20 minutes - a view of the famous mountains. Of course, we would still g
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DET7IXlQaWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy visiting Hollywood, CA!_ :v:

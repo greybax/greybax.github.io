@@ -41,6 +41,8 @@ Our journey, which lasted 10 days (of which almost **60 hours - 2.5 days we've t
 
 It was a very exciting trip, with all seasons and all kinds of weather. Somewhere we were not 100% ready, but after walking in the same rag sneakers in the downpour, desert and snow - we felt the diversity of nature, and how quickly it can change even during the day!
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XBkEhsD7yoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy road trippin'!_ :v:

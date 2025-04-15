@@ -30,6 +30,8 @@ And on the pier was an ancient sailboat, which reminded me of Holland with their
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/55KawuirWk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy Port Angeles visiting!_ :v:

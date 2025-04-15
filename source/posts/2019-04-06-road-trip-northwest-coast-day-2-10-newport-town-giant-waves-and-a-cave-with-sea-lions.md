@@ -32,6 +32,8 @@ The largest cave system in America, home to a large number of fur seals and lion
 
 ![Sea Lions Cave, OR](/images/newport-town-giant-waves-and-a-cave-with-sea-lions/sea_lions_cave.jpg)
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2OWF5K91q7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy road trippin'!_ :v:

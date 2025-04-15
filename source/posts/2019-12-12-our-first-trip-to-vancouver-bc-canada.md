@@ -33,6 +33,8 @@ Some statistics: Vancouver is Canada's third largest city and hosts the 2010 Oly
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wq2ZUSnsF9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy Vancouver, BC visiting!_ :v:

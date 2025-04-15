@@ -29,7 +29,9 @@ It's funny that you can take the neighboring The Hague by metro.
 
 This is the building that Jackie Chan rolled on in the movie **"Who Am I?"**. The movie also partially took place in this city.
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ticE-Eg7I8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 The statue of Peter the Great in Rotterdam:
 

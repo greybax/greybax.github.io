@@ -30,6 +30,8 @@ And finally, we took a walk through downtown. It was surprisingly empty due to t
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LTv4SLJU-ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 _Happy visiting Los Angeles, CA!_ :v:

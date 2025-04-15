@@ -33,6 +33,8 @@ To help the ships safely pass under the bridge and not crash into anything, ther
 
 It seems to be - how can you not see the bridge? But it is quite long - the strait is 2 km, and the bridge itself is 2.7 km. When we approached him, half was visible, then it was clouded entirely...
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/D-gU38NtquE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy road trippin'!_ :v:

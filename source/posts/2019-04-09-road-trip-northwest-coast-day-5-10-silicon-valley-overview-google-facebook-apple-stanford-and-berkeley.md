@@ -48,6 +48,8 @@ The University of Berkeley is a California State University. Among public univer
 
 ![Berkeley bikes](/images/road-trip-northwest-coast-day-5-10-silicon-valley-overview-google-facebook-apple-stanford-and-berkeley/berkeley_bikes.jpg)
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QDVsUVtQjho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy road trippin'!_ :v:

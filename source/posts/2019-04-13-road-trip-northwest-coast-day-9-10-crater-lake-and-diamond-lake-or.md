@@ -36,6 +36,8 @@ Here we spent a little time - rested, drank tea and walked a little along the sn
 
 We wanted to visit another volcanic monument, where we could drive to the top of an active volcano. But - not the season, the volcano is resting.
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bL47v5PTa0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy road trippin'!_ :v:

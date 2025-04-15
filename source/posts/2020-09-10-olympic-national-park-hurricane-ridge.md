@@ -26,6 +26,8 @@ And between the parking lot and the trail where people walk, deer and groundhogs
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y5DJopahuwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 _Happy visiting Olympic National Park!_ :v:

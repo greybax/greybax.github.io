@@ -40,6 +40,8 @@ As we approached the California lands, more and more greenery became in the dese
 
 During the journey, many caves and pits were visible, where the vaults of the cave seem to have already collapsed. It was also interesting to look under your feet and see the frozen lava and waves from it...
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YVMghcGKy7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy road trippin'!_ :v:

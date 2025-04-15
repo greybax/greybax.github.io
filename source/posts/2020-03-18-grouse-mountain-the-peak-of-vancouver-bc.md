@@ -34,6 +34,8 @@ By the way, surprisingly, the food at the top of the mountain turned out to be 1
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-Lbpud6B6sM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy Grouse Mountain skiing!_ :v:

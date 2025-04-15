@@ -40,6 +40,8 @@ In general, during the gold rush of 1849, Sacramento became the center of the pr
 
 ![Sacramento old house](/images/road-trip-northwest-coast-day-6-10-wine-tasting-at-the-napa-valley-ca-trip-to-sacramento-california-capital-and-wild-west/sacramento_old_house.jpg)
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yQk1VthcjR4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy road trippin'!_ :v:

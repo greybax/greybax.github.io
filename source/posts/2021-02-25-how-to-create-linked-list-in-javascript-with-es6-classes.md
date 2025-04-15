@@ -57,6 +57,8 @@ while(current.next) {
 
 ## JSFiddle
 
+<div class="responsive-iframe">
 <iframe width="100%" height="300" src="//jsfiddle.net/r7nx0sda/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+</div>
 
 _Happy creating your own linked lists!_ :)

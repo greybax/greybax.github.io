@@ -24,6 +24,8 @@ We returned to Orlando by midnight - after a two-hour check-in, we completely ci
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8Q2nFSfZVCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy Tampa Bay visiting!_ :v:

@@ -30,6 +30,8 @@ We couldn't see many things due to time, distance, and partial closure: the Midw
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-d_gIMydzMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 _Happy visiting San Diego, CA!_ :v:

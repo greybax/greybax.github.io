@@ -8,7 +8,9 @@ Recently, I've been faced with the task of using my static website on the AWS in
 
 I've followed this good tutorial from YouTube.
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9WPlC5RKfjs?si=h9NcSq0Wq7pZU-EX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 Below, I'm going to highlight some core parts from it in case you don't want to see all 30 minutes of video:
 

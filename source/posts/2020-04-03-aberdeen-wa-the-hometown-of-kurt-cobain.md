@@ -28,6 +28,8 @@ P.S. At the moment, the entire coast of Oregon and at least half of Washington a
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2I6AeEajx2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy Aberdeen, WA visiting!_ :v:

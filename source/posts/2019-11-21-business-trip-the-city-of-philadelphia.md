@@ -35,6 +35,8 @@ And on the coast of the Delaware, you can travel a little to Europe. Nearby ther
 
 ## Our YouTube video
 
+<div class="responsive-iframe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7U7rkhX5GDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 _Happy Philadelphia visiting!_ :v:
