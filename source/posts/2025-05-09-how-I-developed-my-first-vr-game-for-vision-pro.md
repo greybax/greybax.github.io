@@ -16,7 +16,6 @@ The user is in a gym with various sports equipment. In front of the user hangs a
 
 ![Beat the Timer](/images/how-I-developed-my-first-vr-game-for-vision-pro/1.png "Beat the Timer")
 
-
 ## Development
 
 Most interesting thing that I developed this game without having real Vision Pro device! I've used only Simulator to test it.
@@ -25,6 +24,7 @@ During 90% of development process I've been using following tools:
 * ⁠https://sketchfab.com/ for 3d models.
 
 ### GPT
+
 • ⁠At the first step, I describe my application and its functionality as much as possible. Feed it to Gemini in one file until it starts to hallucinate.
 • ⁠After that, I refactored my code and split it into smaller parts. Fed those parts to Gemini for the desired functionality. Briefly, that's how I did it.
 
