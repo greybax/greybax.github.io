@@ -4,7 +4,7 @@
 
 _2025-05-09_
 
-The last couple of months I've been working on a VR game for VisionOS. I didn't develop Va R game before, so mostly I have it an experimental purposes doing it. The market for VR games is relatively small. I've decided to work on a game with a simple UI and with some basic user interactions. So Boxing Trainer game is a good candidate for it. That's how I started to work on my first VR game: **Boxing Trainer: Punch Master**.
+The last couple of months I've been working on a VR game for VisionOS. I didn't develop VR game before, so mostly I have it an experimental purposes doing it. The market for VR games is relatively small. I've decided to work on a game with a simple UI and with some basic user interactions. So Boxing Trainer game is a good candidate for it. That's how I started to work on my first VR game: **Boxing Trainer: Punch Master**.
 
 ## What is this game about?
 
@@ -25,8 +25,8 @@ During 90% of development process I've been using following tools:
 
 ### GPT
 
-• ⁠At the first step, I describe my application and its functionality as much as possible. Feed it to Gemini in one file until it starts to hallucinate.
-• ⁠After that, I refactored my code and split it into smaller parts. Fed those parts to Gemini for the desired functionality. Briefly, that's how I did it.
+* Describe application and its functionality as much as possible. Feed it to Gemini in one file until it starts to hallucinate.
+* Refactor code and split it into smaller parts. Feed those parts to Gemini for the desired functionality.
 
 ### 3D Models
 
