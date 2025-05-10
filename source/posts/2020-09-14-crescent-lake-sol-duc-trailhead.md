@@ -2,6 +2,8 @@
 
 #wa, #trip, #usa, #olympic-peninsula, #youtube, #vlog, #video, #wa-travelers, #pacific, #english;
 
+_2020-09-14_
+
 Day 2. An hour from Port Angeles to Crescent Lake, where we wanted to stop, but the crowds of people stopped us. We moved on, where we planned, but still found a secluded spot on the shore, where we rested a little and wet our feet. The water was surprisingly not very cold - people even swam. The water in this lake is surprisingly clear! And all thanks to the lack of algae.
 
 ![Crescent Lake. Sol Duc Trailhead 1](/images/crescent-lake-sol-duc-trailhead/1.jpg "Crescent Lake. Sol Duc Trailhead 1")
