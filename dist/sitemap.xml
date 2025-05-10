@@ -7,7 +7,7 @@
 <!-- created dynamically during build -->
 <url>
   <loc>https://alfilatov.com/</loc>
-  <lastmod>2025-05-10T03:28:18.117Z</lastmod>
+  <lastmod>2025-05-10T19:18:03.020Z</lastmod>
   <priority>1.00</priority>
 </url>
 
@@ -759,6 +759,11 @@
 <url>
   <loc>https://alfilatov.com/posts/olympic-national-park-hurricane-ridge/</loc>
   <lastmod>2020-09-10T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/crescent-lake-sol-duc-trailhead/</loc>
+  <lastmod>2020-09-14T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
