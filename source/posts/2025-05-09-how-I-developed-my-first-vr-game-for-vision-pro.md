@@ -4,9 +4,9 @@
 
 _2025-05-09_
 
-Last couple months I've been working on VR game for VisionOS. I didn't developed VR game before, so mostly I have an experimental purposes doing it. Market for VR games is relatively small. I've decided to work on a game with simple UI and with some basic user interactions. So Boxing Trainer game is a good candidate for it. That's how I started to work on my first VR game: **Boxing Trainer: Punch Master**.
+The last couple of months I've been working on a VR game for VisionOS. I didn't develop Va R game before, so mostly I have it an experimental purposes doing it. The market for VR games is relatively small. I've decided to work on a game with a simple UI and with some basic user interactions. So Boxing Trainer game is a good candidate for it. That's how I started to work on my first VR game: **Boxing Trainer: Punch Master**.
 
-## What this game is about?
+## What is this game about?
 
 The user is in a gym with various sports equipment. In front of the user hangs a punching bag weighing 80 kg and he must hit it performing combinations of blows for a time that is shown in a separate window. Thus, the user sees statistics of correct and missed combinations on the punching bag.
 
