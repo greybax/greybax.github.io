@@ -4,7 +4,7 @@
         <description><![CDATA[Thoughts and stuff]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 10 May 2025 03:28:16 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 May 2025 19:18:00 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -14,160 +14,6 @@
         <category><![CDATA[js]]></category>
         <category><![CDATA[css]]></category>
         <category><![CDATA[life]]></category>
-        <item>
-            <title><![CDATA[<h1>How I developed my first VR Game for VisionOS without having real Vision Pro device?</h1>]]></title>
-            <description><![CDATA[visionOS, vr, vision-pro, realitykit, swiftui, 3d, gamedev, english]]></description>
-            <link>https://alfilatov.com//posts/how-I-developed-my-first-vr-game-for-visionos-without-having-real-vision-pro-device/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-I-developed-my-first-vr-game-for-visionos-without-having-real-vision-pro-device/</guid>
-            <pubDate>Fri, 09 May 2025 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>My first ProductHunt launch</h1>]]></title>
-            <description><![CDATA[ProductHunt, promo, coredata-studio, english]]></description>
-            <link>https://alfilatov.com//posts/my-first-producthunt-launch/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/my-first-producthunt-launch/</guid>
-            <pubDate>Thu, 03 Apr 2025 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to remove Ads from Disqus on your website for free?</h1>]]></title>
-            <description><![CDATA[disqus, snippet, js, no-ads, free-to-use, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-remove-ads-from-disqus-for-free/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-remove-ads-from-disqus-for-free/</guid>
-            <pubDate>Fri, 28 Mar 2025 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to host static website with AWS S3 and Namecheap domain?</h1>]]></title>
-            <description><![CDATA[website, hosting, static, namecheap, aws, s3, route53, cloudfront, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-host-static-website-with-aws-s3-and-namecheap-domain/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-host-static-website-with-aws-s3-and-namecheap-domain/</guid>
-            <pubDate>Tue, 25 Mar 2025 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>CoreData Studio - macOS App to View and Debug your CoreData projects</h1>]]></title>
-            <description><![CDATA[ios, macos, swiftui, appstore, coredata, database, sqlite, app_promo, xcode, english]]></description>
-            <link>https://alfilatov.com//posts/coredata-studio-macos-app-to-view-and-debug-your-coredata-projects/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/coredata-studio-macos-app-to-view-and-debug-your-coredata-projects/</guid>
-            <pubDate>Mon, 21 Oct 2024 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>AppScreen Studio - macOS App to Create Screenshots and Previews for Your AppStore Apps</h1>]]></title>
-            <description><![CDATA[ios, macos, swiftui, appstore, screenshots, app_promo, xcode, english]]></description>
-            <link>https://alfilatov.com//posts/appscreen-studio-macos-app-to-create-screenshots-and-previews-for-your-appstore-apps/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/appscreen-studio-macos-app-to-create-screenshots-and-previews-for-your-appstore-apps/</guid>
-            <pubDate>Mon, 11 Mar 2024 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to handle different versions of Core Data Models</h1>]]></title>
-            <description><![CDATA[ios, macos, swiftui, appstore, development, coredata, xcode, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-handle-different-versions-of-core-data-models/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-handle-different-versions-of-core-data-models/</guid>
-            <pubDate>Sat, 07 Oct 2023 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How I have visited Coldplay show in Seattle, WA</h1>]]></title>
-            <description><![CDATA[concert, coldplay, seattle, wa, youtube, vlog, video, wa-travelers, english]]></description>
-            <link>https://alfilatov.com//posts/how-i-have-visited-coldplay-show-in-seattle-wa/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-i-have-visited-coldplay-show-in-seattle-wa/</guid>
-            <pubDate>Tue, 03 Oct 2023 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to start a business in Washington State</h1>]]></title>
-            <description><![CDATA[business, wa, entrepreneur, english, LLC, taxes, life, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-start-business-in-washington-state/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-start-business-in-washington-state/</guid>
-            <pubDate>Wed, 29 Mar 2023 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to automate MS Rewards Program</h1>]]></title>
-            <description><![CDATA[swags, free, microsoft, redeem, rewards, github, clicker, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-automate-ms-rewards-program/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-automate-ms-rewards-program/</guid>
-            <pubDate>Fri, 30 Sep 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>Cordova Plugin Native Spinner</h1>]]></title>
-            <description><![CDATA[cordova, plugin, ionic, configuration, mobile, github, english]]></description>
-            <link>https://alfilatov.com//posts/cordova-plugin-native-spinner/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/cordova-plugin-native-spinner/</guid>
-            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>Frontend DTO Challenge</h1>]]></title>
-            <description><![CDATA[dto, frontend, javascript, typescript, react, nodejs, socket-io, english]]></description>
-            <link>https://alfilatov.com//posts/frontend-dto-challenge/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/frontend-dto-challenge/</guid>
-            <pubDate>Tue, 05 Jul 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>Washington State Breweries 🍻</h1>]]></title>
-            <description><![CDATA[washington, breweries, lifestyle, life, english]]></description>
-            <link>https://alfilatov.com//posts/washington-state-breweries/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/washington-state-breweries/</guid>
-            <pubDate>Fri, 10 Jun 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to create AWS EC2 Image Builder with hosted Solr and run it on EC2 using Terraform</h1>]]></title>
-            <description><![CDATA[aws, ec2, s3, ec2-builder, solr, terraform, devops, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-create-aws-ec2-image-builder-with-hosted-solr-and-run-it-on-ec2-using-terraform/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-aws-ec2-image-builder-with-hosted-solr-and-run-it-on-ec2-using-terraform/</guid>
-            <pubDate>Tue, 24 May 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to create AWS RDS cluster with imported SQL dump from S3 using Terraform</h1>]]></title>
-            <description><![CDATA[aws, rds, s3, sql, terraform, devops, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-create-aws-rds-cluster-with-imported-sql-dump-from-s3-using-terraform/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-aws-rds-cluster-with-imported-sql-dump-from-s3-using-terraform/</guid>
-            <pubDate>Sat, 04 Sep 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to create binary search tree in javascript with ES6 classes</h1>]]></title>
-            <description><![CDATA[javascript, data-structure, interview, es6, bst, binary-tree, binary-search-tree, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-create-binary-search-tree-in-javascript-with-es6-classes/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-binary-search-tree-in-javascript-with-es6-classes/</guid>
-            <pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to create linked list in javascript with ES6 classes</h1>]]></title>
-            <description><![CDATA[javascript, data-structure, interview, es6, linked-list, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-create-linked-list-in-javascript-with-es6-classes/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-linked-list-in-javascript-with-es6-classes/</guid>
-            <pubDate>Thu, 25 Feb 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to create, debug and deploy your MS Teams apps using VSCode</h1>]]></title>
-            <description><![CDATA[microsoft, teams, msteams, debug, deploy, vscode, extension, react, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-create-debug-and-deploy-your-ms-teams-apps-using-vscode/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-debug-and-deploy-your-ms-teams-apps-using-vscode/</guid>
-            <pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to create self-signed certificate</h1>]]></title>
-            <description><![CDATA[certificate, ssl, localhost, debug, windows, osx, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-create-self-signed-certificate/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-self-signed-certificate/</guid>
-            <pubDate>Sat, 09 Jan 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>Как взять машину в лизинг в Америке и не быть обманутым</h1>]]></title>
-            <description><![CDATA[driver, cars, usa, wa, life, lease, russian]]></description>
-            <link>https://alfilatov.com//posts/how-to-lease-a-car-in-usa/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-lease-a-car-in-usa/</guid>
-            <pubDate>Wed, 18 Nov 2020 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to pass file into an iframe and convert it to Blob for further AJAX request</h1>]]></title>
-            <description><![CDATA[iframe, vscode, extensions, javascript, typescript, data-transfer, datauri, blob, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</guid>
-            <pubDate>Fri, 06 Nov 2020 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[<h1>How to open links from iframe</h1>]]></title>
-            <description><![CDATA[iframe, vscode, extensions, html, javascript, typescript, data-transfer, english]]></description>
-            <link>https://alfilatov.com//posts/how-to-open-links-from-iframe/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-open-links-from-iframe/</guid>
-            <pubDate>Thu, 01 Oct 2020 00:00:00 GMT</pubDate>
-        </item>
         <item>
             <title><![CDATA[<h1>Olympic National Park. Hurricane Ridge</h1>]]></title>
             <description><![CDATA[wa, trip, national-park, usa, youtube, vlog, video, wa-travelers, pacific, english]]></description>
@@ -1217,6 +1063,167 @@
             <link>https://alfilatov.com//posts/my-contribution-in-mozilla-society/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/my-contribution-in-mozilla-society/</guid>
             <pubDate>Mon, 10 Dec 2012 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Crescent Lake. Sol Duc Trailhead</h1>]]></title>
+            <description><![CDATA[wa, trip, usa, olympic-peninsula, youtube, vlog, video, wa-travelers, pacific, english]]></description>
+            <link>https://alfilatov.com//posts/crescent-lake-sol-duc-trailhead/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/crescent-lake-sol-duc-trailhead/</guid>
+            <pubDate>Sat, 10 May 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How I developed my first VR Game for VisionOS without having real Vision Pro device?</h1>]]></title>
+            <description><![CDATA[visionOS, vr, vision-pro, realitykit, swiftui, 3d, gamedev, english]]></description>
+            <link>https://alfilatov.com//posts/how-I-developed-my-first-vr-game-for-visionos-without-having-real-vision-pro-device/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-I-developed-my-first-vr-game-for-visionos-without-having-real-vision-pro-device/</guid>
+            <pubDate>Fri, 09 May 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>My first ProductHunt launch</h1>]]></title>
+            <description><![CDATA[ProductHunt, promo, coredata-studio, english]]></description>
+            <link>https://alfilatov.com//posts/my-first-producthunt-launch/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/my-first-producthunt-launch/</guid>
+            <pubDate>Thu, 03 Apr 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to remove Ads from Disqus on your website for free?</h1>]]></title>
+            <description><![CDATA[disqus, snippet, js, no-ads, free-to-use, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-remove-ads-from-disqus-for-free/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-remove-ads-from-disqus-for-free/</guid>
+            <pubDate>Fri, 28 Mar 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to host static website with AWS S3 and Namecheap domain?</h1>]]></title>
+            <description><![CDATA[website, hosting, static, namecheap, aws, s3, route53, cloudfront, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-host-static-website-with-aws-s3-and-namecheap-domain/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-host-static-website-with-aws-s3-and-namecheap-domain/</guid>
+            <pubDate>Tue, 25 Mar 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>CoreData Studio - macOS App to View and Debug your CoreData projects</h1>]]></title>
+            <description><![CDATA[ios, macos, swiftui, appstore, coredata, database, sqlite, app_promo, xcode, english]]></description>
+            <link>https://alfilatov.com//posts/coredata-studio-macos-app-to-view-and-debug-your-coredata-projects/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/coredata-studio-macos-app-to-view-and-debug-your-coredata-projects/</guid>
+            <pubDate>Mon, 21 Oct 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>AppScreen Studio - macOS App to Create Screenshots and Previews for Your AppStore Apps</h1>]]></title>
+            <description><![CDATA[ios, macos, swiftui, appstore, screenshots, app_promo, xcode, english]]></description>
+            <link>https://alfilatov.com//posts/appscreen-studio-macos-app-to-create-screenshots-and-previews-for-your-appstore-apps/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/appscreen-studio-macos-app-to-create-screenshots-and-previews-for-your-appstore-apps/</guid>
+            <pubDate>Mon, 11 Mar 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to handle different versions of Core Data Models</h1>]]></title>
+            <description><![CDATA[ios, macos, swiftui, appstore, development, coredata, xcode, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-handle-different-versions-of-core-data-models/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-handle-different-versions-of-core-data-models/</guid>
+            <pubDate>Sat, 07 Oct 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How I have visited Coldplay show in Seattle, WA</h1>]]></title>
+            <description><![CDATA[concert, coldplay, seattle, wa, youtube, vlog, video, wa-travelers, english]]></description>
+            <link>https://alfilatov.com//posts/how-i-have-visited-coldplay-show-in-seattle-wa/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-i-have-visited-coldplay-show-in-seattle-wa/</guid>
+            <pubDate>Tue, 03 Oct 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to start a business in Washington State</h1>]]></title>
+            <description><![CDATA[business, wa, entrepreneur, english, LLC, taxes, life, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-start-business-in-washington-state/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-start-business-in-washington-state/</guid>
+            <pubDate>Wed, 29 Mar 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to automate MS Rewards Program</h1>]]></title>
+            <description><![CDATA[swags, free, microsoft, redeem, rewards, github, clicker, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-automate-ms-rewards-program/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-automate-ms-rewards-program/</guid>
+            <pubDate>Fri, 30 Sep 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Cordova Plugin Native Spinner</h1>]]></title>
+            <description><![CDATA[cordova, plugin, ionic, configuration, mobile, github, english]]></description>
+            <link>https://alfilatov.com//posts/cordova-plugin-native-spinner/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/cordova-plugin-native-spinner/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Frontend DTO Challenge</h1>]]></title>
+            <description><![CDATA[dto, frontend, javascript, typescript, react, nodejs, socket-io, english]]></description>
+            <link>https://alfilatov.com//posts/frontend-dto-challenge/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/frontend-dto-challenge/</guid>
+            <pubDate>Tue, 05 Jul 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Washington State Breweries 🍻</h1>]]></title>
+            <description><![CDATA[washington, breweries, lifestyle, life, english]]></description>
+            <link>https://alfilatov.com//posts/washington-state-breweries/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/washington-state-breweries/</guid>
+            <pubDate>Fri, 10 Jun 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to create AWS EC2 Image Builder with hosted Solr and run it on EC2 using Terraform</h1>]]></title>
+            <description><![CDATA[aws, ec2, s3, ec2-builder, solr, terraform, devops, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-create-aws-ec2-image-builder-with-hosted-solr-and-run-it-on-ec2-using-terraform/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-aws-ec2-image-builder-with-hosted-solr-and-run-it-on-ec2-using-terraform/</guid>
+            <pubDate>Tue, 24 May 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to create AWS RDS cluster with imported SQL dump from S3 using Terraform</h1>]]></title>
+            <description><![CDATA[aws, rds, s3, sql, terraform, devops, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-create-aws-rds-cluster-with-imported-sql-dump-from-s3-using-terraform/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-aws-rds-cluster-with-imported-sql-dump-from-s3-using-terraform/</guid>
+            <pubDate>Sat, 04 Sep 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to create binary search tree in javascript with ES6 classes</h1>]]></title>
+            <description><![CDATA[javascript, data-structure, interview, es6, bst, binary-tree, binary-search-tree, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-create-binary-search-tree-in-javascript-with-es6-classes/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-binary-search-tree-in-javascript-with-es6-classes/</guid>
+            <pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to create linked list in javascript with ES6 classes</h1>]]></title>
+            <description><![CDATA[javascript, data-structure, interview, es6, linked-list, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-create-linked-list-in-javascript-with-es6-classes/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-linked-list-in-javascript-with-es6-classes/</guid>
+            <pubDate>Thu, 25 Feb 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to create, debug and deploy your MS Teams apps using VSCode</h1>]]></title>
+            <description><![CDATA[microsoft, teams, msteams, debug, deploy, vscode, extension, react, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-create-debug-and-deploy-your-ms-teams-apps-using-vscode/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-debug-and-deploy-your-ms-teams-apps-using-vscode/</guid>
+            <pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to create self-signed certificate</h1>]]></title>
+            <description><![CDATA[certificate, ssl, localhost, debug, windows, osx, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-create-self-signed-certificate/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-create-self-signed-certificate/</guid>
+            <pubDate>Sat, 09 Jan 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Как взять машину в лизинг в Америке и не быть обманутым</h1>]]></title>
+            <description><![CDATA[driver, cars, usa, wa, life, lease, russian]]></description>
+            <link>https://alfilatov.com//posts/how-to-lease-a-car-in-usa/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-lease-a-car-in-usa/</guid>
+            <pubDate>Wed, 18 Nov 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to pass file into an iframe and convert it to Blob for further AJAX request</h1>]]></title>
+            <description><![CDATA[iframe, vscode, extensions, javascript, typescript, data-transfer, datauri, blob, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</guid>
+            <pubDate>Fri, 06 Nov 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>How to open links from iframe</h1>]]></title>
+            <description><![CDATA[iframe, vscode, extensions, html, javascript, typescript, data-transfer, english]]></description>
+            <link>https://alfilatov.com//posts/how-to-open-links-from-iframe/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/how-to-open-links-from-iframe/</guid>
+            <pubDate>Thu, 01 Oct 2020 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
