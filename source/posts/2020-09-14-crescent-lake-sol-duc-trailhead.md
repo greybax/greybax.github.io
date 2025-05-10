@@ -26,6 +26,8 @@ Here we ate boiled eggs and moved back. These 2 routes are not the only ones. A 
 
 ![Crescent Lake. Sol Duc Trailhead 6](/images/crescent-lake-sol-duc-trailhead/6.jpg "Crescent Lake. Sol Duc Trailhead 6")
 
+![Crescent Lake. Sol Duc Trailhead 7](/images/crescent-lake-sol-duc-trailhead/7.jpg "Crescent Lake. Sol Duc Trailhead 7")
+
 ## Our YouTube video
 
 <div class="responsive-iframe">
