@@ -4,13 +4,18 @@
 
 _2025-05-09_
 
-Last couple months I've been working on VR game for VisionOS. I didn't developed VR game before, so mostly I have an experimental purposes doing it. Market for VR games is relatively small. I've decided to work on a game with simple UI and with some basic user interactions. So Boxing Trainer game is a good candidate for it. That's how I started to work on my first VR game: **Boxing Trainer: Punch Master**. 
+Last couple months I've been working on VR game for VisionOS. I didn't developed VR game before, so mostly I have an experimental purposes doing it. Market for VR games is relatively small. I've decided to work on a game with simple UI and with some basic user interactions. So Boxing Trainer game is a good candidate for it. That's how I started to work on my first VR game: **Boxing Trainer: Punch Master**.
 
 ## What this game is about?
 
 The user is in a gym with various sports equipment. In front of the user hangs a punching bag weighing 80 kg and he must hit it performing combinations of blows for a time that is shown in a separate window. Thus, the user sees statistics of correct and missed combinations on the punching bag.
 
 **In development:** adding fights in the ring that is in this gym with sparring partners.
+
+![Dynamic Combo Training](/images/how-I-developed-my-first-vr-game-for-vision-pro/1.png "Dynamic Combo Training")
+
+![Beat the Timer](/images/how-I-developed-my-first-vr-game-for-vision-pro/1.png "Beat the Timer")
+
 
 ## Development
 
@@ -34,5 +39,7 @@ During 90% of development process I've been using following tools:
 <script async src="https://www.threads.com/embed.js"></script>
 
 Hope somebody will find it useful too. Good luck with your projects!
+
+Download from VisionOS AppStore [Boxing Trainer: Punch Master](https://apps.apple.com/us/app/boxing-trainer-punch-master/id6743240378)
 
 Happy gamedev vibe coding! ✌🏼
