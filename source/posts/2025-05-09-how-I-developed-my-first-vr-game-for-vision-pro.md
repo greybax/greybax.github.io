@@ -1,6 +1,6 @@
 # How I developed my first VR Game for Vision Pro?
 
-#visionos, #vr, #visionOS, #realitykit, #swiftui, #3d, #gamedev, #english;
+#visionOS, #vr, #vision-pro, #realitykit, #swiftui, #3d, #gamedev, #english;
 
 _2025-05-09_
 
