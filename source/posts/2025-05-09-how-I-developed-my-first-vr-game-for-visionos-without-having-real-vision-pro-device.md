@@ -1,4 +1,4 @@
-# How I developed my first VR Game for Vision Pro?
+# How I developed my first VR Game for VisionOS without having real Vision Pro device?
 
 #visionOS, #vr, #vision-pro, #realitykit, #swiftui, #3d, #gamedev, #english;
 
@@ -12,9 +12,9 @@ The user is in a gym with various sports equipment. In front of the user hangs a
 
 **In development:** adding fights in the ring that is in this gym with sparring partners.
 
-![Dynamic Combo Training](/images/how-I-developed-my-first-vr-game-for-vision-pro/1.png "Dynamic Combo Training")
+![Dynamic Combo Training](/images/how-I-developed-my-first-vr-game-for-visionos-without-having-real-vision-pro-device/1.png "Dynamic Combo Training")
 
-![Beat the Timer](/images/how-I-developed-my-first-vr-game-for-vision-pro/1.png "Beat the Timer")
+![Beat the Timer](/images/how-I-developed-my-first-vr-game-for-visionos-without-having-real-vision-pro-device/1.png "Beat the Timer")
 
 ## Development
 
