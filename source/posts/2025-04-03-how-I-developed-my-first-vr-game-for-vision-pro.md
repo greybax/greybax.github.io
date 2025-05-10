@@ -1,6 +1,6 @@
-# How I developed my first VR Game for Vision Pro
+# How I developed my first VR Game for Vision Pro?
 
-#visionos, #vr, #visionOS, #realitykit, #swiftui, #gamedev, #promo, #english;
+#visionos, #vr, #visionOS, #realitykit, #swiftui, #3d, #gamedev, #promo, #english;
 
 _2025-05-09_
 
@@ -12,11 +12,9 @@ The user is in a gym with various sports equipment. In front of the user hangs a
 
 **In development:** adding fights in the ring that is in this gym with sparring partners.
 
-
 ## Development
 
 Most interesting thing that I developed this game without having real Vision Pro device! I've used only Simulator to test it.
-
 During 90% of development process I've been using following tools:
 * Gemini 2.5 Pro Preview. I've used just the official website and sent requests via browser without any APIs or internal code-editor extensions).
 * ⁠https://sketchfab.com/ for 3d models.
