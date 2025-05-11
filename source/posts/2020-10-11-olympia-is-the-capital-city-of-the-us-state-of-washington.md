@@ -2,7 +2,7 @@
 
 #wa, #trip, #usa, #washington, #olympia, #capital, #town, #pacific, #pnw, #english;
 
-_2020-11-11_
+_2020-10-11_
 
 We've lived in the state for so long - and we haven't been to the capital! After all, the capital is not Seattle, but Olympia. It's an hour's drive away (an hour and a half if you're stuck in traffic).
 
@@ -33,6 +33,5 @@ Among the famous residents of this city is Kurt Cobain, who lived here for 2 yea
 ![olympia-is-the-capital-city-of-the-us-state-of-washington 8](/images/olympia-is-the-capital-city-of-the-us-state-of-washington/8.jpg "olympia-is-the-capital-city-of-the-us-state-of-washington 8")
 
 ![olympia-is-the-capital-city-of-the-us-state-of-washington 9](/images/olympia-is-the-capital-city-of-the-us-state-of-washington/9.jpg "olympia-is-the-capital-city-of-the-us-state-of-washington 9")
-
 
 _Happy visiting Olympia, WA!_ :v:

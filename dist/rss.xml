@@ -4,7 +4,7 @@
         <description><![CDATA[Thoughts and stuff]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 11 May 2025 23:37:49 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 May 2025 23:48:33 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -155,18 +155,25 @@
             <pubDate>Wed, 18 Nov 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[<h1>Olympia is the capital city of the U.S. state of Washington</h1>]]></title>
-            <description><![CDATA[wa, trip, usa, washington, olympia, capital, town, pacific, pnw, english]]></description>
-            <link>https://alfilatov.com//posts/olympia-is-the-capital-city-of-the-us-state-of-washington/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/olympia-is-the-capital-city-of-the-us-state-of-washington/</guid>
-            <pubDate>Wed, 11 Nov 2020 00:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[<h1>How to pass file into an iframe and convert it to Blob for further AJAX request</h1>]]></title>
             <description><![CDATA[iframe, vscode, extensions, javascript, typescript, data-transfer, datauri, blob, english]]></description>
             <link>https://alfilatov.com//posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</guid>
             <pubDate>Fri, 06 Nov 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Fairhaven is the Coziest Town in Washington State</h1>]]></title>
+            <description><![CDATA[wa, trip, usa, fairhaven, washington, town, pacific, pnw, youtube, vlog, video, wa-travelers, pacific, english]]></description>
+            <link>https://alfilatov.com//posts/fairhaven-is-the-coziest-town-in-washington-state/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/fairhaven-is-the-coziest-town-in-washington-state/</guid>
+            <pubDate>Fri, 16 Oct 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Olympia is the capital city of the U.S. state of Washington</h1>]]></title>
+            <description><![CDATA[wa, trip, usa, washington, olympia, capital, town, pacific, pnw, english]]></description>
+            <link>https://alfilatov.com//posts/olympia-is-the-capital-city-of-the-us-state-of-washington/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/olympia-is-the-capital-city-of-the-us-state-of-washington/</guid>
+            <pubDate>Sun, 11 Oct 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>How to open links from iframe</h1>]]></title>

@@ -7,7 +7,7 @@
 <!-- created dynamically during build -->
 <url>
   <loc>https://alfilatov.com/</loc>
-  <lastmod>2025-05-11T23:37:52.878Z</lastmod>
+  <lastmod>2025-05-11T23:48:36.325Z</lastmod>
   <priority>1.00</priority>
 </url>
 
@@ -787,13 +787,18 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://alfilatov.com/posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</loc>
-  <lastmod>2020-11-06T12:00:00+00:00</lastmod>
+  <loc>https://alfilatov.com/posts/olympia-is-the-capital-city-of-the-us-state-of-washington/</loc>
+  <lastmod>2020-10-11T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://alfilatov.com/posts/olympia-is-the-capital-city-of-the-us-state-of-washington/</loc>
-  <lastmod>2020-11-11T12:00:00+00:00</lastmod>
+  <loc>https://alfilatov.com/posts/fairhaven-is-the-coziest-town-in-washington-state/</loc>
+  <lastmod>2020-10-16T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</loc>
+  <lastmod>2020-11-06T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
