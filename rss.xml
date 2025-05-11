@@ -4,7 +4,7 @@
         <description><![CDATA[Thoughts and stuff]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 11 May 2025 22:04:15 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 May 2025 22:12:54 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -167,6 +167,13 @@
             <link>https://alfilatov.com//posts/how-to-open-links-from-iframe/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-open-links-from-iframe/</guid>
             <pubDate>Thu, 01 Oct 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Ruby Beach. Olympic Peninsula</h1>]]></title>
+            <description><![CDATA[wa, trip, usa, olympic-peninsula, youtube, vlog, video, wa-travelers, pacific, english]]></description>
+            <link>https://alfilatov.com//posts/ruby-beach-olympic-peninsula/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/ruby-beach-olympic-peninsula/</guid>
+            <pubDate>Thu, 24 Sep 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Hoh Rain Forest. Olympic Peninsula</h1>]]></title>
