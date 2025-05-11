@@ -4,7 +4,7 @@
         <description><![CDATA[Thoughts and stuff]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 11 May 2025 22:12:54 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 May 2025 23:37:49 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -153,6 +153,13 @@
             <link>https://alfilatov.com//posts/how-to-lease-a-car-in-usa/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-lease-a-car-in-usa/</guid>
             <pubDate>Wed, 18 Nov 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Olympia is the capital city of the U.S. state of Washington</h1>]]></title>
+            <description><![CDATA[wa, trip, usa, washington, olympia, capital, town, pacific, pnw, english]]></description>
+            <link>https://alfilatov.com//posts/olympia-is-the-capital-city-of-the-us-state-of-washington/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/olympia-is-the-capital-city-of-the-us-state-of-washington/</guid>
+            <pubDate>Wed, 11 Nov 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>How to pass file into an iframe and convert it to Blob for further AJAX request</h1>]]></title>
