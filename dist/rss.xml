@@ -4,7 +4,7 @@
         <description><![CDATA[Thoughts and stuff]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 10 May 2025 19:22:55 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 May 2025 22:04:15 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -167,6 +167,20 @@
             <link>https://alfilatov.com//posts/how-to-open-links-from-iframe/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-open-links-from-iframe/</guid>
             <pubDate>Thu, 01 Oct 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Hoh Rain Forest. Olympic Peninsula</h1>]]></title>
+            <description><![CDATA[wa, trip, usa, olympic-peninsula, youtube, vlog, video, wa-travelers, pacific, english]]></description>
+            <link>https://alfilatov.com//posts/hoh-rain-forest-olympic-peninsula/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/hoh-rain-forest-olympic-peninsula/</guid>
+            <pubDate>Mon, 21 Sep 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Rialto Beach. Olympic Peninsula</h1>]]></title>
+            <description><![CDATA[wa, trip, usa, olympic-peninsula, youtube, vlog, video, wa-travelers, pacific, english]]></description>
+            <link>https://alfilatov.com//posts/rialto-beach-olympic-peninsula/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/rialto-beach-olympic-peninsula/</guid>
+            <pubDate>Thu, 17 Sep 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Crescent Lake. Sol Duc Trailhead</h1>]]></title>
