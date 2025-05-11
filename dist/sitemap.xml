@@ -7,7 +7,7 @@
 <!-- created dynamically during build -->
 <url>
   <loc>https://alfilatov.com/</loc>
-  <lastmod>2025-05-11T22:04:17.648Z</lastmod>
+  <lastmod>2025-05-11T22:12:56.767Z</lastmod>
   <priority>1.00</priority>
 </url>
 
@@ -774,6 +774,11 @@
 <url>
   <loc>https://alfilatov.com/posts/hoh-rain-forest-olympic-peninsula/</loc>
   <lastmod>2020-09-21T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alfilatov.com/posts/ruby-beach-olympic-peninsula/</loc>
+  <lastmod>2020-09-24T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
