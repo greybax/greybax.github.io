@@ -4,7 +4,7 @@
         <description><![CDATA[Thoughts and stuff]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 16 May 2025 22:56:31 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 May 2025 23:18:49 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -148,6 +148,13 @@
             <pubDate>Sat, 09 Jan 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[<h1>Pacific Ocean in Cabo San Lucas, Mexico</h1>]]></title>
+            <description><![CDATA[mexico, cabo-san-lucas, nature, pacific-ocean, vacation, pacific, youtube, vlog, video, wa-travelers, english]]></description>
+            <link>https://alfilatov.com//posts/pacific-ocean-in-cabo-san-lucas-mexico/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/pacific-ocean-in-cabo-san-lucas-mexico/</guid>
+            <pubDate>Thu, 19 Nov 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[<h1>Как взять машину в лизинг в Америке и не быть обманутым</h1>]]></title>
             <description><![CDATA[driver, cars, usa, wa, life, lease, russian]]></description>
             <link>https://alfilatov.com//posts/how-to-lease-a-car-in-usa/</link>
@@ -164,8 +171,8 @@
         <item>
             <title><![CDATA[<h1>Nature of Cabo San Lucas, Mexico</h1>]]></title>
             <description><![CDATA[mexico, cabo-san-lucas, nature, pacific-ocean, vacation, pacific, youtube, vlog, video, wa-travelers, english]]></description>
-            <link>https://alfilatov.com//posts/nature-of-cabo-san-lucas/</link>
-            <guid isPermaLink="true">https://alfilatov.com//posts/nature-of-cabo-san-lucas/</guid>
+            <link>https://alfilatov.com//posts/nature-of-cabo-san-lucas-mexico/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/nature-of-cabo-san-lucas-mexico/</guid>
             <pubDate>Mon, 02 Nov 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
