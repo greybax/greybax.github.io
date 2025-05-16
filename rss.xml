@@ -4,7 +4,7 @@
         <description><![CDATA[Thoughts and stuff]]></description>
         <link>https://alfilatov.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 16 May 2025 22:48:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 May 2025 22:56:31 GMT</lastBuildDate>
         <atom:link href="https://alfilatov.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[MIT]]></copyright>
         <language><![CDATA[en-us]]></language>
@@ -160,6 +160,13 @@
             <link>https://alfilatov.com//posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</link>
             <guid isPermaLink="true">https://alfilatov.com//posts/how-to-pass-file-into-an-iframe-and-convert-it-to-blob-for-further-ajax-request/</guid>
             <pubDate>Fri, 06 Nov 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[<h1>Nature of Cabo San Lucas, Mexico</h1>]]></title>
+            <description><![CDATA[mexico, cabo-san-lucas, nature, pacific-ocean, vacation, pacific, youtube, vlog, video, wa-travelers, english]]></description>
+            <link>https://alfilatov.com//posts/nature-of-cabo-san-lucas/</link>
+            <guid isPermaLink="true">https://alfilatov.com//posts/nature-of-cabo-san-lucas/</guid>
+            <pubDate>Mon, 02 Nov 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[<h1>Cabo San Lucas, Mexico</h1>]]></title>
